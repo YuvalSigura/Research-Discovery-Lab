@@ -82,6 +82,9 @@ def synthetic_data():
           "case_ref":C1,"question_event_ref":"EVT-900003",
           "pattern_ref":P1,"pattern_definition_revision":1,
           "mapping_basis":"analyst_comparison","review_status":"curator_reviewed",
+          "abstraction_relation":"same_core_question",
+          "question_novelty":"known_research_question",
+          "question_novelty_basis":"Synthetic documented comparison",
           "abstraction_rationale":"The stated question tests which identity guarantee survives state/order changes.",
           "provenance":dict(PROVENANCE),
           "evidence_anchors":[{"source_ref":SOURCE,"locator":"synthetic:mapping:1"}]}
@@ -94,6 +97,7 @@ def synthetic_data():
           "evidence_anchors":[{"source_ref":SRC2,"locator":"synthetic:mapping:2"}]}
     proposed={**map1, "id":"QMP-900003","pattern_ref":P2,
               "mapping_basis":"algorithmic_suggestion","review_status":"proposed",
+              "abstraction_relation":"analogy_only","question_novelty":"unassessed",
               "abstraction_rationale":"Lexical similarity alone, not reviewed conceptual evidence.",
               "provenance":{"evidence_status":"proposed","source_refs":[SOURCE]}}
     data["question_mappings"].extend([map1,map2,proposed])
@@ -174,9 +178,19 @@ class ResearchQuestionUmbrellaTests(unittest.TestCase):
         historical=self.abstraction.convergence()
         self.assertEqual([g["pattern_id"] for g in historical["patterns"]],[P1])
         all_view=self.abstraction.convergence(view="all")
-        self.assertEqual({g["pattern_id"] for g in all_view["patterns"]},{P1,P2})
-        self.assertEqual(next(g for g in all_view["patterns"]
-                              if g["pattern_id"]==P2)["status"],"proposed")
+        self.assertEqual({g["pattern_id"] for g in all_view["patterns"]},{P1})
+        self.assertEqual(all_view["patterns"][0]["status"],"curator_reviewed")
+        q=self.abstraction.case_report(C1,view="all")["questions"]
+        self.assertIn(P2,{m["pattern_id"] for item in q
+                          for m in item["umbrella_assignments"]})
+
+    def test_overlapping_questions_are_not_merged(self):
+        result=self.abstraction.convergence(view="all")
+        self.assertNotIn(P2,{group["pattern_id"] for group in result["patterns"]})
+        case=self.abstraction.case_report(C1,view="all")
+        proposed=[m for q in case["questions"] for m in q["umbrella_assignments"]
+                  if m["pattern_id"]==P2]
+        self.assertEqual(proposed[0]["abstraction_relation"],"analogy_only")
 
     def test_case_comparison_requires_curated_question_mappings(self):
         result=self.abstraction.compare_case_questions([C1,C2])

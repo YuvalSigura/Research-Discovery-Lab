@@ -100,6 +100,9 @@ class QuestionAbstractionEngine:
                         "revision": item["pattern_definition_revision"],
                         "mapping_basis": item["mapping_basis"],
                         "review_status": item["review_status"],
+                        "abstraction_relation": item["abstraction_relation"],
+                        "question_novelty": item["question_novelty"],
+                        "question_novelty_basis": item.get("question_novelty_basis"),
                         "abstraction_rationale": item["abstraction_rationale"],
                         "mismatches": item.get("mismatches", []),
                         "evidence_anchors": item["evidence_anchors"]
@@ -163,7 +166,9 @@ class QuestionAbstractionEngine:
                 continue
             raw_mappings = self.store.mappings_by_pattern[pattern["id"]]
             mappings = [
-                m for m in raw_mappings if view == "all" or _reviewed_mapping(m, self.store)
+                m for m in raw_mappings if
+                m["abstraction_relation"] in {"same_core_question", "specialization"}
+                and (view == "all" or _reviewed_mapping(m, self.store))
             ]
             # Deduplicate cases and questions independently, never count multiple
             # techniques or source articles as independent successes.
@@ -264,6 +269,8 @@ class QuestionAbstractionEngine:
         for report in reports:
             for q in report["questions"]:
                 for mapping in q["umbrella_assignments"]:
+                    if mapping["abstraction_relation"] not in {"same_core_question", "specialization"}:
+                        continue
                     by_pattern[mapping["pattern_id"]][report["case_id"]].append(q["question_event_id"])
         overlap = []
         for pid, case_map in by_pattern.items():
