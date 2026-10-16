@@ -35,20 +35,20 @@ The following figures reflect the current repository baseline as inspected after
 
 | Item | Status |
 | --- | --- |
-| Catalogued publications | **74 source records** (50 initial + 22 Pentera entries + 2 primary-source decision studies) |
-| CASE records | **74**, mostly source-compatible catalogue placeholders |
-| Deep case example | **ShadowPanel**, **James Kettle topic selection**, and **watchTowr .MOBI**, partially reconstructed; **XBOW Chrome** has five initial process events |
-| ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** (ShadowPanel alone); **45 events and 38 relations** across current archive |
+| Catalogued publications | **76 source records** (the original 74 plus ServiceNow and a negative-result source) |
+| CASE records | **76**, mostly source-compatible catalogue placeholders |
+| Deep case example | **ShadowPanel**, **James Kettle topic selection**, **watchTowr .MOBI**, **ServiceNow** and **an OpenVAS false-positive account**, partially reconstructed; **XBOW Chrome** has five initial process events |
+| ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** (ShadowPanel alone); **78 events and 68 relations** across current archive |
 | Publisher-discovery seeds | **9 configured research publishers**, in `sources/publishers/` |
 | Typed archive, schemas, integrity checks | Implemented |
 | Read-only retrieval, chronology, causal question tracing | Implemented |
 | Mindset taxonomy, question-to-move model and open-world umbrella-question analysis | Implemented **as infrastructure** |
-| Real reviewed mindset / umbrella-question assignments | **Not yet populated** |
+| Mindset / question-pattern / cross-case mappings | **4 unreviewed MND**, **2 proposed QPT**, **3 proposed QMP**; **0 reviewed** |
 | Original article RAW text and licensed passages | **Not archived** for the catalogue |
 | Automated acquisition, document processing and historical extraction | **Not implemented end to end** |
-| Dataset creation, blind evaluation, fine-tuning | **Deferred**; training is the last phase |
+| Dataset creation, blind evaluation, fine-tuning | **Fail-closed predecision candidate exporter exists**, but **0 approved CTX** and **0 qualified benchmark tasks**; training is last |
 
-**Prior verified CI baseline:** [successful workflow run](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38841549105) for baseline `4e713e7`. Future commits require their own fresh CI verification.
+**Last previous verified release:** [first-mission successful CI](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38845096564) on PR #1; Phase-2 validation must pass independently. See [Phase-2 source decision audit](docs/PHASE2_SOURCE_DECISION_AUDIT.md).
 
 The research trajectory records are **partial reconstructions from authors' retrospective public accounts**, not independently repeated exploit experiments. Where event times are unavailable, the engine preserves uncertainty instead of manufacturing dates or causal ordering. See [first-mission source review](docs/FIRST_MISSION_SOURCE_REVIEW.md), [Pentera import notes](docs/PENTERA_IMPORT.md), and [phase status](docs/PHASE1_STATUS.md).
 
@@ -92,13 +92,16 @@ python -m research_engine coverage CASE-000055
 # Grounded questions, mindset links and question abstraction
 python -m research_engine questions CASE-000055
 python -m research_engine question-convergence --min-cases 2
+python tools/curation_readiness.py --case-id CASE-000075
+# Export requires an operator-held RDL_BLIND_KEY; with 0 approved CTX exports 0 tasks:
+python tools/build_predecision_candidates.py
 python -m research_engine compare-questions CASE-000055 CASE-000001
 
 # Strict time-sliced view; unknown or late evidence is withheld
 python -m research_engine reconstruct CASE-000055 --view pre_discovery --cutoff 2026-01-01T00:00:00Z
 ```
 
-**Expected behavior:** query results can be sparse or empty. In particular, question-family convergence must report no reviewed matches until actual source-grounded QMP records have been curated. An empty answer is preferable to a fabricated research story.
+**Expected behavior:** query results can be sparse or empty. In particular, question-family convergence must report no reviewed matches: existing real QMP records are **proposed**, not curator-reviewed. The blind candidate builder must export zero tasks while no CTX records are approved. An empty answer is preferable to a fabricated research story.
 
 API and record semantics: [retrieval documentation](docs/RETRIEVAL_ENGINE.md).
 
@@ -175,7 +178,7 @@ All original/historical vs analyst-reconstructed vs counterfactual vs unknown cl
 
 ## Remaining roadmap — training is last
 
-The existing retrieval/question-analysis foundation is **not** the finished research factory.
+The existing retrieval/question-analysis foundation is **not** the finished research factory. Phase 2 adds publisher-sourced cases, a real negative-result report with methodological caveats, unreviewed MND/QPT/QMP candidates and read-only curation/evaluation gates; it does not establish verified question-family convergence.
 
 | Order | Stage | Exit criterion |
 | --- | --- | --- |
