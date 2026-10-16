@@ -181,8 +181,14 @@ class ResearchQuestionUmbrellaTests(unittest.TestCase):
         historical=self.abstraction.convergence()
         self.assertEqual([g["pattern_id"] for g in historical["patterns"]],[P1])
         all_view=self.abstraction.convergence(view="all")
-        self.assertEqual({g["pattern_id"] for g in all_view["patterns"]},{P1})
-        self.assertEqual(all_view["patterns"][0]["status"],"curator_reviewed")
+        approved = {g["pattern_id"] for g in all_view["patterns"]
+                    if g["status"] == "curator_reviewed"}
+        self.assertEqual(approved, {P1})
+        self.assertTrue(all(g["status"] != "curator_reviewed"
+                            for g in all_view["patterns"] if g["pattern_id"] != P1),
+                        "A real proposed umbrella question must never become approved in all-view")
+        self.assertEqual(next(g for g in all_view["patterns"] if g["pattern_id"] == P1)["status"],
+                         "curator_reviewed")
         q=self.abstraction.case_report(C1,view="all")["questions"]
         self.assertIn(P2,{m["pattern_id"] for item in q
                           for m in item["umbrella_assignments"]})
