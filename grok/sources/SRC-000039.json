@@ -1,0 +1,16 @@
+{
+  "source_id": "SRC-000039",
+  "canonical_url": "https://portswigger.net/research/smashing-the-state-machine",
+  "access_status": "READ_FULL",
+  "document_genres": ["research paper", "methodology"],
+  "lineage_id": "portswigger-race-conditions-2023",
+  "source_claims": [{"claim_id": "C1", "type": "author_reported", "statement": "Moved beyond limit-overruns after Facebook email case. Developed single-packet attack to reduce jitter. Key questions: how state is stored, editing vs appending, operation key. Methodology: predict, probe with single-packet, prove, escalate."}],
+  "research_questions": [{"question_id": "Q1", "formulation": "How can race conditions on multi-step state machines be reliably triggered and detected beyond simple limit overruns?", "basis": "author_explicit"}],
+  "discovery_mechanisms": ["single_packet_synchronization", "key_questions_filtering", "second_order_clue_observation"],
+  "negative_inconclusive": ["Network jitter historically masked windows", "Session locking or batching can prevent", "Deferred collisions hard to detect"],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "layer_b_candidate_principles": ["Single-packet techniques can shrink delivery jitter enough to hit sub-millisecond windows", "Filter candidate endpoints with key questions (storage, edit vs append, key) before expensive synchronization"],
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "retrieval_timestamp": "2026-10-16T10:50:00Z"
+}
