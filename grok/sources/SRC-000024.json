@@ -1,0 +1,81 @@
+{
+  "source_id": "SRC-000024",
+  "case_id": "CASE-000024",
+  "canonical_url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+  "retrieved_url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:30:00Z",
+  "document_genres": ["methodology article", "AI research system description", "whitepaper-style"],
+  "lineage_id": "portswigger-http-terminator-2026",
+  "actor_roles": [
+    {"actor": "James Kettle / PortSwigger", "role": "author_designer"},
+    {"actor": "HTTP Terminator AI system", "role": "experimental_research_system"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Ideation section",
+      "type": "author_reported",
+      "statement": "LLM ideation from RFC micro-fragments (138 RFCs → 15k fragments → 30k vectors). Broad prompts produced low novelty; micro-inspiration improved rediscovery of unpublished techniques."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Evaluation / Negatives",
+      "type": "author_reported",
+      "statement": "Tested on 30k authorized sites. LLMs struggled with HTTP mechanics, over-anchored, produced known triggers. Weaponization required human intervention and prompt workarounds (renaming, placebo features)."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "Cascade",
+      "type": "author_reported",
+      "statement": "Findings fed back to generate new hypotheses. Major conceptual leaps (Shared-Parser Confusion) needed human validation."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Can an LLM-driven system, given micro-fragments of RFCs rather than broad prompts, generate and prove novel HTTP desync triggers that human researchers had not previously published?",
+      "basis": "author_explicit",
+      "anchor": "core research question of the paper",
+      "uncertainty_reduced": "whether AI can produce novel protocol-level findings under constrained inspiration",
+      "assumption_challenged": "that LLMs only rediscover known techniques"
+    }
+  ],
+  "environment_model_updates": [
+    "HTTP desync surface is large and context-dependent",
+    "Evaluation harness must separate trigger discovery from weaponization",
+    "Anomaly detection can surface non-desync issues"
+  ],
+  "discovery_mechanisms": [
+    "rfc_micro_fragment_inspiration",
+    "large_scale_differential_testing",
+    "anomaly_detection_beyond_desync",
+    "human_in_the_loop_for_conceptual_leaps"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "30k triggers × 30k sites differential testing",
+    "exploratory": "cascade from findings to new hypotheses; anomaly detection"
+  },
+  "negative_inconclusive": [
+    "Broad ideation prompts: low novelty",
+    "Autonomous weaponization: high false positives, safety refusals, poor HTTP understanding",
+    "Some evaluation bugs delayed findings"
+  ],
+  "decision_ids": ["portswigger-http-terminator-2026.T001"],
+  "unobserved_history": ["exact prompt iterations that raised rediscovery from 0% to 30%", "full list of discarded triggers"],
+  "forbidden_inferences": [
+    "Do not treat AI-discovered triggers as fully autonomous novel research without the human design of the harness and inspiration method",
+    "Failure of autonomous weaponization does not falsify the trigger-generation approach"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note tool releases and Black Hat/DEF CON presentations"],
+  "layer_b_candidate_principles": [
+    "Micro-inspiration from primary specifications (RFC fragments) can produce higher novelty than broad prompts",
+    "Separate trigger discovery from weaponization; the latter often requires stronger human or deterministic gates",
+    "Anomaly detection on large-scale differential tests can surface unexpected issue classes"
+  ],
+  "model_vs_harness": "Hypothesis generation from RFC fragments is model; large-scale differential evaluation, anomaly detection, and validation gates are primarily harness."
+}
