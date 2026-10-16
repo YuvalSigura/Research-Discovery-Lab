@@ -1,0 +1,1441 @@
+{
+  "schema": "rdl.gpt.source_review_coverage.v1",
+  "date": "2026-10-16",
+  "frozen_registry_sha": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "total": 109,
+  "coverage_counts": {
+    "previous_provisional_case_notes": 2,
+    "original_article_bounded_review": 90,
+    "original_content_recovered_bounded": 13,
+    "publisher_page_opened_only": 3,
+    "official_pdf_identified_body_not_verified": 1
+  },
+  "notes": "All 109 source IDs addressed in bounded source-audit documents. Coverage is not full historical reconstruction. Grok materials were not used. No 109-source full-text verification, no contemporaneous evidence review, no reviewer-approved training data.",
+  "files": [
+    "gpt/cases/XBOW_SRC_000003_000010_INDEPENDENT_ANALYSIS.md",
+    "gpt/cases/XBOW_SRC_000011_000023_INDEPENDENT_ANALYSIS.md",
+    "gpt/cases/RDL_SRC_000024_000043_PRIMARY_SOURCE_PASS.md",
+    "gpt/cases/RDL_SRC_000044_000072_SOURCE_AUDIT.md",
+    "gpt/cases/RDL_SRC_000073_000109_SOURCE_AUDIT.md",
+    "gpt/cases/RDL_RECOVERED_PRIMARY_SOURCES_ADDENDUM.md"
+  ],
+  "records": [
+    {
+      "source_id": "SRC-000001",
+      "case_ids": [
+        "CASE-000001"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit",
+      "review_level": "previous_provisional_case_notes",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000002",
+      "case_ids": [
+        "CASE-000002"
+      ],
+      "registry_url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
+      "review_level": "previous_provisional_case_notes",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000003",
+      "case_ids": [
+        "CASE-000003"
+      ],
+      "registry_url": "https://xbow.com/blog/no-time-to-pwn-cve-2026-72018",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000004",
+      "case_ids": [
+        "CASE-000004"
+      ],
+      "registry_url": "https://xbow.com/blog/bing-images-rce-vulnerabilities",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000005",
+      "case_ids": [
+        "CASE-000005"
+      ],
+      "registry_url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000006",
+      "case_ids": [
+        "CASE-000006"
+      ],
+      "registry_url": "https://xbow.com/blog/three-rce-vulnerabilities-in-microsoft-identified-xbow",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000007",
+      "case_ids": [
+        "CASE-000007"
+      ],
+      "registry_url": "https://xbow.com/blog/tales-from-the-trace-how-xbow-reasons-its-way-into-finding-idors",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000008",
+      "case_ids": [
+        "CASE-000008"
+      ],
+      "registry_url": "https://xbow.com/blog/cooking-an-sql-injection-vulnerability-in-chef-automate",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000009",
+      "case_ids": [
+        "CASE-000009"
+      ],
+      "registry_url": "https://xbow.com/blog/apache-druid-proxy",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000010",
+      "case_ids": [
+        "CASE-000010"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-geolocation-sqli",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000011",
+      "case_ids": [
+        "CASE-000011"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-titiler-lfi",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000012",
+      "case_ids": [
+        "CASE-000012"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-titiler-rce",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000013",
+      "case_ids": [
+        "CASE-000013"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-photo-proxy-lfi",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000014",
+      "case_ids": [
+        "CASE-000014"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-zpush-sqli",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000015",
+      "case_ids": [
+        "CASE-000015"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-salesforce-xss",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000016",
+      "case_ids": [
+        "CASE-000016"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-akamai-cloudtest-xxe",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000017",
+      "case_ids": [
+        "CASE-000017"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-globalprotect-xss",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000018",
+      "case_ids": [
+        "CASE-000018"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-zoo-project-arb",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000019",
+      "case_ids": [
+        "CASE-000019"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-2fauth-xss",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000020",
+      "case_ids": [
+        "CASE-000020"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-eddi-path",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000021",
+      "case_ids": [
+        "CASE-000021"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-2fauth-ssrf",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000022",
+      "case_ids": [
+        "CASE-000022"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-scoold-vuln",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000023",
+      "case_ids": [
+        "CASE-000023"
+      ],
+      "registry_url": "https://xbow.com/blog/xbow-ninja-tables",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000024",
+      "case_ids": [
+        "CASE-000024"
+      ],
+      "registry_url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000025",
+      "case_ids": [
+        "CASE-000025"
+      ],
+      "registry_url": "https://portswigger.net/research/http1-must-die",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000026",
+      "case_ids": [
+        "CASE-000026"
+      ],
+      "registry_url": "https://portswigger.net/research/how-to-distinguish-http-pipelining-from-request-smuggling",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000027",
+      "case_ids": [
+        "CASE-000027"
+      ],
+      "registry_url": "https://portswigger.net/research/browser-powered-desync-attacks",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000028",
+      "case_ids": [
+        "CASE-000028"
+      ],
+      "registry_url": "https://portswigger.net/research/http2",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000029",
+      "case_ids": [
+        "CASE-000029"
+      ],
+      "registry_url": "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000030",
+      "case_ids": [
+        "CASE-000030"
+      ],
+      "registry_url": "https://xbow.com/blog/gpt-5-5-and-xbow-a-step-change-in-autonomous-application-security",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000031",
+      "case_ids": [
+        "CASE-000031"
+      ],
+      "registry_url": "https://xbow.com/blog/mythos-gpt-5-5-ai-vulnerability-detection-security",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000032",
+      "case_ids": [
+        "CASE-000032"
+      ],
+      "registry_url": "https://googleprojectzero.blogspot.com/2024/11/from-naptime-to-big-sleep.html",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://googleprojectzero.blogspot.com/2024/11/?m=1"
+    },
+    {
+      "source_id": "SRC-000033",
+      "case_ids": [
+        "CASE-000033"
+      ],
+      "registry_url": "https://projectzero.google/2025/12/windows-exploitation-techniques.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000034",
+      "case_ids": [
+        "CASE-000034"
+      ],
+      "registry_url": "https://projectzero.google/2025/05/breaking-sound-barrier-part-i-fuzzing.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000035",
+      "case_ids": [
+        "CASE-000035"
+      ],
+      "registry_url": "https://projectzero.google/2025/05/the-windows-registry-adventure-8-exploitation.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000036",
+      "case_ids": [
+        "CASE-000036"
+      ],
+      "registry_url": "https://projectzero.google/2025/07/reporting-transparency.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000037",
+      "case_ids": [
+        "CASE-000037"
+      ],
+      "registry_url": "https://projectzero.google/reporting-transparency-2025.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000038",
+      "case_ids": [
+        "CASE-000038"
+      ],
+      "registry_url": "https://projectzero.google/reporting-transparency.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000039",
+      "case_ids": [
+        "CASE-000039"
+      ],
+      "registry_url": "https://portswigger.net/research/smashing-the-state-machine",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000040",
+      "case_ids": [
+        "CASE-000040"
+      ],
+      "registry_url": "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000041",
+      "case_ids": [
+        "CASE-000041"
+      ],
+      "registry_url": "https://portswigger.net/research/introducing-http-anomaly-rank",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000042",
+      "case_ids": [
+        "CASE-000042"
+      ],
+      "registry_url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2024",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000043",
+      "case_ids": [
+        "CASE-000043"
+      ],
+      "registry_url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2025",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000044",
+      "case_ids": [
+        "CASE-000044"
+      ],
+      "registry_url": "https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://www.slcyber.io/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os-cve-2025-0108"
+    },
+    {
+      "source_id": "SRC-000045",
+      "case_ids": [
+        "CASE-000045"
+      ],
+      "registry_url": "https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://www.slcyber.io/research/doing-the-due-diligence-analysing-the-next-js-middleware-bypass-cve-2025-29927"
+    },
+    {
+      "source_id": "SRC-000046",
+      "case_ids": [
+        "CASE-000046"
+      ],
+      "registry_url": "https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000047",
+      "case_ids": [
+        "CASE-000047"
+      ],
+      "registry_url": "https://www.assetnote.io/resources/research/ivantis-pulse-connect-secure-auth-bypass-round-two/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000048",
+      "case_ids": [
+        "CASE-000048"
+      ],
+      "registry_url": "https://www.assetnote.io/resources/research/high-signal-detection-and-exploitation-of-ivantis-pulse-connect-secure-auth-bypass-rce/",
+      "review_level": "publisher_page_opened_only",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000049",
+      "case_ids": [
+        "CASE-000049"
+      ],
+      "registry_url": "https://www.assetnote.io/resources/research/advisory-next-js-ssrf-cve-2024-34351",
+      "review_level": "publisher_page_opened_only",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000050",
+      "case_ids": [
+        "CASE-000050"
+      ],
+      "registry_url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534",
+      "review_level": "publisher_page_opened_only",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000051",
+      "case_ids": [
+        "CASE-000051"
+      ],
+      "registry_url": "https://pentera.io/resources/research/what-ai-cannot-decide-for-us/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000052",
+      "case_ids": [
+        "CASE-000052"
+      ],
+      "registry_url": "https://pentera.io/resources/research/what-ai-cannot-predict-or-verify/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000053",
+      "case_ids": [
+        "CASE-000053"
+      ],
+      "registry_url": "https://pentera.io/resources/research/what-ai-cannot-learn-universally/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000054",
+      "case_ids": [
+        "CASE-000054"
+      ],
+      "registry_url": "https://pentera.io/resources/research/mathematical-limits-of-ai/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000055",
+      "case_ids": [
+        "CASE-000055"
+      ],
+      "registry_url": "https://pentera.io/resources/research/pre-auth-rce-chain-cyberpanel/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000056",
+      "case_ids": [
+        "CASE-000056"
+      ],
+      "registry_url": "https://pentera.io/resources/research/ai-double-agent-claude/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000057",
+      "case_ids": [
+        "CASE-000057"
+      ],
+      "registry_url": "https://pentera.io/resources/research/ssm-cross-account-sharing/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000058",
+      "case_ids": [
+        "CASE-000058"
+      ],
+      "registry_url": "https://pentera.io/resources/research/podmans-webview/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000059",
+      "case_ids": [
+        "CASE-000059"
+      ],
+      "registry_url": "https://pentera.io/resources/research/integration-flaws-gmail-google-drive/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000060",
+      "case_ids": [
+        "CASE-000060"
+      ],
+      "registry_url": "https://pentera.io/resources/research/ai-assisted-reverse-engineering-lolbins/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000061",
+      "case_ids": [
+        "CASE-000061"
+      ],
+      "registry_url": "https://pentera.io/resources/research/exposed-cloud-training-apps-pentera-labs/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000062",
+      "case_ids": [
+        "CASE-000062"
+      ],
+      "registry_url": "https://pentera.io/resources/research/ingress-nightmare/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/blog/ingress-nginx-injection-vulnerabilities/ ; https://pentera.io/wp-content/uploads/2026/03/penteralabs_ingress.pdf"
+    },
+    {
+      "source_id": "SRC-000063",
+      "case_ids": [
+        "CASE-000063"
+      ],
+      "registry_url": "https://pentera.io/resources/research/risks-of-aws-ssm-in-hybrid-landscapes/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2025/01/pentera_labs_risks_of_aws_ssm_in_hybrid_landscapes.pdf ; https://pentera.io/blog/deciphering-risk-of-aws-sssm-in-hybrid-environments/"
+    },
+    {
+      "source_id": "SRC-000064",
+      "case_ids": [
+        "CASE-000064"
+      ],
+      "registry_url": "https://pentera.io/resources/research/two-zero-days-forticlient-vpn-2024/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2024/11/pentera_labs_fortinet_cves-1.pdf ; https://pentera.io/blog/fortinet-vulnerabilities-cve-2024-47574-disclosure/"
+    },
+    {
+      "source_id": "SRC-000065",
+      "case_ids": [
+        "CASE-000065"
+      ],
+      "registry_url": "https://pentera.io/resources/research/dos-attack-active-directory-sid-exploitation/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2024/11/pentera_labs_youll_never_sidem_coming-1.pdf ; https://pentera.io/blog/dos-attack-active-directory-sid-exploitation/"
+    },
+    {
+      "source_id": "SRC-000066",
+      "case_ids": [
+        "CASE-000066"
+      ],
+      "registry_url": "https://pentera.io/resources/research/reflective-loading-with-remote-memory-interactions/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2024/06/pentera_labs_reflective_loading_remote_memory_interactions.pdf"
+    },
+    {
+      "source_id": "SRC-000067",
+      "case_ids": [
+        "CASE-000067"
+      ],
+      "registry_url": "https://pentera.io/resources/research/devalscript-the-language-of-processes/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2024/06/pentera_labs_reflective_loading_deval_script.pdf"
+    },
+    {
+      "source_id": "SRC-000068",
+      "case_ids": [
+        "CASE-000068"
+      ],
+      "registry_url": "https://pentera.io/resources/research/not-another-weblogic-exploitation-how-to-prevent-rce/",
+      "review_level": "official_pdf_identified_body_not_verified",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2023/12/pentera_labs_not_another_weblogic_exploitation_the_road_to_post_exploitation.pdf"
+    },
+    {
+      "source_id": "SRC-000069",
+      "case_ids": [
+        "CASE-000069"
+      ],
+      "registry_url": "https://pentera.io/resources/research/the-lolbas-odyssey-finding-new-lolbas-and-how-you-can-too/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2023/08/pentera_labs_the_lolbas_odyssey_finding_new_lolbas_and_how_you_can_too.pdf"
+    },
+    {
+      "source_id": "SRC-000070",
+      "case_ids": [
+        "CASE-000070"
+      ],
+      "registry_url": "https://pentera.io/resources/research/death-by-default-neglected-network-protocols-you-should-know/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2023/07/pentera_labs_neglected_network_protocols-1.pdf"
+    },
+    {
+      "source_id": "SRC-000071",
+      "case_ids": [
+        "CASE-000071"
+      ],
+      "registry_url": "https://pentera.io/resources/research/detecting-an-mssql-databases-version-using-the-tds-protocol/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2023/05/pentera_labs_the_gateway_to_control_initiating_attacks_on_mssql_databases.pdf ; https://pentera.io/blog/how-to-find-the-mssql-databases-version-with-the-tds-protocol/"
+    },
+    {
+      "source_id": "SRC-000072",
+      "case_ids": [
+        "CASE-000072"
+      ],
+      "registry_url": "https://pentera.io/resources/research/evading-detection-from-inception-to-reality/",
+      "review_level": "original_content_recovered_bounded",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": "https://pentera.io/wp-content/uploads/2023/02/pentera_labs_evading_detection_pdf.pdf"
+    },
+    {
+      "source_id": "SRC-000073",
+      "case_ids": [
+        "CASE-000073"
+      ],
+      "registry_url": "https://portswigger.net/research/how-i-choose-a-security-research-topic",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000074",
+      "case_ids": [
+        "CASE-000074"
+      ],
+      "registry_url": "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000075",
+      "case_ids": [
+        "CASE-000075"
+      ],
+      "registry_url": "https://www.slcyber.io/research/chaining-three-bugs-to-access-all-your-servicenow-data",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000076",
+      "case_ids": [
+        "CASE-000076"
+      ],
+      "registry_url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000077",
+      "case_ids": [
+        "CASE-000077"
+      ],
+      "registry_url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000078",
+      "case_ids": [
+        "CASE-000078"
+      ],
+      "registry_url": "https://securitylab.github.com/research/Fail2exploit/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000079",
+      "case_ids": [
+        "CASE-000079"
+      ],
+      "registry_url": "https://orca.security/resources/blog/azure-machine-learning-privilege-escalation/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000080",
+      "case_ids": [
+        "CASE-000080"
+      ],
+      "registry_url": "https://portswigger.net/research/bypassing-csp-with-dangling-iframes",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000081",
+      "case_ids": [
+        "CASE-000081"
+      ],
+      "registry_url": "https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000082",
+      "case_ids": [
+        "CASE-000082"
+      ],
+      "registry_url": "https://securitylab.github.com/advisories/GHSL-2024-069_ngrinder/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000083",
+      "case_ids": [
+        "CASE-000083"
+      ],
+      "registry_url": "https://www.wiz.io/blog/ai-agents-vs-humans-who-wins-at-web-hacking-in-2026",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000084",
+      "case_ids": [
+        "CASE-000084"
+      ],
+      "registry_url": "https://blog.trailofbits.com/2023/03/22/codex-and-gpt4-cant-beat-humans-on-smart-contract-audits/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000085",
+      "case_ids": [
+        "CASE-000085"
+      ],
+      "registry_url": "https://projectzero.google/2020/02/several-months-in-life-of-part1.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000086",
+      "case_ids": [
+        "CASE-000086"
+      ],
+      "registry_url": "https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000087",
+      "case_ids": [
+        "CASE-000087"
+      ],
+      "registry_url": "https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000088",
+      "case_ids": [
+        "CASE-000088"
+      ],
+      "registry_url": "https://labs.watchtowr.com/ghost-in-the-wire-sonic-in-the-wall/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000089",
+      "case_ids": [
+        "CASE-000089"
+      ],
+      "registry_url": "https://blog.trailofbits.com/2024/04/30/curvance-invariants-unleashed/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000090",
+      "case_ids": [
+        "CASE-000090"
+      ],
+      "registry_url": "https://labs.watchtowr.com/gitlab-arbitrary-file-read-gitlab-cve-2023-2825-analysis/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000091",
+      "case_ids": [
+        "CASE-000091"
+      ],
+      "registry_url": "https://horizon3.ai/attack-research/attack-blogs/the-long-tail-of-log4shell-exploitation/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000092",
+      "case_ids": [
+        "CASE-000092"
+      ],
+      "registry_url": "https://projectzero.google/2025/03/blasting-past-webp.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000093",
+      "case_ids": [
+        "CASE-000093"
+      ],
+      "registry_url": "https://securitylab.github.com/research/uboot-rce-nfs-vulnerability/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000094",
+      "case_ids": [
+        "CASE-000094"
+      ],
+      "registry_url": "https://blog.trailofbits.com/2019/01/23/fuzzing-an-api-with-deepstate-part-2/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000095",
+      "case_ids": [
+        "CASE-000095"
+      ],
+      "registry_url": "https://projectzero.google/2021/12/this-shouldnt-have-happened.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000096",
+      "case_ids": [
+        "CASE-000096"
+      ],
+      "registry_url": "https://research.checkpoint.com/2025/denial-of-fuzzing-rust-in-the-windows-kernel/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000097",
+      "case_ids": [
+        "CASE-000097"
+      ],
+      "registry_url": "https://projectzero.google/2021/04/designing-sockfuzzer-network-syscall.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000098",
+      "case_ids": [
+        "CASE-000098"
+      ],
+      "registry_url": "https://blog.trailofbits.com/2025/07/25/exploiting-zero-days-in-abandoned-hardware/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000099",
+      "case_ids": [
+        "CASE-000099"
+      ],
+      "registry_url": "https://labs.watchtowr.com/fortinet-fortigate-cve-2024-23113-a-super-complex-vulnerability-in-a-super-secure-appliance-in-2024/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000100",
+      "case_ids": [
+        "CASE-000100"
+      ],
+      "registry_url": "https://devco.re/blog/2021/08/06/a-new-attack-surface-on-MS-exchange-part-1-ProxyLogon/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000101",
+      "case_ids": [
+        "CASE-000101"
+      ],
+      "registry_url": "https://projectzero.google/2025/05/the-windows-registry-adventure-7-attack-surface.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000102",
+      "case_ids": [
+        "CASE-000102"
+      ],
+      "registry_url": "https://labs.watchtowr.com/auth-bypass-in-un-limited-scenarios-progress-moveit-transfer-cve-2024-5806/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000103",
+      "case_ids": [
+        "CASE-000103"
+      ],
+      "registry_url": "https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000104",
+      "case_ids": [
+        "CASE-000104"
+      ],
+      "registry_url": "https://devco.re/blog/2025/06/26/the-journey-of-bypassing-ubuntus-unprivileged-namespace-restriction-en/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000105",
+      "case_ids": [
+        "CASE-000105"
+      ],
+      "registry_url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000106",
+      "case_ids": [
+        "CASE-000106"
+      ],
+      "registry_url": "https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000107",
+      "case_ids": [
+        "CASE-000107"
+      ],
+      "registry_url": "https://blog.trailofbits.com/2025/09/25/taming-2500-compiler-warnings-with-codeql-an-openvpn2-case-study/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000108",
+      "case_ids": [
+        "CASE-000108"
+      ],
+      "registry_url": "https://projectzero.google/2018/12/searching-statically-linked-vulnerable.html",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    },
+    {
+      "source_id": "SRC-000109",
+      "case_ids": [
+        "CASE-000109"
+      ],
+      "registry_url": "https://bugculture.io/fuzz-or-miss/",
+      "review_level": "original_article_bounded_review",
+      "research_decisions_complete": false,
+      "independent_reviewer_approved": false,
+      "predecision_ground_truth_verified": false,
+      "training_ready": false,
+      "followup_original_url": null
+    }
+  ]
+}
