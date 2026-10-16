@@ -105,10 +105,16 @@ Use fresh, held-out controlled research environments (not the historical RDL sou
 
 ### Conditions to compare (controlled tools, budgets, models)
 
-1. Baseline model without RDL principles
-2. Baseline model with RDL retrieval (principles supplied as context)
-3. Model trained on validated synthetic scientific-reasoning examples (principle-level only)
-4. Fine-tuned model with retrieval (only after training gates are passed)
+**E0: no training, test retrieval value first (three required matched arms).**
+1. Baseline model without RDL principles (`baseline`)
+2. Identical model with *relevant, provisional* RDL retrieval (`rdl_relevant`)
+3. Identical model with **content-/length-matched unrelated guidance** as a placebo (`rdl_unrelated`)
+
+**E1: future training comparison — not authorized.**
+4. Model fine-tuned only on independently validated and rights-cleared synthetic principle examples (`sft_principles`)
+5. Such a fine-tuned model with matched retrieval (`sft_plus_retrieval`)
+
+This distinction is controlled by [the RDL scientific evaluation protocol](../../docs/RDL_PRINCIPLE_EVALUATION_PROTOCOL.md), not by the order of examples in this document. The current `rdl.paired_trial.v1` scorer supports only the three E0 arms and is descriptive. The evaluation requires **independently authored hidden fixtures that are not a re-labeling of this ontology**, at least two held-out out-of-ontology categories, a preregistered power/sample-size plan, independent double-rating and an ordinal IRR result, and leakage/rights/lineage audits **before making any performance claims**. The scorer's `n >= 3` check is not a power calculation. E1 needs its own schema/scorer and new authorization.
 
 ### Metrics (not final exploit success)
 
@@ -137,6 +143,10 @@ This strategy does not attempt to reconstruct or imitate historical researcher t
 ### Scientific evaluation controls
 
 Preregister held-out tasks, environments, mechanisms, investigators/publishers and source lineage separation; freeze evaluation rubric and model/tool/token/time budgets before any comparison. Include negative and irrecoverable-prerequisite examples as well as positives; grade epistemic calibration and **unnecessary follow-up** alongside question quality. Match baseline/retrieval/fine-tuning conditions and disclose where frozen model revisions are unavailable. No article's eventual success is a unique gold next action; judge admissibility and discriminating power against fixture ground truth. Record contamination and rights review separately.
+
+**External-repository qualification:** References to FUP-B1/B3, F1–F12, WorkGraph, ResearchStateStore and other HOMELAB owners are `UNVERIFIABLE_FROM_THIS_REPO` until the external branch, SHA, production callers and tests have been audited. Offline controlled E0 evaluation has independent scientific gates; live HOMELAB instrumentation additionally requires its architectural conformance gates. See [external dependency record](../../docs/RDL_EXTERNAL_HOMELAB_DEPENDENCIES.md).
+
+**Review amendment provenance:** This E0/E1 clarification was added by GPT after Claude's independent PR #5 review on 2026-10-16. It does not retroactively claim that Grok had independently established these requirements.
 
 **Document-finalization status:** This file is now a **detailed provisional design contract for engineering review**, not an implemented or approved architectural contract. Validate the exact HOMELAB branch and ongoing FUP-B1/FUP-B3 changes before implementation. No statement here grants a new scheduler, proof owner, target execution authority, or state writer.
 
