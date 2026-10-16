@@ -1,0 +1,44 @@
+{
+  "source_id": "SRC-000006",
+  "case_id": "CASE-000006",
+  "canonical_url": "https://xbow.com/blog/three-rce-vulnerabilities-in-microsoft-identified-xbow",
+  "retrieved_url": "https://xbow.com/blog/three-rce-vulnerabilities-in-microsoft-identified-xbow",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:15:00Z",
+  "document_genres": ["publisher announcement", "high-level disclosure note"],
+  "lineage_id": "xbow-microsoft-cloud-rce-2026",
+  "actor_roles": [
+    {"actor": "XBOW autonomous AI", "role": "claimed_discoverer"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "opening paragraphs",
+      "type": "author_reported",
+      "statement": "Autonomous AI uncovered critical RCEs in Microsoft Cloud (CVE-2026-21536 Devices Pricing, CVE-2026-32194 and CVE-2026-32191 Bing) without source code access."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "technical details paragraph",
+      "type": "publisher_claimed",
+      "statement": "Technical details withheld at Microsoft's request until risk window closes."
+    }
+  ],
+  "research_questions": [],
+  "decision_ids": [],
+  "unobserved_history": [
+    "Entire research process, experiments, pivots, and decision points (explicitly not shared)"
+  ],
+  "forbidden_inferences": [
+    "Do not invent research questions, experiments, or causal links from the announcement alone",
+    "CVE numbers and autonomy claim are vendor statements; independent process evidence is absent"
+  ],
+  "scientific_readiness": "catalog_only",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": [
+    "Seek linked technical write-ups or Microsoft advisories for process evidence if released",
+    "Treat as announcement only; research trajectory UNKNOWN"
+  ]
+}
