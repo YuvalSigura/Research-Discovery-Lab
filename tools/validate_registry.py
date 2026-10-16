@@ -15,6 +15,92 @@ LINKS = {"source_refs":"SRC","system_refs":"SYS","environment_refs":"ENV","findi
 def require(condition, message):
     if not condition: raise ValueError(message)
 
+
+def validate_provisional_question_crosswalk(root, records):
+    """Fail-closed structural AND source-specific registry check for docs/data.
+
+    This does not curate, promote, or ingest CQ records as canonical QPT/QMP.
+    """
+    from jsonschema import Draft202012Validator
+    doc_path = root / "docs/data/RDL_CONSOLIDATED_CANDIDATE_QUESTIONS.v0.json"
+    schema_path = root / "schemas/v2/rdl_candidate_questions.schema.json"
+    if not doc_path.is_file():
+        # Synthetic registry-only fixtures may omit the independent RDL documents.
+        require(root != ROOT, f"Missing required provisional crosswalk: {doc_path}")
+        return None
+    require(schema_path.is_file(), f"Missing CQ review-only JSON schema: {schema_path}")
+    data = json.loads(doc_path.read_text(encoding="utf-8"))
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    Draft202012Validator.check_schema(schema)
+    Draft202012Validator(schema).validate(data)
+
+    mpath = root / "registry/question_mappings/index.json"
+    raw_mapping = mpath.read_bytes()
+    git_blob_hash = hashlib.sha1(b"blob " + str(len(raw_mapping)).encode("ascii")
+                                 + b"\0" + raw_mapping).hexdigest()
+    require(data["existing_qmp_registry_sha"] == git_blob_hash,
+            "CQ crosswalk's registry/QMP revision is stale; re-audit source-specific mappings")
+
+    ontology = json.loads((root / "ontology/common/research_question_hypotheses.json").read_text(encoding="utf-8"))
+    allowed_seeds = {seed["seed_id"] for seed in ontology["candidate_seeds"]}
+    md = (root / "docs/RDL_GPT_GROK_QUESTION_ONTOLOGY_CANDIDATES.md").read_text(encoding="utf-8")
+    md_questions = {}
+    for line in md.splitlines():
+        match = re.match(r"^\|\s+\*\*(CQ-[0-9]{3})\b", line)
+        if not match:
+            continue
+        parts = line.split("|")
+        require(len(parts) >= 6, f"Malformed crosswalk Markdown table row {match.group(1)}")
+        cid = match.group(1)
+        require(cid not in md_questions, f"Duplicate CQ in Markdown: {cid}")
+        md_questions[cid] = parts[2].strip()
+
+    seen_ids = set()
+    for candidate in data["candidate_families"]:
+        cid = candidate["id"]
+        require(cid not in seen_ids, f"Duplicate candidate ID: {cid}")
+        seen_ids.add(cid)
+        require(cid in md_questions, f"Missing CQ Markdown table row: {cid}")
+        require(md_questions[cid] == candidate["question"],
+                f"Markdown/JSON scientific-question wording drift: {cid}")
+        require(set(candidate["seed_refs"]) <= allowed_seeds,
+                f"Unknown seed reference for {cid}")
+        candidate_sources = candidate["source_ids"]
+        require(len(candidate_sources) == len(set(candidate_sources)),
+                f"Duplicate candidate source in {cid}")
+        for src in candidate_sources:
+            require(src in records and src.startswith("SRC-"),
+                    f"Unknown CQ source reference {cid}: {src}")
+        descriptions = candidate["source_evidence"]
+        described_refs = [x["source_ref"] for x in descriptions]
+        require(set(described_refs) == set(candidate_sources) and
+                len(described_refs) == len(candidate_sources),
+                f"Missing/duplicate source-specific provenance for {cid}")
+        for desc in descriptions:
+            require(desc["publisher"] == records[desc["source_ref"]]["publisher"],
+                    f"Publisher/lineage metadata mismatch {cid} / {desc['source_ref']}")
+        for proposal in candidate["qpt_mapping_proposal"]:
+            mid = proposal["existing_qmp_ref"]
+            require(mid in records and mid.startswith("QMP-"),
+                    f"{cid}: reference to nonexistent QMP {mid}")
+            existing = records[mid]
+            require(existing["pattern_ref"] == proposal["id"] and
+                    existing["abstraction_relation"] == proposal["relationship"] and
+                    proposal["source_ref"] in existing["provenance"]["source_refs"] and
+                    proposal["source_ref"] in candidate_sources,
+                    f"{cid}: silent relation upgrade or source mismatch with canonical {mid}")
+            require(existing["review_status"] == "proposed",
+                    f"{cid}: unexpected QMP status changed; independent review required")
+        require(candidate["status"] == "PROVISIONAL" and
+                candidate["review_status"] == "UNREVIEWED" and
+                candidate["training_status"] == "TRAINING_BLOCKED",
+                f"{cid}: promoted outside canonical governance")
+    require(set(md_questions) == seen_ids, "Markdown/JSON crosswalk ID mismatch")
+    require(sum(c["kind"] == "cross_cutting_evaluation_lens"
+                for c in data["candidate_families"]) >= 1,
+            "Cross-cutting evaluation lens must not be silently treated as a question family")
+    return {"candidate_records": len(seen_ids), "status": "PROVISIONAL_TRAINING_BLOCKED"}
+
 def validate(root=ROOT):
     records = {}
     for folder, prefix in KINDS.items():
@@ -258,6 +344,7 @@ def validate(root=ROOT):
         require(sid in records[rid]["source_refs"], "Crosswalk source/case mismatch")
         require(records[sid]["url"]==entry["source_url"]==by_id[entry["legacy_id"]]["url"], "Crosswalk URL mismatch")
         require((root/entry["legacy_path"]).is_file(), "Missing legacy metadata")
+    validate_provisional_question_crosswalk(root, records)
     return {"records":len(records),"sources":sum(k.startswith("SRC-") for k in records),"cases":sum(k.startswith("CASE-") for k in records)}
 
 if __name__=="__main__": print("PASS:",validate())
