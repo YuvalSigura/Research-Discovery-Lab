@@ -1,0 +1,57 @@
+{
+  "source_id": "SRC-000018",
+  "case_id": "CASE-000018",
+  "canonical_url": "https://xbow.com/blog/xbow-zoo-project-arb",
+  "retrieved_url": "https://xbow.com/blog/xbow-zoo-project-arb",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:15:00Z",
+  "document_genres": ["technical walkthrough", "source-assisted research narrative"],
+  "lineage_id": "xbow-zoo-project-arb-2024",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process",
+      "type": "author_reported",
+      "statement": "Had source code access. Mapped structure, inspected cgi-bin. Transitioned from static to dynamic analysis. Identified services and crafted requests for arbitrary file download. Verified with canary flag.txt."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Which cgi-bin service parameters allow retrieving an arbitrary local file?",
+      "basis": "action_implied_candidate",
+      "anchor": "iteration between source inspection and request crafting",
+      "uncertainty_reduced": "which identifiers/parameters control file download",
+      "assumption_challenged": "none explicitly documented"
+    }
+  ],
+  "environment_model_updates": [
+    "cgi-bin contains file-handling services",
+    "Specific parameters control which file is returned"
+  ],
+  "discovery_mechanisms": [
+    "source_code_inspection",
+    "static_to_dynamic_iteration"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "structure mapping and cgi-bin inspection",
+    "exploratory": "iterating request parameters until canary was retrieved"
+  },
+  "negative_inconclusive": [],
+  "decision_ids": ["xbow-zoo-project-arb-2024.T001"],
+  "unobserved_history": ["exact sequence of parameter guesses", "full trace details"],
+  "forbidden_inferences": [
+    "Process is relatively thin; do not invent failed branches",
+    "Source access changed the starting point compared with black-box cases"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note CVE-2024-53982 and maintainer fix"],
+  "layer_b_candidate_principles": [
+    "When source is available, map file-handling services first and then validate candidate parameters dynamically with a canary file"
+  ],
+  "model_vs_harness": "Reading source to identify candidate services is model reasoning; automated request iteration against a canary can be harness."
+}
