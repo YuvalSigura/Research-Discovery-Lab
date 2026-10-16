@@ -1,0 +1,71 @@
+{
+  "source_id": "SRC-000003",
+  "case_id": "CASE-000003",
+  "canonical_url": "https://xbow.com/blog/no-time-to-pwn-cve-2026-72018",
+  "retrieved_url": "https://xbow.com/blog/no-time-to-pwn-cve-2026-72018",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:10:00Z",
+  "document_genres": ["research narrative", "technical walkthrough", "AI-assisted research reflection"],
+  "lineage_id": "xbow-smc-d-kernel-lpe-2026",
+  "actor_roles": [
+    {"actor": "XBOW AI", "role": "primary_investigator_tool"},
+    {"actor": "human researchers", "role": "intervention_at_pivots"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Vulnerability Discovery section",
+      "type": "author_reported",
+      "statement": "Adversarial protocol-aware testing on SMC-D / dibs_loopback; assumed malicious peer and tampered with CLC fields (gid, token, dmbe_idx, dmbe_size)."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Methodology",
+      "type": "author_reported",
+      "statement": "Reviewed RFC 7609 for threat model; analyzed code paths to memory writes; identified missing bounds checks on dmbe_idx/bufsize."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "Negative Results/Pivots",
+      "type": "author_reported",
+      "statement": "Initial assessment deemed 16-byte zero-write unexploitable; MITM approach initially abandoned due to perceived complexity; human intervention revived MITM; confusion between send-only zero-write and write-what-where resolved experimentally."
+    },
+    {
+      "claim_id": "C4",
+      "anchor": "Experiments",
+      "type": "author_reported",
+      "statement": "Tested on Ubuntu 24.04 (Linux 7.1.0-rc6); reliability measured across 100 boots (22 successes)."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Can a malicious peer-controlled field in the SMC-D CLC handshake produce a usable memory write primitive on the loopback driver?",
+      "basis": "author_explicit",
+      "anchor": "threat model from RFC 7609"
+    },
+    {
+      "question_id": "Q2",
+      "formulation": "Is the resulting 16-byte zero-write primitive exploitable for LPE without additional leaks or stronger primitives?",
+      "basis": "author_reported_pivot",
+      "anchor": "human intervention section"
+    }
+  ],
+  "decision_ids": ["xbow-smc-d-kernel-lpe-2026.T001"],
+  "unobserved_history": [
+    "Exact internal agent traces before human intervention",
+    "Precise timestamps of each pivot within the investigation"
+  ],
+  "forbidden_inferences": [
+    "Do not treat initial abandonment of MITM as a falsified hypothesis; it was a resource/complexity judgment later revised",
+    "Do not equate the zero-write primitive's initial assessment as proof it was unexploitable"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": [
+    "Cross-check kernel commit or advisory for independent root-cause confirmation",
+    "Note AI vs human decision points explicitly in any future lineage graph"
+  ]
+}
