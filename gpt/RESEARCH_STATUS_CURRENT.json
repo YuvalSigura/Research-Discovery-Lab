@@ -1,0 +1,51 @@
+{
+  "schema": "rdl.gpt.corpus_work_status.v2",
+  "timestamp_utc": "2026-10-16",
+  "frozen_registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "source_ids_total": 109,
+  "source_specific_notes_present": 109,
+  "with_additional_deeper_section_review": 37,
+  "original_article_bounded_review": 95,
+  "first_party_content_recovered_bounded": 13,
+  "publisher_pdf_body_unread": 1,
+  "publisher_pdf_body_unread_ids": [
+    "SRC-000068"
+  ],
+  "new_original_source_crosschecks": [
+    "SRC-000026",
+    "SRC-000094",
+    "SRC-000095",
+    "SRC-000107"
+  ],
+  "new_crosschecks_candidate_transitions": 15,
+  "independent_source_claim_adjudication_approved": 0,
+  "verified_historical_predecision_snapshots": 0,
+  "approved_fine_tuning_samples": 0,
+  "all_historical_reconstructions_complete": false,
+  "coverage_explanation": "The catalogue is covered with independent analyst notes, which are not exhaustive reconstructive histories. For each source, refer to primary publisher text and deeper review where present; all author reports unverified independently.",
+  "current_git_artifacts": {
+    "all_source_packets": "gpt/analysis/RDL_109_SOURCE_INDEPENDENT_ANALYSIS_PACKETS.jsonl",
+    "packets_readme": "gpt/analysis/RDL_109_SOURCE_PACKETS_README.md",
+    "original_coverage": "gpt/SOURCE_COVERAGE_109_2026-10-16.json",
+    "source_recovery": "gpt/cases/RDL_RECOVERED_PRIMARY_SOURCES_ADDENDUM.md",
+    "recent_deep_audit": "gpt/cases/RDL_SRC_000026_000094_000095_000107_DEEP_PRIMARY_AUDIT.md",
+    "recent_deep_structured": "gpt/cases/RDL_SRC_000026_000094_000095_000107_X_TO_Y_CANDIDATES.jsonl"
+  },
+  "limits": [
+    "No byte-frozen primary-page snapshots or original publisher article hash",
+    "No verified contemporary known_at states for decision training",
+    "No independent external replay of experiments",
+    "Not all long articles or PDFs were reviewed line-by-line",
+    "Rights and separate curation not complete",
+    "No generalizable policy quality demonstrated by blinded tasks",
+    "Do not read Grok analyses until authoring of independent GPT source notes is frozen"
+  ],
+  "next_scientific_gates": [
+    "Obtain reliable original text for SRC-000068 if possible",
+    "For all sources, review source locators and every material causal claim against immutable original captures",
+    "Reconcile exact independent research lineages and multiplicity of campaigns",
+    "Evaluate candidate transfer principles across independent positive and negative sources",
+    "Adjudicate all training candidates for false known_at leakage",
+    "Independent reviewer approval of evidence fidelity and training rights"
+  ]
+}
