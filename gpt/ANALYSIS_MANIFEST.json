@@ -1,0 +1,27 @@
+{
+  "date_utc": "2026-10-16",
+  "frozen_inventory_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "authoring_model": "ChatGPT GPT-6",
+  "corpus_sources": 109,
+  "targeted_original_content_notes": 36,
+  "metadata_or_unverified_source_review": 73,
+  "curator_approved": 0,
+  "training_ready": 0,
+  "uploaded_readable_files": [
+    "gpt/analysis/RDL_INDEPENDENT_109_SOURCE_ANALYSIS_PASS1.md",
+    "gpt/analysis/RDL_109_INDEPENDENT_RESEARCH_TRIAGE.csv",
+    "gpt/analysis/RDL_109_Source_Treatment_Map.md",
+    "gpt/analysis/RDL_Three_Random_Cases_Architecture_Stress_Test.md",
+    "gpt/cases/RDL_Fail2ban_Assistant_Independent_Sealed.md",
+    "gpt/methodology/RDL_COMPARISON_PROTOCOL.md",
+    "gpt/methodology/RDL_BLIND_COMPARISON_WORKSHEET.csv"
+  ],
+  "methodology": "Provisional source triage and targeted source content inspection, not 109 complete case reconstructions.",
+  "limitations": [
+    "No human independent source fidelity review.",
+    "No validation of published source assertions by reproducing security testing.",
+    "No evidence of historical known-at for eligible blind predecision examples.",
+    "Grok must not read gpt/ before sealing independent results.",
+    "Source rights/capture not approved for fine-tuning."
+  ]
+}
