@@ -55,7 +55,7 @@ class FirstMissionIntakeTests(unittest.TestCase):
                             x.get("result_status") == "not_applicable" for x in mobi))
         self.assertTrue(any(x.get("direction_status") == "abandoned" and
                             "certificate" in x["statement"].lower() for x in mobi))
-        self.assertFalse(any("rogue certificate issued" in x["statement"].lower() for x in mobi))
+        self.assertFalse(any("successfully issued a rogue certificate" in x["statement"].lower() for x in mobi))
 
     def test_no_self_approved_mindset_or_umbrella_convergence(self):
         for kind in ("mindsets", "question_patterns", "question_mappings"):
