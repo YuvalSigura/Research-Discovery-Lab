@@ -1,0 +1,837 @@
+{
+  "schema": "rdl.consolidation.candidate_question_families.v0_review2",
+  "created_utc": "2026-10-16",
+  "status": "PROVISIONAL",
+  "purpose": "Review-only crosswalk between independent GPT/Grok source analyses, existing question seeds and candidate RDL research-question families.",
+  "prohibitions": [
+    "NOT_TRAINING_APPROVED",
+    "NOT_CANONICAL_QPT_OR_QMP",
+    "NOT_HISTORICAL_PREDECISION",
+    "NOT_PRODUCTION_IMPLEMENTATION_SPEC",
+    "NO_AUTOMATIC_PROOF_OR_EXECUTION_AUTHORITY"
+  ],
+  "evidence_note": "Candidate source IDs are structurally checked against source registry; first-party passages and all per-source source_basis labels require independent curator verification. GPT/Grok agreement over the same publisher article is not independent corroboration.",
+  "frozen_registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "existing_qpt_ids_untouched": [
+    "QPT-000001",
+    "QPT-000002"
+  ],
+  "candidate_families": [
+    {
+      "id": "CQ-001",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which exact scope does a negative observation refute, and what remains untested?",
+      "source_ids": [
+        "SRC-000008",
+        "SRC-000078",
+        "SRC-000107"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q001",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "failure_signal"
+      ],
+      "major_boundary": "Do not generalize from tested fields or deployments to global security.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000008",
+          "source_basis": "retrospective_author_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000078",
+          "source_basis": "retrospective_author_report",
+          "publisher": "GitHub Security Lab",
+          "publisher_lineage": "GitHub Security Lab",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000107",
+          "source_basis": "methodology_research_report",
+          "publisher": "Trail of Bits",
+          "publisher_lineage": "Trail of Bits",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-002",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Is a path blocked by authorization, missing state, cost, or actual experimental refutation?",
+      "source_ids": [
+        "SRC-000022",
+        "SRC-000073",
+        "SRC-000104"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q002",
+          "relationship": "analogy_only",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "reachability_constraints",
+        "failure_signal"
+      ],
+      "major_boundary": "Changing research value or missing permission is not experimental falsification.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000022",
+          "source_basis": "retrospective_author_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000073",
+          "source_basis": "methodology_essay",
+          "publisher": "PortSwigger",
+          "publisher_lineage": "PortSwigger",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000104",
+          "source_basis": "retrospective_author_report",
+          "publisher": "DEVCORE",
+          "publisher_lineage": "DEVCORE",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-003",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which missing prerequisite makes a blocked direction testable, if obtaining it is authorized?",
+      "source_ids": [
+        "SRC-000055",
+        "SRC-000011",
+        "SRC-000086"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q003",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "reachability_constraints",
+        "feature_composition"
+      ],
+      "major_boundary": "SRC-000055 maps to existing QMP-000002 as analogy_only, not partial_overlap; QMP-000001's partial_overlap concerns SRC-000074 which is not cited in CQ-003.",
+      "qpt_mapping_proposal": [
+        {
+          "id": "QPT-000001",
+          "source_ref": "SRC-000055",
+          "existing_qmp_ref": "QMP-000002",
+          "relationship": "analogy_only",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "existing_registry_literal"
+        }
+      ],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000055",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Pentera Labs",
+          "publisher_lineage": "Pentera Labs",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000011",
+          "source_basis": "retrospective_vendor_research_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "XBOW publisher lineage shared with SRC-000001/002; separate parallel runs from a single chronological reconstruction."
+        },
+        {
+          "source_ref": "SRC-000086",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Wiz Research",
+          "publisher_lineage": "Wiz Research",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-004",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "What does a validated trigger support, versus a demonstrated reusable capability?",
+      "source_ids": [
+        "SRC-000024",
+        "SRC-000022"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q004",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "failure_signal",
+        "defense_implementation"
+      ],
+      "major_boundary": "Trigger observation is not verified full security impact.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000024",
+          "source_basis": "methodology_research_report",
+          "publisher": "PortSwigger",
+          "publisher_lineage": "PortSwigger",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000022",
+          "source_basis": "retrospective_author_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-005",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which specification or implementation invariant can be tested for counterexamples?",
+      "source_ids": [
+        "SRC-000089",
+        "SRC-000002"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q005",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "boundary_consistency",
+        "defense_implementation"
+      ],
+      "major_boundary": "An implementation discrepancy does not alone prove vulnerability.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000089",
+          "source_basis": "methodology_research_report",
+          "publisher": "Trail of Bits",
+          "publisher_lineage": "Trail of Bits",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000002",
+          "source_basis": "retrospective_vendor_research_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-006",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Do separate components or authorities disagree in interpreting input, paths, or security state?",
+      "source_ids": [
+        "SRC-000044",
+        "SRC-000045",
+        "SRC-000059"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q006",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "interpretation_divergence",
+        "boundary_consistency",
+        "authority_context"
+      ],
+      "major_boundary": "Different outputs can be harmless; establish a crossed protection boundary.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000044",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Assetnote",
+          "publisher_lineage": "Assetnote_Searchlight_Cyber",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Recovered first-party text at slcyber.io mirror; original assetnote.io link may be dead. Verify against gpt/cases/RDL_RECOVERED_PRIMARY_SOURCES_ADDENDUM.md and RDL_TARGETED_DEEP_X_TO_Y_AUDIT.md."
+        },
+        {
+          "source_ref": "SRC-000045",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Assetnote",
+          "publisher_lineage": "Assetnote_Searchlight_Cyber",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Assetnote/Searchlight Cyber common lineage with SRC-000044; inspect later targeted deep audit and recovered mirror."
+        },
+        {
+          "source_ref": "SRC-000059",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Pentera Labs",
+          "publisher_lineage": "Pentera Labs",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-007",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Does the claimed guarantee hold across time, state transitions and ordering?",
+      "source_ids": [
+        "SRC-000033",
+        "SRC-000039",
+        "SRC-000085"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q007",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "state_time_ordering"
+      ],
+      "major_boundary": "Not all races are influenceable and event sequence is not automatically causal.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000033",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Google Project Zero",
+          "publisher_lineage": "Google Project Zero",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000039",
+          "source_basis": "methodology_research_report",
+          "publisher": "PortSwigger",
+          "publisher_lineage": "PortSwigger",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000085",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Google Project Zero",
+          "publisher_lineage": "Google Project Zero",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-008",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Do the test inputs exercise security-relevant behavior rather than only generating superficial coverage?",
+      "source_ids": [
+        "SRC-000095",
+        "SRC-000094",
+        "SRC-000097"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q008",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "coverage_blindspot"
+      ],
+      "major_boundary": "Aggregate code or endpoint coverage is not evidence of controllable end-to-end behavior.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000095",
+          "source_basis": "methodology_research_report",
+          "publisher": "Google Project Zero",
+          "publisher_lineage": "Google Project Zero",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000094",
+          "source_basis": "methodology_research_report",
+          "publisher": "Trail of Bits",
+          "publisher_lineage": "Trail of Bits",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000097",
+          "source_basis": "methodology_research_report",
+          "publisher": "Google Project Zero",
+          "publisher_lineage": "Google Project Zero",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-009",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Could the observed signal originate in the measurement or test procedure rather than the target?",
+      "source_ids": [
+        "SRC-000076",
+        "SRC-000026",
+        "SRC-000094"
+      ],
+      "grok_mappings": [],
+      "seed_refs": [
+        "data_provenance",
+        "failure_signal"
+      ],
+      "major_boundary": "Overlaps existing proposed QPT-000002; do not create approved duplicate.",
+      "qpt_mapping_proposal": [
+        {
+          "id": "QPT-000002",
+          "source_ref": "SRC-000076",
+          "existing_qmp_ref": "QMP-000003",
+          "relationship": "specialization",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "existing_registry_literal"
+        }
+      ],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000076",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Stingrai",
+          "publisher_lineage": "Stingrai",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000026",
+          "source_basis": "retrospective_author_report",
+          "publisher": "PortSwigger",
+          "publisher_lineage": "PortSwigger",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000094",
+          "source_basis": "methodology_research_report",
+          "publisher": "Trail of Bits",
+          "publisher_lineage": "Trail of Bits",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-010",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Across candidate questions, which permitted experiment gives the most discriminating evidence per unit of cost?",
+      "source_ids": [
+        "SRC-000073",
+        "SRC-000107",
+        "SRC-000024"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q008",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "failure_signal",
+        "coverage_blindspot"
+      ],
+      "major_boundary": "Cross-cutting evaluation criterion, not an independent evidence-backed scientific-question family; cited examples overlap with other families.",
+      "qpt_mapping_proposal": [],
+      "kind": "cross_cutting_evaluation_lens",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000073",
+          "source_basis": "methodology_essay",
+          "publisher": "PortSwigger",
+          "publisher_lineage": "PortSwigger",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000107",
+          "source_basis": "methodology_research_report",
+          "publisher": "Trail of Bits",
+          "publisher_lineage": "Trail of Bits",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000024",
+          "source_basis": "methodology_research_report",
+          "publisher": "PortSwigger",
+          "publisher_lineage": "PortSwigger",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-011",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Does an assumption from another deployment, version or tenant actually transfer here?",
+      "source_ids": [
+        "SRC-000086",
+        "SRC-000048",
+        "SRC-000104"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q005",
+          "relationship": "analogy_only",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        },
+        {
+          "id": "TB-Q006",
+          "relationship": "analogy_only",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "assumption_transfer",
+        "authority_context"
+      ],
+      "major_boundary": "Analogy is not proof; keep exact version and context.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000086",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Wiz Research",
+          "publisher_lineage": "Wiz Research",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000048",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Assetnote",
+          "publisher_lineage": "Assetnote",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Use the later targeted deep X-to-Y audit (not only early bounded source audit) for 'Analysis of the authentication bypass'."
+        },
+        {
+          "source_ref": "SRC-000104",
+          "source_basis": "retrospective_author_report",
+          "publisher": "DEVCORE",
+          "publisher_lineage": "DEVCORE",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-012",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which meaningful actions, workflows, identities or states remain missing from our application model?",
+      "source_ids": [
+        "SRC-000109",
+        "SRC-000008",
+        "SRC-000055"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q003",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        },
+        {
+          "id": "TB-Q008",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "coverage_blindspot",
+        "reachability_constraints"
+      ],
+      "major_boundary": "Known-catalog coverage does not establish full application discovery.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000109",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Bug Culture",
+          "publisher_lineage": "Bug Culture",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000008",
+          "source_basis": "retrospective_author_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000055",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Pentera Labs",
+          "publisher_lineage": "Pentera Labs",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-013",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Whose run and knowledge state do these observations belong to, and when were they available?",
+      "source_ids": [
+        "SRC-000011",
+        "SRC-000092",
+        "SRC-000104",
+        "SRC-000001",
+        "SRC-000002"
+      ],
+      "grok_mappings": [],
+      "seed_refs": [
+        "data_provenance"
+      ],
+      "major_boundary": "Parallel and forensic accounts cannot be mistaken for original chronological decisions.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000011",
+          "source_basis": "retrospective_vendor_research_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "XBOW publisher lineage shared with SRC-000001/002; separate parallel runs from a single chronological reconstruction."
+        },
+        {
+          "source_ref": "SRC-000092",
+          "source_basis": "third_party_forensic_reconstruction",
+          "publisher": "Google Project Zero",
+          "publisher_lineage": "Google Project Zero",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Later forensic analysis must not be attributed to original attacker as predecision motivation."
+        },
+        {
+          "source_ref": "SRC-000104",
+          "source_basis": "retrospective_author_report",
+          "publisher": "DEVCORE",
+          "publisher_lineage": "DEVCORE",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000001",
+          "source_basis": "retrospective_vendor_research_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000002",
+          "source_basis": "retrospective_vendor_research_report",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-014",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which exact claim does evidence support and when may existing proof authority promote it?",
+      "source_ids": [
+        "SRC-000076",
+        "SRC-000026",
+        "SRC-000095"
+      ],
+      "grok_mappings": [
+        {
+          "id": "TB-Q004",
+          "relationship": "partial_overlap",
+          "review_status": "UNREVIEWED",
+          "mapping_basis": "analyst_semantic_comparison"
+        }
+      ],
+      "seed_refs": [
+        "data_provenance",
+        "defense_implementation"
+      ],
+      "major_boundary": "Proof decision belongs to existing verifier, not model or retrieval.",
+      "qpt_mapping_proposal": [],
+      "kind": "candidate_question_family",
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000076",
+          "source_basis": "retrospective_author_report",
+          "publisher": "Stingrai",
+          "publisher_lineage": "Stingrai",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000026",
+          "source_basis": "retrospective_author_report",
+          "publisher": "PortSwigger",
+          "publisher_lineage": "PortSwigger",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        },
+        {
+          "source_ref": "SRC-000095",
+          "source_basis": "methodology_research_report",
+          "publisher": "Google Project Zero",
+          "publisher_lineage": "Google Project Zero",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Article/analysis-based candidate; not independently verified decision-time history."
+        }
+      ]
+    },
+    {
+      "id": "CQ-015",
+      "kind": "candidate_question_family",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which vendor or publisher self-reported claims depend on unobserved denominators, selection criteria, or unverifiable aggregate measurements?",
+      "source_ids": [
+        "SRC-000030",
+        "SRC-000031",
+        "SRC-000105",
+        "SRC-000106"
+      ],
+      "grok_mappings": [],
+      "seed_refs": [
+        "data_provenance",
+        "failure_signal",
+        "coverage_blindspot"
+      ],
+      "major_boundary": "Vendor-reported totals and success rates are evidence of publisher assertions, not independently validated performance or research outcomes; avoid fabricating denominators.",
+      "qpt_mapping_proposal": [],
+      "source_evidence": [
+        {
+          "source_ref": "SRC-000030",
+          "source_basis": "vendor_position_article",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Vendor position article, not case-level independently reproduced experiment evidence; any quantitative claim requires separate denominator and measurement validation."
+        },
+        {
+          "source_ref": "SRC-000031",
+          "source_basis": "vendor_position_article",
+          "publisher": "XBOW",
+          "publisher_lineage": "XBOW",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Vendor position article, not case-level independently reproduced experiment evidence; any quantitative claim requires separate denominator and measurement validation."
+        },
+        {
+          "source_ref": "SRC-000105",
+          "source_basis": "vendor_aggregate_report",
+          "publisher": "Wiz Research",
+          "publisher_lineage": "Wiz Research",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Vendor-level qualitative or aggregate performance assertions: denominator, protocol, selection process and replication remain unverified."
+        },
+        {
+          "source_ref": "SRC-000106",
+          "source_basis": "vendor_aggregate_report",
+          "publisher": "Unit 42",
+          "publisher_lineage": "Unit 42",
+          "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
+          "note": "Vendor-level qualitative or aggregate performance assertions: denominator, protocol, selection process and replication remain unverified."
+        }
+      ]
+    }
+  ],
+  "review_iteration": 2,
+  "scientific_use_gate": "DO_NOT_PROMOTE_TO_CURATION_QPT_QMP_OR_TRAINING",
+  "reviewer_adjudication": "PENDING_INDEPENDENT_RE_REVIEW",
+  "existing_qmp_registry_sha": "bb5c8f670632f2267a8928dd8ee7b6716e18e7dc",
+  "mapping_semantics": "qpt_mapping_proposal quotes *source-specific existing QMP* relationships; Grok mappings are analyst crosswalks and not canonical QMP records."
+}

@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/YuvalSigura/Research-Discovery-Lab/blob/main/schemas/v2/rdl_candidate_questions.schema.json",
+  "title": "Review-only RDL candidate question ontology (NEVER canonical QPT/QMP)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "created_utc",
+    "status",
+    "purpose",
+    "prohibitions",
+    "evidence_note",
+    "frozen_registry_revision",
+    "existing_qpt_ids_untouched",
+    "candidate_families",
+    "review_iteration",
+    "scientific_use_gate",
+    "reviewer_adjudication",
+    "existing_qmp_registry_sha",
+    "mapping_semantics"
+  ],
+  "properties": {
+    "schema": {
+      "const": "rdl.consolidation.candidate_question_families.v0_review2"
+    },
+    "created_utc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "status": {
+      "const": "PROVISIONAL"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prohibitions": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "NOT_TRAINING_APPROVED"
+          }
+        },
+        {
+          "contains": {
+            "const": "NOT_CANONICAL_QPT_OR_QMP"
+          }
+        },
+        {
+          "contains": {
+            "const": "NOT_HISTORICAL_PREDECISION"
+          }
+        },
+        {
+          "contains": {
+            "const": "NOT_PRODUCTION_IMPLEMENTATION_SPEC"
+          }
+        },
+        {
+          "contains": {
+            "const": "NO_AUTOMATIC_PROOF_OR_EXECUTION_AUTHORITY"
+          }
+        }
+      ]
+    },
+    "evidence_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "frozen_registry_revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "existing_qpt_ids_untouched": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^QPT-[0-9]{6}$"
+      }
+    },
+    "candidate_families": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "status",
+          "review_status",
+          "training_status",
+          "question",
+          "source_ids",
+          "source_evidence",
+          "grok_mappings",
+          "seed_refs",
+          "major_boundary",
+          "qpt_mapping_proposal"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^CQ-[0-9]{3}$"
+          },
+          "kind": {
+            "enum": [
+              "candidate_question_family",
+              "cross_cutting_evaluation_lens"
+            ]
+          },
+          "status": {
+            "const": "PROVISIONAL"
+          },
+          "review_status": {
+            "const": "UNREVIEWED"
+          },
+          "training_status": {
+            "const": "TRAINING_BLOCKED"
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^SRC-[0-9]{6}$"
+            }
+          },
+          "source_evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source_ref",
+                "source_basis",
+                "publisher",
+                "publisher_lineage",
+                "attribution_status",
+                "note"
+              ],
+              "properties": {
+                "source_ref": {
+                  "type": "string",
+                  "pattern": "^SRC-[0-9]{6}$"
+                },
+                "source_basis": {
+                  "enum": [
+                    "retrospective_author_report",
+                    "retrospective_vendor_research_report",
+                    "methodology_research_report",
+                    "methodology_essay",
+                    "third_party_forensic_reconstruction",
+                    "vendor_aggregate_report",
+                    "vendor_position_article"
+                  ]
+                },
+                "publisher": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "publisher_lineage": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "attribution_status": {
+                  "const": "ANALYST_CLASSIFICATION_UNREVIEWED"
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "grok_mappings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "relationship",
+                "review_status",
+                "mapping_basis"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^TB-Q[0-9]{3}$"
+                },
+                "relationship": {
+                  "enum": [
+                    "same_core_question",
+                    "specialization",
+                    "partial_overlap",
+                    "analogy_only",
+                    "unresolved"
+                  ]
+                },
+                "review_status": {
+                  "const": "UNREVIEWED"
+                },
+                "mapping_basis": {
+                  "const": "analyst_semantic_comparison"
+                }
+              }
+            }
+          },
+          "seed_refs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "major_boundary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "qpt_mapping_proposal": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "source_ref",
+                "existing_qmp_ref",
+                "relationship",
+                "review_status",
+                "mapping_basis"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^QPT-[0-9]{6}$"
+                },
+                "source_ref": {
+                  "type": "string",
+                  "pattern": "^SRC-[0-9]{6}$"
+                },
+                "existing_qmp_ref": {
+                  "type": "string",
+                  "pattern": "^QMP-[0-9]{6}$"
+                },
+                "relationship": {
+                  "enum": [
+                    "same_core_question",
+                    "specialization",
+                    "partial_overlap",
+                    "analogy_only",
+                    "unresolved"
+                  ]
+                },
+                "review_status": {
+                  "const": "UNREVIEWED"
+                },
+                "mapping_basis": {
+                  "const": "existing_registry_literal"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "review_iteration": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "scientific_use_gate": {
+      "const": "DO_NOT_PROMOTE_TO_CURATION_QPT_QMP_OR_TRAINING"
+    },
+    "reviewer_adjudication": {
+      "const": "PENDING_INDEPENDENT_RE_REVIEW"
+    },
+    "existing_qmp_registry_sha": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "mapping_semantics": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
