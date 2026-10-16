@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000074",
+  "title": "We Spent $20 To Achieve RCE And Accidentally Became The Admins Of .MOBI",
+  "publisher": "watchTowr Labs",
+  "publication_date": "2024-09-11",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-000074",
+      "url": "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "in_progress",
+  "training_status": "not_started",
+  "provenance_note": "Public primary source reviewed for discrete narrative events and section anchors; reconstruction partial, publication retrospective, historical event times largely unestablished. No archived RAW or redistribution permission, human curator review or independent exploitation verification."
+}
