@@ -9,7 +9,8 @@ from collections import defaultdict
 from pathlib import Path
 
 KINDS = ("sources", "cases", "systems", "environments", "contexts",
-         "findings", "mechanisms", "events", "relations", "passages")
+         "findings", "mechanisms", "events", "relations", "passages",
+         "mindsets", "question_patterns", "question_mappings")
 
 
 class ResearchStore:
@@ -36,6 +37,9 @@ class ResearchStore:
                     raise ValueError(f"duplicate entity ID: {rid}")
                 self.by_id[rid] = record
                 self.kind_by_id[rid] = kind
+        self.mindsets_by_case = defaultdict(list)
+        self.question_mappings_by_case = defaultdict(list)
+        self.mappings_by_pattern = defaultdict(list)
         self.events_by_case = defaultdict(list)
         self.contexts_by_case = defaultdict(list)
         self.findings_by_case = defaultdict(list)
@@ -43,6 +47,11 @@ class ResearchStore:
         self.relations_by_node = defaultdict(list)
         for event in self.registries["events"]:
             self.events_by_case[event["case_ref"]].append(event)
+        for mindset in self.registries["mindsets"]:
+            self.mindsets_by_case[mindset["case_ref"]].append(mindset)
+        for mapping in self.registries["question_mappings"]:
+            self.question_mappings_by_case[mapping["case_ref"]].append(mapping)
+            self.mappings_by_pattern[mapping["pattern_ref"]].append(mapping)
         for context in self.registries["contexts"]:
             self.contexts_by_case[context["case_ref"]].append(context)
         for finding in self.registries["findings"]:
