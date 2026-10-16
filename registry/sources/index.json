@@ -1081,6 +1081,36 @@
       "case_refs": [
         "CASE-000072"
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000073",
+      "title": "How I choose a security research topic",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/how-i-choose-a-security-research-topic",
+      "publication_date": "2023-06-14",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000073"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000074",
+      "title": "We Spent $20 To Achieve RCE And Accidentally Became The Admins Of .MOBI",
+      "publisher": "watchTowr Labs",
+      "url": "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/",
+      "publication_date": "2024-09-11",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000074"
+      ]
     }
   ]
 }

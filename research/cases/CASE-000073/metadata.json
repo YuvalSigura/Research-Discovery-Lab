@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000073",
+  "title": "How I choose a security research topic",
+  "publisher": "PortSwigger",
+  "publication_date": "2023-06-14",
+  "category": "research_methodology",
+  "sources": [
+    {
+      "source_id": "SRC-000073",
+      "url": "https://portswigger.net/research/how-i-choose-a-security-research-topic",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "in_progress",
+  "training_status": "not_started",
+  "provenance_note": "Public primary source reviewed for discrete narrative events and section anchors; reconstruction partial, publication retrospective, historical event times largely unestablished. No archived RAW or redistribution permission, human curator review or independent exploitation verification."
+}

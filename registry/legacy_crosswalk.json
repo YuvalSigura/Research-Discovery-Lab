@@ -578,6 +578,22 @@
       "source_url": "https://pentera.io/resources/research/evading-detection-from-inception-to-reality/",
       "source_registry_ref": "SRC-000072",
       "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000073",
+      "legacy_path": "research/cases/CASE-000073/metadata.json",
+      "new_case_ref": "CASE-000073",
+      "source_url": "https://portswigger.net/research/how-i-choose-a-security-research-topic",
+      "source_registry_ref": "SRC-000073",
+      "classification_status": "pending_review"
+    },
+    {
+      "legacy_id": "CASE-000074",
+      "legacy_path": "research/cases/CASE-000074/metadata.json",
+      "new_case_ref": "CASE-000074",
+      "source_url": "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/",
+      "source_registry_ref": "SRC-000074",
+      "classification_status": "pending_review"
     }
   ]
 }

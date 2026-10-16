@@ -1670,6 +1670,72 @@
         "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
       },
       "legacy_metadata_path": "research/cases/CASE-000072/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000073",
+      "source_refs": [
+        "SRC-000073"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology",
+        "web_research"
+      ],
+      "analysis_status": "in_progress",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Partial analysis of a retrospective public account; no independent reproduction, exact historical timeline, or curator approval."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000073/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "This intake does not independently determine zero-day status."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000074",
+      "source_refs": [
+        "SRC-000074"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "architecture",
+      "domain_labels": [
+        "internet_infrastructure",
+        "trust_boundaries"
+      ],
+      "analysis_status": "in_progress",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Partial analysis of a retrospective public account; no independent reproduction, exact historical timeline, or curator approval."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000074/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "This intake does not independently determine zero-day status."
+      }
     }
   ]
 }

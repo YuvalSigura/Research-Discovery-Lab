@@ -476,6 +476,481 @@
           "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
         }
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000020",
+      "subject": "EVT-000019",
+      "predicate": "tested_by",
+      "object": "EVT-000020",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000021",
+      "subject": "EVT-000020",
+      "predicate": "produced_evidence",
+      "object": "EVT-000021",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000022",
+      "subject": "EVT-000021",
+      "predicate": "pivoted_to",
+      "object": "EVT-000022",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000023",
+      "subject": "EVT-000022",
+      "predicate": "pivoted_to",
+      "object": "EVT-000023",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000024",
+      "subject": "EVT-000023",
+      "predicate": "tested_by",
+      "object": "EVT-000024",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000025",
+      "subject": "EVT-000024",
+      "predicate": "produced_evidence",
+      "object": "EVT-000025",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000026",
+      "subject": "EVT-000028",
+      "predicate": "raised_question",
+      "object": "EVT-000029",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Setting The Scene"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000027",
+      "subject": "EVT-000029",
+      "predicate": "followed_by",
+      "object": "EVT-000030",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Retrospective order only; causation not established.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Collateral Damage In Pursuit Of RCE"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000028",
+      "subject": "EVT-000030",
+      "predicate": "informed_by",
+      "object": "EVT-000031",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Collateral Damage In Pursuit Of RCE"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000029",
+      "subject": "EVT-000031",
+      "predicate": "revised_belief",
+      "object": "EVT-000032",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: So What? It's Old"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000030",
+      "subject": "EVT-000034",
+      "predicate": "produced_evidence",
+      "object": "EVT-000035",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Kill WHOIS With Fire; Uh….."
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000031",
+      "subject": "EVT-000035",
+      "predicate": "raised_question",
+      "object": "EVT-000036",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: TLS/SSL validation"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000032",
+      "subject": "EVT-000036",
+      "predicate": "tested_by",
+      "object": "EVT-000037",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: TLS/SSL validation"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000033",
+      "subject": "EVT-000037",
+      "predicate": "pivoted_to",
+      "object": "EVT-000038",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: TLS/SSL validation"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000034",
+      "subject": "EVT-000038",
+      "predicate": "followed_by",
+      "object": "EVT-000039",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Retrospective order only; causation not established.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: GlobalSign experiment"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000035",
+      "subject": "EVT-000038",
+      "predicate": "produced_evidence",
+      "object": "EVT-000040",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: GlobalSign experiment"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000036",
+      "subject": "EVT-000041",
+      "predicate": "followed_by",
+      "object": "EVT-000042",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Retrospective order only; causation not established.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: Swapping Out the Middle"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000037",
+      "subject": "EVT-000043",
+      "predicate": "pivoted_to",
+      "object": "EVT-000044",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: Swapping Out the Middle"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000038",
+      "subject": "EVT-000044",
+      "predicate": "produced_evidence",
+      "object": "EVT-000045",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Author narrative directly connects these steps.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Source is retrospective; event timing remains uncertain."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: Swapping Out the Middle"
+        }
+      ]
     }
   ]
 }

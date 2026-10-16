@@ -35,10 +35,10 @@ The following figures reflect the current repository baseline as inspected after
 
 | Item | Status |
 | --- | --- |
-| Catalogued publications | **72 source records** (50 initial + 22 Pentera research entries) |
-| CASE records | **72**, mostly source-compatible catalogue placeholders |
-| Deep case example | **ShadowPanel / CyberPanel**, partially reconstructed |
-| ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** |
+| Catalogued publications | **74 source records** (50 initial + 22 Pentera entries + 2 primary-source decision studies) |
+| CASE records | **74**, mostly source-compatible catalogue placeholders |
+| Deep case example | **ShadowPanel**, **James Kettle topic selection**, and **watchTowr .MOBI**, partially reconstructed; **XBOW Chrome** has five initial process events |
+| ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** (ShadowPanel alone); **45 events and 38 relations** across current archive |
 | Publisher-discovery seeds | **9 configured research publishers**, in `sources/publishers/` |
 | Typed archive, schemas, integrity checks | Implemented |
 | Read-only retrieval, chronology, causal question tracing | Implemented |
@@ -48,9 +48,9 @@ The following figures reflect the current repository baseline as inspected after
 | Automated acquisition, document processing and historical extraction | **Not implemented end to end** |
 | Dataset creation, blind evaluation, fine-tuning | **Deferred**; training is the last phase |
 
-**Latest verified CI:** [successful workflow run](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38841549105) for baseline `4e713e7`. Future commits require their own fresh CI verification.
+**Prior verified CI baseline:** [successful workflow run](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38841549105) for baseline `4e713e7`. Future commits require their own fresh CI verification.
 
-The ShadowPanel records are **a partial reconstruction from an author's retrospective public account**, not independently repeated exploit experiments. Where event times are unavailable, the engine preserves uncertainty instead of manufacturing dates or causal ordering. See [Pentera import notes](docs/PENTERA_IMPORT.md) and [phase status](docs/PHASE1_STATUS.md).
+The research trajectory records are **partial reconstructions from authors' retrospective public accounts**, not independently repeated exploit experiments. Where event times are unavailable, the engine preserves uncertainty instead of manufacturing dates or causal ordering. See [first-mission source review](docs/FIRST_MISSION_SOURCE_REVIEW.md), [Pentera import notes](docs/PENTERA_IMPORT.md), and [phase status](docs/PHASE1_STATUS.md).
 
 ## Implemented retrieval and investigation engine
 
@@ -81,6 +81,11 @@ python -m research_engine search "CyberPanel"
 python -m research_engine search "Chrome" --kind sources
 
 # Existing partial ShadowPanel reconstruction
+# First-mission case studies: method choice, infrastructure assumptions, and agent pivots
+python -m research_engine reconstruct CASE-000073 --view historical
+python -m research_engine reconstruct CASE-000074 --view historical
+python -m research_engine reconstruct CASE-000002 --view historical
+
 python -m research_engine reconstruct CASE-000055 --view historical
 python -m research_engine coverage CASE-000055
 

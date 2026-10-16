@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "created_on": "2026-10-16",
-  "case_count": 72,
+  "case_count": 74,
   "cases": [
     {
       "id": "CASE-000001",
@@ -577,6 +577,22 @@
       "title": "Evading Detection: From Inception to Reality",
       "url": "https://pentera.io/resources/research/evading-detection-from-inception-to-reality/",
       "date": "2023-02",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000073",
+      "publisher": "PortSwigger",
+      "title": "How I choose a security research topic",
+      "url": "https://portswigger.net/research/how-i-choose-a-security-research-topic",
+      "date": "2023-06-14",
+      "category": "research_methodology"
+    },
+    {
+      "id": "CASE-000074",
+      "publisher": "watchTowr Labs",
+      "title": "We Spent $20 To Achieve RCE And Accidentally Became The Admins Of .MOBI",
+      "url": "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/",
+      "date": "2024-09-11",
       "category": "security_research"
     }
   ],
