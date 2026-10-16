@@ -1,0 +1,374 @@
+{
+  "schema": "rdl.consolidation.candidate_question_families.v0",
+  "created_utc": "2026-10-16",
+  "status": "PROVISIONAL",
+  "purpose": "Review-only crosswalk between independent GPT/Grok source analyses, existing question seeds and candidate RDL research-question families.",
+  "prohibitions": [
+    "NOT_TRAINING_APPROVED",
+    "NOT_CANONICAL_QPT_OR_QMP",
+    "NOT_HISTORICAL_PREDECISION",
+    "NOT_PRODUCTION_IMPLEMENTATION_SPEC",
+    "NO_AUTOMATIC_PROOF_OR_EXECUTION_AUTHORITY"
+  ],
+  "evidence_note": "Source IDs validated against frozen 109-source registry. Anchors are article-section descriptions in companion Markdown; primary passage verification and independent curator adjudication remain pending. Agreement of GPT/Grok on a single article is not independent corroboration.",
+  "frozen_registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "existing_qpt_ids_untouched": [
+    "QPT-000001",
+    "QPT-000002"
+  ],
+  "candidate_families": [
+    {
+      "id": "CQ-001",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which exact scope does a negative observation refute, and what remains untested?",
+      "source_ids": [
+        "SRC-000008",
+        "SRC-000078",
+        "SRC-000107"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q001",
+          "relationship": "candidate_same_core"
+        }
+      ],
+      "seed_refs": [
+        "failure_signal"
+      ],
+      "major_boundary": "Do not generalize from tested fields or deployments to global security.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-002",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Is a path blocked by authorization, missing state, cost, or actual experimental refutation?",
+      "source_ids": [
+        "SRC-000022",
+        "SRC-000073",
+        "SRC-000104"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q002",
+          "relationship": "candidate_same_core"
+        }
+      ],
+      "seed_refs": [
+        "reachability_constraints",
+        "failure_signal"
+      ],
+      "major_boundary": "Changing research value or missing permission is not experimental falsification.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-003",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which missing prerequisite makes a blocked direction testable, if obtaining it is authorized?",
+      "source_ids": [
+        "SRC-000055",
+        "SRC-000011",
+        "SRC-000086"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q003",
+          "relationship": "candidate_same_core"
+        }
+      ],
+      "seed_refs": [
+        "reachability_constraints",
+        "feature_composition"
+      ],
+      "major_boundary": "No assumption that missing capability is recoverable; QPT-000001 mapping remains partial/analogy.",
+      "qpt_mapping_proposal": {
+        "id": "QPT-000001",
+        "relationship": "partial_overlap_only"
+      }
+    },
+    {
+      "id": "CQ-004",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "What does a validated trigger support, versus a demonstrated reusable capability?",
+      "source_ids": [
+        "SRC-000024",
+        "SRC-000022"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q004",
+          "relationship": "candidate_same_core"
+        }
+      ],
+      "seed_refs": [
+        "failure_signal",
+        "defense_implementation"
+      ],
+      "major_boundary": "Trigger observation is not verified full security impact.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-005",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which specification or implementation invariant can be tested for counterexamples?",
+      "source_ids": [
+        "SRC-000089",
+        "SRC-000095",
+        "SRC-000002"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q005",
+          "relationship": "specialization_or_partial_overlap"
+        }
+      ],
+      "seed_refs": [
+        "boundary_consistency",
+        "defense_implementation"
+      ],
+      "major_boundary": "An implementation discrepancy does not alone prove vulnerability.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-006",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Do separate components or authorities disagree in interpreting input, paths, or security state?",
+      "source_ids": [
+        "SRC-000044",
+        "SRC-000045",
+        "SRC-000059"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q006",
+          "relationship": "candidate_same_core_for_parser_subset"
+        }
+      ],
+      "seed_refs": [
+        "interpretation_divergence",
+        "boundary_consistency",
+        "authority_context"
+      ],
+      "major_boundary": "Different outputs can be harmless; establish a crossed protection boundary.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-007",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Does the claimed guarantee hold across time, state transitions and ordering?",
+      "source_ids": [
+        "SRC-000033",
+        "SRC-000039",
+        "SRC-000085"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q007",
+          "relationship": "candidate_same_core_at_question_level"
+        }
+      ],
+      "seed_refs": [
+        "state_time_ordering"
+      ],
+      "major_boundary": "Not all races are influenceable and event sequence is not automatically causal.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-008",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Do the test inputs exercise security-relevant behavior rather than only generating superficial coverage?",
+      "source_ids": [
+        "SRC-000095",
+        "SRC-000094",
+        "SRC-000097",
+        "SRC-000109"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q008",
+          "relationship": "partial_overlap"
+        }
+      ],
+      "seed_refs": [
+        "coverage_blindspot"
+      ],
+      "major_boundary": "Aggregate code or endpoint coverage is not evidence of controllable end-to-end behavior.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-009",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Could the observed signal originate in the measurement or test procedure rather than the target?",
+      "source_ids": [
+        "SRC-000076",
+        "SRC-000026",
+        "SRC-000094"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [],
+      "seed_refs": [
+        "data_provenance",
+        "failure_signal"
+      ],
+      "major_boundary": "Overlaps existing proposed QPT-000002; do not create approved duplicate.",
+      "qpt_mapping_proposal": {
+        "id": "QPT-000002",
+        "relationship": "unreviewed_overlap"
+      }
+    },
+    {
+      "id": "CQ-010",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which permitted and affordable next test best discriminates competing explanations?",
+      "source_ids": [
+        "SRC-000073",
+        "SRC-000107",
+        "SRC-000024"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q008",
+          "relationship": "partial_overlap"
+        }
+      ],
+      "seed_refs": [
+        "failure_signal",
+        "coverage_blindspot"
+      ],
+      "major_boundary": "Low cost is not sufficient if experiment does not reduce uncertainty.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-011",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Does an assumption from another deployment, version or tenant actually transfer here?",
+      "source_ids": [
+        "SRC-000086",
+        "SRC-000048",
+        "SRC-000104"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q005",
+          "relationship": "analogy_only"
+        },
+        {
+          "id": "TB-Q006",
+          "relationship": "analogy_only"
+        }
+      ],
+      "seed_refs": [
+        "assumption_transfer",
+        "authority_context"
+      ],
+      "major_boundary": "Analogy is not proof; keep exact version and context.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-012",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which meaningful actions, workflows, identities or states remain missing from our application model?",
+      "source_ids": [
+        "SRC-000109",
+        "SRC-000008",
+        "SRC-000055"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q003",
+          "relationship": "partial_overlap"
+        },
+        {
+          "id": "TB-Q008",
+          "relationship": "partial_overlap"
+        }
+      ],
+      "seed_refs": [
+        "coverage_blindspot",
+        "reachability_constraints"
+      ],
+      "major_boundary": "Known-catalog coverage does not establish full application discovery.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-013",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Whose run and knowledge state do these observations belong to, and when were they available?",
+      "source_ids": [
+        "SRC-000011",
+        "SRC-000092",
+        "SRC-000104",
+        "SRC-000001",
+        "SRC-000002"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [],
+      "seed_refs": [
+        "data_provenance"
+      ],
+      "major_boundary": "Parallel and forensic accounts cannot be mistaken for original chronological decisions.",
+      "qpt_mapping_proposal": null
+    },
+    {
+      "id": "CQ-014",
+      "status": "PROVISIONAL",
+      "review_status": "UNREVIEWED",
+      "training_status": "TRAINING_BLOCKED",
+      "question": "Which exact claim does evidence support and when may existing proof authority promote it?",
+      "source_ids": [
+        "SRC-000076",
+        "SRC-000026",
+        "SRC-000095"
+      ],
+      "source_basis": "retrospective_author_account_or_analyst_reconstruction",
+      "grok_mappings": [
+        {
+          "id": "TB-Q004",
+          "relationship": "partial_overlap"
+        }
+      ],
+      "seed_refs": [
+        "data_provenance",
+        "defense_implementation"
+      ],
+      "major_boundary": "Proof decision belongs to existing verifier, not model or retrieval.",
+      "qpt_mapping_proposal": null
+    }
+  ]
+}
