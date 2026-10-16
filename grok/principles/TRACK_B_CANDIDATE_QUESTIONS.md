@@ -130,4 +130,16 @@ All principles below are candidate patterns observed across multiple retrospecti
 - **Principle-level supervised training** (possible later, after validation): Use independently validated synthetic cases that instantiate these broader questions. The model learns to recognize the situation type and generate the appropriate question or interpretation. Technique-specific examples may appear as illustrations but are not the training target.  
 - **Historical trajectory imitation** (currently blocked): Requires defensible pre-decision snapshots that do not exist in the current retrospective corpus. Do not train on full published narratives.
 
-**No principle in this document is TRAINING_APPROVED.** All require the validation gates listed above plus rights, curation, and leakage controls.
+## Candidate finalization: learning unit, counterfactuals, and gates
+
+The stable TB-Q identifiers denote **candidate research-question families**, not historically verified causal rules or automatically accepted training labels. A technique (for example, RFC-fragment prompting or Windows lookup slowdown) is an instance or test context under a broader question. This registry is open-world: a new question need not fit TB-Q001–Q008.
+
+For each eventual example, preserve: (a) an evidence-bounded **observation**, (b) the exact uncertainty and competing explanations, (c) an admissible discriminating question or experiment, (d) a **plausible but scientifically unsound contrast**, and (e) a rubric that judges the reasoning rather than whether the response matches a historical researcher's next step. The reason for the contrast must be grounded in a controlled fixture or independently reviewed evidence. "What happened later" is never a pre-decision input or a unique answer key.
+
+**No fine-tuning directly from these retrospective analyses.** Principle-level synthetic examples become eligible only after independent fixture/label review, leakage and memorization controls, held-out evaluation, rights review, and explicit dataset approval. Research principles can be used earlier as separately labeled **provisional retrieval guidance** or for benchmark *design*, but no scientific or security truth is promoted by retrieval.
+
+**Avoid false universalization:** TB-Q001 does not imply every negative warrants another probe; TB-Q003 does not imply every prerequisite can be recovered; TB-Q006 does not imply discrepancies are necessarily vulnerabilities; TB-Q007 does not imply controllable races in every system. Include closed, irrecoverable, benign, and instrument-artifact counterexamples, and measure unnecessary follow-up rate.
+
+**Cross-track binding:** TA-H001–TA-H008 are *candidate* operational interpretations, not authoritative implementations. Record mappings as versioned candidate mappings, not proven causal transfer. P0 experiment-outcome and campaign-stagnation fixes being developed separately in HOMELAB are not redefined here.
+
+**No principle in this document is TRAINING_APPROVED.** All require the validation gates above plus rights, curation, and leakage controls.
