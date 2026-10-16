@@ -1,0 +1,74 @@
+{
+  "source_id": "SRC-000008",
+  "case_id": "CASE-000008",
+  "canonical_url": "https://xbow.com/blog/cooking-an-sql-injection-vulnerability-in-chef-automate",
+  "retrieved_url": "https://xbow.com/blog/cooking-an-sql-injection-vulnerability-in-chef-automate",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:50:00Z",
+  "document_genres": ["technical walkthrough", "research narrative"],
+  "lineage_id": "xbow-chef-automate-sqli-2025",
+  "actor_roles": [{"actor": "XBOW researchers", "role": "investigators"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Discovery Process",
+      "type": "author_reported",
+      "statement": "Standard reconnaissance on Angular app under /api/v0/; JS bundles examined; data collector endpoint found with default token that granted access."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Vulnerability Analysis",
+      "type": "author_reported",
+      "statement": "Error messages used to reverse JSON structure of filters array (type + values). Injection in values and name fields returned normal responses (negative). Pivot to type field produced PostgreSQL errors."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "Exploitation Verification",
+      "type": "author_reported",
+      "statement": "Confirmed via pg_sleep timing differences (1s and 5s)."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Does the compliance profiles search endpoint properly sanitize filter type fields when accessed with a default data-collector token?",
+      "basis": "action_implied_candidate",
+      "anchor": "pivot after negative results on values/name",
+      "uncertainty_reduced": "whether type field is concatenated into SQL",
+      "assumption_challenged": "that all filter inputs are sanitized equally"
+    }
+  ],
+  "environment_model_updates": [
+    "Angular frontend with gRPC-gateway backend (grpc-metadata-content-type headers)",
+    "Default data-collector token exists and is sufficient for compliance endpoints",
+    "filters array structure recovered from error messages"
+  ],
+  "discovery_mechanisms": [
+    "prior_knowledge_of_default_credentials",
+    "error_message_structure_recovery",
+    "systematic_injection_point_testing_with_pivot_on_negative"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "endpoint enumeration, JS analysis, sequential testing of injection points",
+    "exploratory_or_unexpected": "use of known default token (prior experience) that unlocked protected surface"
+  },
+  "negative_inconclusive": [
+    "values and name fields showed no injection behavior (bounded negative on those fields)"
+  ],
+  "decision_ids": ["xbow-chef-automate-sqli-2025.T001"],
+  "unobserved_history": ["exact tools used for initial recon", "whether default token was looked up or recalled from memory"],
+  "forbidden_inferences": [
+    "Do not claim the default token was discovered purely by scanning; source attributes it to knowledge of common configurations",
+    "Negative results on values/name do not prove the endpoint is generally safe"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note CVE-2025-8868 assignment and recommended upgrade version"],
+  "layer_b_candidate_principles": [
+    "When an API returns structured errors, recover the expected schema before assuming injection points are exhausted",
+    "Default or well-known tokens can expand the testable attack surface; treat them as environment facts worth verifying"
+  ],
+  "model_vs_harness": "Prior knowledge of default tokens is model/experience; systematic field-by-field testing and error recovery can be harness-supported."
+}
