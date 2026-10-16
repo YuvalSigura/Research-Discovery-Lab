@@ -1,0 +1,67 @@
+{
+  "source_id": "SRC-000014",
+  "case_id": "CASE-000014",
+  "canonical_url": "https://xbow.com/blog/xbow-zpush-sqli",
+  "retrieved_url": "https://xbow.com/blog/xbow-zpush-sqli",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:00:00Z",
+  "document_genres": ["technical walkthrough", "research narrative"],
+  "lineage_id": "xbow-zpush-sqli-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "How Found / Negatives",
+      "type": "author_reported",
+      "statement": "Systematic exploration of Z-Push ActiveSync. Multiple SQLi attempts in URL params, POST, XML, headers, different SQL dialects produced consistent response times and no errors."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "Shifted to authentication mechanism; injected into username of Basic Auth header. Timing with sleep confirmed (8s for 5s sleep)."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After standard parameter and body injection points show no differential behavior, does the authentication username field reach the database?",
+      "basis": "action_implied_candidate",
+      "anchor": "pivot to Basic Auth username after other vectors failed",
+      "uncertainty_reduced": "whether auth credentials are used in SQL",
+      "assumption_challenged": "that auth fields are handled separately from injectable parameters"
+    }
+  ],
+  "environment_model_updates": [
+    "Z-Push 2.4.4+0 ActiveSync server with PostgreSQL backend",
+    "Authentication required; baseline response times stable"
+  ],
+  "discovery_mechanisms": [
+    "systematic_vector_exhaustion_then_pivot",
+    "timing_oracle",
+    "auth_field_as_injection_surface"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "endpoint probing, testing common SQLi locations and dialects",
+    "exploratory": "moving to authentication username after standard locations failed"
+  },
+  "negative_inconclusive": [
+    "URL params, POST, XML, headers, multiple SQL syntaxes: consistent times, no errors (bounded negatives)"
+  ],
+  "decision_ids": ["xbow-zpush-sqli-2025.T001"],
+  "unobserved_history": ["exact list of tested payloads before the auth pivot", "tool adjustments for timing thresholds"],
+  "forbidden_inferences": [
+    "Do not treat early consistent timings as proof of no SQLi",
+    "Auth username injection is a distinct surface from request parameters"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note HackerOne reporting and reward"],
+  "layer_b_candidate_principles": [
+    "When common injection surfaces show no differential behavior, test authentication fields (username, password) before concluding the application is not injectable",
+    "Stable baseline timings make sleep-based confirmation reliable once a candidate surface is identified"
+  ],
+  "model_vs_harness": "Choosing to test auth fields after other vectors fail is model judgment; systematic testing of parameters and timing measurement can be harness."
+}
