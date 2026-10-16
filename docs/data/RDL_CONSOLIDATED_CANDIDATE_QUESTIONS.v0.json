@@ -796,19 +796,19 @@
       "source_evidence": [
         {
           "source_ref": "SRC-000030",
-          "source_basis": "vendor_aggregate_report",
+          "source_basis": "vendor_position_article",
           "publisher": "XBOW",
           "publisher_lineage": "XBOW",
           "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
-          "note": "Vendor-level qualitative or aggregate performance assertions: denominator, protocol, selection process and replication remain unverified."
+          "note": "Vendor position article, not case-level independently reproduced experiment evidence; any quantitative claim requires separate denominator and measurement validation."
         },
         {
           "source_ref": "SRC-000031",
-          "source_basis": "vendor_aggregate_report",
+          "source_basis": "vendor_position_article",
           "publisher": "XBOW",
           "publisher_lineage": "XBOW",
           "attribution_status": "ANALYST_CLASSIFICATION_UNREVIEWED",
-          "note": "Vendor-level qualitative or aggregate performance assertions: denominator, protocol, selection process and replication remain unverified."
+          "note": "Vendor position article, not case-level independently reproduced experiment evidence; any quantitative claim requires separate denominator and measurement validation."
         },
         {
           "source_ref": "SRC-000105",
