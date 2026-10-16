@@ -326,3 +326,8 @@ Early contributions are most useful in **research methodology, synthetic world d
 Run \`python -m research_engine search "Chrome"\` or \`python -m research_engine reconstruct CASE-000001\` after \`python -m pip install -r requirements-validation.txt\`. The read-only engine assembles source-grounded timelines, negative and untried directions, challenged assumptions, question transitions, and evidence gap reports.
 
 **Limitation:** all 50 initial records are source metadata only. A historical research trajectory is never invented from titles. See [retrieval and reconstruction documentation](docs/RETRIEVAL_ENGINE.md). Training remains the final project phase.
+
+
+### Question-first research intelligence
+
+The laboratory distinguishes **routine checklist work, apparently novel research moves, underlying research questions, and zero-day outcomes**. Grounded move-to-question links can be compared under open-ended, curated umbrella research questions. Analogy and string similarity do not become scientific equivalence automatically; unpublished or inconclusive research must not be treated as failures. See [Question-first methodology](docs/QUESTION_FIRST_RESEARCH.md).

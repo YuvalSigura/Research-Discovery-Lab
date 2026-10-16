@@ -101,3 +101,9 @@ The unit tests contain a fabricated research story (challenged authorization ass
 ## Future acquisition boundary
 
 When the collector is implemented, it can add copyright-cleared passage records and RAW manifests. The engine indexes new registry records automatically when loaded; it never fetches external URLs or guesses missing original publications. Training remains the last project phase.
+
+## Question-first reasoning and underlying research questions
+
+The research question is the primary analytical unit for understanding originality. Strategy labels are attached to evidenced moves and those moves must link to an originating question. Versioned, open-world umbrella question patterns allow **curated** cross-case convergence without equating superficially similar techniques. Zero-day status is assessed separately.
+
+See [Question-first research intelligence](QUESTION_FIRST_RESEARCH.md) for the taxonomy, protocols, provenance safeguards, CLI commands and tests.
