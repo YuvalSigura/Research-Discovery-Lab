@@ -1095,7 +1095,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "sections: Summary; TLS/SSL validation"
+          "locator": "sections: Summary; Tales of TLS"
         }
       ]
     },
@@ -1124,7 +1124,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: TLS/SSL validation; GoGetSSL check"
+          "locator": "section: Tales of TLS; Tales of TLS: GoGetSSL checks"
         }
       ],
       "direction_status": "attempted",
@@ -1157,7 +1157,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: TLS/SSL validation; GlobalSign experiment"
+          "locator": "section: Tales of TLS; Tales of TLS: GlobalSign checks"
         }
       ],
       "direction_status": "succeeded",
@@ -1189,7 +1189,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "sections: GlobalSign experiment; Here We Go Again"
+          "locator": "sections: Tales of TLS: GlobalSign checks; Here We Go Again"
         }
       ],
       "direction_status": "abandoned",
@@ -1220,7 +1220,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "sections: Summary; GlobalSign experiment"
+          "locator": "sections: Summary; Tales of TLS: GlobalSign checks"
         }
       ],
       "result_status": "positive",
