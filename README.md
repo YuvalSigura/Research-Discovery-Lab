@@ -2,332 +2,214 @@
 
 # 🔬 Research Discovery Lab
 
-### Train models to ask better questions — before the answers are known.
+### Understand the questions behind discoveries — before training a model to ask them.
 
-**An evidence-driven research arena for autonomous scientific discovery, question selection, and multi-agent investigation.**
+**An evidence-grounded research archive, investigation reconstruction engine and question-first research intelligence project.**
 
-[![Status: Research Prototype](https://img.shields.io/badge/status-research%20prototype-6C63FF?style=for-the-badge)](#project-status)
-[![Focus: Discovery Intelligence](https://img.shields.io/badge/focus-discovery%20intelligence-00BFA6?style=for-the-badge)](#research-thesis)
-[![Architecture: CEO → Workers](https://img.shields.io/badge/architecture-CEO%20%E2%86%92%20Workers-334155?style=for-the-badge)](#system-architecture)
+[![Status: Active research infrastructure](https://img.shields.io/badge/status-active%20research%20infrastructure-4C78A8)](#verified-project-status)
+[![CI](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/workflows/archive-validation.yml/badge.svg)](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/workflows/archive-validation.yml)
 
-**[Vision](#research-thesis)** · **[Architecture](#system-architecture)** · **[Learning Arena](#the-research-learning-arena)** · **[Evaluation](#evaluation-and-success-criteria)** · **[Roadmap](#roadmap)**
+[Current state](#verified-project-status) · [Thesis](#research-thesis) · [Research engine](#implemented-retrieval-and-investigation-engine) · [Question-first analysis](#question-first-analysis-what-was-the-investigator-trying-to-find-out) · [Roadmap](#remaining-roadmap--training-is-last) · [Data integrity](#scientific-integrity-and-source-rights)
 
 </div>
 
 ---
 
-> [!IMPORTANT]
-> **The goal is not to memorize exploit paths.** The goal is to develop models that recognize hidden assumptions, formulate high-value research questions, and adapt their understanding when evidence contradicts expectations.
+> **The central question is not only how a zero-day was found. It is what question made the investigator look in that direction — and whether seemingly original research moves are different ways of investigating the same deeper question.**
+>
+> **Zero-day ≠ original thinking. Routine work ≠ low-value research. Negative results ≠ failed science.**
 
 ## Research thesis
 
-Security investigations do not always stall because investigators lack tools or execution capability. Often, the limiting factor is **which question they choose to investigate**.
+A discovery may follow a checklist, variant analysis, anomaly investigation, an unexpected failure, or the deliberate challenge of an architectural assumption. Its significance and its reasoning originality are **separate properties**.
 
-Traditional benchmark-driven systems can become skilled at following known paths:
+Research Discovery Lab (RDL) aims to reconstruct **the process that produced a question**, not merely the final exploitation steps. Across many independent investigations, it asks whether researchers repeatedly converge on a smaller — but not predetermined — collection of fundamental, discriminating research questions.
 
-`Observation → Known pattern → Tool invocation → Expected outcome`
+These may concern identity, authority, timing, state changes, parser disagreement, isolation, trust boundaries or interactions among intended product features. They are **candidate patterns**, not a fixed list that every investigation must fit.
 
-Research Discovery Lab explores a different loop:
+This is a separate project from the HOMELAB authorized security-research execution system. RDL models evidence, decisions, questions and research knowledge; it does **not** introduce a new authority for target execution or verified findings.
 
-**`Partial understanding → Novel question → Investigation → Evidence → Revised understanding`**
+## Verified project status
 
-The central hypothesis is that **question-generation intelligence can be trained and measured independently from the mechanics of executing an investigation**.
+The following figures reflect the current repository baseline as inspected after the last successful CI run; they are not claims about deep coverage of every publication.
 
-A successful research model should be able to:
-
-- Identify assumptions a system appears to rely on, including assumptions no one explicitly documented.
-- Ask what changes across **time, state, identity, ordering, concurrency, component boundaries, and context**.
-- Find useful contradictions between expected and observed behavior.
-- Select questions whose answers could materially change the investigation.
-- Learn from negative results without inventing findings.
-- Generalize to unseen systems rather than reproducing published write-ups.
-
-## System architecture
-
-The design separates **asking**, **answering**, **routing**, **execution**, and **verification**.
-
-```mermaid
-flowchart TD
-    G[Research goal + partial world model] --> CEO[CEO · Research Question Model]
-    CEO --> Q[Research question + rationale]
-    Q --> R[Capability Router]
-    R --> W1[Worker · System Understanding]
-    R --> W2[Worker · State & Time]
-    R --> W3[Worker · Contradictions]
-    R --> W4[Worker · Experiment Design]
-    W1 --> E[Authorized Investigation Environment]
-    W2 --> E
-    W3 --> E
-    W4 --> E
-    E --> V[Observations · Evidence · Verification]
-    V --> A[Research answer + uncertainty]
-    A --> CEO
-```
-
-### CEO — learning to ask
-
-The **CEO** is a comparatively capable research model. It receives the research objective, a grounded snapshot of the known world, previous answers, and outstanding uncertainties.
-
-Its job is to decide **what needs to be understood next**, not to micromanage individual tool calls.
-
-A good CEO question is:
-
-- **Grounded:** motivated by facts available *before* the discovery.
-- **Investigable:** answerable, or meaningfully reducible, with available capabilities.
-- **Discriminating:** distinguishes between competing explanations.
-- **Consequential:** likely to change the researcher's understanding or next decision.
-- **Open-ended in method:** does not prescribe a rigid execution path.
-
-### Capability Router — allocating intelligence
-
-The router is a **system capability**, not an independent truth authority or scheduler. It maps research questions to the skills, models, contexts, and resources needed to answer them.
-
-A worker is **a research role instantiated for a task**; a model is the inference engine assigned to that role. Multiple workers may share the same small model, and a role may be reassigned to a different model as needed.
-
-Routing should consider task requirements, measured model competence, context limits, latency, resource budgets, and escalation conditions.
-
-### Workers — learning to answer
-
-Workers are bounded investigators. They may plan experiments, compare hypotheses, react to intermediate observations, and request additional evidence **within the assigned research question and authorization boundaries**.
-
-Examples of useful specializations include:
-
-| Worker capability | Primary responsibility |
+| Item | Status |
 | --- | --- |
-| System Understanding | Build a coherent picture of entities, behaviors, and dependencies |
-| Contradiction Analysis | Compare observations with expectations and competing explanations |
-| State & Temporal Reasoning | Investigate transitions, sequencing, concurrency, and stale assumptions |
-| Relationship Reasoning | Examine identities, resources, trust boundaries, and interactions |
-| Experimental Design | Propose controlled, informative tests and stopping conditions |
-| Tool & Context Reasoning | Select appropriate available capabilities and interpret tool limitations |
+| Catalogued publications | **72 source records** (50 initial + 22 Pentera research entries) |
+| CASE records | **72**, mostly source-compatible catalogue placeholders |
+| Deep case example | **ShadowPanel / CyberPanel**, partially reconstructed |
+| ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** |
+| Publisher-discovery seeds | **9 configured research publishers**, in `sources/publishers/` |
+| Typed archive, schemas, integrity checks | Implemented |
+| Read-only retrieval, chronology, causal question tracing | Implemented |
+| Mindset taxonomy, question-to-move model and open-world umbrella-question analysis | Implemented **as infrastructure** |
+| Real reviewed mindset / umbrella-question assignments | **Not yet populated** |
+| Original article RAW text and licensed passages | **Not archived** for the catalogue |
+| Automated acquisition, document processing and historical extraction | **Not implemented end to end** |
+| Dataset creation, blind evaluation, fine-tuning | **Deferred**; training is the last phase |
 
-Specialization is a **hypothesis to test**, not a requirement to train a separate model for every row.
+**Latest verified CI:** [successful workflow run](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38841549105) for baseline `4e713e7`. Future commits require their own fresh CI verification.
 
-### Execution and truth remain external to models
+The ShadowPanel records are **a partial reconstruction from an author's retrospective public account**, not independently repeated exploit experiments. Where event times are unavailable, the engine preserves uncertainty instead of manufacturing dates or causal ordering. See [Pentera import notes](docs/PENTERA_IMPORT.md) and [phase status](docs/PHASE1_STATUS.md).
 
-A model can **propose** a hypothesis, action, or interpretation. It does not grant itself authorization or declare a vulnerability verified.
+## Implemented retrieval and investigation engine
 
-For future HOMELAB integration, the existing ownership boundaries remain intact:
+The Python `research_engine` package reads the typed registries and produces evidence-aware JSON. It provides:
 
-- **WorkGraph:** task state, dependencies, and recovery.
-- **ActionPlane:** authorized target execution.
-- **Evidence / deterministic verification:** observation provenance and truth claims.
-- **Models:** reasoning, research questions, and proposed experiments.
+- **Source and record retrieval:** deterministic lexical search with metadata filters and source references; no unsupported claims of semantic indexing or uncaptured full-text search.
+- **Investigation reconstruction:** documented events in known time order; unknown-time events kept in a separate bucket.
+- **Trajectory accounting:** assumptions, hypotheses, considered/abandoned/untried directions, experiments, negative and inconclusive results, pivots, and questions.
+- **Provenance-aware tracing:** explicit transitions between questions, evidence and research decisions; chronology alone is not treated as causality.
+- **Coverage/gap reports:** missing triggering evidence, unexplained pivots, unattested motivations and unresolved question directions.
+- **Fail-closed pre-discovery views:** do not reveal final findings, post-cutoff evidence, or inferred historical knowledge as if it existed at the time.
+- **Rights checks:** source-backed passage hashes and explicit permission requirements for republished excerpts.
+- **Offline tests and GitHub Actions:** schema, relation, archival and leakage checks, plus **synthetic-only** negative/control research cases.
 
-Research Discovery Lab is a **separate training and evaluation environment**, not a replacement execution authority for HOMELAB.
+### Run locally
 
-## The Research Learning Arena
+Requires Python 3.12 or a compatible installation:
 
-The arena tests whether a model can discover valuable questions in **partially observable worlds**.
+```bash
+python -m pip install -r requirements-validation.txt
+python tools/validate_archive.py
+python tools/validate_registry.py
+python tools/validate_publisher_sources.py
+python -m unittest discover -s tests -p "test_*.py" -v
 
-Each world may contain:
+# Browse existing catalogue
+python -m research_engine search "CyberPanel"
+python -m research_engine search "Chrome" --kind sources
 
-- Entities, identities, resources, and relationships.
-- State machines and asynchronous processes.
-- Hidden rules, invariants, and trust boundaries.
-- Time-dependent or order-dependent behavior.
-- Multiple plausible explanations for the same observation.
-- Cases with **no vulnerability at all**.
+# Existing partial ShadowPanel reconstruction
+python -m research_engine reconstruct CASE-000055 --view historical
+python -m research_engine coverage CASE-000055
 
-The model does **not** receive the hidden rules or final answer. It receives only information that would have been observable at that point in the investigation.
+# Grounded questions, mindset links and question abstraction
+python -m research_engine questions CASE-000055
+python -m research_engine question-convergence --min-cases 2
+python -m research_engine compare-questions CASE-000055 CASE-000001
 
-### Example episode
-
-**Visible world snapshot**
-
-> A document service accepts requests, authorizes them, and processes some jobs asynchronously. User permissions can change while a job is queued. No security violation has been established.
-
-**CEO question**
-
-> Which assumptions about authorization remain valid when the state changes between request acceptance and job completion?
-
-**Worker investigation**
-
-The assigned worker identifies relevant states, proposes discriminating tests, and requests observations from the arena. The arena returns results based on its hidden world rules — **not** on a predetermined solution path.
-
-**Research answer**
-
-The worker returns a conclusion with evidence references, uncertainty, unresolved alternatives, and any unexpected observations. The CEO then chooses whether to investigate a new question, refine the existing one, or stop.
-
-> [!NOTE]
-> An informative negative result can be a success. An unsupported positive claim is not.
-
-## From published research to training data
-
-Published security research provides inspiration and technical grounding, but a write-up's final solution must **never leak into the model's pre-discovery context**.
-
-The dataset-building process distinguishes:
-
-1. **Documented facts:** information demonstrably available at a given point in time.
-2. **Reconstructed context:** plausible pre-discovery states inferred from a retrospective write-up.
-3. **Hidden outcomes:** discoveries and evidence revealed only after the decision point.
-
-Reconstructed decisions must be labeled as reconstructions, **not** attributed to the original researcher as historical fact.
-
-### Proposed research record
-
-```json
-{
-  "case_id": "example-001",
-  "goal": "Understand whether authorization assumptions hold across a process",
-  "snapshot": {
-    "known_facts": ["Jobs can remain queued", "Permissions can change"],
-    "unknowns": ["When authorization is evaluated"],
-    "available_capabilities": ["Observe job state", "Run approved test"]
-  },
-  "ceo_question": {
-    "text": "Can state changes invalidate assumptions made earlier in a job?",
-    "assumption_under_test": "Authorization remains applicable throughout the job"
-  },
-  "provenance": {
-    "context_type": "synthetic",
-    "source_refs": []
-  },
-  "outcome": {
-    "visibility": "hidden_until_evaluation",
-    "status": "inconclusive"
-  }
-}
+# Strict time-sliced view; unknown or late evidence is withheld
+python -m research_engine reconstruct CASE-000055 --view pre_discovery --cutoff 2026-01-01T00:00:00Z
 ```
 
-*This is an illustrative schema, not a claim that an implementation already exists.*
+**Expected behavior:** query results can be sparse or empty. In particular, question-family convergence must report no reviewed matches until actual source-grounded QMP records have been curated. An empty answer is preferable to a fabricated research story.
 
-Potential research sources include published analyses from **XBOW, PortSwigger Research, Google Project Zero**, and other responsibly disclosed security research. Source licensing, attribution, and training permissions must be reviewed before incorporating source text.
+API and record semantics: [retrieval documentation](docs/RETRIEVAL_ENGINE.md).
 
-## Learning strategy
+## Question-first analysis: what was the investigator trying to find out?
 
-We will **measure first, fine-tune second**.
+The unit of comparison is the **research question**, not the exploit name or the researcher’s personality. Our evidence graph captures:
 
-| Stage | Purpose | Required evidence |
+```text
+Known context + assumptions + observations
+                 ↓
+         Motivating research question
+                 ↓
+      Research decision / direction
+                 ↓
+      Actual test / evidence / result
+                 ↓
+       New question, pivot, or stop
+                 │
+                 └── Mindset observation tied to *this move*
+                                      │
+                                      └── Novelty relative to prior work
+
+Specific question in case A ──┐
+Specific question in case B ──┼── Reviewed umbrella-question hypothesis
+Specific question in case C ──┘         (QPT; open-world, not forced)
+```
+
+The system distinguishes five independent assessments:
+
+1. **What question was asked, why, and what evidence was available when it arose?**
+2. **What research move was actually performed?** Checklist, variant analysis, anomaly follow-up, hypothesis test, assumption challenge, recombination, failure-driven pivot, etc.
+3. **How original was the move relative to the question and prior art?** Conventional procedure, contextual adaptation, novel recombination, or *candidate* originality.
+4. **Does it instantiate an underlying question shared with other cases?** Require a reviewed, versioned mapping and inclusion/exclusion criteria; analogy alone is not identity.
+5. **What was the outcome?** A claimed zero-day, independently corroborated zero-day, no zero-day, a disputed outcome, or unknown — independently assessed, never used as a shortcut for originality.
+
+A single investigator may use multiple strategies in one investigation. **Mindset here is a label for evidenced actions and decisions, not a psychological profile of a person.**
+
+### Open-world research-question families
+
+The ontology includes **candidate seed questions**, but the engine must support genuinely new families and preserve unmatched questions. Similar tools, CVEs, attack chains and titles are not sufficient grounds to merge investigations. Convergence is counted only when the underlying uncertainty is substantially the same and the mapping is reviewed; partial overlap and analogies remain distinct.
+
+The model also preserves differences between the researcher’s *explicit stated reasoning* and an analyst’s *retrospective inference*. The latter must not become historical truth.
+
+Full methodology and data contracts: [question-first research intelligence](docs/QUESTION_FIRST_RESEARCH.md).
+
+## Research sources and acquisition policy
+
+RDL prioritizes first-party security research that documents **how an investigator arrived at a discovery**, especially failed attempts, surprising observations, competing hypotheses, changed assumptions, abandoned directions and evidence-driven pivots. Relevant sources include vulnerability research laboratories, offensive-security validation vendors, academic work, bug-bounty disclosures and original public investigator threads on X.
+
+Starting publishers include Pentera Labs and the curated watchlist in [competitor research sources](docs/COMPETITOR_RESEARCH_SOURCES.md). The publisher seeds are **discovery inputs only**, not automatically archived source texts or endorsed original investigations.
+
+For X/Twitter discovery, use [the Grok research-hunting prompt](docs/GROK_X_RESEARCH_DISCOVERY.md) to collect original thread permalinks, author/date, linked primary publications and a first-pass *evidence-backed* trajectory assessment. Each source must pass ingestion and licensing gates before entering the scientific corpus.
+
+Public access is **not** permission to mirror articles, X posts, media or PDFs. Capture only permitted original bytes, maintain source hashes/capture dates, and preserve provenance. Keep independent original analysis separate from publisher text.
+
+## Data architecture
+
+```text
+sources/             Curated publisher discovery seeds
+research/            Legacy catalogue and RAW manifests
+registry/            Typed SRC, CASE, SYS, ENV, CTX, EVT, REL, PAS,
+                     FND, MEC, MND, QPT and QMP registries
+schemas/v2/          Schema validation for each registry
+ontology/            Event, relation, mindset and question vocabularies
+research_engine/     Retrieval and question-analysis read-only implementation
+tools/               Archive, registry and publisher-config validators
+tests/               Offline regression, corruption and synthetic-case tests
+docs/                Policy, intake, reconstruction and research methodologies
+```
+
+The core trajectory is a branching, evidence-backed graph rather than a linear hindsight story. Four distinct temporal concepts may matter: when an event occurred, when it was observed, when it was recorded, and when it became available or was published.
+
+All original/historical vs analyst-reconstructed vs counterfactual vs unknown claims remain explicitly distinct. **Not tried ≠ failed. Failed test ≠ disproven hypothesis. Disclosed vulnerability ≠ proven zero-day.**
+
+## Remaining roadmap — training is last
+
+The existing retrieval/question-analysis foundation is **not** the finished research factory.
+
+| Order | Stage | Exit criterion |
 | --- | --- | --- |
-| **0 · Baseline** | Measure untuned models on blind research episodes | Reproducible metrics and held-out worlds |
-| **1 · Supervised Fine-Tuning** | Teach grounded, precise research-question formulation | Improvement beyond prompting alone |
-| **2 · Preference Optimization** | Prefer useful questions over shallow, redundant, or untestable ones | Independent ranking and outcome checks |
-| **3 · Reinforcement Learning** | Optimize long-horizon research value using arena outcomes | Generalization to unseen worlds and mechanisms |
-| **4 · Worker Specialization** | Improve small-model answer quality where measured bottlenecks exist | Better quality/cost trade-offs than shared baselines |
-| **5 · Transfer Evaluation** | Test whether learned behavior helps authorized real investigations | Verified results with controlled budgets |
+| **1** | **Research acquisition:** canonical URL discovery, deduplication, source monitoring and rights-aware capture | Public origin, version, permission and provenance are recorded |
+| **2** | **Document processing:** structure-aware extraction from permitted HTML, PDF, code, figures and source references | Reconstructable exact citations, anchors and hashes |
+| **3** | **Investigation reconstruction:** extract events, hypotheses, questions, failed/untried paths, decision reasons and alternative explanations | Deep reviewed packs, first across 10–20 diverse independent investigations |
+| **4** | **Evidence verification and adjudication:** verify source anchors, contradictions, chronology and causal support | Claim-level citation and negative/uncertainty coverage gates |
+| **5** | **Cross-case question intelligence:** review MND/QPT/QMP mappings and test convergence across different researcher groups | Reliable grouping of equivalent questions, with difficult negative cases and unclassified questions retained |
+| **6** | **Evaluation factory:** blind holdouts split by researcher, publisher, research lineage, mechanism and time; matched-budget untuned baselines | Measurable value without hindsight leakage or survivorship claims |
+| **7 — LAST** | **Training / fine-tuning experiments:** only after the corpus, reconstruction, review and blind evaluation machinery are ready | Demonstrated improvement in question selection on unseen research |
 
-The project does not assume that RL, model specialization, or a new model architecture will necessarily outperform a strong baseline. Each is an experiment.
+Scaling toward thousands of articles is a **long-term target**, not a current corpus size. Deep analysis quality and measurable retrieval coverage take priority over raw count.
 
-## Reward design
+The eventual research-question CEO and bounded workers are **future model/arena experiments**, not deployed capabilities of the current read-only archive. In any future HOMELAB integration, WorkGraph owns execution state, ActionPlane owns authorization and target execution, and deterministic Evidence/Verifier/Proof controls scientific truth. Models propose; they do not self-authorize actions or self-certify vulnerability claims.
 
-Reward should reflect **what the question enabled the investigation to learn**, not whether it resembled a known write-up or contained fashionable security terms.
+## Scientific integrity and source rights
 
-A proposed scoring model considers:
-
-| Signal | Desired behavior |
-| --- | --- |
-| **Information gain** | Reduce uncertainty between plausible world models |
-| **Decision relevance** | Change what an informed investigator should do next |
-| **Grounding** | Ask questions justified by the visible evidence |
-| **Discriminative power** | Separate competing explanations through observable outcomes |
-| **Feasibility** | Stay within available capabilities and authorization |
-| **Efficiency** | Avoid redundant, expensive, or low-value investigation |
-| **Scientific integrity** | Report negative and inconclusive results accurately |
-
-A discovered bug is **not** the only positive outcome. A question that reliably rules out a costly false lead may be valuable. A fabricated finding should never receive a positive scientific reward.
-
-## Evaluation and success criteria
-
-A credible result must survive **blind evaluation**.
-
-- **Synthetic holdouts:** unseen world rules and combinations, not merely renamed training cases.
-- **Research holdouts:** published cases withheld by research lineage and mechanism to reduce solution leakage.
-- **Negative controls:** correctly functioning systems and deliberately misleading observations.
-- **Ablations:** compare CEO-only, prompted CEO, fine-tuned CEO, specialized workers, and shared workers.
-- **Matched budgets:** hold investigation time, tokens, tool access, and experiment budgets constant.
-- **Transfer tests:** authorized HOMELAB investigations evaluated through existing evidence and verification contracts.
-
-**Primary question:** Does the trained system select better research questions on unseen worlds than the same base model under the same budget?
-
-Secondary measures include calibrated uncertainty, time to useful answer, false-positive rate, research cost, and robustness to changed names, domains, and surface details.
-
-## Roadmap
-
-### Phase 0 — Foundations
-
-- [ ] Define versioned `ResearchQuestion`, `ResearchAnswer`, and `WorldSnapshot` contracts.
-- [ ] Establish provenance, uncertainty, and evidence-reference requirements.
-- [ ] Build deterministic tests for schema validation and information visibility.
-
-### Phase 1 — First playable arena
-
-- [ ] Implement a small stateful world generator and hidden-rule oracle.
-- [ ] Support question → investigation → observation → answer → next question.
-- [ ] Include normal, ambiguous, and adversarially confusing worlds.
-- [ ] Record complete, replayable research trajectories.
-
-### Phase 2 — Corpus and baseline
-
-- [ ] Curate an initial set of documented research cases.
-- [ ] Separate pre-discovery facts from retrospective reconstruction.
-- [ ] Freeze blind evaluation splits before model training.
-- [ ] Benchmark at least one untuned CEO and one baseline worker configuration.
-
-### Phase 3 — Training experiments
-
-- [ ] Test SFT against strong prompting and retrieval baselines.
-- [ ] Evaluate preference optimization on held-out decisions.
-- [ ] Explore outcome-based RL only after reward validity is demonstrated.
-- [ ] Fine-tune small workers only for measured performance gaps.
-
-### Phase 4 — HOMELAB integration
-
-- [ ] Adapt research question/answer contracts to existing HOMELAB interfaces.
-- [ ] Route worker tasks through existing capability and resource ownership.
-- [ ] Preserve WorkGraph, ActionPlane, and evidence authority boundaries.
-- [ ] Run controlled, authorized transfer evaluations before deployment.
-
-## Project principles
-
-**Questions before paths.** Investigate what matters instead of blindly replaying a known sequence.
-
-**Discovery before exploitation.** Understand mechanisms and boundary conditions before making security claims.
-
-**Evidence before confidence.** A plausible explanation is not a verified fact.
-
-**Freedom in reasoning; constraints in execution.** Agents may invent hypotheses and tests, but may not bypass scope or authorization.
-
-**No reward for hallucination.** Unknown is a valid answer.
-
-**Measure generalization, not memorization.** Success on familiar write-ups is insufficient.
-
-**Small models where they work.** Use routing and specialization to improve research quality per unit of compute.
-
-## Safety and research scope
-
-This project is intended for **authorized security research, synthetic environments, and controlled evaluations**. Research tasks and worker actions must respect explicit scope, tool permissions, rate limits, and applicable rules. Findings require independent evidence and verification; models cannot self-certify impact.
-
-The arena may simulate risky behaviors without requiring uncontrolled execution against real targets. Real-world integration must use HOMELAB's established authorization and evidence boundaries.
-
-## Project status
-
-> **Early-stage research design / initial repository.** The architecture, experiments, and milestones above describe the intended direction. Do not interpret unchecked roadmap items or illustrative interfaces as shipped functionality.
+- **Evidence before belief:** each substantive claim needs a source/locator, uncertainty status and an auditable review path.
+- **No invented trajectories:** inferred motives, failed attempts and untried directions remain explicitly hypothetical unless documented.
+- **Question before method:** distinguish the underlying research question from a checklist or technique used to explore it.
+- **Originality before outcome bias:** routine work can discover zero-days; original reasoning can end with a useful negative result.
+- **No forced umbrella classes:** new questions may not fit old categories; contested mappings remain contested.
+- **Pre-discovery integrity:** withhold information that could not have been known at the investigated decision point.
+- **No spurious causal claim:** the coexistence of a mindset and a zero-day does not prove the mindset caused the discovery.
+- **Responsible sourcing:** preserve canonical URLs, capture timestamps, authors and appropriate legal permissions.
+- **Authorized environments only:** no autonomous target exploitation, external execution authority or unsanctioned investigation is introduced by this repository.
 
 ## Contributing
 
-Early contributions are most useful in **research methodology, synthetic world design, evaluation validity, dataset provenance, and reproducibility**. Please open an issue describing the hypothesis, expected observable outcome, and how the proposal avoids training/evaluation leakage.
+Contributions are especially useful in original research source discovery, provenance-preserving parsers, careful reconstruction of **why a question emerged**, independent reviews of competing abstractions, negative-result examples and robust evaluation design.
+
+For proposed source/case updates, provide original URLs, precise source anchors, an originality assessment, and which material is fact, inference, or currently unknown.
 
 ---
 
 <div align="center">
 
-### Better questions. Better investigations. New discoveries.
+**Better questions. Better investigations. Research intelligence grounded in evidence.**
 
-**Research Discovery Lab** · An experimental research companion to **HOMELAB**
-
-*The objective is not to know the answer in advance — it is to discover what is worth asking.*
+*Research Discovery Lab · Separate companion to HOMELAB*
 
 </div>
-
-
-## Retrieval and investigation reconstruction
-
-Run \`python -m research_engine search "Chrome"\` or \`python -m research_engine reconstruct CASE-000001\` after \`python -m pip install -r requirements-validation.txt\`. The read-only engine assembles source-grounded timelines, negative and untried directions, challenged assumptions, question transitions, and evidence gap reports.
-
-**Limitation:** all 50 initial records are source metadata only. A historical research trajectory is never invented from titles. See [retrieval and reconstruction documentation](docs/RETRIEVAL_ENGINE.md). Training remains the final project phase.
-
-
-### Question-first research intelligence
-
-The laboratory distinguishes **routine checklist work, apparently novel research moves, underlying research questions, and zero-day outcomes**. Grounded move-to-question links can be compared under open-ended, curated umbrella research questions. Analogy and string similarity do not become scientific equivalence automatically; unpublished or inconclusive research must not be treated as failures. See [Question-first methodology](docs/QUESTION_FIRST_RESEARCH.md).
