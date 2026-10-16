@@ -1,0 +1,65 @@
+{
+  "source_id": "SRC-000005",
+  "case_id": "CASE-000005",
+  "canonical_url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+  "retrieved_url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:10:00Z",
+  "document_genres": ["technical vulnerability disclosure", "AI-assisted exploit development narrative", "research process reflection"],
+  "lineage_id": "xbow-exim-tls-bdat-uaf-2026",
+  "actor_roles": [
+    {"actor": "named human researcher (20y experience)", "role": "primary_investigator_with_LLM_assistance"},
+    {"actor": "XBOW Native autonomous LLM", "role": "parallel_exploit_development_system"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "The vulnerability / The trigger",
+      "type": "author_reported",
+      "statement": "UAF in TLS shutdown (tls_close frees xfer_buffer) while nested BDAT ungetc continues to write into freed memory."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Negative Results / Pivots",
+      "type": "author_reported",
+      "statement": "Human struggled with heap grooming due to unfreed GnuTLS structures and store_reset; initial LLM produced glibc largebin/FSOP style; pivoted to Exim custom store allocator."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "AI/Human Involvement / Final Round",
+      "type": "author_reported",
+      "statement": "Autonomous system succeeded on non-ASLR and ASLR-no-PIE stages but failed production ASLR+PIE; human+LLM achieved stack leak on production target."
+    },
+    {
+      "claim_id": "C4",
+      "anchor": "Timeline section",
+      "type": "author_reported",
+      "statement": "Submitted 2026-05-01; public 2026-05-12 with coordinated release."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Does the interaction between TLS shutdown and BDAT chunking produce a usable memory corruption in Exim's receive path?",
+      "basis": "author_explicit",
+      "anchor": "Setting the challenge / The vulnerability"
+    }
+  ],
+  "decision_ids": ["xbow-exim-tls-bdat-uaf-2026.T001"],
+  "unobserved_history": [
+    "Full intermediate agent traces for both human-assisted and autonomous runs",
+    "Exact negative test results that led to abandoning largebin approach"
+  ],
+  "forbidden_inferences": [
+    "Do not equate autonomous system's failure on production build with falsification of the UAF hypothesis",
+    "Parallel human and autonomous runs are distinct; do not merge into one serial diary"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": [
+    "Note two parallel research runs (human+LLM vs fully autonomous)",
+    "Timeline is disclosure timeline, not discovery timeline"
+  ]
+}
