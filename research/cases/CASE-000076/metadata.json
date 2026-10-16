@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000076",
+  "title": "The Perils of Premature Vulnerability Reporting: A Case Study in Off-by-One Analysis",
+  "publisher": "Stingrai",
+  "publication_date": "2026-01-07",
+  "category": "negative_result",
+  "sources": [
+    {
+      "source_id": "SRC-000076",
+      "url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "in_progress",
+  "training_status": "not_started",
+  "provenance_note": "Publisher's own retrospective account of an OpenVAS code audit and withdrawn overflow interpretation. No external examination of private vendor correspondence, reproduction, or broader absence-of-bugs proof. Primary article remains with publisher; source locators are section names; no original RAW. Research chronology and knowledge-at-decision dates unavailable."
+}
