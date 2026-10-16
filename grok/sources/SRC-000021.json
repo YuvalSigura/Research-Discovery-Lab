@@ -1,0 +1,70 @@
+{
+  "source_id": "SRC-000021",
+  "case_id": "CASE-000021",
+  "canonical_url": "https://xbow.com/blog/xbow-2fauth-ssrf",
+  "retrieved_url": "https://xbow.com/blog/xbow-2fauth-ssrf",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:20:00Z",
+  "document_genres": ["research narrative", "source-assisted technical walkthrough"],
+  "lineage_id": "xbow-2fauth-2024",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process / Negatives",
+      "type": "author_reported",
+      "statement": "Code analysis found fillWithURI(). Preview endpoint icon parameter returned NULL. MIME type validation blocked content inspection."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "After auth and MIME barriers, used SVG with type=image/svg+xml#.svg exploiting PHP extension extraction after #. Confirmed with sheriff server."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After initial SSRF attempts return NULL due to MIME checks, can a crafted extension or fragment bypass the validation while still triggering the URI fetch?",
+      "basis": "action_implied_candidate",
+      "anchor": "shift to SVG + # fragment after MIME barrier",
+      "uncertainty_reduced": "whether MIME validation can be satisfied while controlling the fetched URL",
+      "assumption_challenged": "that MIME type checks fully close the SSRF"
+    }
+  ],
+  "environment_model_updates": [
+    "fillWithURI() used in multiple endpoints",
+    "Preview requires valid image MIME",
+    "PHP extracts extension after # incorrectly for validation"
+  ],
+  "discovery_mechanisms": [
+    "source_code_identification_of_uri_handler",
+    "mime_bypass_via_fragment_and_type",
+    "oob_confirmation_with_controlled_server"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "code review of URL handling and auth flows",
+    "exploratory": "trying fragment and SVG type combinations after NULL responses"
+  },
+  "negative_inconclusive": [
+    "Initial icon SSRF: NULL",
+    "MIME validation blocked content inspection",
+    "Some auth flow attempts failed"
+  ],
+  "decision_ids": ["xbow-2fauth-2024.T002"],
+  "unobserved_history": ["exact sequence of MIME bypass attempts before SVG"],
+  "forbidden_inferences": [
+    "Do not treat NULL as proof of no SSRF",
+    "The bypass exploited a mismatch between validation and actual fetch"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Group with SRC-000019; note CVE-2024-52598 and fix in v5.4.1"],
+  "layer_b_candidate_principles": [
+    "When an SSRF is gated by MIME or content-type checks, test mismatches between how the extension is extracted for validation versus how the full URL is fetched",
+    "Fragment identifiers or type parameters can sometimes satisfy validators without changing the requested resource"
+  ],
+  "model_vs_harness": "Recognizing the PHP extension-extraction quirk is model reasoning; OOB confirmation and systematic auth/URI testing can be harness."
+}
