@@ -7,6 +7,7 @@
 - Two new primary-source CASE/SRC pairs: `CASE-000075` (ServiceNow) and `CASE-000076` (negative OpenVAS-claim investigation). Both are retrospective author accounts, not reconstructed contemporaneous laboratory notebooks.
 - 33 new research EVT events / 30 REL links. Historic events retain unknown `occurred_at` / `known_at` and `hindsight_review=not_reviewed`. Analyst question reformulations are explicitly `origin=reconstructed` with `evidence_status=proposed`; their links are `causal_basis=reconstructed`, not `explicit_documented`.
 - Four **unreviewed** source-linked MND observations, two **proposed** QPT research-question candidates, and three **proposed** QMP comparisons. These **do not** establish convergent underlying questions or the originality of any investigator's thinking.
+- `tools/triage_source_candidates.py` consumes a scout/Grok JSON candidate array and builds a **read-only** deduplicated intake queue. It flags non-first-party or preview-only sources and never grants redistribution rights or stable SRC identifiers.
 - `tools/curation_readiness.py` inventories missing evidence and curation gates on real cases.
 - `tools/build_predecision_candidates.py` exports **review-only**, source-free decision prompts only when a human-reviewed context has documented evidence sourced to material published **before** its cutoff. No approved CTX records exist yet, so the actual archive should export **zero** candidate tasks. The exporter does not include a solution label and uses operator-keyed opaque IDs; it does not guarantee that observation prose is semantically anonymous.
 - `tests/test_phase2_curation.py` checks provenance, nonpromotion, expected negative result, and blind-export rejection cases.
@@ -46,6 +47,7 @@ python tools/validate_archive.py
 python tools/validate_registry.py
 python tools/validate_publisher_sources.py
 python -m unittest discover -s tests -p "test_*.py" -v
+python tools/triage_source_candidates.py path/to/scout_candidates.json
 python tools/curation_readiness.py --case-id CASE-000075
 python tools/curation_readiness.py --case-id CASE-000076
 # RDL_BLIND_KEY must be an operator-held string >=16 characters, not committed:
@@ -53,4 +55,4 @@ python tools/build_predecision_candidates.py
 # Expected: zero candidate tasks, since no eligible CTX has been independently reviewed.
 ```
 
-**Definition of this increment:** new source-grounded cases, negative example, unreviewed hypothesis and question data, auditable readiness tool and tested **fail-closed** evaluation export. **Not:** completion of the research factory, independent empirical validation, usable training samples, proven question-family convergence or live researcher intelligence.
+**Definition of this increment:** new source-grounded cases, negative example, unreviewed hypothesis and question data, auditable candidate-source triage, readiness tool and tested **fail-closed** evaluation export. **Not:** completion of the research factory, independent empirical validation, usable training samples, proven question-family convergence or live researcher intelligence.
