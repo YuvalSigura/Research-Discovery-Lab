@@ -1,0 +1,15 @@
+{
+  "source_id": "SRC-000031",
+  "canonical_url": "https://xbow.com/blog/mythos-gpt-5-5-ai-vulnerability-detection-security",
+  "access_status": "READ_FULL",
+  "document_genres": ["opinionated analysis", "product blog"],
+  "lineage_id": "xbow-model-evaluation-2026",
+  "source_claims": [{"claim_id": "C1", "type": "publisher_claimed", "statement": "LLMs good at individual threads but stop after one result, underexplore, accumulate assumptions. Fleets cause overlap. XBOW uses short-lived agents, deterministic validators, safety guardians."}],
+  "research_questions": [{"question_id": "Q1", "formulation": "What structural systems are required beyond model capability to achieve reliable coverage, validation, and safety at scale?", "basis": "author_implied"}],
+  "negative_inconclusive": ["Thin quantitative results", "Promotional elements"],
+  "scientific_readiness": "catalog_only",
+  "training_status": "TRAINING_BLOCKED",
+  "layer_b_candidate_principles": ["Short-lived specialized agents under coordinators reduce accumulation of false assumptions", "Deterministic validators are required to separate model proposals from verified facts"],
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "retrieval_timestamp": "2026-10-16T10:50:00Z"
+}
