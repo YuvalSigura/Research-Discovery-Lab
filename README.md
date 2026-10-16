@@ -57,6 +57,7 @@ The research trajectory records are **partial reconstructions from authors' retr
 The Python `research_engine` package reads the typed registries and produces evidence-aware JSON. It provides:
 
 - **Source and record retrieval:** deterministic lexical search with metadata filters and source references; no unsupported claims of semantic indexing or uncaptured full-text search.
+- **Scout intake triage:** `tools/triage_source_candidates.py` deduplicates canonical first-party leads, flags unverifiable sources and keeps rights unreviewed; it deliberately creates no authoritative archive records.
 - **Investigation reconstruction:** documented events in known time order; unknown-time events kept in a separate bucket.
 - **Trajectory accounting:** assumptions, hypotheses, considered/abandoned/untried directions, experiments, negative and inconclusive results, pivots, and questions.
 - **Provenance-aware tracing:** explicit transitions between questions, evidence and research decisions; chronology alone is not treated as causality.
@@ -92,6 +93,7 @@ python -m research_engine coverage CASE-000055
 # Grounded questions, mindset links and question abstraction
 python -m research_engine questions CASE-000055
 python -m research_engine question-convergence --min-cases 2
+python tools/triage_source_candidates.py path/to/scout_candidates.json
 python tools/curation_readiness.py --case-id CASE-000075
 # Export requires an operator-held RDL_BLIND_KEY; with 0 approved CTX exports 0 tasks:
 python tools/build_predecision_candidates.py
