@@ -25,6 +25,8 @@ This is **not a complete adjudication** of all 109 sources; the associations bel
 
 All candidate examples below identify an **article section or technical subject**, not an immutable first-party passage capture. The curator must acquire/verifiably locate source passages before upgrading any assertion.
 
+**Machine-readable candidate view:** [RDL_CONSOLIDATED_CANDIDATE_QUESTIONS.v0.json](data/RDL_CONSOLIDATED_CANDIDATE_QUESTIONS.v0.json) contains the same 14 local IDs with candidate question text, source IDs, seed crosswalk, epistemic labels, boundary warnings and explicit training prohibition. All 44 source-ID references were checked against the 109-source registry, and all seed references against the existing ontology. This is **structural validation only**, not source-fidelity adjudication.
+
 ## 1. Rule for semantic merging
 
 Two questions may be proposed as the **same core question** only if their relevant uncertainty, preconditions, discriminating experiment, and counterexample remain equivalent after removing product/technique-specific terms. Similar exploit classes, endpoint labels, tool names, or successful outcomes are insufficient.
