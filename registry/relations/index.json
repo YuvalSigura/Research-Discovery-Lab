@@ -773,7 +773,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: TLS/SSL validation"
+          "locator": "section: Tales of TLS"
         }
       ]
     },
@@ -798,7 +798,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: TLS/SSL validation"
+          "locator": "section: Tales of TLS"
         }
       ]
     },
@@ -823,7 +823,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: TLS/SSL validation"
+          "locator": "section: Tales of TLS"
         }
       ]
     },
@@ -848,7 +848,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: GlobalSign experiment"
+          "locator": "section: Tales of TLS: GlobalSign checks"
         }
       ]
     },
@@ -873,7 +873,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: GlobalSign experiment"
+          "locator": "section: Tales of TLS: GlobalSign checks"
         }
       ]
     },
