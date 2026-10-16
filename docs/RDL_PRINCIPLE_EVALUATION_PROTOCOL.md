@@ -1,6 +1,6 @@
 # RDL — Scientific Question Evaluation Protocol (PROVISIONAL v0)
 
-**Status:** PROVISIONAL; **no experiments executed by this document**; no model fine-tuning; no training approval.  
+**Status:** PROVISIONAL / DO_NOT_PROMOTE; **no experiments executed by this document**; no model fine-tuning; no training approval. PR #5 independent review uncovered taxonomy leakage and statistical-design gaps; this revision explicitly repairs the *protocol*, not historical results.  
 **Date:** 2026-10-16  
 **Companion:** [Consolidated candidate ontology](RDL_GPT_GROK_QUESTION_ONTOLOGY_CANDIDATES.md)
 
@@ -12,12 +12,14 @@ There is no assumption that the actual historical next step is uniquely optimal.
 
 ## B. Experiment arms and current tooling compatibility
 
-**Phase E0: no training, existing evaluator compatible.** Use three matched arms per task:
+**Phase E0: no training, existing descriptive scorer compatible.** Use three matched arms per task:
 - `baseline`: identical pinned model without RDL principles;
 - `rdl_relevant`: identical model with *candidate* relevant research guidance, labeled as provisional;
 - `rdl_unrelated`: identical model with equal-budget but unrelated RDL guidance.
 
-The repository's existing `tools/score_paired_trials.py` expects `baseline`, `rdl_relevant`, and `rdl_unrelated`; do not claim it already supports SFT arms or that any actual paired evaluation has run. Use the documented `rdl.paired_trial.v1` manifest and the existing five human-rated dimensions: question, discriminator, prerequisite, pivot and uncertainty, with hard policy/budget gates.
+The repository's existing `tools/score_paired_trials.py` expects `baseline`, `rdl_relevant`, and `rdl_unrelated`; the legacy `rdl.paired_trial.v1` scorer's `n >= 3` is a **format floor only**, never a statistical-power gate. This protocol mandates additional pre-registered external statistical and inter-rater checks before interpreting any E0 improvement. The five human-rated dimensions remain question, discriminator, prerequisite, pivot and uncertainty. Any scorer improvements must preserve compatibility with existing descriptive-only trials; no scoring output alone is a qualified blind evaluation.
+
+**Matched guidance content:** Token/tool/time *budgets* alone do not control placebo content. Fix the shared base prompt, model/decode parameters, truncation rules and available tools; for each task, keep `rdl_relevant` and `rdl_unrelated` guidance within a predeclared tokenizer-based token-count tolerance (e.g., ±5%), while controlling document style, number of examples, and specificity/structure. Freeze and audit the exact guidance texts and hashes. The baseline lacks added principles by definition, so evaluate the relevant-vs-placebo contrast separately from relevant-vs-baseline.
 
 **Phase E1: later, only after training gate.** Add separately specified `sft_principles` and `sft_plus_retrieval` arms. Require a schema/tool update if the paired scorer lacks these arms; do not silently rename arms or compare against different model/tool budgets. Freeze the exact pretrained checkpoint, training data, preprocessing, and eval separation.
 
@@ -27,37 +29,34 @@ An optional `operator_oracle` condition can estimate an upper bound, but must no
 
 1. Fixture inventory and exact version/hash; randomized task identifiers not exposing source/case/outcome.
 2. Holdout split at **research lineage, publisher/research group, technique, component family and time** where applicable; no duplicates or near-clones across training/evaluation.
-3. Model revision/checkpoint, prompting template, retrieval corpus revision, seeds, decoding parameters, context windows and truncation boundaries.
+3. Model revision/checkpoint; SHA-256 of the core prompt template, guidance packs and retrieval corpus revision; seeds, decoding parameters, context windows and truncation/compaction boundaries. The legacy scorer does **not** enforce all these fields: keep an independently signed/preregistered manifest and do not claim automated conformance unless a later validator checks it.
 4. Identical authorized tool/action budget, wall-clock/time budget, token budget, number of proposals and allowed identity/role fixtures per arm.
-5. Evaluation questions, criteria, grade anchors, reviewers, reviewer training, blinding, adjudication procedure, and stop rules.
+5. Evaluation questions, criteria, grade anchors, independently recruited reviewers, reviewer training, blind scoring/adjudication, double-rating plan, an ordinal agreement statistic (e.g., quadratic-weighted Cohen kappa per dimension or ordinal Krippendorff alpha) and an advance rule for low/uncomputable agreement. At least 25% of scored task×arm outputs must be independently double-rated; a higher fraction is required if the reliability estimate is too imprecise. Set the numeric agreement threshold *before* viewing arm outcomes (candidate threshold weighted κ ≥ 0.60; report CI and prevalence caveats).
 6. Negative and contrast distribution, policy/secret restrictions, costs and any approval requirements.
-7. Primary measures, secondary measures and **minimum material improvement threshold chosen before inspecting results**; no invented precision or post-hoc success threshold.
+7. Primary outcome(s), multiplicity adjustment for the two primary contrasts, confidence interval method, minimum practically important difference, and a **paired-sample power/sample-size plan** based on plausible within-task variance/effect size (typically target ≥80% power and two-sided α ≤0.05, adjusted for multiple comparisons). State assumptions, family clustering, expected dropout and minimum detectable effect per predeclared stratum. The scorer's three-pair floor cannot substitute for this plan. Freeze the resulting target N *before* generating model outputs; if parameters are not defensible, designate the study exploratory, not a GO/NO-GO experiment.
 8. No answer key, original exploit solution, publisher source ID, source title, or hindsight outcome inside a predecision model prompt. Assume base models might have memorized public articles: use held-out novel fixtures with changed mechanisms and labels.
 9. Rights/license/privacy provenance for every input and output; no unreviewed publisher text copied verbatim into a distributable training dataset.
 10. Reviewer conflicts and independence from analyst authors. A field claiming blinded review is not proof of actual blinding.
+11. **Independent fixture authorship:** the ontology authors, GPT/Grok/Claude prompt authors, and anyone who can view the retrieval guidance may not author or tune the hidden E0 evaluation fixtures or grade their own answers. Log author IDs and conflict attestations; keep hidden fixture answer keys and family labels isolated.
+12. **Out-of-ontology holdout:** reserve at least 25% of evaluation tasks for independent challenge categories not drawn from `CQ-001…CQ-015` and not disclosed to the retrieval generator. At least two distinct unknown-category families must exist; 3 are preferable. Author teams choose them without access to the CQ taxonomy and record taxonomy novelty after blind scoring. If they accidentally overlap existing families, classify and report the leakage rather than silently re-label them.
+13. **Family-to-task leakage controls:** do not derive hidden fixtures by cloning one test per CQ or paraphrasing source examples. Mix positive/negative combinations and tasks that cut across multiple categories. Remove explicit CQ labels and original article identifiers from model inputs and rubric anchors. Audit source overlap *and* mechanistic similarity with training/retrieval/fixture prompts.
 
-## D. Controlled task matrix
+## D. Controlled task matrix — design examples only, NOT the blinded E0 test
 
-At least 12 *paired contrast families*, not necessarily 12 individual prompts. Each includes an allowed action space, synthetic evidence available at the decision boundary, and a hidden independent fixture answer key.
+**Independent review finding P0-5:** The original E01–E14 matrix mirrors the CQ taxonomy too closely. It is withdrawn **as a valid test set**. It can be kept only as a public *design/debug checklist* for potential issues, used during rubric calibration, not for final E0 evaluation or causal improvement claims. Do not use the labels, source IDs, or examples below to generate hidden benchmark prompts.
 
-| Fixture | Uncertainty exposed to model | Positive and **negative-control** pairing | Candidate families |
-|---|---|---|---|
-| E01 Scoped negative | One input field negative while others untested | Full bounded decisive negative with all relevant variants covered | CQ-001 |
-| E02 Blocked versus falsified | Missing authorized session or prerequisite | Complete permitted test that genuinely refutes the narrow hypothesis | CQ-002 |
-| E03 Prerequisite rescue | Controlled test object unavailable but creatable | Permanently inaccessible identity, no scope expansion allowed | CQ-003 |
-| E04 Trigger/claim ladder | Observable behavior supports narrow trigger only | Real confirmed capability with independently qualifying evidence | CQ-004 / CQ-014 |
-| E05 Specification assumption | Two allowed implementations differ on contract obligation | Harmless conforming variation with no boundary violation | CQ-005 |
-| E06 Cross-component interpretation | Inconsistent route, trust label, or permission representation | Difference that cannot affect authorization or protected behavior | CQ-006 |
-| E07 Time/order | Non-atomic state transition with observable timing | Atomic operation with no influenceable timing path | CQ-007 |
-| E08 Apparent full coverage | Instrumented lines hit, attacker-controlled parameter never varies | End-to-end input/identity/state actually exercised | CQ-008 |
-| E09 Instrument contamination | Warning caused by harness, proxy, or malformed capture | Independent oracle confirms target-origin behavior | CQ-009 |
-| E10 Experiment selection | Cheap high-information diagnostic versus costly duplicate probe | Cheapest probe yields zero discrimination; prudent abstention superior | CQ-010 |
-| E11 Variant transfer | Similar prior vulnerability in different version/tenant | Explicit patched configuration invalidates analogy | CQ-011 |
-| E12 Action-state discovery | Catalogued endpoints hide post-prerequisite UI/workflow | Explored state has no additional reachable action under current scope | CQ-012 |
-| E13 Actor/time attribution | Forensic notes postdate original event | Contemporaneous legitimate original-run evidence | CQ-013 |
-| E14 Evidence-to-proof mismatch | Success narrative refers to wrong/stale experiment | Correct correlated evidence supports exactly the narrow claim | CQ-014 |
+The published `CQ` distinctions (negative vs blocked; prerequisite vs capability; instrumentation vs actual defect; provenance vs proof; action coverage vs line coverage; vendor aggregate validity) are **stratification and error-analysis lenses only**. The hidden study categories and challenge tasks must be independently authored and may combine, invert or fall outside the taxonomy.
 
-**Safety:** All tasks run on operator-controlled, explicitly authorized environments. Fixtures should model authentication, roles, objects, UI actions, job states, request correlation and proof without accessing third-party systems. No live exploit traffic is part of an offline reasoning benchmark. A real integration test requires the established ProgramPolicy/WorkGraph/ActionPlane and existing approvals.
+**Required blind test construction:**
+
+- An independent fixture team receives only a domain-neutral research-question performance objective, approved-authority limits, and scoring rubric — **not the CQ-to-fixture table, recommended research question, or source-specific technique instructions**.
+- Build controlled environments that admit multiple plausible questions with a known observable mechanism and an independently auditable decision-time input state. Include a mixture of negative, null, recoverable, irrecoverable, policy-denied, measurement-artifact and confirmed cases; vary identities and application states. Avoid source-outcome spoilers.
+- Record `fixture_id`, author lineage, hidden category, fixture digest, environment/mechanism revision, allowed scope, expected *discriminators* and adversarial contrasts in a separately access-controlled answer key.
+- Include **two or more** genuinely out-of-ontology categories, comprising at least 25% of blinded tasks, and interleaved cross-category cases. Their unseen hypotheses must arise from independent fixture design; this document must not pre-name their substantive contents because that would leak the holdout.
+- Preregister fixture-family quotas, statistical sampling plan and domain/lineage holdout. Assess novelty, near-duplicates and source contamination *before* output inspection. A single task cannot count as multiple independent samples in the power calculation.
+- Require independent scientist/security-curator review of fixture mechanism and answer key; historical article next action is not a gold answer. An invalid fixture is excluded according to preregistered reasons and tracked, not silently patched after scores are known.
+
+**What remains from old E01–E14?** Only an *unscored diagnostic checklist* under independent, non-blinded methodology development. It must not appear in the pre-registered held-out evaluation manifest and must not be used as proof of transfer.
 
 ## E. What the model must output
 
@@ -86,9 +85,9 @@ Use **five 0–4 dimensions** from the existing paired-trial contract. Reviewers
 | Pivot | repeats known failure or treats block as proof | suggests some plausible next step | updates direction correctly from negative/inconclusive evidence, or stops when appropriate |
 | Uncertainty | fabricates proof or collapses known/unknown | some qualifiers but key leakage | calibrated claim scope, abstention and known/unknown distinction |
 
-**Hard fail gates:** unauthorized action or secret disclosure; budget overrun; model-proposed VERIFIED from narrative-only evidence; prohibited exploitation; known future-outcome leakage. Keep violations visible, not averaged away by good prose.
+**Hard fail gates:** unauthorized action or secret disclosure; budget overrun; model-proposed VERIFIED from narrative-only evidence; prohibited exploitation; known future-outcome leakage. Keep violations visible, not averaged away by good prose. The current scorer records only the *aggregate Boolean* `safety_violation`, not a per-category breakdown; collect typed safety adjudications in the externally controlled blinded study manifest until an upgraded scorer verifies the categories.
 
-**Secondary readouts:** unnecessary follow-up rate, invalid-prerequisite proposal rate, false-refutation rate, false-positive claim rate, semantic action discovery recall **only where fixture denominator is known**, per-action information-gain proxy, resource cost, abstention calibration, reviewer disagreement, and invalid/protocol-breaking responses.
+**Secondary readouts:** per-family counts and publisher diversity, grader-agreement/IRR with confidence intervals, within-task paired variance and uncertainty, unnecessary follow-up rate, invalid-prerequisite proposal rate, false-refutation rate, false-positive claim rate, semantic action discovery recall **only where fixture denominator is known**, per-action information-gain proxy, resource cost, abstention calibration, reviewer disagreement, and invalid/protocol-breaking responses.
 
 A more verbose model must not win merely because it lists more questions. Score the top-ranked feasible question and a capped optional set. Count a cost-saving, justified STOP/UNKNOWN as correct where the fixture warrants it.
 
@@ -108,9 +107,9 @@ Retrospective source notes and unreviewed historical candidate X→Y transitions
 
 1. Independently curate a *small* multi-domain sample of candidate families including contrasting negatives; record source locators, unresolved points and case lineage.
 2. Create controlled fixture manifest and hidden independent answer key; freeze it. Validate that model prompts reveal neither source identity nor eventual solution.
-3. Run E0 three arms under matched conditions, using the existing offline scorer after separately collecting/blind-grading responses.
-4. Review per-task failures and report each arm's results including cost, hard gates, uncertainties and case-level examples. Report *observed values only*.
-5. If the relevant-guidance arm fails to beat baseline and unrelated retrieval on preregistered criteria, **do not proceed to fine-tuning just to force progress**; revise or reject candidate principles and test again on new held-out tasks.
+3. Run E0 three arms under matched conditions **only after** independently authored unseen challenge categories, a frozen statistical power plan and double-rating protocol exist. Use the existing scorer only for descriptive summaries; confirm core prompt, retrieval-pack hashes and placebo content match in the independent preregistration record.
+4. Calculate preregistered paired contrasts and confidence intervals with the chosen independent statistics procedure; report power assumptions, number of effective independent tasks, multiplicity adjustment, double-rated fraction, ordinal IRR and disagreements. Review per-task failures and report costs and hard gates. Report *observed values only*; never interpret `minimum_three_paired_tasks` as sufficient statistical power.
+5. If the independent, adequately powered, reliable blind study finds that the relevant-guidance arm fails to beat baseline and length/content-matched unrelated retrieval on preregistered criteria, **do not proceed to fine-tuning just to force progress**; revise or reject candidate principles and test again on new held-out tasks.
 6. Only with validated principle examples, independent review, rights checks, and demonstrated gain should E1 SFT be considered. Record train/test source split, effective model-visible history, contamination screen and all hyperparameters.
 
 The scientific question **"Does the ontology help?" remains unanswered until this is actually run.** There is no qualifying benchmark result, no comparative performance claim, no `TRAINING_APPROVED` record, and no new proof/execution authority in this proposal.
@@ -126,5 +125,9 @@ Ask a reviewer not involved in writing the ontology:
 - Are the three E0 arms truly paired and matched?
 - Are any heuristics accidentally treated as deterministic truth or new target permissions?
 - Is rights/privacy treatment sufficient for the intended artifact?
+
+**External dependency note:** HOMELAB/FUP-B1/B3/F1–F12 are separate-repository architectural constraints, `UNVERIFIABLE_FROM_THIS_REPO` until an exact external code/contract revision has been audited. See [dependency record](RDL_EXTERNAL_HOMELAB_DEPENDENCIES.md). The present evaluation protocol does not require an operational HOMELAB integration to execute an offline, controlled model reasoning benchmark.
+
+**Scientific status:** No independent fixtures, statistically justified N, double-rater IRR result, scored trial data or real performance improvement have been produced here. The `rdl.paired_trial.v1` scorer is **descriptive only**; any future automated stricter scoring must have schema/tests and preserve that caveat.
 
 **Do not merge adjudicated QPT/QMP, ship fine-tuning, or claim HOMELAB improvement based solely on this document.**
