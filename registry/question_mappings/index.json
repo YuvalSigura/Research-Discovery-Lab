@@ -1,5 +1,96 @@
 {
   "schema_version": "1.0",
   "entity_type": "QMP",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "QMP-000001",
+      "case_ref": "CASE-000074",
+      "question_event_ref": "EVT-000029",
+      "pattern_ref": "QPT-000001",
+      "pattern_definition_revision": 1,
+      "mapping_basis": "analyst_comparison",
+      "review_status": "proposed",
+      "abstraction_rationale": "Both cases involve obtaining a missing precondition from a second system, but ownership of a retired infrastructure endpoint differs from discovery of a protected object identifier.",
+      "mismatches": [
+        "The WHOIS challenge concerns effective control of a reply origin; the CyberPanel challenge concerns obtaining an existing scan identifier."
+      ],
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Analyst hypothesis, not reviewed same-core equivalence."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Setting The Scene; Collateral Damage In Pursuit Of RCE"
+        }
+      ],
+      "abstraction_relation": "partial_overlap",
+      "question_novelty": "unassessed",
+      "notes": "Do not count as convergence or pre-discovery knowledge."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "QMP-000002",
+      "case_ref": "CASE-000055",
+      "question_event_ref": "EVT-000017",
+      "pattern_ref": "QPT-000001",
+      "pattern_definition_revision": 1,
+      "mapping_basis": "analyst_comparison",
+      "review_status": "proposed",
+      "abstraction_rationale": "The analyst-reconstructed question about obtaining a scan identifier resembles prerequisite reframing, but the abstract uncertainty is not established as identical.",
+      "mismatches": [
+        "The motivating ShadowPanel question is reconstructed, not known to have been asked at the historical decision point."
+      ],
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Analyst hypothesis, not reviewed same-core equivalence."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Almost-Bug; Stepping Back"
+        }
+      ],
+      "abstraction_relation": "analogy_only",
+      "question_novelty": "unassessed",
+      "notes": "Do not count as convergence or pre-discovery knowledge."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "QMP-000003",
+      "case_ref": "CASE-000076",
+      "question_event_ref": "EVT-000073",
+      "pattern_ref": "QPT-000002",
+      "pattern_definition_revision": 1,
+      "mapping_basis": "analyst_comparison",
+      "review_status": "proposed",
+      "abstraction_rationale": "A retrospectively formulated diagnostic question considers whether the experiment itself caused the safety warning; one instance of measurement-validity uncertainty.",
+      "mismatches": [
+        "The exact diagnostic question was not recorded before the tests and cannot create a blind historical snapshot."
+      ],
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Analyst hypothesis, not reviewed same-core equivalence."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: Empirical Validation: Building a Definitive Test; AddressSanitizer: A Tool for Detection, Not Proof"
+        }
+      ],
+      "abstraction_relation": "specialization",
+      "question_novelty": "unassessed",
+      "notes": "Do not count as convergence or pre-discovery knowledge."
+    }
+  ]
 }

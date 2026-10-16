@@ -1095,7 +1095,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "sections: Summary; TLS/SSL validation"
+          "locator": "sections: Summary; Tales of TLS"
         }
       ]
     },
@@ -1124,7 +1124,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: TLS/SSL validation; GoGetSSL check"
+          "locator": "section: Tales of TLS; Tales of TLS: GoGetSSL checks"
         }
       ],
       "direction_status": "attempted",
@@ -1157,7 +1157,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "section: TLS/SSL validation; GlobalSign experiment"
+          "locator": "section: Tales of TLS; Tales of TLS: GlobalSign checks"
         }
       ],
       "direction_status": "succeeded",
@@ -1189,7 +1189,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "sections: GlobalSign experiment; Here We Go Again"
+          "locator": "sections: Tales of TLS: GlobalSign checks; Here We Go Again"
         }
       ],
       "direction_status": "abandoned",
@@ -1220,7 +1220,7 @@
       "evidence_anchors": [
         {
           "source_ref": "SRC-000074",
-          "locator": "sections: Summary; GlobalSign experiment"
+          "locator": "sections: Summary; Tales of TLS: GlobalSign checks"
         }
       ],
       "result_status": "positive",
@@ -1375,6 +1375,1003 @@
       ],
       "result_status": "success",
       "actual_outcome": "Publisher-reported external confirmation, not independently verified by RDL"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000046",
+      "case_ref": "CASE-000075",
+      "kind": "external_input",
+      "statement": "The researchers selected ServiceNow in part because cloud-hosted instances expose sensitive business data and MID Servers can connect into customer networks.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: introduction"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000047",
+      "case_ref": "CASE-000075",
+      "kind": "question",
+      "statement": "When visiting a URL on ServiceNow, how does the application decide how to handle the request?",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: The Architecture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000048",
+      "case_ref": "CASE-000075",
+      "kind": "observation",
+      "statement": "Routing depends on database-backed tables, processors and UI pages; table/row/field ACL checks vary by path.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: The Architecture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000049",
+      "case_ref": "CASE-000075",
+      "kind": "observation",
+      "statement": "UI pages pass supplied query variables into a two-phase Jelly/JEXL rendering process; phase-one substitutions may become phase-two input.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Signs of Trouble"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000050",
+      "case_ref": "CASE-000075",
+      "kind": "question",
+      "statement": "Could a pre-authenticated page insert user-controlled content during the first render that becomes executable syntax in the second render?",
+      "origin": "reconstructed",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Analyst's interrogative formulation of the author's conditional threat model; not a contemporaneous quoted researcher question."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Signs of Trouble"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000051",
+      "case_ref": "CASE-000075",
+      "kind": "direction",
+      "statement": "The authors searched pre-authenticated UI templates for no-escape rendering paths.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 1: Title Injection"
+        }
+      ],
+      "direction_status": "attempted"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000052",
+      "case_ref": "CASE-000075",
+      "kind": "experiment",
+      "statement": "The researchers tested whether a user-supplied page-title variable reached a public login page title without being overwritten.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 1: Title Injection"
+        }
+      ],
+      "direction_status": "attempted",
+      "result_status": "positive",
+      "actual_outcome": "Publisher shows page-title injection; this did not yet establish code execution."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000053",
+      "case_ref": "CASE-000075",
+      "kind": "observation",
+      "statement": "The page-title route was reachable but a sanitization step remained between supplied input and XML template interpretation.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 1: Title Injection"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000054",
+      "case_ref": "CASE-000075",
+      "kind": "blocking_factor",
+      "statement": "The HTML sanitizer initially blocked the intended XML/template content, requiring analysis of the sanitizer and later parser's differing behavior.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 1: Title Injection"
+        }
+      ],
+      "blocking_reason": "Sanitizer boundary still active; title injection alone was insufficient."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000055",
+      "case_ref": "CASE-000075",
+      "kind": "experiment",
+      "statement": "The researchers observed that markup accepted inside a style element could be interpreted as nested XML by the later Jelly processor.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 1: Title Injection"
+        }
+      ],
+      "direction_status": "succeeded",
+      "result_status": "positive",
+      "actual_outcome": "Publisher-reported difference between HTML sanitization and XML interpretation."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000056",
+      "case_ref": "CASE-000075",
+      "kind": "experiment",
+      "statement": "A proposed remapping to an alternative Jelly namespace prefix was rejected by the application's namespace guard.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 2: Template Injection Mitigation Bypass"
+        }
+      ],
+      "direction_status": "failed",
+      "result_status": "negative",
+      "actual_outcome": "Application returned an invalid-namespace-prefix error."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000057",
+      "case_ref": "CASE-000075",
+      "kind": "experiment",
+      "statement": "A subsequent attempt to remap a permitted namespace prefix was stopped by an expression-layer safeguard.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 2: Template Injection Mitigation Bypass"
+        }
+      ],
+      "direction_status": "failed",
+      "result_status": "negative",
+      "actual_outcome": "Publisher reports template-injection attempt blocked."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000058",
+      "case_ref": "CASE-000075",
+      "kind": "knowledge_revision",
+      "statement": "Inspecting source identified a safeguard whose pattern matched double-quoted namespace declarations, prompting a syntactic alternative.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 2: Template Injection Mitigation Bypass"
+        }
+      ],
+      "assumption_status": "revised"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000059",
+      "case_ref": "CASE-000075",
+      "kind": "experiment",
+      "statement": "A modified namespace-declaration form passed that safeguard; the authors report script execution within the ServiceNow instance.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 2: Template Injection Mitigation Bypass"
+        }
+      ],
+      "direction_status": "succeeded",
+      "result_status": "positive",
+      "actual_outcome": "Publisher-reported ServiceNow-side script execution; not independently reproduced."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000060",
+      "case_ref": "CASE-000075",
+      "kind": "question",
+      "statement": "Could the newly demonstrated script execution reach database credentials despite additional filesystem restrictions?",
+      "origin": "reconstructed",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Analyst question derived from the article's expressed goal to reach the credential file; not a quoted contemporaneous question."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 3: Filesystem Filter Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000061",
+      "case_ref": "CASE-000075",
+      "kind": "direction",
+      "statement": "The researchers inspected SecurelyAccess source to understand which filesystem paths its file-reading helper would permit.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 3: Filesystem Filter Bypass"
+        }
+      ],
+      "direction_status": "attempted"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000062",
+      "case_ref": "CASE-000075",
+      "kind": "observation",
+      "statement": "The helper validated a canonicalized path against its blacklist, but a downstream file-resolution step performed another normalization.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 3: Filesystem Filter Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000063",
+      "case_ref": "CASE-000075",
+      "kind": "experiment",
+      "statement": "The authors report exploiting the disagreement between the file-path checks to read instance database configuration material.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bug 3: Filesystem Filter Bypass"
+        }
+      ],
+      "direction_status": "succeeded",
+      "result_status": "positive",
+      "actual_outcome": "Publisher-reported database-credential read in a research instance."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000064",
+      "case_ref": "CASE-000075",
+      "kind": "outcome",
+      "statement": "The article reports a three-issue chain with access to ServiceNow data and potential MID-server consequences; it is not independently reproduced by RDL.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Bonus - Going for Full Compromise"
+        }
+      ],
+      "result_status": "positive",
+      "actual_outcome": "Published chain impact in researchers' test environment; no general claim that every deployment has a MID Server."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000065",
+      "case_ref": "CASE-000075",
+      "kind": "outcome",
+      "statement": "The authors report coordinated disclosure to ServiceNow on 14 May 2024 and subsequent vendor patches.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: Conclusion"
+        }
+      ],
+      "result_status": "success",
+      "actual_outcome": "Author-reported disclosure date and remediation timeline, not timestamped private correspondence."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000066",
+      "case_ref": "CASE-000076",
+      "kind": "external_input",
+      "statement": "During an OpenVAS source audit, an allocation for a constructed Kerberos principal appeared suspicious to the authors.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The Initial Discovery"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000067",
+      "case_ref": "CASE-000076",
+      "kind": "observation",
+      "statement": "The suspected allocation used component string lengths plus small constants for separator and terminator bytes.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The Initial Discovery"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000068",
+      "case_ref": "CASE-000076",
+      "kind": "question",
+      "statement": "Did the allocation constants account for the terminating NUL byte or only the separators?",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The Initial Analysis: A Suspected Vulnerability"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000069",
+      "case_ref": "CASE-000076",
+      "kind": "assumption",
+      "statement": "The initial assessment assumed the constants excluded the NUL terminator, suggesting a one-byte short allocation.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The Initial Analysis: A Suspected Vulnerability"
+        }
+      ],
+      "assumption_status": "assumed",
+      "assumption_basis": "Interpretation of format-string separator counts later reconsidered."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000070",
+      "case_ref": "CASE-000076",
+      "kind": "experiment",
+      "statement": "A small test produced AddressSanitizer warnings; the authors initially interpreted them as confirming the suspected overflow.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The Initial Analysis: A Suspected Vulnerability"
+        }
+      ],
+      "direction_status": "attempted",
+      "result_status": "inconclusive",
+      "actual_outcome": "ASan warned, but later source review attributed the warning to the test's own out-of-bounds access."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000071",
+      "case_ref": "CASE-000076",
+      "kind": "external_input",
+      "statement": "The article reports that OpenVAS maintainers disputed the finding and explained that the constants already included the NUL byte.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The Vendor Response: A Different Interpretation"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000072",
+      "case_ref": "CASE-000076",
+      "kind": "knowledge_revision",
+      "statement": "The researchers re-counted separator bytes and the terminating byte, finding both allocation formulas sufficient under the described assumptions.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: Mathematical Validation: Breaking Down the Calculation"
+        }
+      ],
+      "assumption_status": "revised"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000073",
+      "case_ref": "CASE-000076",
+      "kind": "question",
+      "statement": "Did AddressSanitizer signal corruption from the original formatter or an out-of-bounds access in the test itself?",
+      "origin": "reconstructed",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Analyst restatement of the author's later diagnostic reasoning; historical wording not established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: AddressSanitizer: A Tool for Detection, Not Proof"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000074",
+      "case_ref": "CASE-000076",
+      "kind": "experiment",
+      "statement": "The authors report constructing canary-based tests and varying string sizes to examine the actual formatter's buffer use.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: Empirical Validation: Building a Definitive Test"
+        }
+      ],
+      "direction_status": "attempted",
+      "result_status": "negative",
+      "actual_outcome": "No canary corruption observed in publisher-described tests."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000075",
+      "case_ref": "CASE-000076",
+      "kind": "observation",
+      "statement": "The article says earlier ASan warnings came from deliberately accessing the test buffer beyond its allocated end, not from the principal formatter.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: AddressSanitizer: A Tool for Detection, Not Proof"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000076",
+      "case_ref": "CASE-000076",
+      "kind": "outcome",
+      "statement": "The authors withdrew the suspected overflow interpretation as a false positive in the tested code paths.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The False Positive: Understanding What Went Wrong"
+        }
+      ],
+      "result_status": "negative",
+      "actual_outcome": "Publisher's negative result only; not independent proof of the absence of every vulnerability."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000077",
+      "case_ref": "CASE-000076",
+      "kind": "decision",
+      "statement": "The published conclusion calls for separating instrument warnings from the effect being tested and accepting the negative result.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Retrospective first-person article. Source existence is verified, not internal timing or independent execution."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: Conclusion: The Path to Accurate Vulnerability Assessment"
+        }
+      ],
+      "direction_status": "abandoned",
+      "decision_rationale": "The original overflow claim was contradicted by arithmetic and the reported follow-up tests."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000078",
+      "case_ref": "CASE-000076",
+      "kind": "blocking_factor",
+      "statement": "No independent version-pinned reproduction or contemporaneous correspondence is available in the RDL archive.",
+      "origin": "reconstructed",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "RDL analyst's evidence-coverage limitation, not an event in the original historical investigation."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "section: The Vendor Response: A Different Interpretation"
+        }
+      ],
+      "blocking_reason": "Cannot independently establish source revision, exact testing context or universal non-vulnerability."
     }
   ]
 }

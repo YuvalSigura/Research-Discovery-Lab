@@ -1111,6 +1111,36 @@
       "case_refs": [
         "CASE-000074"
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000075",
+      "title": "Chaining Three Bugs to Access All Your ServiceNow Data",
+      "publisher": "Searchlight Cyber (original Assetnote research)",
+      "url": "https://www.slcyber.io/research/chaining-three-bugs-to-access-all-your-servicenow-data",
+      "publication_date": "2024-07-11",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000075"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000076",
+      "title": "The Perils of Premature Vulnerability Reporting: A Case Study in Off-by-One Analysis",
+      "publisher": "Stingrai",
+      "url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one",
+      "publication_date": "2026-01-07",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000076"
+      ]
     }
   ]
 }

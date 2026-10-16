@@ -1,5 +1,152 @@
 {
   "schema_version": "1.0",
   "entity_type": "MND",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "MND-000001",
+      "case_ref": "CASE-000055",
+      "event_refs": [
+        "EVT-000003"
+      ],
+      "question_event_refs": [
+        "EVT-000002"
+      ],
+      "question_link_basis": "explicit_documented",
+      "question_relation_refs": [
+        "REL-000002"
+      ],
+      "mindset_key": "variant_analysis",
+      "statement": "The team selected another hosting panel after a related cPanel pre-auth issue, using the prior result as a research lead.",
+      "attribution": "observed_research_action",
+      "novelty": "unassessed",
+      "comparison_scope": "not_assessed",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Author narrative is retrospective; strategy observation is NOT independent evidence of causal efficacy or move originality."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel"
+        }
+      ],
+      "outcome_linkage": "none",
+      "outcome_event_refs": [],
+      "review_status": "not_reviewed",
+      "notes": "Initial analysis only; second curator and prior-art review pending."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "MND-000002",
+      "case_ref": "CASE-000073",
+      "event_refs": [
+        "EVT-000020"
+      ],
+      "question_event_refs": [
+        "EVT-000019"
+      ],
+      "question_link_basis": "explicit_documented",
+      "question_relation_refs": [
+        "REL-000020"
+      ],
+      "mindset_key": "opportunity_prioritization",
+      "statement": "A small viability experiment was chosen to bound the upfront cost of committing to an uncertain research idea.",
+      "attribution": "researcher_explicit",
+      "novelty": "unassessed",
+      "comparison_scope": "not_assessed",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author narrative is retrospective; strategy observation is NOT independent evidence of causal efficacy or move originality."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ],
+      "outcome_linkage": "none",
+      "outcome_event_refs": [],
+      "review_status": "not_reviewed",
+      "notes": "Initial analysis only; second curator and prior-art review pending."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "MND-000003",
+      "case_ref": "CASE-000075",
+      "event_refs": [
+        "EVT-000048"
+      ],
+      "question_event_refs": [
+        "EVT-000047"
+      ],
+      "question_link_basis": "explicit_documented",
+      "question_relation_refs": [
+        "REL-000040"
+      ],
+      "mindset_key": "systematic_exploration",
+      "statement": "The author investigated routing and internal application structures before selecting security hypotheses.",
+      "attribution": "researcher_explicit",
+      "novelty": "unassessed",
+      "comparison_scope": "not_assessed",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Author narrative is retrospective; strategy observation is NOT independent evidence of causal efficacy or move originality."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "section: The Architecture"
+        }
+      ],
+      "outcome_linkage": "none",
+      "outcome_event_refs": [],
+      "review_status": "not_reviewed",
+      "notes": "Initial analysis only; second curator and prior-art review pending."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "MND-000004",
+      "case_ref": "CASE-000076",
+      "event_refs": [
+        "EVT-000074"
+      ],
+      "question_event_refs": [
+        "EVT-000073"
+      ],
+      "question_link_basis": "analyst_hypothesis",
+      "question_relation_refs": [],
+      "mindset_key": "hypothesis_testing",
+      "statement": "The choice to use additional empirical buffer-integrity testing is documented, but linking it to this retrospectively worded question is an analyst interpretation.",
+      "attribution": "analyst_inference",
+      "novelty": "unassessed",
+      "comparison_scope": "not_assessed",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Author narrative is retrospective; strategy observation is NOT independent evidence of causal efficacy or move originality."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: Empirical Validation: Building a Definitive Test; AddressSanitizer: A Tool for Detection, Not Proof"
+        }
+      ],
+      "outcome_linkage": "none",
+      "outcome_event_refs": [],
+      "review_status": "not_reviewed",
+      "notes": "Initial analysis only; second curator and prior-art review pending."
+    }
+  ]
 }

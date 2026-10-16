@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000076",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000076",
+      "url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one"
+    }
+  ],
+  "note": "No source text/media reproduced. Copyright/permission pending; exact source revisions and contemporaneous timestamps unavailable."
+}

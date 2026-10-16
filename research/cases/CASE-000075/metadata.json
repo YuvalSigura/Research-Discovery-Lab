@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000075",
+  "title": "Chaining Three Bugs to Access All Your ServiceNow Data",
+  "publisher": "Searchlight Cyber (original Assetnote research)",
+  "publication_date": "2024-07-11",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-000075",
+      "url": "https://www.slcyber.io/research/chaining-three-bugs-to-access-all-your-servicenow-data",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "in_progress",
+  "training_status": "not_started",
+  "provenance_note": "First-person published research account by Adam Kues; former Assetnote origin, now hosted by Searchlight Cyber. Dates within article are partial. No independent replication or curator approval. Primary article remains with publisher; source locators are section names; no original RAW. Research chronology and knowledge-at-decision dates unavailable."
+}

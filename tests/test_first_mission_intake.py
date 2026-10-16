@@ -60,7 +60,15 @@ class FirstMissionIntakeTests(unittest.TestCase):
     def test_no_self_approved_mindset_or_umbrella_convergence(self):
         for kind in ("mindsets", "question_patterns", "question_mappings"):
             for item in registry(kind):
-                self.assertNotIn(item.get("case_ref"), {"CASE-000073", "CASE-000074"})
+                # Phase 2 legitimately adds real, explicitly unreviewed research
+                # proposals. The invariant is NO SELF-APPROVAL, not an empty registry.
+                if kind == "mindsets" and item.get("case_ref") in {"CASE-000073", "CASE-000074"}:
+                    self.assertNotEqual(item.get("review_status"), "curator_reviewed")
+                    self.assertEqual(item.get("novelty"), "unassessed")
+                if kind == "question_mappings" and item.get("case_ref") in {"CASE-000073", "CASE-000074"}:
+                    self.assertNotEqual(item.get("review_status"), "curator_reviewed")
+                if kind == "question_patterns":
+                    self.assertNotEqual(item.get("status"), "curator_reviewed")
         for link in self.relations:
             if int(link["id"].split("-")[1]) <= 19:
                 continue

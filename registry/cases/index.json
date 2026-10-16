@@ -1736,6 +1736,74 @@
         "review_status": "not_reviewed",
         "basis": "This intake does not independently determine zero-day status."
       }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000075",
+      "source_refs": [
+        "SRC-000075"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "web_research",
+        "enterprise_saas",
+        "template_processing"
+      ],
+      "analysis_status": "in_progress",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "First-person published research account by Adam Kues; former Assetnote origin, now hosted by Searchlight Cyber. Dates within article are partial. No independent replication or curator approval."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000075/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "Publisher description only; no independent verification or discovery assessment."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000076",
+      "source_refs": [
+        "SRC-000076"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "negative_result",
+      "domain_labels": [
+        "memory_safety",
+        "false_positive",
+        "experimental_validity"
+      ],
+      "analysis_status": "in_progress",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Publisher's own retrospective account of an OpenVAS code audit and withdrawn overflow interpretation. No external examination of private vendor correspondence, reproduction, or broader absence-of-bugs proof."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000076/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "Publisher description only; no independent verification or discovery assessment."
+      }
     }
   ]
 }

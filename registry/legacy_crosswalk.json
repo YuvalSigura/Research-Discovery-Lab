@@ -594,6 +594,22 @@
       "source_url": "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/",
       "source_registry_ref": "SRC-000074",
       "classification_status": "pending_review"
+    },
+    {
+      "legacy_id": "CASE-000075",
+      "legacy_path": "research/cases/CASE-000075/metadata.json",
+      "new_case_ref": "CASE-000075",
+      "source_url": "https://www.slcyber.io/research/chaining-three-bugs-to-access-all-your-servicenow-data",
+      "source_registry_ref": "SRC-000075",
+      "classification_status": "pending_review"
+    },
+    {
+      "legacy_id": "CASE-000076",
+      "legacy_path": "research/cases/CASE-000076/metadata.json",
+      "new_case_ref": "CASE-000076",
+      "source_url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one",
+      "source_registry_ref": "SRC-000076",
+      "classification_status": "pending_review"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000075",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000075",
+      "url": "https://www.slcyber.io/research/chaining-three-bugs-to-access-all-your-servicenow-data"
+    }
+  ],
+  "note": "No source text/media reproduced. Copyright/permission pending; exact source revisions and contemporaneous timestamps unavailable."
+}
