@@ -1,0 +1,66 @@
+{
+  "source_id": "SRC-000001",
+  "case_id": "CASE-000001",
+  "canonical_url": "https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit",
+  "retrieved_url": "https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:00:00Z",
+  "document_genres": ["publisher announcement", "high-level research narrative"],
+  "lineage_id": "xbow-chrome-fullchain-2026",
+  "actor_roles": [
+    {"actor": "XBOW team", "role": "original_finders"},
+    {"actor": "Brendan Dolan-Gavitt", "role": "named_investigator"},
+    {"actor": "Andres Luksenberg", "role": "named_team_member"},
+    {"actor": "Baul Lee", "role": "named_team_member"},
+    {"actor": "Willem Pinckaers", "role": "named_team_member"},
+    {"actor": "GPT-5.6 Sol and predecessors", "role": "AI_tool_agents"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "How We Did It section",
+      "type": "author_reported",
+      "granularity": "team",
+      "scope": "this investigation",
+      "statement": "AI searched Chrome source, tested ideas, built PoCs and early drafts; humans set strategy, chose areas, verified and redirected."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "How We Did It",
+      "type": "author_reported",
+      "statement": "Initial chain disqualified because Google already knew about one bug; team went back to the drawing board."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "timeline paragraph",
+      "type": "author_reported",
+      "statement": "New exploit built between August 2 and August 7 in Las Vegas during Black Hat/DEF CON."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Can a full-chain Chrome exploit (remote takeover from a web page) be constructed under the given constraints?",
+      "basis": "author_explicit_goal",
+      "anchor": "challenge description"
+    }
+  ],
+  "decision_ids": [],
+  "unobserved_history": [
+    "Exact knowledge-at-time for the first chain disqualification",
+    "Internal experiment logs and agent traces",
+    "Precise reasons for selecting specific search areas beyond high-level narrative"
+  ],
+  "forbidden_inferences": [
+    "Do not infer day-by-day bug assignments from the six-day total",
+    "Do not treat modular design as proven post-hoc only; causality relative to first disqualification is uncertain across sources"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": [
+    "Cross-check with SRC-000002 technical post for stage details",
+    "Attempt to locate linked Chromium issues for independent artifact corroboration"
+  ]
+}
