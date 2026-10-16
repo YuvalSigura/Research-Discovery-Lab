@@ -1,8 +1,9 @@
 # TRACK B — Candidate Research-Question Principles
 
 **Status:** PROVISIONAL. Not TRAINING_APPROVED. Not a training dataset.  
-**Purpose:** Distill source-grounded scientific reasoning patterns into candidate question patterns for a future research-question model.  
+**Purpose:** Distill source-grounded scientific reasoning patterns into candidate question patterns for a future research-question model. Technique-specific examples are retained as illustrations under broader questions.  
 **Independence note:** Principles below are derived from Grok's independent source readings under `grok/sources/`. GPT analyses under `gpt/` were consulted only after independent work for cross-check; agreement is not treated as independent corroboration.  
+**Revision note:** Revised 2026-10-16 to elevate technique-specific observations into broader scientific questions while retaining original anchors.  
 **Date:** 2026-10-16
 
 ## Epistemic framing
@@ -10,6 +11,7 @@
 All principles below are candidate patterns observed across multiple retrospective sources. They do not constitute verified historical decision trajectories. Each principle includes:
 
 - Stable ID
+- Broader scientific question
 - Source anchors (SRC IDs + brief locator)
 - Epistemic status
 - What the model should learn to do
@@ -21,9 +23,10 @@ All principles below are candidate patterns observed across multiple retrospecti
 
 ## TB-Q001 — Negative result is scoped, not global
 
+**Broader question:** Which exact scope, identity, inputs, and assumptions were tested by this negative result, and what remains untested?  
 **Epistemic status:** author_reported across multiple sources; analyst reconstruction of the general pattern.  
 **Sources:** SRC-000008 (Chef Automate: values/name fields negative, type field positive); SRC-000004 (Bing Images: XXE probes negative, renderer positive); SRC-000009 (Druid: historical endpoints negative due to configuration).  
-**What the model should learn:** When an experiment returns a negative or null result, formulate the next question as "which exact scope and assumptions were tested?" rather than "is the class closed?". Propose a bounded negative interpretation and identify what remains untested.  
+**What the model should learn:** When an experiment returns a negative or null result, formulate the next question around the tested scope rather than closing the class. Identify what remains untested.  
 **Boundaries:** Does not apply when the source explicitly states a global closure with supporting evidence. Does not license inventing untested surfaces.  
 **Failure condition:** Treating a scoped negative as license to continue indefinitely on the same surface without new discriminating evidence.  
 **Counterexample:** A source that documents a systematic, exhaustive check of all relevant variants with consistent negatives and no remaining untested assumptions.  
@@ -33,9 +36,10 @@ All principles below are candidate patterns observed across multiple retrospecti
 
 ## TB-Q002 — Blocked is not falsified
 
+**Broader question:** Is this direction blocked by a missing precondition, a cost judgment, an authorization limit, or an experimental negative — and what would make it testable?  
 **Epistemic status:** author_reported in several sources; strong pattern.  
 **Sources:** SRC-000003 (SMC-D: MITM abandoned due to complexity, later revived); SRC-000025 (HTTP/1.1: 0.CL deadlocks treated as prerequisite problem); SRC-000055 (CyberPanel: XSS blocked by missing scan_id).  
-**What the model should learn:** When a direction is blocked by a missing precondition, cost judgment, or configuration state, generate the question "what would make this direction testable?" rather than closing it. Distinguish resource/complexity abandonment from experimental falsification.  
+**What the model should learn:** Distinguish the reason for blockage. Generate the question “what would make this direction testable?” when the blockage is a missing precondition or cost judgment. Do not treat authorization limits as scientific findings.  
 **Boundaries:** Does not require pursuing every blocked path. Must be weighed against available resources and expected information gain.  
 **Failure condition:** Treating every timeout, 403, or missing token as a permanent closure.  
 **Counterexample:** A source where the researcher explicitly documents that further investigation of the blocked path is not worthwhile given current constraints and alternative higher-value directions.  
@@ -45,9 +49,10 @@ All principles below are candidate patterns observed across multiple retrospecti
 
 ## TB-Q003 — Missing prerequisite is a research question
 
+**Broader question:** Which missing precondition is blocking progress, and what observable or constructible artifact within the authorized scope might supply it?  
 **Epistemic status:** action_implied + author_reported.  
 **Sources:** SRC-000055 (CyberPanel: two blocked primitives resolved by forgotten debug endpoint); SRC-000025 (early-response gadgets for 0.CL); SRC-000023 (Ninja Tables: nonce recoverable from client-side).  
-**What the model should learn:** When two or more promising primitives are each blocked by a different missing precondition, formulate a question that searches for the missing link (debug surfaces, client-side artifacts, early-response behaviors, alternative routing).  
+**What the model should learn:** When promising directions are blocked by missing preconditions, formulate a question that searches for the missing link inside the permitted action space.  
 **Boundaries:** The missing link must be observable or reachable within the permitted action space. Do not invent prerequisites.  
 **Failure condition:** Assuming every blocked pair has a recoverable link.  
 **Counterexample:** Cases where the missing precondition is intentionally protected and no recoverable artifact exists in the authorized scope.  
@@ -57,67 +62,72 @@ All principles below are candidate patterns observed across multiple retrospecti
 
 ## TB-Q004 — Separate trigger discovery from weaponization
 
+**Broader question:** What does a successful trigger demonstrate, and what additional evidence is required to claim a reliable capability?  
 **Epistemic status:** author_reported (methodology paper).  
 **Sources:** SRC-000024 (HTTP Terminator: micro-inspiration produced novel triggers; autonomous weaponization required human intervention and workarounds).  
-**What the model should learn:** Distinguish the research question "does this trigger produce a desync/parser discrepancy?" from "can this be weaponized reliably against live targets?". Propose different experiment designs and evidence standards for each.  
-**Boundaries:** Applies primarily to protocol and parser research; less relevant to pure application logic bugs.  
+**What the model should learn:** Distinguish the research question “does this trigger produce the hypothesized discrepancy?” from “can this be turned into a reliable, demonstrated capability?” Propose different experiment designs and evidence standards for each.  
+**Boundaries:** Applies across protocol, parser, and logic research; the specific form of weaponization varies by domain.  
 **Failure condition:** Declaring a research direction closed because weaponization failed when the trigger itself was validated.  
 **Counterexample:** Domains where trigger and weaponization are inseparable by design.  
-**Validation required:** Evaluation tasks that require the model to propose trigger-only experiments before weaponization attempts.
+**Validation required:** Evaluation tasks that require the model to propose trigger-only experiments before capability claims.
 
 ---
 
-## TB-Q005 — Micro-inspiration from primary specification can increase novelty
+## TB-Q005 — Specification or implementation assumptions can generate hypotheses
 
-**Epistemic status:** author_reported experimental result.  
-**Sources:** SRC-000024 (RFC micro-fragments outperformed broad prompts for rediscovery of unpublished techniques).  
-**What the model should learn:** When generating hypotheses about protocol or specification-governed behavior, prefer constrained inspiration from primary specification fragments over open-ended prompting. Recognize when over-anchoring reduces novelty.  
-**Boundaries:** Specific to domains with rich formal specifications. Not a general claim about all research.  
-**Failure condition:** Over-fitting to the inspiration method itself.  
+**Broader question:** Which assumption in a specification, interface contract, or implementation could be violated or interpreted differently to produce a new hypothesis?  
+**Epistemic status:** author_reported experimental result (technique) elevated to general question.  
+**Sources:** SRC-000024 (RFC micro-fragments outperformed broad prompts for rediscovery of unpublished techniques). Technique example: constrained inspiration from primary specification fragments.  
+**What the model should learn:** When working in a domain with accessible specifications or contracts, generate hypotheses by challenging specific assumptions or obligations stated in those documents, rather than relying only on open-ended exploration. Recognize when over-anchoring reduces novelty.  
+**Boundaries:** Most useful in domains with formal or semi-formal specifications. Not a claim that this method is universally superior.  
+**Failure condition:** Over-fitting to one inspiration method.  
 **Counterexample:** Research domains without accessible primary specifications.  
-**Validation required:** Controlled comparison of inspiration methods on held-out protocol research tasks.
+**Validation required:** Controlled comparison of hypothesis-generation methods on held-out tasks.
 
 ---
 
-## TB-Q006 — When classic detection is mitigated, probe discrepancies and early-response gadgets
+## TB-Q006 — Different components may interpret the same input or state differently
 
+**Broader question:** Do different components, parsers, or layers interpret the same input, state, or message differently, and does that discrepancy create a security-relevant gap?  
 **Epistemic status:** author_reported multi-year research sequence.  
 **Sources:** SRC-000025 (HTTP/1.1 must die: classic CL.TE methods fingerprinted; shift to parser discrepancy detection, 0.CL with early-response gadgets, Expect header).  
-**What the model should learn:** After observing that a previously effective detection method is blocked or fingerprinted, generate questions about alternative discrepancy surfaces or early-response behaviors rather than abandoning the vulnerability class.  
+**What the model should learn:** After observing that a previously effective detection method is blocked or fingerprinted, generate questions about alternative interpretation discrepancies or early-response behaviors rather than abandoning the class, provided evidence remains that the class is still plausible.  
 **Boundaries:** Requires evidence that the class remains plausible. Does not license infinite exploration of a closed class.  
 **Failure condition:** Continuing to probe a class after multiple independent sources of evidence indicate it is no longer viable.  
 **Counterexample:** A class for which the source documents comprehensive mitigation and no remaining discrepancy surface.  
-**Validation required:** Evaluation on environments where classic detection is blocked but alternative gadgets exist, and environments where the class is truly closed.
+**Validation required:** Evaluation on environments where classic detection is blocked but alternative discrepancies exist, and environments where the class is truly closed.
 
 ---
 
-## TB-Q007 — Race window expansion via resource-lookup slowdown composition
+## TB-Q007 — Time, state, and ordering assumptions can be challenged
 
-**Epistemic status:** author_reported empirical + kernel analysis.  
-**Sources:** SRC-000033 (Windows OMNS: long paths insufficient; composition of recursive directories, symbolic links, hash collisions, and shadow directories).  
-**What the model should learn:** When a race condition is theoretically present but the window is too small, formulate questions about measurable slowdowns in the resource resolution path and possible compositional techniques, rather than abandoning the race.  
-**Boundaries:** Domain-specific to systems with complex named-resource lookup. Requires empirical measurement capability.  
-**Failure condition:** Assuming every race can be expanded this way.  
-**Counterexample:** Races where the check and use are atomic or where lookup time cannot be influenced within the permitted action space.  
-**Validation required:** Controlled race environments with and without expandable lookup paths.
+**Broader question:** Which assumption about time, state stability, or execution order is required for a security guarantee, and how can that assumption be stressed or violated within the permitted action space?  
+**Epistemic status:** author_reported empirical + kernel analysis (technique) elevated to general question.  
+**Sources:** SRC-000033 (Windows OMNS: long paths insufficient; composition of recursive directories, symbolic links, hash collisions, and shadow directories to expand a race window). Technique example: measuring and composing slowdowns in a resource lookup path.  
+**What the model should learn:** When a race or time-of-check/time-of-use condition is theoretically present but the window is small, formulate questions about which timing or ordering assumptions can be influenced, and what measurements would distinguish competing explanations, rather than abandoning the class.  
+**Boundaries:** Requires that the relevant timing or ordering assumptions are influenceable within the authorized action space.  
+**Failure condition:** Assuming every race or ordering issue can be expanded.  
+**Counterexample:** Cases where the check and use are atomic or where the relevant timing cannot be influenced.  
+**Validation required:** Controlled environments with and without influenceable timing or ordering assumptions.
 
 ---
 
-## TB-Q008 — Key questions for state-machine race filtering
+## TB-Q008 — Filter candidate surfaces with structural questions before expensive experiments
 
+**Broader question:** Which structural properties of state, identity, or operation make a candidate surface more or less likely to exhibit the hypothesized behavior?  
 **Epistemic status:** author_reported methodology.  
 **Sources:** SRC-000039 (Smashing the state machine: how is state stored? editing vs appending? operation keyed on what?).  
-**What the model should learn:** Before expensive synchronization experiments, generate filtering questions about state storage, edit vs append semantics, and operation keys to prioritize candidate endpoints.  
-**Boundaries:** Specific to multi-step state machine races. Not a general prioritization method.  
-**Failure condition:** Applying the filter so strictly that valid but unusual state machines are excluded.  
-**Counterexample:** Races that do not fit the storage/edit/key model.  
-**Validation required:** Evaluation on race-prone applications where the filter correctly ranks high-value endpoints.
+**What the model should learn:** Before expensive synchronization or high-cost experiments, generate filtering questions about relevant structural properties (state storage, edit vs append, operation key, identity context, etc.) to prioritize candidates.  
+**Boundaries:** The specific filtering questions depend on the hypothesis class. Over-strict filters can exclude valid but unusual cases.  
+**Failure condition:** Applying a filter so strictly that valid surfaces are excluded, or skipping the filter and wasting resources on low-probability candidates.  
+**Counterexample:** Hypothesis classes that do not admit useful structural pre-filters.  
+**Validation required:** Evaluation on applications where structural filters correctly rank high-value candidates.
 
 ---
 
 ## Training distinction
 
-- **Principle-level supervised training** (possible later, after validation): Use independently validated synthetic cases that instantiate these principles. The model learns to recognize the situation type and generate the appropriate question or interpretation.  
+- **Principle-level supervised training** (possible later, after validation): Use independently validated synthetic cases that instantiate these broader questions. The model learns to recognize the situation type and generate the appropriate question or interpretation. Technique-specific examples may appear as illustrations but are not the training target.  
 - **Historical trajectory imitation** (currently blocked): Requires defensible pre-decision snapshots that do not exist in the current retrospective corpus. Do not train on full published narratives.
 
 **No principle in this document is TRAINING_APPROVED.** All require the validation gates listed above plus rights, curation, and leakage controls.
