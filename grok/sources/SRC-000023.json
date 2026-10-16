@@ -1,0 +1,70 @@
+{
+  "source_id": "SRC-000023",
+  "case_id": "CASE-000023",
+  "canonical_url": "https://xbow.com/blog/xbow-ninja-tables",
+  "retrieved_url": "https://xbow.com/blog/xbow-ninja-tables",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:25:00Z",
+  "document_genres": ["research narrative", "technical walkthrough"],
+  "lineage_id": "xbow-ninja-tables-2024",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process / Negatives",
+      "type": "author_reported",
+      "statement": "WordPress recon via robots.txt and sitemaps. Common LFI tests failed with 403/422. Discovered ninja_table_force_download action with url parameter from JS and blog samples."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "Extracted nonce from JavaScript. Used AJAX endpoint. Retrieved /etc/os-release."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After common LFI surfaces return 403, does a plugin-specific AJAX action that accepts a url parameter allow file read once a public nonce is supplied?",
+      "basis": "action_implied_candidate",
+      "anchor": "shift from generic LFI to ninja_table_force_download after JS clue",
+      "uncertainty_reduced": "whether the download action is protected only by nonce",
+      "assumption_challenged": "that 403 on common paths closes file-read possibilities"
+    }
+  ],
+  "environment_model_updates": [
+    "Ninja Tables plugin exposes force_download action",
+    "Public nonce required and present in JS",
+    "Some paths blocked by WAF (403) vs validation (422)"
+  ],
+  "discovery_mechanisms": [
+    "wordpress_endpoint_enumeration",
+    "javascript_clue_to_plugin_action",
+    "nonce_extraction_then_ajax"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "robots.txt, sitemaps, WordPress endpoint testing",
+    "exploratory": "examining blog posts and JS for less obvious download actions"
+  },
+  "negative_inconclusive": [
+    "Common LFI: 403",
+    "Requests without nonce: 403/422",
+    "Some file paths inaccessible"
+  ],
+  "decision_ids": ["xbow-ninja-tables-2024.T001"],
+  "unobserved_history": ["exact order of file paths tested"],
+  "forbidden_inferences": [
+    "Do not treat 403 as proof of no file read",
+    "Nonce was a prerequisite that was recoverable from client-side"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note HackerOne program and responsible disclosure"],
+  "layer_b_candidate_principles": [
+    "When common LFI paths are blocked, examine plugin-specific AJAX actions and client-side nonces that may unlock them",
+    "Distinguish WAF blocks (403) from application validation (422) when interpreting failures"
+  ],
+  "model_vs_harness": "Recognizing a plugin action from JS/blog is model reasoning; WordPress endpoint enumeration and nonce extraction can be harness."
+}
