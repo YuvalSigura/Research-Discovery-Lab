@@ -33,7 +33,13 @@
         "experiment",
         "evidence",
         "outcome",
-        "principle"
+        "principle",
+        "direction",
+        "decision",
+        "pivot",
+        "knowledge_revision",
+        "blocking_factor",
+        "external_input"
       ]
     },
     "statement": {
@@ -86,6 +92,175 @@
           ]
         }
       }
+    },
+    "origin": {
+      "enum": [
+        "historical",
+        "reconstructed",
+        "counterfactual",
+        "unknown"
+      ]
+    },
+    "timestamps": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "occurred_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "recorded_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "known_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "direction_status": {
+      "enum": [
+        "considered",
+        "planned",
+        "attempted",
+        "not_tested",
+        "abandoned",
+        "blocked",
+        "failed",
+        "succeeded",
+        "inconclusive",
+        "unknown"
+      ]
+    },
+    "result_status": {
+      "enum": [
+        "success",
+        "failure",
+        "negative",
+        "positive",
+        "inconclusive",
+        "not_applicable",
+        "unknown"
+      ]
+    },
+    "assumption_status": {
+      "enum": [
+        "assumed",
+        "challenged",
+        "supported",
+        "refuted",
+        "revised",
+        "unknown"
+      ]
+    },
+    "hindsight_review": {
+      "enum": [
+        "not_reviewed",
+        "passed",
+        "failed"
+      ]
+    },
+    "evidence_anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_ref",
+          "locator"
+        ],
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "actor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "decision_rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expected_outcome": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actual_outcome": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "information_gained": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "blocking_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "assumption_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }

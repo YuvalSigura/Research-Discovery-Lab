@@ -11,6 +11,25 @@
     "derived_from",
     "tests",
     "answers",
-    "supersedes"
+    "supersedes",
+    "motivated_by",
+    "raised_question",
+    "pivoted_to",
+    "ruled_out_by",
+    "abandoned_because",
+    "remained_unexplored",
+    "challenged_assumption",
+    "revised_belief",
+    "selected_over",
+    "followed_by",
+    "informed_by",
+    "tested_by",
+    "triggered_by",
+    "combined_with",
+    "blocked_by",
+    "failed_because",
+    "produced_evidence",
+    "supported_assumption",
+    "refuted_assumption"
   ]
 }

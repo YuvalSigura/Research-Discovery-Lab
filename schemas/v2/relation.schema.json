@@ -36,7 +36,26 @@
         "derived_from",
         "tests",
         "answers",
-        "supersedes"
+        "supersedes",
+        "motivated_by",
+        "raised_question",
+        "pivoted_to",
+        "ruled_out_by",
+        "abandoned_because",
+        "remained_unexplored",
+        "challenged_assumption",
+        "revised_belief",
+        "selected_over",
+        "followed_by",
+        "informed_by",
+        "tested_by",
+        "triggered_by",
+        "combined_with",
+        "blocked_by",
+        "failed_because",
+        "produced_evidence",
+        "supported_assumption",
+        "refuted_assumption"
       ]
     },
     "object": {
@@ -75,6 +94,58 @@
           ]
         }
       }
+    },
+    "causal_basis": {
+      "enum": [
+        "explicit_documented",
+        "reconstructed",
+        "temporal_only",
+        "counterfactual",
+        "unknown"
+      ]
+    },
+    "rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_ref",
+          "locator"
+        ],
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "temporal_order": {
+      "enum": [
+        "before",
+        "after",
+        "overlap",
+        "unknown"
+      ]
     }
   }
 }
