@@ -1,0 +1,69 @@
+{
+  "source_id": "SRC-000015",
+  "case_id": "CASE-000015",
+  "canonical_url": "https://xbow.com/blog/xbow-salesforce-xss",
+  "retrieved_url": "https://xbow.com/blog/xbow-salesforce-xss",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:05:00Z",
+  "document_genres": ["research narrative", "technical walkthrough"],
+  "lineage_id": "xbow-salesforce-aura-xss-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Starting Point / Negatives",
+      "type": "author_reported",
+      "statement": "Recon on /s/sfsites/aura endpoints. Initial reflections HTML-encoded due to text/plain. Script tags filtered."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "Focused on Aura/Lightning. aura.tag reflected; aura.format=JSON changed content type to text/html. SVG onload bypassed script filtering."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Can an Aura parameter that reflects be made to render as HTML and execute despite encoding and script filtering?",
+      "basis": "action_implied_candidate",
+      "anchor": "introduction of aura.format=JSON after initial reflection failed verification",
+      "uncertainty_reduced": "whether content type can be controlled and script filters bypassed",
+      "assumption_challenged": "that text/plain or script filtering closes the XSS"
+    }
+  ],
+  "environment_model_updates": [
+    "Experience Cloud / Aura endpoints",
+    "Content type controllable via aura.format",
+    "CSP limited to upgrade-insecure-requests"
+  ],
+  "discovery_mechanisms": [
+    "parameter_combination_testing",
+    "content_type_differential",
+    "svg_event_handler_bypass"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "scripted payload testing across parameters",
+    "exploratory": "Salesforce-specific parameter combinations (aura.format) and SVG after standard XSS failed"
+  },
+  "negative_inconclusive": [
+    "Initial reflections encoded due to text/plain",
+    "Script tags escaped/filtered"
+  ],
+  "decision_ids": ["xbow-salesforce-aura-xss-2025.T001"],
+  "unobserved_history": ["exact training data influence on Aura knowledge"],
+  "forbidden_inferences": [
+    "Do not treat early encoding as proof of no XSS",
+    "The working combination required both content-type control and non-script payload"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note CVD reporting and Salesforce remediation"],
+  "layer_b_candidate_principles": [
+    "When a parameter reflects but content type prevents execution, test framework-specific parameters that may change response content type",
+    "SVG event handlers can serve as an alternative when script tags are filtered"
+  ],
+  "model_vs_harness": "Knowing Aura-specific parameters is model/domain knowledge; systematic parameter testing and content-type observation can be harness."
+}
