@@ -1,5 +1,20 @@
 {
   "schema_version": "1.0",
   "entity_type": "MEC",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "MEC-000001",
+      "name": "Reachability unlocks a previously insufficient capability",
+      "description": "An initially limited security weakness becomes consequential when another weakness satisfies a missing prerequisite; resulting access can reuse a previously dismissed privileged feature.",
+      "status": "supported",
+      "evidence_refs": [
+        "SRC-000055"
+      ],
+      "related_mechanisms": [],
+      "domain_examples": [
+        "CASE-000055"
+      ]
+    }
+  ]
 }

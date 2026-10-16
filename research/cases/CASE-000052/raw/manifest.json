@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000052",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000052",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-predict-or-verify/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

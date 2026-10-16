@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000051",
+  "title": "The Value Problem: What AI cannot decide for us",
+  "publisher": "Pentera Labs",
+  "publication_date": "2026-08-17",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-000051",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-decide-for-us/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Pentera research index and article URLs verified publicly. RAW not copied; categorization is preliminary and is not a technical finding."
+}

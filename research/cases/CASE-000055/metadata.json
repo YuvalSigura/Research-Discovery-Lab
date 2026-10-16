@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000055",
+  "title": "ShadowPanel: Pre-Auth RCE in CyberPanel",
+  "publisher": "Pentera Labs",
+  "publication_date": "2026-08-12",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-000055",
+      "url": "https://pentera.io/resources/research/pre-auth-rce-chain-cyberpanel/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "in_progress",
+  "training_status": "not_started",
+  "provenance_note": "Partial manually reviewed trajectory with source headings as anchors; RAW not archived. Not a complete timeline or independent reproduction."
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000066",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000066",
+      "url": "https://pentera.io/resources/research/reflective-loading-with-remote-memory-interactions/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

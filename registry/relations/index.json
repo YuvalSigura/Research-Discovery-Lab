@@ -1,5 +1,481 @@
 {
   "schema_version": "1.0",
   "entity_type": "REL",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "REL-000001",
+      "subject": "EVT-000001",
+      "predicate": "raised_question",
+      "object": "EVT-000002",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000002",
+      "subject": "EVT-000002",
+      "predicate": "pivoted_to",
+      "object": "EVT-000003",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000003",
+      "subject": "EVT-000003",
+      "predicate": "followed_by",
+      "object": "EVT-000004",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000004",
+      "subject": "EVT-000004",
+      "predicate": "raised_question",
+      "object": "EVT-000005",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000005",
+      "subject": "EVT-000005",
+      "predicate": "pivoted_to",
+      "object": "EVT-000006",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000006",
+      "subject": "EVT-000006",
+      "predicate": "pivoted_to",
+      "object": "EVT-000007",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000007",
+      "subject": "EVT-000007",
+      "predicate": "followed_by",
+      "object": "EVT-000008",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000008",
+      "subject": "EVT-000008",
+      "predicate": "motivated_by",
+      "object": "EVT-000009",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000009",
+      "subject": "EVT-000009",
+      "predicate": "pivoted_to",
+      "object": "EVT-000010",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000010",
+      "subject": "EVT-000010",
+      "predicate": "produced_evidence",
+      "object": "EVT-000011",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000011",
+      "subject": "EVT-000011",
+      "predicate": "pivoted_to",
+      "object": "EVT-000012",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000012",
+      "subject": "EVT-000012",
+      "predicate": "produced_evidence",
+      "object": "EVT-000013",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000013",
+      "subject": "EVT-000013",
+      "predicate": "pivoted_to",
+      "object": "EVT-000014",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000014",
+      "subject": "EVT-000014",
+      "predicate": "produced_evidence",
+      "object": "EVT-000015",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000015",
+      "subject": "EVT-000004",
+      "predicate": "informed_by",
+      "object": "EVT-000014",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000016",
+      "subject": "EVT-000008",
+      "predicate": "challenged_assumption",
+      "object": "EVT-000016",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst reconstruction; not documented as actual researcher decision.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000017",
+      "subject": "EVT-000016",
+      "predicate": "raised_question",
+      "object": "EVT-000017",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst reconstruction; not documented as actual researcher decision.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000018",
+      "subject": "EVT-000017",
+      "predicate": "pivoted_to",
+      "object": "EVT-000010",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst reconstruction; not documented as actual researcher decision.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000019",
+      "subject": "EVT-000018",
+      "predicate": "informed_by",
+      "object": "EVT-000003",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrates this sequence or dependency in the indicated sections.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera ShadowPanel retrospective; no precise timestamps asserted."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Trigger; Enter CyberPanel; The First Lead; Changing Direction; The Almost-Bug; Stepping Back; The Thing That Shouldn't Have Been There; The Chain Comes Together; Back to Where We Started"
+        }
+      ]
+    }
+  ]
 }

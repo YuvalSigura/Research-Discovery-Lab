@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "created_on": "2026-10-16",
-  "case_count": 50,
+  "case_count": 72,
   "cases": [
     {
       "id": "CASE-000001",
@@ -401,6 +401,182 @@
       "title": "Citrix Denial of Service: Analysis of CVE-2024-8534",
       "url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534",
       "date": "2024-12-13",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000051",
+      "publisher": "Pentera Labs",
+      "title": "The Value Problem: What AI cannot decide for us",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-decide-for-us/",
+      "date": "2026-08-17",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000052",
+      "publisher": "Pentera Labs",
+      "title": "The Behavior Frontier: What AI cannot predict or verify",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-predict-or-verify/",
+      "date": "2026-08",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000053",
+      "publisher": "Pentera Labs",
+      "title": "The Information Ceiling: What AI cannot learn universally",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-learn-universally/",
+      "date": "2026-08",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000054",
+      "publisher": "Pentera Labs",
+      "title": "The Self-Reference Trap: What AI cannot say about itself",
+      "url": "https://pentera.io/resources/research/mathematical-limits-of-ai/",
+      "date": "2026-08",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000055",
+      "publisher": "Pentera Labs",
+      "title": "ShadowPanel: Pre-Auth RCE in CyberPanel",
+      "url": "https://pentera.io/resources/research/pre-auth-rce-chain-cyberpanel/",
+      "date": "2026-08-12",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000056",
+      "publisher": "Pentera Labs",
+      "title": "AI Double Agent: Claude Just Got a New Voice",
+      "url": "https://pentera.io/resources/research/ai-double-agent-claude/",
+      "date": "2026-07-01",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000057",
+      "publisher": "Pentera Labs",
+      "title": "Looks Legit, Runs Malicious: The Quiet Trust Gap in AWS SSM",
+      "url": "https://pentera.io/resources/research/ssm-cross-account-sharing/",
+      "date": "2026-06",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000058",
+      "publisher": "Pentera Labs",
+      "title": "Podman's WebView Turned World-View (CVE-2026-34045)",
+      "url": "https://pentera.io/resources/research/podmans-webview/",
+      "date": "2026-05",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000059",
+      "publisher": "Pentera Labs",
+      "title": "Thinking Outside of the (In)Box: Gmail and Google Drive",
+      "url": "https://pentera.io/resources/research/integration-flaws-gmail-google-drive/",
+      "date": "2026-05",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000060",
+      "publisher": "Pentera Labs",
+      "title": "LOLBins Against the Machine: Reverse Engineering at Machine Speed",
+      "url": "https://pentera.io/resources/research/ai-assisted-reverse-engineering-lolbins/",
+      "date": "2026-02",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000061",
+      "publisher": "Pentera Labs",
+      "title": "When the Lab Door Stays Open: Exposed Cloud Training Apps",
+      "url": "https://pentera.io/resources/research/exposed-cloud-training-apps-pentera-labs/",
+      "date": "2026-01",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000062",
+      "publisher": "Pentera Labs",
+      "title": "Beyond IngressNightmare: Kubernetes Ingress-NGINX Injection Vectors",
+      "url": "https://pentera.io/resources/research/ingress-nightmare/",
+      "date": "2025-06",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000063",
+      "publisher": "Pentera Labs",
+      "title": "Blurring Boundaries: Risks of AWS SSM in Hybrid Landscapes",
+      "url": "https://pentera.io/resources/research/risks-of-aws-ssm-in-hybrid-landscapes/",
+      "date": "2025-01",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000064",
+      "publisher": "Pentera Labs",
+      "title": "Piping Hot Fortinet Vulnerabilities: Zero-Days in FortiClient VPN",
+      "url": "https://pentera.io/resources/research/two-zero-days-forticlient-vpn-2024/",
+      "date": "2024-11",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000065",
+      "publisher": "Pentera Labs",
+      "title": "You'll Never SID'em Coming: DoS in Active Directory",
+      "url": "https://pentera.io/resources/research/dos-attack-active-directory-sid-exploitation/",
+      "date": "2024-11",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000066",
+      "publisher": "Pentera Labs",
+      "title": "Reflective Loading with Remote Memory Interactions",
+      "url": "https://pentera.io/resources/research/reflective-loading-with-remote-memory-interactions/",
+      "date": "2024-06",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000067",
+      "publisher": "Pentera Labs",
+      "title": "DevalScript: The Language of Processes",
+      "url": "https://pentera.io/resources/research/devalscript-the-language-of-processes/",
+      "date": "2024-06",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000068",
+      "publisher": "Pentera Labs",
+      "title": "Not Another WebLogic Exploitation: The Road to Post Exploitation",
+      "url": "https://pentera.io/resources/research/not-another-weblogic-exploitation-how-to-prevent-rce/",
+      "date": "2023-12",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000069",
+      "publisher": "Pentera Labs",
+      "title": "The LOLBAS Odyssey: Finding New LOLBAS",
+      "url": "https://pentera.io/resources/research/the-lolbas-odyssey-finding-new-lolbas-and-how-you-can-too/",
+      "date": "2023-08",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000070",
+      "publisher": "Pentera Labs",
+      "title": "Death by Default: Neglected Network Protocols",
+      "url": "https://pentera.io/resources/research/death-by-default-neglected-network-protocols-you-should-know/",
+      "date": "2023-07",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000071",
+      "publisher": "Pentera Labs",
+      "title": "The Gateway to Control: MSSQL Databases and TDS Protocol",
+      "url": "https://pentera.io/resources/research/detecting-an-mssql-databases-version-using-the-tds-protocol/",
+      "date": "2023-05",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000072",
+      "publisher": "Pentera Labs",
+      "title": "Evading Detection: From Inception to Reality",
+      "url": "https://pentera.io/resources/research/evading-detection-from-inception-to-reality/",
+      "date": "2023-02",
       "category": "security_research"
     }
   ],

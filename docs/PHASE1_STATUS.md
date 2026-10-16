@@ -1,21 +1,9 @@
-# Phase 1 — retrieval engine status
+# Phase 1 status — 2026-10-16
 
-## Delivered
+**Catalogued:** 72 verified publication URLs (50 preceding records + 22 Pentera research articles). Metadata and links only; RAW remains unavailable, no article text or copyrighted PDFs republished.
 
-- 50 preserved original research source entries, 50 source registry entities and legacy case crosswalk.
-- Ten typed registries/schemas: sources, cases, systems, environments, contexts, findings, mechanisms, events, relations, passages.
-- Read-only Python research engine and JSON CLI: search, reconstruct, trace, related, coverage.
-- Deterministic lexical and structured-filter retrieval, provenance, passage SHA-256 and explicit license checks.
-- Chronological reconstruction with unknown chronology separate; assumptions, abandoned/failed/untried directions, pivots and source-backed questions.
-- Historical versus explicitly reconstructed/counterfactual views; fail-closed pre-discovery snapshots and dedicated trajectory gap audit.
-- CI schema validation, fault-injection tests and offline synthetic branching-investigation tests.
+**Structured:** 72 SRC records, 72 CASE placeholders; one partial manual ShadowPanel research trajectory containing 18 source-anchored EVT nodes and 19 provenance-tagged REL edges, one documented SYS, ENV and supported MEC. Reconstructed assumptions and proposed questions are not historical facts. Timeline dates unknown except reported publication/disclosure dates.
 
-## Not accomplished / intentionally deferred
+**Retrieval:** read-only lexical/metadata search, evidence packs, provenance, directed question tracing and pre-discovery fail-closed controls. Model training deferred until all collection, analysis and evaluations are complete.
 
-- The 50 real publications have **no original RAW full-text captures**. Search currently indexes catalogue metadata, not missing article content.
-- The existing CASE IDs are source-catalogue placeholders, **not fully reconstructed investigations**; evidence-backed event extraction and curatorial review still need actual sources.
-- No live acquisition or web crawling as part of this read-only engine.
-- No automatic historical assertion that was not documented; no LLM decision authority.
-- No training; fine-tuning is the last project phase.
-
-See \`docs/RETRIEVAL_ENGINE.md\`.
+**Next:** licensed RAW capture where permitted, more fully sourced manual reconstructions, automated metadata ingestion and source update monitoring.

@@ -1101,6 +1101,575 @@
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000050/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000051",
+      "source_refs": [
+        "SRC-000051"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology",
+        "ai_agents"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000051"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000051/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000052",
+      "source_refs": [
+        "SRC-000052"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology",
+        "ai_agents"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000052"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000052/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000053",
+      "source_refs": [
+        "SRC-000053"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology",
+        "ai_agents"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000053"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000053/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000054",
+      "source_refs": [
+        "SRC-000054"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology",
+        "ai_agents"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000054"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000054/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000055",
+      "source_refs": [
+        "SRC-000055"
+      ],
+      "system_refs": [
+        "SYS-000001"
+      ],
+      "environment_refs": [
+        "ENV-000001"
+      ],
+      "finding_refs": [],
+      "mechanism_refs": [
+        "MEC-000001"
+      ],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "web_api",
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "in_progress",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Partial manual reconstruction of the public publisher's retrospective write-up; not a complete independent historical record."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000055/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000056",
+      "source_refs": [
+        "SRC-000056"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "ai_agents",
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000056"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000056/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000057",
+      "source_refs": [
+        "SRC-000057"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "cloud_identity"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000057"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000057/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000058",
+      "source_refs": [
+        "SRC-000058"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "os_kernel",
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000058"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000058/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000059",
+      "source_refs": [
+        "SRC-000059"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "cloud_identity",
+        "web_api"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000059"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000059/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000060",
+      "source_refs": [
+        "SRC-000060"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "ai_agents",
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000060"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000060/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000061",
+      "source_refs": [
+        "SRC-000061"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "architecture",
+      "domain_labels": [
+        "cloud_identity"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000061"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000061/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000062",
+      "source_refs": [
+        "SRC-000062"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "cloud_identity",
+        "web_api"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000062"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000062/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000063",
+      "source_refs": [
+        "SRC-000063"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "architecture",
+      "domain_labels": [
+        "cloud_identity"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000063"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000063/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000064",
+      "source_refs": [
+        "SRC-000064"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000064"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000064/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000065",
+      "source_refs": [
+        "SRC-000065"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000065"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000065/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000066",
+      "source_refs": [
+        "SRC-000066"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "os_kernel"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000066"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000066/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000067",
+      "source_refs": [
+        "SRC-000067"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "os_kernel",
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000067"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000067/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000068",
+      "source_refs": [
+        "SRC-000068"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "web_api",
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000068"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000068/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000069",
+      "source_refs": [
+        "SRC-000069"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "os_kernel",
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000069"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000069/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000070",
+      "source_refs": [
+        "SRC-000070"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000070"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000070/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000071",
+      "source_refs": [
+        "SRC-000071"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000071"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000071/metadata.json"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000072",
+      "source_refs": [
+        "SRC-000072"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "enterprise_supply_chain"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000072"
+        ],
+        "notes": "Source catalogued from Pentera research index; investigation reconstruction not performed."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000072/metadata.json"
     }
   ]
 }

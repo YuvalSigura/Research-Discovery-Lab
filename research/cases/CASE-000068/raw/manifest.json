@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000068",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000068",
+      "url": "https://pentera.io/resources/research/not-another-weblogic-exploitation-how-to-prevent-rce/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

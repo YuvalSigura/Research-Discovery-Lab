@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000061",
+  "title": "When the Lab Door Stays Open: Exposed Cloud Training Apps",
+  "publisher": "Pentera Labs",
+  "publication_date": "2026-01",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-000061",
+      "url": "https://pentera.io/resources/research/exposed-cloud-training-apps-pentera-labs/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Pentera research index and article URLs verified publicly. RAW not copied; categorization is preliminary and is not a technical finding."
+}

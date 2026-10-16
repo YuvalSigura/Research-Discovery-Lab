@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000072",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000072",
+      "url": "https://pentera.io/resources/research/evading-detection-from-inception-to-reality/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

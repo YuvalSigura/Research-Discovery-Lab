@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000070",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000070",
+      "url": "https://pentera.io/resources/research/death-by-default-neglected-network-protocols-you-should-know/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

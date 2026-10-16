@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000067",
+  "title": "DevalScript: The Language of Processes",
+  "publisher": "Pentera Labs",
+  "publication_date": "2024-06",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-000067",
+      "url": "https://pentera.io/resources/research/devalscript-the-language-of-processes/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Pentera research index and article URLs verified publicly. RAW not copied; categorization is preliminary and is not a technical finding."
+}

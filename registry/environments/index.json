@@ -1,5 +1,30 @@
 {
   "schema_version": "1.0",
   "entity_type": "ENV",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "ENV-000001",
+      "system_refs": [
+        "SYS-000001"
+      ],
+      "versions": [
+        {
+          "system_ref": "SYS-000001",
+          "version": "2.4",
+          "commit": null
+        }
+      ],
+      "deployment": "internet-facing hosting administration deployment",
+      "configuration": null,
+      "dependencies": [],
+      "knowledge": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher describes v2.4 and public web exposure; exact configuration not documented."
+      }
+    }
+  ]
 }

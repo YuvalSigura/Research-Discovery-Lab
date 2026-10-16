@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000064",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000064",
+      "url": "https://pentera.io/resources/research/two-zero-days-forticlient-vpn-2024/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

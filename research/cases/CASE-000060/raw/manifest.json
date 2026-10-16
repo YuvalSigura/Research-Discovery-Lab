@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000060",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000060",
+      "url": "https://pentera.io/resources/research/ai-assisted-reverse-engineering-lolbins/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "publisher": "Pentera Labs",
+  "root_url": "https://pentera.io/resources/",
+  "research_listing_urls": [
+    "https://pentera.io/resources/research/",
+    "https://pentera.io/resources/research/page/2/"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publisher-labelled Research articles and independently verified technical research only.",
+  "exclude_by_default": [
+    "datasheets",
+    "demos",
+    "customer stories",
+    "sales webinars",
+    "promotional reports",
+    "product reviews"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "review_required_for": [
+    "research_methodology",
+    "theoretical_AI",
+    "PDF downloads",
+    "security_claims"
+  ],
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "Do not equate the site's Research filter with an original experimental investigation. Preserve methodological papers separately. Site structure and pagination may change."
+}

@@ -402,6 +402,182 @@
       "source_url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534",
       "source_registry_ref": "SRC-000050",
       "classification_status": "pending_review"
+    },
+    {
+      "legacy_id": "CASE-000051",
+      "legacy_path": "research/cases/CASE-000051/metadata.json",
+      "new_case_ref": "CASE-000051",
+      "source_url": "https://pentera.io/resources/research/what-ai-cannot-decide-for-us/",
+      "source_registry_ref": "SRC-000051",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000052",
+      "legacy_path": "research/cases/CASE-000052/metadata.json",
+      "new_case_ref": "CASE-000052",
+      "source_url": "https://pentera.io/resources/research/what-ai-cannot-predict-or-verify/",
+      "source_registry_ref": "SRC-000052",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000053",
+      "legacy_path": "research/cases/CASE-000053/metadata.json",
+      "new_case_ref": "CASE-000053",
+      "source_url": "https://pentera.io/resources/research/what-ai-cannot-learn-universally/",
+      "source_registry_ref": "SRC-000053",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000054",
+      "legacy_path": "research/cases/CASE-000054/metadata.json",
+      "new_case_ref": "CASE-000054",
+      "source_url": "https://pentera.io/resources/research/mathematical-limits-of-ai/",
+      "source_registry_ref": "SRC-000054",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000055",
+      "legacy_path": "research/cases/CASE-000055/metadata.json",
+      "new_case_ref": "CASE-000055",
+      "source_url": "https://pentera.io/resources/research/pre-auth-rce-chain-cyberpanel/",
+      "source_registry_ref": "SRC-000055",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000056",
+      "legacy_path": "research/cases/CASE-000056/metadata.json",
+      "new_case_ref": "CASE-000056",
+      "source_url": "https://pentera.io/resources/research/ai-double-agent-claude/",
+      "source_registry_ref": "SRC-000056",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000057",
+      "legacy_path": "research/cases/CASE-000057/metadata.json",
+      "new_case_ref": "CASE-000057",
+      "source_url": "https://pentera.io/resources/research/ssm-cross-account-sharing/",
+      "source_registry_ref": "SRC-000057",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000058",
+      "legacy_path": "research/cases/CASE-000058/metadata.json",
+      "new_case_ref": "CASE-000058",
+      "source_url": "https://pentera.io/resources/research/podmans-webview/",
+      "source_registry_ref": "SRC-000058",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000059",
+      "legacy_path": "research/cases/CASE-000059/metadata.json",
+      "new_case_ref": "CASE-000059",
+      "source_url": "https://pentera.io/resources/research/integration-flaws-gmail-google-drive/",
+      "source_registry_ref": "SRC-000059",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000060",
+      "legacy_path": "research/cases/CASE-000060/metadata.json",
+      "new_case_ref": "CASE-000060",
+      "source_url": "https://pentera.io/resources/research/ai-assisted-reverse-engineering-lolbins/",
+      "source_registry_ref": "SRC-000060",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000061",
+      "legacy_path": "research/cases/CASE-000061/metadata.json",
+      "new_case_ref": "CASE-000061",
+      "source_url": "https://pentera.io/resources/research/exposed-cloud-training-apps-pentera-labs/",
+      "source_registry_ref": "SRC-000061",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000062",
+      "legacy_path": "research/cases/CASE-000062/metadata.json",
+      "new_case_ref": "CASE-000062",
+      "source_url": "https://pentera.io/resources/research/ingress-nightmare/",
+      "source_registry_ref": "SRC-000062",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000063",
+      "legacy_path": "research/cases/CASE-000063/metadata.json",
+      "new_case_ref": "CASE-000063",
+      "source_url": "https://pentera.io/resources/research/risks-of-aws-ssm-in-hybrid-landscapes/",
+      "source_registry_ref": "SRC-000063",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000064",
+      "legacy_path": "research/cases/CASE-000064/metadata.json",
+      "new_case_ref": "CASE-000064",
+      "source_url": "https://pentera.io/resources/research/two-zero-days-forticlient-vpn-2024/",
+      "source_registry_ref": "SRC-000064",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000065",
+      "legacy_path": "research/cases/CASE-000065/metadata.json",
+      "new_case_ref": "CASE-000065",
+      "source_url": "https://pentera.io/resources/research/dos-attack-active-directory-sid-exploitation/",
+      "source_registry_ref": "SRC-000065",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000066",
+      "legacy_path": "research/cases/CASE-000066/metadata.json",
+      "new_case_ref": "CASE-000066",
+      "source_url": "https://pentera.io/resources/research/reflective-loading-with-remote-memory-interactions/",
+      "source_registry_ref": "SRC-000066",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000067",
+      "legacy_path": "research/cases/CASE-000067/metadata.json",
+      "new_case_ref": "CASE-000067",
+      "source_url": "https://pentera.io/resources/research/devalscript-the-language-of-processes/",
+      "source_registry_ref": "SRC-000067",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000068",
+      "legacy_path": "research/cases/CASE-000068/metadata.json",
+      "new_case_ref": "CASE-000068",
+      "source_url": "https://pentera.io/resources/research/not-another-weblogic-exploitation-how-to-prevent-rce/",
+      "source_registry_ref": "SRC-000068",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000069",
+      "legacy_path": "research/cases/CASE-000069/metadata.json",
+      "new_case_ref": "CASE-000069",
+      "source_url": "https://pentera.io/resources/research/the-lolbas-odyssey-finding-new-lolbas-and-how-you-can-too/",
+      "source_registry_ref": "SRC-000069",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000070",
+      "legacy_path": "research/cases/CASE-000070/metadata.json",
+      "new_case_ref": "CASE-000070",
+      "source_url": "https://pentera.io/resources/research/death-by-default-neglected-network-protocols-you-should-know/",
+      "source_registry_ref": "SRC-000070",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000071",
+      "legacy_path": "research/cases/CASE-000071/metadata.json",
+      "new_case_ref": "CASE-000071",
+      "source_url": "https://pentera.io/resources/research/detecting-an-mssql-databases-version-using-the-tds-protocol/",
+      "source_registry_ref": "SRC-000071",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000072",
+      "legacy_path": "research/cases/CASE-000072/metadata.json",
+      "new_case_ref": "CASE-000072",
+      "source_url": "https://pentera.io/resources/research/evading-detection-from-inception-to-reality/",
+      "source_registry_ref": "SRC-000072",
+      "classification_status": "catalogue_level_only"
     }
   ]
 }

@@ -1,5 +1,30 @@
 {
   "schema_version": "1.0",
   "entity_type": "SYS",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "SYS-000001",
+      "name": "CyberPanel",
+      "vendor": "CyberPanel",
+      "product": "CyberPanel",
+      "components": [
+        "web administrative interface",
+        "AI Scanner",
+        "cron functionality",
+        "centralized security middleware"
+      ],
+      "technology": [],
+      "identity_model": "admin session and authentication boundary",
+      "state_model": null,
+      "architecture": "hosting control-plane web application",
+      "knowledge": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Pentera's ShadowPanel publication, Enter CyberPanel and Full Picture sections; component list curated from retrospective source."
+      }
+    }
+  ]
 }

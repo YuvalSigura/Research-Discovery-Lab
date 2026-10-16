@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000055",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000055",
+      "url": "https://pentera.io/resources/research/pre-auth-rce-chain-cyberpanel/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

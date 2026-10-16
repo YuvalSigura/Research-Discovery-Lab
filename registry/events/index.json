@@ -1,5 +1,551 @@
 {
   "schema_version": "1.0",
   "entity_type": "EVT",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000001",
+      "case_ref": "CASE-000055",
+      "kind": "external_input",
+      "statement": "A widely discussed pre-authentication vulnerability in cPanel prompted the team to look for analogous hosting control panels.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Trigger"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000002",
+      "case_ref": "CASE-000055",
+      "kind": "question",
+      "statement": "Could a different hosting control panel expose a comparable unauthenticated control-plane path?",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Trigger"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000003",
+      "case_ref": "CASE-000055",
+      "kind": "direction",
+      "statement": "The team chose CyberPanel for variant analysis, with centralized security middleware treated as an area worth scrutinizing.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: Enter CyberPanel"
+        }
+      ],
+      "direction_status": "attempted"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000004",
+      "case_ref": "CASE-000055",
+      "kind": "direction",
+      "statement": "A cron command parameter bypassed input filtering; command execution worked, but required authentication and added little beyond intended cron functionality.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The First Lead (That Went Nowhere)"
+        }
+      ],
+      "direction_status": "abandoned",
+      "result_status": "negative",
+      "expected_outcome": "Meaningful new access through command injection",
+      "actual_outcome": "Authenticated execution without material additional capability",
+      "information_gained": "The primitive was not a useful unauthenticated entry point",
+      "blocking_reason": "Authentication required; cron already supports command execution"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000005",
+      "case_ref": "CASE-000055",
+      "kind": "question",
+      "statement": "What additional capability, if any, did the cron injection actually provide?",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The First Lead (That Went Nowhere)"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000006",
+      "case_ref": "CASE-000055",
+      "kind": "decision",
+      "statement": "Investigators changed course from obvious injection candidates toward newer functionality with potentially immature assumptions.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: Changing Direction"
+        }
+      ],
+      "decision_rationale": "The initial primitive did not improve attacker reachability"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000007",
+      "case_ref": "CASE-000055",
+      "kind": "direction",
+      "statement": "The AI Scanner accepted unauthenticated callback data that was stored and later displayed without output sanitization.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Almost-Bug"
+        }
+      ],
+      "direction_status": "attempted",
+      "result_status": "positive"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000008",
+      "case_ref": "CASE-000055",
+      "kind": "blocking_factor",
+      "statement": "A valid scan ID was required before the callback could reach the stored script path.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Almost-Bug"
+        }
+      ],
+      "blocking_reason": "Unusable or absent scan_id"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000009",
+      "case_ref": "CASE-000055",
+      "kind": "direction",
+      "statement": "The researchers tried guessing scan IDs, replaying interactions, and tracing scan creation; these approaches did not work.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Almost-Bug"
+        }
+      ],
+      "direction_status": "failed",
+      "result_status": "negative",
+      "actual_outcome": "No usable scan ID found by these attempts",
+      "information_gained": "The intended scanner flow did not yield the missing prerequisite"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000010",
+      "case_ref": "CASE-000055",
+      "kind": "decision",
+      "statement": "After this dead end, the investigation widened to routes and leftover functionality that should not have been exposed.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: Stepping Back"
+        }
+      ],
+      "decision_rationale": "Repeated attempts to reach the existing partial issue had stalled"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000011",
+      "case_ref": "CASE-000055",
+      "kind": "observation",
+      "statement": "Leftover API routes exposed recent scan metadata, including valid scan identifiers.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Thing That Shouldn't Have Been There"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000012",
+      "case_ref": "CASE-000055",
+      "kind": "experiment",
+      "statement": "With a valid scan identifier, forged scanner data was stored and executed when viewed in the administrative dashboard.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Chain Comes Together"
+        }
+      ],
+      "result_status": "positive",
+      "actual_outcome": "Admin-session script execution from stored scan content"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000013",
+      "case_ref": "CASE-000055",
+      "kind": "observation",
+      "statement": "The resulting administrator-session context allowed creation of an additional administrative account.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Chain Comes Together"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000014",
+      "case_ref": "CASE-000055",
+      "kind": "direction",
+      "statement": "The team revisited the previously discovered cron functionality after obtaining administrative access, which now enabled system command execution.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: Back to Where We Started"
+        }
+      ],
+      "direction_status": "succeeded",
+      "information_gained": "Previously dismissed capability became valuable after the access prerequisites changed"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000015",
+      "case_ref": "CASE-000055",
+      "kind": "outcome",
+      "statement": "The researchers reported a pre-authentication remote-code-execution chain affecting CyberPanel v2.4, disclosed May 4, 2026 and fixed rapidly by the vendor.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Full Picture / Disclosure"
+        }
+      ],
+      "result_status": "success"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000016",
+      "case_ref": "CASE-000055",
+      "kind": "assumption",
+      "statement": "Without an obtainable scan ID, the vulnerable callback appeared unreachable from the initial unauthenticated position.",
+      "origin": "reconstructed",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Explicit analyst reconstruction, not documented as a question/assumption raised by investigators."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: The Almost-Bug"
+        }
+      ],
+      "assumption_status": "challenged",
+      "assumption_basis": "Researchers documented scan-ID dependency and unsuccessful attempts; this explicit assumption wording is an analyst reconstruction."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000017",
+      "case_ref": "CASE-000055",
+      "kind": "question",
+      "statement": "Could an unintended endpoint expose an existing scan identifier without requiring the normal workflow?",
+      "origin": "reconstructed",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Explicit analyst reconstruction, not documented as a question/assumption raised by investigators."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: Stepping Back"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000018",
+      "case_ref": "CASE-000055",
+      "kind": "observation",
+      "statement": "An earlier CyberPanel issue suggested heavy reliance on centralized security middleware for route protection.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": "2026-08-12T00:00:00Z",
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000055"
+        ],
+        "notes": "Publisher's retrospective account; exact occurrence times were not provided."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "section: Enter CyberPanel"
+        }
+      ]
+    }
+  ]
 }

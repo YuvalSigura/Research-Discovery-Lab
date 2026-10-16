@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000062",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000062",
+      "url": "https://pentera.io/resources/research/ingress-nightmare/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}

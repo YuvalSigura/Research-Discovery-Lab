@@ -751,6 +751,336 @@
       "case_refs": [
         "CASE-000050"
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000051",
+      "title": "The Value Problem: What AI cannot decide for us",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-decide-for-us/",
+      "publication_date": "2026-08-17",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000051"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000052",
+      "title": "The Behavior Frontier: What AI cannot predict or verify",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-predict-or-verify/",
+      "publication_date": "2026-08",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000052"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000053",
+      "title": "The Information Ceiling: What AI cannot learn universally",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/what-ai-cannot-learn-universally/",
+      "publication_date": "2026-08",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000053"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000054",
+      "title": "The Self-Reference Trap: What AI cannot say about itself",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/mathematical-limits-of-ai/",
+      "publication_date": "2026-08",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000054"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000055",
+      "title": "ShadowPanel: Pre-Auth RCE in CyberPanel",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/pre-auth-rce-chain-cyberpanel/",
+      "publication_date": "2026-08-12",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000055"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000056",
+      "title": "AI Double Agent: Claude Just Got a New Voice",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/ai-double-agent-claude/",
+      "publication_date": "2026-07-01",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000056"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000057",
+      "title": "Looks Legit, Runs Malicious: The Quiet Trust Gap in AWS SSM",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/ssm-cross-account-sharing/",
+      "publication_date": "2026-06",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000057"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000058",
+      "title": "Podman's WebView Turned World-View (CVE-2026-34045)",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/podmans-webview/",
+      "publication_date": "2026-05",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000058"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000059",
+      "title": "Thinking Outside of the (In)Box: Gmail and Google Drive",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/integration-flaws-gmail-google-drive/",
+      "publication_date": "2026-05",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000059"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000060",
+      "title": "LOLBins Against the Machine: Reverse Engineering at Machine Speed",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/ai-assisted-reverse-engineering-lolbins/",
+      "publication_date": "2026-02",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000060"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000061",
+      "title": "When the Lab Door Stays Open: Exposed Cloud Training Apps",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/exposed-cloud-training-apps-pentera-labs/",
+      "publication_date": "2026-01",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000061"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000062",
+      "title": "Beyond IngressNightmare: Kubernetes Ingress-NGINX Injection Vectors",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/ingress-nightmare/",
+      "publication_date": "2025-06",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000062"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000063",
+      "title": "Blurring Boundaries: Risks of AWS SSM in Hybrid Landscapes",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/risks-of-aws-ssm-in-hybrid-landscapes/",
+      "publication_date": "2025-01",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000063"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000064",
+      "title": "Piping Hot Fortinet Vulnerabilities: Zero-Days in FortiClient VPN",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/two-zero-days-forticlient-vpn-2024/",
+      "publication_date": "2024-11",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000064"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000065",
+      "title": "You'll Never SID'em Coming: DoS in Active Directory",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/dos-attack-active-directory-sid-exploitation/",
+      "publication_date": "2024-11",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000065"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000066",
+      "title": "Reflective Loading with Remote Memory Interactions",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/reflective-loading-with-remote-memory-interactions/",
+      "publication_date": "2024-06",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000066"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000067",
+      "title": "DevalScript: The Language of Processes",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/devalscript-the-language-of-processes/",
+      "publication_date": "2024-06",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000067"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000068",
+      "title": "Not Another WebLogic Exploitation: The Road to Post Exploitation",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/not-another-weblogic-exploitation-how-to-prevent-rce/",
+      "publication_date": "2023-12",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000068"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000069",
+      "title": "The LOLBAS Odyssey: Finding New LOLBAS",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/the-lolbas-odyssey-finding-new-lolbas-and-how-you-can-too/",
+      "publication_date": "2023-08",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000069"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000070",
+      "title": "Death by Default: Neglected Network Protocols",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/death-by-default-neglected-network-protocols-you-should-know/",
+      "publication_date": "2023-07",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000070"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000071",
+      "title": "The Gateway to Control: MSSQL Databases and TDS Protocol",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/detecting-an-mssql-databases-version-using-the-tds-protocol/",
+      "publication_date": "2023-05",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000071"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000072",
+      "title": "Evading Detection: From Inception to Reality",
+      "publisher": "Pentera Labs",
+      "url": "https://pentera.io/resources/research/evading-detection-from-inception-to-reality/",
+      "publication_date": "2023-02",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000072"
+      ]
     }
   ]
 }

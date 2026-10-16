@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000063",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000063",
+      "url": "https://pentera.io/resources/research/risks-of-aws-ssm-in-hybrid-landscapes/"
+    }
+  ],
+  "note": "Original publication not archived; copyright review required before capturing exact bytes."
+}
