@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Versioned hypothesized umbrella research question pattern",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "question_text",
+    "scope",
+    "definition_revision",
+    "status",
+    "inclusion_criteria",
+    "exclusion_criteria",
+    "provenance",
+    "evidence_anchors"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^QPT-[0-9]{6}$"
+    },
+    "question_text": {
+      "type": "string",
+      "minLength": 15
+    },
+    "scope": {
+      "enum": [
+        "hypothesis",
+        "cross_case_candidate",
+        "curated_pattern"
+      ]
+    },
+    "definition_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "curator_reviewed",
+        "disputed",
+        "superseded"
+      ]
+    },
+    "inclusion_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "exclusion_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "boundary_or_invariant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alternative_framings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "contrast_example": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supersedes_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^QPT-[0-9]{6}$"
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_status",
+        "source_refs"
+      ],
+      "properties": {
+        "evidence_status": {
+          "enum": [
+            "unknown",
+            "proposed",
+            "documented",
+            "verified",
+            "refuted"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "evidence_anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_ref",
+          "locator"
+        ],
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "reviewed_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

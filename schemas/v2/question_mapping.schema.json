@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Curated or proposed mapping from a documented question to an umbrella question pattern",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "case_ref",
+    "question_event_ref",
+    "pattern_ref",
+    "pattern_definition_revision",
+    "mapping_basis",
+    "review_status",
+    "abstraction_rationale",
+    "provenance",
+    "evidence_anchors"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^QMP-[0-9]{6}$"
+    },
+    "case_ref": {
+      "type": "string",
+      "pattern": "^CASE-[0-9]{6}$"
+    },
+    "question_event_ref": {
+      "type": "string",
+      "pattern": "^EVT-[0-9]{6}$"
+    },
+    "pattern_ref": {
+      "type": "string",
+      "pattern": "^QPT-[0-9]{6}$"
+    },
+    "pattern_definition_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "mapping_basis": {
+      "enum": [
+        "explicit_source_correspondence",
+        "analyst_comparison",
+        "algorithmic_suggestion"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "proposed",
+        "curator_reviewed",
+        "contested",
+        "rejected"
+      ]
+    },
+    "abstraction_rationale": {
+      "type": "string",
+      "minLength": 10
+    },
+    "mismatches": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_status",
+        "source_refs"
+      ],
+      "properties": {
+        "evidence_status": {
+          "enum": [
+            "unknown",
+            "proposed",
+            "documented",
+            "verified",
+            "refuted"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "evidence_anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_ref",
+          "locator"
+        ],
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

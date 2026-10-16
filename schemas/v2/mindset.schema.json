@@ -15,7 +15,10 @@
     "provenance",
     "evidence_anchors",
     "outcome_linkage",
-    "outcome_event_refs"
+    "outcome_event_refs",
+    "question_event_refs",
+    "question_link_basis",
+    "question_relation_refs"
   ],
   "properties": {
     "schema_version": {
@@ -193,6 +196,30 @@
         "string",
         "null"
       ]
+    },
+    "question_event_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^EVT-[0-9]{6}$"
+      }
+    },
+    "question_link_basis": {
+      "enum": [
+        "explicit_documented",
+        "analyst_hypothesis",
+        "unknown"
+      ]
+    },
+    "question_relation_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^REL-[0-9]{6}$"
+      }
     }
   }
 }

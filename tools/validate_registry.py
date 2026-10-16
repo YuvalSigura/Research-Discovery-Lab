@@ -8,9 +8,9 @@ from urllib.parse import urlsplit
 from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
-KINDS = {"sources":"SRC","systems":"SYS","environments":"ENV","cases":"CASE","contexts":"CTX","findings":"FND","mechanisms":"MEC","events":"EVT","relations":"REL","passages":"PAS","mindsets":"MND"}
-SCHEMAS = {"sources":"source","systems":"system","environments":"environment","cases":"case","contexts":"context","findings":"finding","mechanisms":"mechanism","events":"research_event","relations":"relation","passages":"passage","mindsets":"mindset"}
-LINKS = {"source_refs":"SRC","system_refs":"SYS","environment_refs":"ENV","finding_refs":"FND","mechanism_refs":"MEC","case_refs":"CASE","case_ref":"CASE","context_ref":"CTX","previous_event_refs":"EVT","related_mechanisms":"MEC","source_ref":"SRC","event_refs":"EVT","outcome_event_refs":"EVT","prior_art_source_refs":"SRC"}
+KINDS = {"sources":"SRC","systems":"SYS","environments":"ENV","cases":"CASE","contexts":"CTX","findings":"FND","mechanisms":"MEC","events":"EVT","relations":"REL","passages":"PAS","mindsets":"MND","question_patterns":"QPT","question_mappings":"QMP"}
+SCHEMAS = {"sources":"source","systems":"system","environments":"environment","cases":"case","contexts":"context","findings":"finding","mechanisms":"mechanism","events":"research_event","relations":"relation","passages":"passage","mindsets":"mindset","question_patterns":"question_pattern","question_mappings":"question_mapping"}
+LINKS = {"source_refs":"SRC","system_refs":"SYS","environment_refs":"ENV","finding_refs":"FND","mechanism_refs":"MEC","case_refs":"CASE","case_ref":"CASE","context_ref":"CTX","previous_event_refs":"EVT","related_mechanisms":"MEC","source_ref":"SRC","event_refs":"EVT","outcome_event_refs":"EVT","prior_art_source_refs":"SRC","question_event_refs":"EVT","question_relation_refs":"REL","question_event_ref":"EVT","pattern_ref":"QPT","supersedes_refs":"QPT"}
 
 def require(condition, message):
     if not condition: raise ValueError(message)
@@ -87,10 +87,68 @@ def validate(root=ROOT):
                 require(cid in records and cid.startswith("CASE-"), f"{rid}: invalid passage case")
                 require(item["source_ref"] in records[cid]["source_refs"],
                         f"{rid}: passage case source mismatch")
+        if rid.startswith("QPT-"):
+            for anchor in item["evidence_anchors"]:
+                require(anchor["source_ref"] in records and
+                        anchor["source_ref"].startswith("SRC-"),
+                        f"{rid}: missing umbrella question evidence source")
+            if item["status"]=="curator_reviewed":
+                require(item["scope"]=="curated_pattern" and
+                        bool(item["evidence_anchors"]) and
+                        bool(item.get("reviewed_by")),
+                        f"{rid}: unsupported reviewed question family")
+        if rid.startswith("QMP-"):
+            question=records[item["question_event_ref"]]
+            pattern=records[item["pattern_ref"]]
+            require(question["kind"]=="question" and
+                    question["case_ref"]==item["case_ref"],
+                    f"{rid}: mapping references wrong question or case")
+            require(item["pattern_definition_revision"]==pattern["definition_revision"],
+                    f"{rid}: stale question pattern mapping revision")
+            require(pattern["status"]!="superseded",
+                    f"{rid}: mapping references superseded pattern")
+            case_sources=set(records[item["case_ref"]]["source_refs"])
+            source_refs=set(item["provenance"]["source_refs"])
+            for anchor in item["evidence_anchors"]:
+                require(anchor["source_ref"] in records and
+                        anchor["source_ref"] in case_sources and
+                        anchor["source_ref"] in source_refs,
+                        f"{rid}: invalid question mapping source")
+            if item["mapping_basis"]=="algorithmic_suggestion":
+                require(item["review_status"]=="proposed" and
+                        item["provenance"]["evidence_status"] in {"proposed","unknown"},
+                        f"{rid}: algorithmic grouping cannot claim scientific equivalence")
+            if item["review_status"]=="curator_reviewed":
+                require(pattern["status"]=="curator_reviewed" and
+                        item["mapping_basis"]!="algorithmic_suggestion" and
+                        bool(item["evidence_anchors"]) and
+                        item["provenance"]["evidence_status"] in {"documented","verified"},
+                        f"{rid}: insufficient evidence for reviewed abstraction")
         if rid.startswith("MND-"):
             case_id=item["case_ref"]
-            cases=set(item["event_refs"]+item["outcome_event_refs"])
-            for eid in cases:
+            for eid in item["question_event_refs"]:
+                require(eid in records and records[eid].get("kind")=="question" and
+                        records[eid].get("case_ref")==case_id,
+                        f"{rid}: motivating question missing or outside case {eid}")
+            if item["question_link_basis"]=="explicit_documented":
+                require(item["attribution"] in {"researcher_explicit","observed_research_action"},
+                        f"{rid}: inferred question presented as explicit")
+                require(bool(item["question_relation_refs"]),
+                        f"{rid}: no documented relation supporting question to move")
+            for relid in item["question_relation_refs"]:
+                require(relid in records and relid.startswith("REL-"),
+                        f"{rid}: missing question relation {relid}")
+                relation=records[relid]
+                endpoints={relation["subject"],relation["object"]}
+                require(bool(endpoints.intersection(item["question_event_refs"])) and
+                        bool(endpoints.intersection(item["event_refs"])),
+                        f"{rid}: unrelated question to action link {relid}")
+                if item["question_link_basis"]=="explicit_documented":
+                    require(relation.get("causal_basis")=="explicit_documented" and
+                            relation["provenance"]["evidence_status"] in {"documented","verified"},
+                            f"{rid}: question link is not documented {relid}")
+            case_ids=set(item["event_refs"]+item["outcome_event_refs"])
+            for eid in case_ids:
                 require(eid in records and eid.startswith("EVT-"),
                         f"{rid}: invalid mindset event {eid}")
                 require(records[eid]["case_ref"]==case_id,

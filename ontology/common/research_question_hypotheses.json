@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "title": "Candidate seed questions; discovery must be open-world",
+  "no_forced_assignment": true,
+  "caveat": "These are starting hypotheses, NOT demonstrated universal roots or fixed groups. New QPT records are allowed. The questions below must never be counted as verified patterns without grounded independent cases and curator review.",
+  "candidate_seeds": [
+    {
+      "seed_id": "boundary_consistency",
+      "example_question": "When do security guarantees fail across different components or trust boundaries?"
+    },
+    {
+      "seed_id": "authority_context",
+      "example_question": "Who actually authorizes an operation, and whose identity or authority is used?"
+    },
+    {
+      "seed_id": "state_time_ordering",
+      "example_question": "Does a guarantee remain true across time, state changes, races or operation ordering?"
+    },
+    {
+      "seed_id": "interpretation_divergence",
+      "example_question": "Do two components parse or interpret the same representation differently?"
+    },
+    {
+      "seed_id": "feature_composition",
+      "example_question": "Can individually intended product features combine to violate a protection boundary?"
+    },
+    {
+      "seed_id": "reachability_constraints",
+      "example_question": "What overlooked precondition, capability, or artifact makes a previously blocked path reachable?"
+    },
+    {
+      "seed_id": "data_provenance",
+      "example_question": "When does untrusted or stale information become treated as trusted evidence or authority?"
+    },
+    {
+      "seed_id": "assumption_transfer",
+      "example_question": "What breaks when design assumptions are transferred to another product, version, deployment or tenant?"
+    },
+    {
+      "seed_id": "failure_signal",
+      "example_question": "Which apparent negative result actually rules out the hypothesis, and which only rules out the chosen probe?"
+    },
+    {
+      "seed_id": "defense_implementation",
+      "example_question": "Does an apparent fix or enforcement mechanism actually preserve the intended invariant?"
+    },
+    {
+      "seed_id": "coverage_blindspot",
+      "example_question": "Which search or validation strategy is systematically missing a class of behaviors?"
+    },
+    {
+      "seed_id": "novel_unclassified",
+      "example_question": "What question does not fit the current families, and requires its own abstraction?"
+    }
+  ],
+  "analysis_protocol": [
+    "Extract the actual question asked, and link it to its researcher's action with evidence or mark the link as a hypothesis.",
+    "Record why the question arose from prior observations, anomalies, assumption checks or failed experiments.",
+    "Identify candidate invariant/boundary and what experiment would falsify the proposed family.",
+    "Abstract only if case-specific vocabulary can be removed without losing the discriminating research objective.",
+    "Search other cases for same underlying research question; do not infer equivalence from identical exploit techniques.",
+    "Record cases that look similar but do not fit, including failures and studies without zero-days.",
+    "Keep unclassified questions unforced and split/merge patterns only with versioned review.",
+    "Evaluate novelty of the research move relative to its question and relevant prior-art snapshot.",
+    "Assess zero-day status independently; associations are observational, not causal."
+  ],
+  "warnings": [
+    "An original-looking technique might instantiate a recurring abstract question; that discovery alone does not disprove its novelty at the implementation level.",
+    "Research questions are not motivational personality traits.",
+    "Published success cases create survivorship bias. Negative/failed cases and undisclosed research are unknown, not zeros."
+  ]
+}
