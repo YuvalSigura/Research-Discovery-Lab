@@ -68,7 +68,7 @@ def build(root: Path = ROOT, *, secret: str) -> dict:
                 # Date-only publication metadata cannot prove an article was available at
                 # 09:00 on that same day. Require strictly earlier publication DAY.
                 published = source.get("publication_date")
-                if not isinstance(published, str) or re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", published) is None:
+                if not isinstance(published, str) or re.fullmatch(r"\d{4}-\d{2}-\d{2}", published) is None:
                     reasons.append("publication_day_unverified")
                 elif snapshot is not None and published >= snapshot.date().isoformat():
                     reasons.append("source_not_certainly_published_before_cutoff")
