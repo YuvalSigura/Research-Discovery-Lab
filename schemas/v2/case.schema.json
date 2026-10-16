@@ -116,6 +116,10 @@
           ]
         }
       }
+    },
+    "legacy_metadata_path": {
+      "type": "string",
+      "pattern": "^research/cases/CASE-[0-9]{6}/metadata\\.json$"
     }
   }
 }

@@ -1,7 +1,9 @@
 # Phase 1 status — 2026-10-16
 
-**Delivered:** 50 source-catalogue entries and their RAW status manifests; versioned typed registry scaffolding (SRC/SYS/ENV/CASE/CTX/FND/MEC/EVT/REL); 50 legacy case placeholders; explicit crosswalk; common research-event ontology; domain labels; JSON schemas; stdlib integrity validator; GitHub Actions workflow.
+## Delivered
 
-**Not delivered:** full-text RAW captures, verified extraction of system/version/environment data, analyzed findings, discovery timelines, source hash capture, or fine-tuning examples. These remain future acquisition/analysis tasks.
+50 original source catalogue entries and RAW manifests; 50 linked SRC records with explicit one-to-one **legacy source** links to 50 compatibility CASE placeholders; typed v2 registries; crosswalk; domain ontology; 9 JSON Schemas; schema-based validation, referential integrity, bidirectional source/case checks, CI, and corruption-injection tests.
 
-**Migration policy:** Existing source records remain immutable. Legacy CASE identifiers are preserved as placeholders, not asserted to be one-to-one investigations. Future normalization should explicitly distinguish source identities from investigations and migrate references with recorded lineage.
+## Important limitations
+
+Original RAW article bytes are **not archived**. The CASE placeholders are not evidence-validated investigations. System, environment, findings, mechanism, context and event registries are currently empty. Training is explicitly deferred until all acquisition, analysis and evaluation phases are complete. Actual CI run outcome must be checked separately.

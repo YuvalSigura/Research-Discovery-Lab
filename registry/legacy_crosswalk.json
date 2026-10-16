@@ -8,7 +8,7 @@
       "legacy_path": "research/cases/CASE-000001/metadata.json",
       "new_case_ref": "CASE-000001",
       "source_url": "https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000001",
       "classification_status": "pending_review"
     },
     {
@@ -16,7 +16,7 @@
       "legacy_path": "research/cases/CASE-000002/metadata.json",
       "new_case_ref": "CASE-000002",
       "source_url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000002",
       "classification_status": "pending_review"
     },
     {
@@ -24,7 +24,7 @@
       "legacy_path": "research/cases/CASE-000003/metadata.json",
       "new_case_ref": "CASE-000003",
       "source_url": "https://xbow.com/blog/no-time-to-pwn-cve-2026-72018",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000003",
       "classification_status": "pending_review"
     },
     {
@@ -32,7 +32,7 @@
       "legacy_path": "research/cases/CASE-000004/metadata.json",
       "new_case_ref": "CASE-000004",
       "source_url": "https://xbow.com/blog/bing-images-rce-vulnerabilities",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000004",
       "classification_status": "pending_review"
     },
     {
@@ -40,7 +40,7 @@
       "legacy_path": "research/cases/CASE-000005/metadata.json",
       "new_case_ref": "CASE-000005",
       "source_url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000005",
       "classification_status": "pending_review"
     },
     {
@@ -48,7 +48,7 @@
       "legacy_path": "research/cases/CASE-000006/metadata.json",
       "new_case_ref": "CASE-000006",
       "source_url": "https://xbow.com/blog/three-rce-vulnerabilities-in-microsoft-identified-xbow",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000006",
       "classification_status": "pending_review"
     },
     {
@@ -56,7 +56,7 @@
       "legacy_path": "research/cases/CASE-000007/metadata.json",
       "new_case_ref": "CASE-000007",
       "source_url": "https://xbow.com/blog/tales-from-the-trace-how-xbow-reasons-its-way-into-finding-idors",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000007",
       "classification_status": "pending_review"
     },
     {
@@ -64,7 +64,7 @@
       "legacy_path": "research/cases/CASE-000008/metadata.json",
       "new_case_ref": "CASE-000008",
       "source_url": "https://xbow.com/blog/cooking-an-sql-injection-vulnerability-in-chef-automate",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000008",
       "classification_status": "pending_review"
     },
     {
@@ -72,7 +72,7 @@
       "legacy_path": "research/cases/CASE-000009/metadata.json",
       "new_case_ref": "CASE-000009",
       "source_url": "https://xbow.com/blog/apache-druid-proxy",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000009",
       "classification_status": "pending_review"
     },
     {
@@ -80,7 +80,7 @@
       "legacy_path": "research/cases/CASE-000010/metadata.json",
       "new_case_ref": "CASE-000010",
       "source_url": "https://xbow.com/blog/xbow-geolocation-sqli",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000010",
       "classification_status": "pending_review"
     },
     {
@@ -88,7 +88,7 @@
       "legacy_path": "research/cases/CASE-000011/metadata.json",
       "new_case_ref": "CASE-000011",
       "source_url": "https://xbow.com/blog/xbow-titiler-lfi",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000011",
       "classification_status": "pending_review"
     },
     {
@@ -96,7 +96,7 @@
       "legacy_path": "research/cases/CASE-000012/metadata.json",
       "new_case_ref": "CASE-000012",
       "source_url": "https://xbow.com/blog/xbow-titiler-rce",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000012",
       "classification_status": "pending_review"
     },
     {
@@ -104,7 +104,7 @@
       "legacy_path": "research/cases/CASE-000013/metadata.json",
       "new_case_ref": "CASE-000013",
       "source_url": "https://xbow.com/blog/xbow-photo-proxy-lfi",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000013",
       "classification_status": "pending_review"
     },
     {
@@ -112,7 +112,7 @@
       "legacy_path": "research/cases/CASE-000014/metadata.json",
       "new_case_ref": "CASE-000014",
       "source_url": "https://xbow.com/blog/xbow-zpush-sqli",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000014",
       "classification_status": "pending_review"
     },
     {
@@ -120,7 +120,7 @@
       "legacy_path": "research/cases/CASE-000015/metadata.json",
       "new_case_ref": "CASE-000015",
       "source_url": "https://xbow.com/blog/xbow-salesforce-xss",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000015",
       "classification_status": "pending_review"
     },
     {
@@ -128,7 +128,7 @@
       "legacy_path": "research/cases/CASE-000016/metadata.json",
       "new_case_ref": "CASE-000016",
       "source_url": "https://xbow.com/blog/xbow-akamai-cloudtest-xxe",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000016",
       "classification_status": "pending_review"
     },
     {
@@ -136,7 +136,7 @@
       "legacy_path": "research/cases/CASE-000017/metadata.json",
       "new_case_ref": "CASE-000017",
       "source_url": "https://xbow.com/blog/xbow-globalprotect-xss",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000017",
       "classification_status": "pending_review"
     },
     {
@@ -144,7 +144,7 @@
       "legacy_path": "research/cases/CASE-000018/metadata.json",
       "new_case_ref": "CASE-000018",
       "source_url": "https://xbow.com/blog/xbow-zoo-project-arb",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000018",
       "classification_status": "pending_review"
     },
     {
@@ -152,7 +152,7 @@
       "legacy_path": "research/cases/CASE-000019/metadata.json",
       "new_case_ref": "CASE-000019",
       "source_url": "https://xbow.com/blog/xbow-2fauth-xss",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000019",
       "classification_status": "pending_review"
     },
     {
@@ -160,7 +160,7 @@
       "legacy_path": "research/cases/CASE-000020/metadata.json",
       "new_case_ref": "CASE-000020",
       "source_url": "https://xbow.com/blog/xbow-eddi-path",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000020",
       "classification_status": "pending_review"
     },
     {
@@ -168,7 +168,7 @@
       "legacy_path": "research/cases/CASE-000021/metadata.json",
       "new_case_ref": "CASE-000021",
       "source_url": "https://xbow.com/blog/xbow-2fauth-ssrf",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000021",
       "classification_status": "pending_review"
     },
     {
@@ -176,7 +176,7 @@
       "legacy_path": "research/cases/CASE-000022/metadata.json",
       "new_case_ref": "CASE-000022",
       "source_url": "https://xbow.com/blog/xbow-scoold-vuln",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000022",
       "classification_status": "pending_review"
     },
     {
@@ -184,7 +184,7 @@
       "legacy_path": "research/cases/CASE-000023/metadata.json",
       "new_case_ref": "CASE-000023",
       "source_url": "https://xbow.com/blog/xbow-ninja-tables",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000023",
       "classification_status": "pending_review"
     },
     {
@@ -192,7 +192,7 @@
       "legacy_path": "research/cases/CASE-000024/metadata.json",
       "new_case_ref": "CASE-000024",
       "source_url": "https://portswigger.net/research/can-ai-do-novel-security-research",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000024",
       "classification_status": "pending_review"
     },
     {
@@ -200,7 +200,7 @@
       "legacy_path": "research/cases/CASE-000025/metadata.json",
       "new_case_ref": "CASE-000025",
       "source_url": "https://portswigger.net/research/http1-must-die",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000025",
       "classification_status": "pending_review"
     },
     {
@@ -208,7 +208,7 @@
       "legacy_path": "research/cases/CASE-000026/metadata.json",
       "new_case_ref": "CASE-000026",
       "source_url": "https://portswigger.net/research/how-to-distinguish-http-pipelining-from-request-smuggling",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000026",
       "classification_status": "pending_review"
     },
     {
@@ -216,7 +216,7 @@
       "legacy_path": "research/cases/CASE-000027/metadata.json",
       "new_case_ref": "CASE-000027",
       "source_url": "https://portswigger.net/research/browser-powered-desync-attacks",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000027",
       "classification_status": "pending_review"
     },
     {
@@ -224,7 +224,7 @@
       "legacy_path": "research/cases/CASE-000028/metadata.json",
       "new_case_ref": "CASE-000028",
       "source_url": "https://portswigger.net/research/http2",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000028",
       "classification_status": "pending_review"
     },
     {
@@ -232,7 +232,7 @@
       "legacy_path": "research/cases/CASE-000029/metadata.json",
       "new_case_ref": "CASE-000029",
       "source_url": "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000029",
       "classification_status": "pending_review"
     },
     {
@@ -240,7 +240,7 @@
       "legacy_path": "research/cases/CASE-000030/metadata.json",
       "new_case_ref": "CASE-000030",
       "source_url": "https://xbow.com/blog/gpt-5-5-and-xbow-a-step-change-in-autonomous-application-security",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000030",
       "classification_status": "pending_review"
     },
     {
@@ -248,7 +248,7 @@
       "legacy_path": "research/cases/CASE-000031/metadata.json",
       "new_case_ref": "CASE-000031",
       "source_url": "https://xbow.com/blog/mythos-gpt-5-5-ai-vulnerability-detection-security",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000031",
       "classification_status": "pending_review"
     },
     {
@@ -256,7 +256,7 @@
       "legacy_path": "research/cases/CASE-000032/metadata.json",
       "new_case_ref": "CASE-000032",
       "source_url": "https://googleprojectzero.blogspot.com/2024/11/from-naptime-to-big-sleep.html",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000032",
       "classification_status": "pending_review"
     },
     {
@@ -264,7 +264,7 @@
       "legacy_path": "research/cases/CASE-000033/metadata.json",
       "new_case_ref": "CASE-000033",
       "source_url": "https://projectzero.google/2025/12/windows-exploitation-techniques.html",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000033",
       "classification_status": "pending_review"
     },
     {
@@ -272,7 +272,7 @@
       "legacy_path": "research/cases/CASE-000034/metadata.json",
       "new_case_ref": "CASE-000034",
       "source_url": "https://projectzero.google/2025/05/breaking-sound-barrier-part-i-fuzzing.html",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000034",
       "classification_status": "pending_review"
     },
     {
@@ -280,7 +280,7 @@
       "legacy_path": "research/cases/CASE-000035/metadata.json",
       "new_case_ref": "CASE-000035",
       "source_url": "https://projectzero.google/2025/05/the-windows-registry-adventure-8-exploitation.html",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000035",
       "classification_status": "pending_review"
     },
     {
@@ -288,7 +288,7 @@
       "legacy_path": "research/cases/CASE-000036/metadata.json",
       "new_case_ref": "CASE-000036",
       "source_url": "https://projectzero.google/2025/07/reporting-transparency.html",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000036",
       "classification_status": "pending_review"
     },
     {
@@ -296,7 +296,7 @@
       "legacy_path": "research/cases/CASE-000037/metadata.json",
       "new_case_ref": "CASE-000037",
       "source_url": "https://projectzero.google/reporting-transparency-2025.html",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000037",
       "classification_status": "pending_review"
     },
     {
@@ -304,7 +304,7 @@
       "legacy_path": "research/cases/CASE-000038/metadata.json",
       "new_case_ref": "CASE-000038",
       "source_url": "https://projectzero.google/reporting-transparency.html",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000038",
       "classification_status": "pending_review"
     },
     {
@@ -312,7 +312,7 @@
       "legacy_path": "research/cases/CASE-000039/metadata.json",
       "new_case_ref": "CASE-000039",
       "source_url": "https://portswigger.net/research/smashing-the-state-machine",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000039",
       "classification_status": "pending_review"
     },
     {
@@ -320,7 +320,7 @@
       "legacy_path": "research/cases/CASE-000040/metadata.json",
       "new_case_ref": "CASE-000040",
       "source_url": "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000040",
       "classification_status": "pending_review"
     },
     {
@@ -328,7 +328,7 @@
       "legacy_path": "research/cases/CASE-000041/metadata.json",
       "new_case_ref": "CASE-000041",
       "source_url": "https://portswigger.net/research/introducing-http-anomaly-rank",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000041",
       "classification_status": "pending_review"
     },
     {
@@ -336,7 +336,7 @@
       "legacy_path": "research/cases/CASE-000042/metadata.json",
       "new_case_ref": "CASE-000042",
       "source_url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2024",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000042",
       "classification_status": "pending_review"
     },
     {
@@ -344,7 +344,7 @@
       "legacy_path": "research/cases/CASE-000043/metadata.json",
       "new_case_ref": "CASE-000043",
       "source_url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2025",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000043",
       "classification_status": "pending_review"
     },
     {
@@ -352,7 +352,7 @@
       "legacy_path": "research/cases/CASE-000044/metadata.json",
       "new_case_ref": "CASE-000044",
       "source_url": "https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000044",
       "classification_status": "pending_review"
     },
     {
@@ -360,7 +360,7 @@
       "legacy_path": "research/cases/CASE-000045/metadata.json",
       "new_case_ref": "CASE-000045",
       "source_url": "https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000045",
       "classification_status": "pending_review"
     },
     {
@@ -368,7 +368,7 @@
       "legacy_path": "research/cases/CASE-000046/metadata.json",
       "new_case_ref": "CASE-000046",
       "source_url": "https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000046",
       "classification_status": "pending_review"
     },
     {
@@ -376,7 +376,7 @@
       "legacy_path": "research/cases/CASE-000047/metadata.json",
       "new_case_ref": "CASE-000047",
       "source_url": "https://www.assetnote.io/resources/research/ivantis-pulse-connect-secure-auth-bypass-round-two/",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000047",
       "classification_status": "pending_review"
     },
     {
@@ -384,7 +384,7 @@
       "legacy_path": "research/cases/CASE-000048/metadata.json",
       "new_case_ref": "CASE-000048",
       "source_url": "https://www.assetnote.io/resources/research/high-signal-detection-and-exploitation-of-ivantis-pulse-connect-secure-auth-bypass-rce/",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000048",
       "classification_status": "pending_review"
     },
     {
@@ -392,7 +392,7 @@
       "legacy_path": "research/cases/CASE-000049/metadata.json",
       "new_case_ref": "CASE-000049",
       "source_url": "https://www.assetnote.io/resources/research/advisory-next-js-ssrf-cve-2024-34351",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000049",
       "classification_status": "pending_review"
     },
     {
@@ -400,7 +400,7 @@
       "legacy_path": "research/cases/CASE-000050/metadata.json",
       "new_case_ref": "CASE-000050",
       "source_url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534",
-      "source_registry_ref": null,
+      "source_registry_ref": "SRC-000050",
       "classification_status": "pending_review"
     }
   ]

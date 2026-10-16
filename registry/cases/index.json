@@ -5,7 +5,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000001",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000001"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -15,7 +17,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000001"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000001/metadata.json"
@@ -23,7 +27,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000002",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000002"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -33,7 +39,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000002"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000002/metadata.json"
@@ -41,7 +49,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000003",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000003"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -51,7 +61,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000003"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000003/metadata.json"
@@ -59,7 +71,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000004",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000004"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -69,7 +83,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000004"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000004/metadata.json"
@@ -77,7 +93,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000005",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000005"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -87,7 +105,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000005"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000005/metadata.json"
@@ -95,7 +115,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000006",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000006"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -105,7 +127,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000006"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000006/metadata.json"
@@ -113,7 +137,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000007",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000007"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -123,7 +149,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000007"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000007/metadata.json"
@@ -131,7 +159,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000008",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000008"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -141,7 +171,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000008"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000008/metadata.json"
@@ -149,7 +181,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000009",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000009"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -159,7 +193,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000009"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000009/metadata.json"
@@ -167,7 +203,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000010",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000010"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -177,7 +215,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000010"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000010/metadata.json"
@@ -185,7 +225,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000011",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000011"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -195,7 +237,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000011"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000011/metadata.json"
@@ -203,7 +247,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000012",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000012"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -213,7 +259,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000012"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000012/metadata.json"
@@ -221,7 +269,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000013",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000013"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -231,7 +281,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000013"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000013/metadata.json"
@@ -239,7 +291,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000014",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000014"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -249,7 +303,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000014"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000014/metadata.json"
@@ -257,7 +313,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000015",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000015"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -267,7 +325,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000015"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000015/metadata.json"
@@ -275,7 +335,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000016",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000016"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -285,7 +347,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000016"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000016/metadata.json"
@@ -293,7 +357,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000017",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000017"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -303,7 +369,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000017"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000017/metadata.json"
@@ -311,7 +379,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000018",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000018"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -321,7 +391,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000018"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000018/metadata.json"
@@ -329,7 +401,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000019",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000019"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -339,7 +413,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000019"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000019/metadata.json"
@@ -347,7 +423,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000020",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000020"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -357,7 +435,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000020"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000020/metadata.json"
@@ -365,7 +445,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000021",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000021"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -375,7 +457,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000021"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000021/metadata.json"
@@ -383,7 +467,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000022",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000022"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -393,7 +479,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000022"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000022/metadata.json"
@@ -401,7 +489,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000023",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000023"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -411,7 +501,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000023"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000023/metadata.json"
@@ -419,7 +511,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000024",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000024"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -429,7 +523,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000024"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000024/metadata.json"
@@ -437,7 +533,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000025",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000025"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -447,7 +545,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000025"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000025/metadata.json"
@@ -455,7 +555,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000026",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000026"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -465,7 +567,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000026"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000026/metadata.json"
@@ -473,7 +577,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000027",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000027"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -483,7 +589,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000027"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000027/metadata.json"
@@ -491,7 +599,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000028",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000028"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -501,7 +611,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000028"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000028/metadata.json"
@@ -509,7 +621,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000029",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000029"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -519,7 +633,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000029"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000029/metadata.json"
@@ -527,7 +643,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000030",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000030"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -537,7 +655,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000030"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000030/metadata.json"
@@ -545,7 +665,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000031",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000031"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -555,7 +677,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000031"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000031/metadata.json"
@@ -563,7 +687,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000032",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000032"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -573,7 +699,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000032"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000032/metadata.json"
@@ -581,7 +709,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000033",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000033"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -591,7 +721,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000033"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000033/metadata.json"
@@ -599,7 +731,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000034",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000034"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -609,7 +743,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000034"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000034/metadata.json"
@@ -617,7 +753,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000035",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000035"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -627,7 +765,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000035"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000035/metadata.json"
@@ -635,7 +775,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000036",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000036"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -645,7 +787,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000036"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000036/metadata.json"
@@ -653,7 +797,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000037",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000037"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -663,7 +809,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000037"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000037/metadata.json"
@@ -671,7 +819,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000038",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000038"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -681,7 +831,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000038"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000038/metadata.json"
@@ -689,7 +841,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000039",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000039"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -699,7 +853,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000039"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000039/metadata.json"
@@ -707,7 +863,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000040",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000040"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -717,7 +875,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000040"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000040/metadata.json"
@@ -725,7 +885,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000041",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000041"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -735,7 +897,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000041"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000041/metadata.json"
@@ -743,7 +907,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000042",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000042"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -753,7 +919,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000042"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000042/metadata.json"
@@ -761,7 +929,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000043",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000043"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -771,7 +941,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000043"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000043/metadata.json"
@@ -779,7 +951,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000044",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000044"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -789,7 +963,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000044"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000044/metadata.json"
@@ -797,7 +973,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000045",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000045"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -807,7 +985,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000045"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000045/metadata.json"
@@ -815,7 +995,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000046",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000046"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -825,7 +1007,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000046"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000046/metadata.json"
@@ -833,7 +1017,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000047",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000047"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -843,7 +1029,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000047"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000047/metadata.json"
@@ -851,7 +1039,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000048",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000048"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -861,7 +1051,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000048"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000048/metadata.json"
@@ -869,7 +1061,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000049",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000049"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -879,7 +1073,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000049"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000049/metadata.json"
@@ -887,7 +1083,9 @@
     {
       "schema_version": "1.0",
       "id": "CASE-000050",
-      "source_refs": [],
+      "source_refs": [
+        "SRC-000050"
+      ],
       "system_refs": [],
       "environment_refs": [],
       "finding_refs": [],
@@ -897,7 +1095,9 @@
       "analysis_status": "not_started",
       "provenance": {
         "evidence_status": "unknown",
-        "source_refs": [],
+        "source_refs": [
+          "SRC-000050"
+        ],
         "notes": "Legacy catalog migration: source links remain in research/cases/CASE-XXXXXX/metadata.json; not asserted as analyzed research."
       },
       "legacy_metadata_path": "research/cases/CASE-000050/metadata.json"

@@ -1,5 +1,756 @@
 {
   "schema_version": "1.0",
   "entity_type": "SRC",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000001",
+      "title": "Chrome full-chain exploit",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit",
+      "publication_date": "2026-10-13",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000001"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000002",
+      "title": "Chrome full-chain technical research",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
+      "publication_date": "2026-10",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000002"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000003",
+      "title": "No Time to Pwn CVE-2026-72018",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/no-time-to-pwn-cve-2026-72018",
+      "publication_date": "2026-09-28",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000003"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000004",
+      "title": "Bing Images RCEs",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/bing-images-rce-vulnerabilities",
+      "publication_date": "2026-07-23",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000004"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000005",
+      "title": "Exim Dead Letter CVE-2026-45185",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+      "publication_date": "2026-05-12",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000005"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000006",
+      "title": "Microsoft cloud RCE discoveries",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/three-rce-vulnerabilities-in-microsoft-identified-xbow",
+      "publication_date": "2026-04-02",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000006"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000007",
+      "title": "Spree IDOR trace research",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/tales-from-the-trace-how-xbow-reasons-its-way-into-finding-idors",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000007"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000008",
+      "title": "Chef Automate SQL injection",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/cooking-an-sql-injection-vulnerability-in-chef-automate",
+      "publication_date": "2025-09-30",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000008"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000009",
+      "title": "Apache Druid proxy SSRF",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/apache-druid-proxy",
+      "publication_date": "2025-09-23",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000009"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000010",
+      "title": "Geolocation bypass leading to SQL injection",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-geolocation-sqli",
+      "publication_date": "2025-07-31",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000010"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000011",
+      "title": "TiTiler SSRF to file-reading oracle",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-titiler-lfi",
+      "publication_date": "2025-07-28",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000011"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000012",
+      "title": "TiTiler expression parser RCE",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-titiler-rce",
+      "publication_date": "2025-07-25",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000012"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000013",
+      "title": "Photo proxy file inclusion",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-photo-proxy-lfi",
+      "publication_date": "2025-07-21",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000013"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000014",
+      "title": "Z-Push SQL injection",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-zpush-sqli",
+      "publication_date": "2025-07-10",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000014"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000015",
+      "title": "Salesforce Aura XSS",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-salesforce-xss",
+      "publication_date": "2025-07-07",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000015"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000016",
+      "title": "Akamai CloudTest XXE",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-akamai-cloudtest-xxe",
+      "publication_date": "2025-06-30",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000016"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000017",
+      "title": "GlobalProtect XSS",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-globalprotect-xss",
+      "publication_date": "2025-06-24",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000017"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000018",
+      "title": "Zoo-Project arbitrary file download",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-zoo-project-arb",
+      "publication_date": "2024-12-20",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000018"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000019",
+      "title": "2FAuth stored XSS",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-2fauth-xss",
+      "publication_date": "2024-12-13",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000019"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000020",
+      "title": "EDDI path traversal",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-eddi-path",
+      "publication_date": "2024-12-02",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000020"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000021",
+      "title": "2FAuth SSRF URI validation bypass",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-2fauth-ssrf",
+      "publication_date": "2024-11-22",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000021"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000022",
+      "title": "Scoold authentication bypass",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-scoold-vuln",
+      "publication_date": "2024-11-14",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000022"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000023",
+      "title": "Ninja Tables research",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/xbow-ninja-tables",
+      "publication_date": "2024-08-14",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000023"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000024",
+      "title": "HTTP Terminator AI novel security research",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+      "publication_date": "2026-08-05",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000024"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000025",
+      "title": "HTTP 1.1 must die",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/http1-must-die",
+      "publication_date": "2025-08-06",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000025"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000026",
+      "title": "HTTP request smuggling false positives",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/how-to-distinguish-http-pipelining-from-request-smuggling",
+      "publication_date": "2025-08-19",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000026"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000027",
+      "title": "Browser powered desync attacks",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/browser-powered-desync-attacks",
+      "publication_date": "2022-08-10",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000027"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000028",
+      "title": "HTTP 2 sequel",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/http2",
+      "publication_date": "2021-08-05",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000028"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000029",
+      "title": "HTTP desync attacks request smuggling reborn",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn",
+      "publication_date": "2019-08-07",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000029"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000030",
+      "title": "GPT-5.5 autonomous appsec evaluation",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/gpt-5-5-and-xbow-a-step-change-in-autonomous-application-security",
+      "publication_date": "2026-06-03",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000030"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000031",
+      "title": "Mythos and GPT-5.5 security evaluation",
+      "publisher": "XBOW",
+      "url": "https://xbow.com/blog/mythos-gpt-5-5-ai-vulnerability-detection-security",
+      "publication_date": "2026-06-02",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000031"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000032",
+      "title": "From Naptime to Big Sleep: Using Large Language Models To Catch Vulnerabilities In Real-World Code",
+      "publisher": "Google Project Zero",
+      "url": "https://googleprojectzero.blogspot.com/2024/11/from-naptime-to-big-sleep.html",
+      "publication_date": "2024-11-01",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000032"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000033",
+      "title": "Windows Exploitation Techniques: Winning Race Conditions with Path Lookups",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2025/12/windows-exploitation-techniques.html",
+      "publication_date": "2025-12-16",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000033"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000034",
+      "title": "Breaking the Sound Barrier Part I: Fuzzing CoreAudio with Mach Messages",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2025/05/breaking-sound-barrier-part-i-fuzzing.html",
+      "publication_date": "2025-05-09",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000034"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000035",
+      "title": "The Windows Registry Adventure #8: Practical exploitation of hive memory corruption",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2025/05/the-windows-registry-adventure-8-exploitation.html",
+      "publication_date": "2025-05-28",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000035"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000036",
+      "title": "Policy and Disclosure: 2025 Edition",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2025/07/reporting-transparency.html",
+      "publication_date": "2025-07-29",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000036"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000037",
+      "title": "Reporting Transparency 2025",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/reporting-transparency-2025.html",
+      "publication_date": "2025",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000037"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000038",
+      "title": "Reporting Transparency 2026",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/reporting-transparency.html",
+      "publication_date": "2026",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000038"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000039",
+      "title": "Smashing the state machine: the true potential of web race conditions",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/smashing-the-state-machine",
+      "publication_date": "2023-08-09",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000039"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000040",
+      "title": "Listen to the whispers: web timing attacks that actually work",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work",
+      "publication_date": "2024-08-07",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000040"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000041",
+      "title": "Introducing HTTP Anomaly Rank",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/introducing-http-anomaly-rank",
+      "publication_date": "2025-11-11",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000041"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000042",
+      "title": "Top 10 web hacking techniques of 2024",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2024",
+      "publication_date": "2025-02-04",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000042"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000043",
+      "title": "Top 10 web hacking techniques of 2025",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2025",
+      "publication_date": "2026-02-05",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000043"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000044",
+      "title": "Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108)",
+      "publisher": "Assetnote",
+      "url": "https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os",
+      "publication_date": "2025-02-12",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000044"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000045",
+      "title": "Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927)",
+      "publisher": "Assetnote",
+      "url": "https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927",
+      "publication_date": "2025-03-24",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000045"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000046",
+      "title": "Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x",
+      "publisher": "Assetnote",
+      "url": "https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x",
+      "publication_date": "2024-11-22",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000046"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000047",
+      "title": "Ivanti's Pulse Connect Secure Auth Bypass Round Two",
+      "publisher": "Assetnote",
+      "url": "https://www.assetnote.io/resources/research/ivantis-pulse-connect-secure-auth-bypass-round-two/",
+      "publication_date": "2024-02-02",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000047"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000048",
+      "title": "High Signal Detection and Exploitation of Ivanti's Pulse Connect Secure Auth Bypass & RCE",
+      "publisher": "Assetnote",
+      "url": "https://www.assetnote.io/resources/research/high-signal-detection-and-exploitation-of-ivantis-pulse-connect-secure-auth-bypass-rce/",
+      "publication_date": "2024-01-18",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000048"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000049",
+      "title": "Advisory: Next.js SSRF (CVE-2024-34351)",
+      "publisher": "Assetnote",
+      "url": "https://www.assetnote.io/resources/research/advisory-next-js-ssrf-cve-2024-34351",
+      "publication_date": "2024-05-09",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000049"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000050",
+      "title": "Citrix Denial of Service: Analysis of CVE-2024-8534",
+      "publisher": "Assetnote",
+      "url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534",
+      "publication_date": "2024-12-13",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000050"
+      ]
+    }
+  ]
 }
