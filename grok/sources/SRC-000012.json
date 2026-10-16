@@ -1,0 +1,72 @@
+{
+  "source_id": "SRC-000012",
+  "case_id": "CASE-000012",
+  "canonical_url": "https://xbow.com/blog/xbow-titiler-rce",
+  "retrieved_url": "https://xbow.com/blog/xbow-titiler-rce",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:00:00Z",
+  "document_genres": ["technical walkthrough", "iterative research narrative"],
+  "lineage_id": "xbow-titiler-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process",
+      "type": "author_reported",
+      "statement": "Enumerated API via OpenAPI; confirmed SSRF. Analyzed expression parameter for band math. Generated valid TIFFs to bypass url validation. Tested expressions and algorithm params."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots / Negatives",
+      "type": "author_reported",
+      "statement": "Direct code injection and algorithm command injection failed. Custom scripts tested alternative payloads. Breakthrough on /cog/crop endpoint via unique error messages. RCE in <12 minutes / <32 iterations. Root cause: numexpr evaluate."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Does the expression parameter for band math reach an evaluator that can be abused for code execution, given that SSRF alone did not escalate easily?",
+      "basis": "action_implied_candidate",
+      "anchor": "shift from SSRF escalation failures to expression analysis",
+      "uncertainty_reduced": "whether expression parsing is restricted or injectable",
+      "assumption_challenged": "that expression is only safe band math"
+    }
+  ],
+  "environment_model_updates": [
+    "OpenAPI reveals expression parameter",
+    "rio-tiler + numexpr used for evaluation",
+    "Error messages distinguish parsing issues from GDAL errors"
+  ],
+  "discovery_mechanisms": [
+    "api_spec_enumeration",
+    "error_message_differential",
+    "scripted_payload_iteration",
+    "capability_composition_after_initial_ssrf"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "OpenAPI mapping, SSRF confirmation, systematic payload testing across endpoints",
+    "exploratory": "trying sandbox escape and algorithm injection after direct failures; refining exfiltration"
+  },
+  "negative_inconclusive": [
+    "SSRF to file read via formats/XXE failed",
+    "Direct __import__ style injection errored",
+    "Algorithm param command injection failed",
+    "Initial exfil payloads failed due to type parsing"
+  ],
+  "decision_ids": ["xbow-titiler-2025.T002"],
+  "unobserved_history": ["exact relation to the LFI finding in SRC-000011", "full list of failed payloads"],
+  "forbidden_inferences": [
+    "Do not assume the RCE and LFI were discovered in a single linear path; source treats LFI as separate",
+    "Failed direct injection does not falsify the expression vector"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Group with SRC-000011 under shared lineage; note CVE-2023-39631 reference"],
+  "layer_b_candidate_principles": [
+    "When a media/geospatial API exposes an expression or formula parameter, differential error messages can reveal whether it reaches a restricted evaluator",
+    "Scripted generation of minimal valid inputs (TIFFs) can unlock testing of otherwise gated parameters"
+  ],
+  "model_vs_harness": "Recognizing expression as a potential injection surface is model reasoning; OpenAPI parsing and automated payload iteration across endpoints can be harness."
+}
