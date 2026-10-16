@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000002",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain"
+    }
+  ],
+  "note": "No raw article text has been copied. Acquire only after licensing/permission review, hash exact bytes, and record capture provenance."
+}

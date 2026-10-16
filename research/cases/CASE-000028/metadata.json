@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000028",
+  "title": "HTTP 2 sequel",
+  "publisher": "PortSwigger",
+  "publication_date": "2021-08-05",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://portswigger.net/research/http2",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Title/date/source catalogued; no full-text raw copy or technical analysis is claimed."
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+research/private/
+research/**/raw/private/
+*.sqlite3

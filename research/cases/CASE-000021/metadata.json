@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000021",
+  "title": "2FAuth SSRF URI validation bypass",
+  "publisher": "XBOW",
+  "publication_date": "2024-11-22",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://xbow.com/blog/xbow-2fauth-ssrf",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Title/date/source catalogued; no full-text raw copy or technical analysis is claimed."
+}

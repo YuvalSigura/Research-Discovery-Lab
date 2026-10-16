@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "created_on": "2026-10-16",
+  "case_count": 31,
+  "cases": [
+    {
+      "id": "CASE-000001",
+      "publisher": "XBOW",
+      "title": "Chrome full-chain exploit",
+      "url": "https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit",
+      "date": "2026-10-13",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000002",
+      "publisher": "XBOW",
+      "title": "Chrome full-chain technical research",
+      "url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
+      "date": "2026-10",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000003",
+      "publisher": "XBOW",
+      "title": "No Time to Pwn CVE-2026-72018",
+      "url": "https://xbow.com/blog/no-time-to-pwn-cve-2026-72018",
+      "date": "2026-09-28",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000004",
+      "publisher": "XBOW",
+      "title": "Bing Images RCEs",
+      "url": "https://xbow.com/blog/bing-images-rce-vulnerabilities",
+      "date": "2026-07-23",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000005",
+      "publisher": "XBOW",
+      "title": "Exim Dead Letter CVE-2026-45185",
+      "url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+      "date": "2026-05-12",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000006",
+      "publisher": "XBOW",
+      "title": "Microsoft cloud RCE discoveries",
+      "url": "https://xbow.com/blog/three-rce-vulnerabilities-in-microsoft-identified-xbow",
+      "date": "2026-04-02",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000007",
+      "publisher": "XBOW",
+      "title": "Spree IDOR trace research",
+      "url": "https://xbow.com/blog/tales-from-the-trace-how-xbow-reasons-its-way-into-finding-idors",
+      "date": "unknown",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000008",
+      "publisher": "XBOW",
+      "title": "Chef Automate SQL injection",
+      "url": "https://xbow.com/blog/cooking-an-sql-injection-vulnerability-in-chef-automate",
+      "date": "2025-09-30",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000009",
+      "publisher": "XBOW",
+      "title": "Apache Druid proxy SSRF",
+      "url": "https://xbow.com/blog/apache-druid-proxy",
+      "date": "2025-09-23",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000010",
+      "publisher": "XBOW",
+      "title": "Geolocation bypass leading to SQL injection",
+      "url": "https://xbow.com/blog/xbow-geolocation-sqli",
+      "date": "2025-07-31",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000011",
+      "publisher": "XBOW",
+      "title": "TiTiler SSRF to file-reading oracle",
+      "url": "https://xbow.com/blog/xbow-titiler-lfi",
+      "date": "2025-07-28",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000012",
+      "publisher": "XBOW",
+      "title": "TiTiler expression parser RCE",
+      "url": "https://xbow.com/blog/xbow-titiler-rce",
+      "date": "2025-07-25",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000013",
+      "publisher": "XBOW",
+      "title": "Photo proxy file inclusion",
+      "url": "https://xbow.com/blog/xbow-photo-proxy-lfi",
+      "date": "2025-07-21",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000014",
+      "publisher": "XBOW",
+      "title": "Z-Push SQL injection",
+      "url": "https://xbow.com/blog/xbow-zpush-sqli",
+      "date": "2025-07-10",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000015",
+      "publisher": "XBOW",
+      "title": "Salesforce Aura XSS",
+      "url": "https://xbow.com/blog/xbow-salesforce-xss",
+      "date": "2025-07-07",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000016",
+      "publisher": "XBOW",
+      "title": "Akamai CloudTest XXE",
+      "url": "https://xbow.com/blog/xbow-akamai-cloudtest-xxe",
+      "date": "2025-06-30",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000017",
+      "publisher": "XBOW",
+      "title": "GlobalProtect XSS",
+      "url": "https://xbow.com/blog/xbow-globalprotect-xss",
+      "date": "2025-06-24",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000018",
+      "publisher": "XBOW",
+      "title": "Zoo-Project arbitrary file download",
+      "url": "https://xbow.com/blog/xbow-zoo-project-arb",
+      "date": "2024-12-20",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000019",
+      "publisher": "XBOW",
+      "title": "2FAuth stored XSS",
+      "url": "https://xbow.com/blog/xbow-2fauth-xss",
+      "date": "2024-12-13",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000020",
+      "publisher": "XBOW",
+      "title": "EDDI path traversal",
+      "url": "https://xbow.com/blog/xbow-eddi-path",
+      "date": "2024-12-02",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000021",
+      "publisher": "XBOW",
+      "title": "2FAuth SSRF URI validation bypass",
+      "url": "https://xbow.com/blog/xbow-2fauth-ssrf",
+      "date": "2024-11-22",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000022",
+      "publisher": "XBOW",
+      "title": "Scoold authentication bypass",
+      "url": "https://xbow.com/blog/xbow-scoold-vuln",
+      "date": "2024-11-14",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000023",
+      "publisher": "XBOW",
+      "title": "Ninja Tables research",
+      "url": "https://xbow.com/blog/xbow-ninja-tables",
+      "date": "2024-08-14",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000024",
+      "publisher": "PortSwigger",
+      "title": "HTTP Terminator AI novel security research",
+      "url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+      "date": "2026-08-05",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000025",
+      "publisher": "PortSwigger",
+      "title": "HTTP 1.1 must die",
+      "url": "https://portswigger.net/research/http1-must-die",
+      "date": "2025-08-06",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000026",
+      "publisher": "PortSwigger",
+      "title": "HTTP request smuggling false positives",
+      "url": "https://portswigger.net/research/how-to-distinguish-http-pipelining-from-request-smuggling",
+      "date": "2025-08-19",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000027",
+      "publisher": "PortSwigger",
+      "title": "Browser powered desync attacks",
+      "url": "https://portswigger.net/research/browser-powered-desync-attacks",
+      "date": "2022-08-10",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000028",
+      "publisher": "PortSwigger",
+      "title": "HTTP 2 sequel",
+      "url": "https://portswigger.net/research/http2",
+      "date": "2021-08-05",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000029",
+      "publisher": "PortSwigger",
+      "title": "HTTP desync attacks request smuggling reborn",
+      "url": "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn",
+      "date": "2019-08-07",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000030",
+      "publisher": "XBOW",
+      "title": "GPT-5.5 autonomous appsec evaluation",
+      "url": "https://xbow.com/blog/gpt-5-5-and-xbow-a-step-change-in-autonomous-application-security",
+      "date": "2026-06-03",
+      "category": "ai_research"
+    },
+    {
+      "id": "CASE-000031",
+      "publisher": "XBOW",
+      "title": "Mythos and GPT-5.5 security evaluation",
+      "url": "https://xbow.com/blog/mythos-gpt-5-5-ai-vulnerability-detection-security",
+      "date": "2026-06-02",
+      "category": "ai_research"
+    }
+  ]
+}

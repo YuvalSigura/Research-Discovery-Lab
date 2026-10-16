@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000010",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://xbow.com/blog/xbow-geolocation-sqli"
+    }
+  ],
+  "note": "No raw article text has been copied. Acquire only after licensing/permission review, hash exact bytes, and record capture provenance."
+}

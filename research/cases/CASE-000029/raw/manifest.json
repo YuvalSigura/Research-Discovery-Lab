@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000029",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn"
+    }
+  ],
+  "note": "No raw article text has been copied. Acquire only after licensing/permission review, hash exact bytes, and record capture provenance."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000024",
+  "title": "HTTP Terminator AI novel security research",
+  "publisher": "PortSwigger",
+  "publication_date": "2026-08-05",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Title/date/source catalogued; no full-text raw copy or technical analysis is claimed."
+}

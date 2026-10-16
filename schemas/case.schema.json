@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Case Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "publisher",
+    "sources",
+    "analysis_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^CASE-[0-9]{6}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publication_date": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "url",
+          "original_content_status"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "original_content_status": {
+            "enum": [
+              "not_archived",
+              "archived",
+              "restricted"
+            ]
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "analysis_status": {
+      "enum": [
+        "not_started",
+        "in_progress",
+        "reviewed"
+      ]
+    }
+  }
+}
