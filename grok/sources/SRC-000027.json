@@ -1,0 +1,58 @@
+{
+  "source_id": "SRC-000027",
+  "case_id": "CASE-000027",
+  "canonical_url": "https://portswigger.net/research/browser-powered-desync-attacks",
+  "retrieved_url": "https://portswigger.net/research/browser-powered-desync-attacks",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_PARTIAL",
+  "source_revision_or_capture": "partial extract 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:45:00Z",
+  "document_genres": ["research paper", "technical deep dive"],
+  "lineage_id": "portswigger-http-desync-lineage",
+  "actor_roles": [{"actor": "James Kettle", "role": "author"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Introduction",
+      "type": "author_reported",
+      "statement": "Extends desync beyond reverse-proxy front-ends by using the victim's browser as delivery platform. Combines cross-domain requests with server flaws to poison connection pools, install backdoors, release desync worms. Targets include Apache, Akamai, Varnish, Amazon, web VPNs."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Can browser-sent cross-domain requests be used to deliver desync attacks against single-server targets and internal networks that lack an attacker-accessible reverse proxy?",
+      "basis": "author_explicit",
+      "anchor": "core thesis of the paper",
+      "uncertainty_reduced": "whether desync is limited to attacker-controlled front-ends",
+      "assumption_challenged": "that desync requires an attacker-accessible reverse proxy"
+    }
+  ],
+  "environment_model_updates": [
+    "Browser connection pools can be poisoned",
+    "Cross-domain requests can carry desync payloads"
+  ],
+  "discovery_mechanisms": [
+    "browser_as_delivery_platform",
+    "connection_pool_poisoning"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "methodology combining browser features and custom tooling",
+    "exploratory": "extreme innovation for scenarios where classic gadgets do not adapt"
+  },
+  "negative_inconclusive": [
+    "Some classic desync gadgets do not adapt to browser delivery"
+  ],
+  "decision_ids": ["portswigger-http-desync-lineage.T003"],
+  "unobserved_history": ["full research journey details beyond the partial extract"],
+  "forbidden_inferences": [
+    "Partial extract; do not invent detailed experiment sequence"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Full re-read of the paper for complete process details"],
+  "layer_b_candidate_principles": [
+    "Desync delivery is not limited to attacker-controlled proxies; browser connection pools can serve as an alternative delivery surface"
+  ],
+  "model_vs_harness": "Recognizing browser as delivery platform is model reasoning; tooling for connection-pool experiments can be harness."
+}
