@@ -166,7 +166,8 @@
                     "methodology_research_report",
                     "methodology_essay",
                     "third_party_forensic_reconstruction",
-                    "vendor_aggregate_report"
+                    "vendor_aggregate_report",
+                    "vendor_position_article"
                   ]
                 },
                 "publisher": {
