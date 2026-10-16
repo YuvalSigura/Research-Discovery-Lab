@@ -92,6 +92,9 @@ def synthetic_data():
           "case_ref":C2,"question_event_ref":"EVT-900008",
           "pattern_ref":P1,"pattern_definition_revision":1,
           "mapping_basis":"analyst_comparison","review_status":"curator_reviewed",
+          "abstraction_relation":"same_core_question",
+          "question_novelty":"known_research_question",
+          "question_novelty_basis":"Synthetic identity-transition case comparison",
           "abstraction_rationale":"A different technique addresses the same identity-transition invariant.",
           "provenance":{"evidence_status":"documented","source_refs":[SRC2]},
           "evidence_anchors":[{"source_ref":SRC2,"locator":"synthetic:mapping:2"}]}
