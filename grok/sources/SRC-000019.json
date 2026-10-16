@@ -1,0 +1,69 @@
+{
+  "source_id": "SRC-000019",
+  "case_id": "CASE-000019",
+  "canonical_url": "https://xbow.com/blog/xbow-2fauth-xss",
+  "retrieved_url": "https://xbow.com/blog/xbow-2fauth-xss",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:15:00Z",
+  "document_genres": ["research narrative", "source-assisted technical walkthrough"],
+  "lineage_id": "xbow-2fauth-2024",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process / Negatives",
+      "type": "author_reported",
+      "statement": "Source review of icon fetch (no SSRF due to controls). QR decode accepted SVG but returned 500. Shifted to migration/import path. AegisMigrator stored icon data without sanitization."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "After QR decode failures, focused on POST /api/v1/twofaccounts/migration. Verified stored XSS with victim-goto headless browser."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After QR-code SVG processing fails or is controlled, does the migration/import path store unsanitized icon data that is later rendered?",
+      "basis": "action_implied_candidate",
+      "anchor": "shift from QrCodeController to AegisMigrator after 500s",
+      "uncertainty_reduced": "whether imported icons are sanitized before storage",
+      "assumption_challenged": "that all SVG handling paths are equally protected"
+    }
+  ],
+  "environment_model_updates": [
+    "Icon fetch has controls",
+    "QR decode accepts SVG but errors",
+    "Migration stores Base64 icon data without sanitization"
+  ],
+  "discovery_mechanisms": [
+    "source_code_review_of_input_paths",
+    "failure_driven_pivot_to_related_feature",
+    "headless_browser_verification"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "review of IconFetch, QR, and migration controllers",
+    "exploratory": "moving to migration after QR path failed"
+  },
+  "negative_inconclusive": [
+    "Icon fetch: no exploitable SSRF",
+    "QR decode with SVG: 500 errors"
+  ],
+  "decision_ids": ["xbow-2fauth-2024.T001"],
+  "unobserved_history": ["exact auth automation trial-and-error details"],
+  "forbidden_inferences": [
+    "Do not treat QR 500 as proof no SVG issues exist elsewhere",
+    "Stored XSS was in a different feature from the initial QR focus"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note CVE-2024-52597; group with SRC-000021 under 2FAuth lineage"],
+  "layer_b_candidate_principles": [
+    "When one input path (QR decode) fails or is controlled, examine related import/migration features that handle the same data type",
+    "Stored content that is later rendered is a higher-value target than one-time processing endpoints"
+  ],
+  "model_vs_harness": "Recognizing migration as an alternative SVG sink is model reasoning; source review and headless verification can be partially harnessed."
+}
