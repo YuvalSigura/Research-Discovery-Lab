@@ -1,0 +1,61 @@
+{
+  "source_id": "SRC-000026",
+  "case_id": "CASE-000026",
+  "canonical_url": "https://portswigger.net/research/how-to-distinguish-http-pipelining-from-request-smuggling",
+  "retrieved_url": "https://portswigger.net/research/how-to-distinguish-http-pipelining-from-request-smuggling",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:40:00Z",
+  "document_genres": ["methodology note", "technical guidance"],
+  "lineage_id": "portswigger-http-desync-lineage",
+  "actor_roles": [{"actor": "PortSwigger Research", "role": "author"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Methodology",
+      "type": "author_reported",
+      "statement": "Connection reuse often causes false positives for smuggling. Disable reuse first. Use specific probes (HTTP/2 nesting, partial requests, connection-state probe) to distinguish true smuggling, connection-locked, connection-state, and client-side desync."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "When a desync proof-of-concept only works with connection reuse, which of the three valid reuse-dependent classes is it, versus pure pipelining false positive?",
+      "basis": "author_explicit",
+      "anchor": "core distinction method",
+      "uncertainty_reduced": "false positive vs real vulnerability class",
+      "assumption_challenged": "that any reuse-dependent behavior is either pure FP or true smuggling"
+    }
+  ],
+  "environment_model_updates": [
+    "HTTP/1 connection reuse concatenates requests",
+    "Three distinct classes require reuse but have different exploitability"
+  ],
+  "discovery_mechanisms": [
+    "differential_testing_with_and_without_reuse",
+    "http2_nesting_probe",
+    "connection_state_probe"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "disable reuse first, then apply specific probes",
+    "exploratory": "further impact exploration if a real class is confirmed"
+  },
+  "negative_inconclusive": [
+    "Reuse alone is often pure pipelining/keep-alive (false positive)"
+  ],
+  "decision_ids": ["portswigger-http-desync-lineage.T002"],
+  "unobserved_history": [],
+  "forbidden_inferences": [
+    "Do not treat all reuse-dependent findings as false positives",
+    "Do not treat them all as classic request smuggling"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Link to SRC-000025 and SRC-000027"],
+  "layer_b_candidate_principles": [
+    "Always disable connection reuse first when validating desync findings; only then apply class-specific probes",
+    "Distinguish connection-locked, connection-state, and client-side desync rather than collapsing them"
+  ],
+  "model_vs_harness": "Class distinction is model judgment; automated reuse-disable and probe execution is harness."
+}
