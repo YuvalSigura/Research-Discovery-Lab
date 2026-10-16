@@ -1,0 +1,15 @@
+{
+  "source_id": "SRC-000028",
+  "case_id": "CASE-000028",
+  "canonical_url": "https://portswigger.net/research/http2",
+  "access_status": "READ_FULL",
+  "document_genres": ["research paper", "technical deep dive"],
+  "lineage_id": "portswigger-http-desync-lineage",
+  "source_claims": [{"claim_id": "C1", "type": "author_reported", "statement": "Coded HTTP/2 client from scratch. Adapted timeout detection. Focused on downgrading desync (H2.CL, H2.TE). Developed tunnelling confirmation via HEAD/Content-Length. Incomplete hotfixes led to further findings."}],
+  "research_questions": [{"question_id": "Q1", "formulation": "How do HTTP/2 downgrading and RFC imperfections create exclusive desync and tunnelling opportunities?", "basis": "author_explicit"}],
+  "discovery_mechanisms": ["protocol_implementation_from_scratch", "adapted_timeout_detection", "tunnelling_confirmation"],
+  "negative_inconclusive": ["Many servers skip validation", "Connection reuse limits cross-user impact", "Incomplete hotfixes"],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "layer_b_candidate_principles": ["HTTP/2 downgrading reintroduces length ambiguity; probe for H2.CL/H2.TE and tunnelling", "Incomplete mitigations often leave alternative injection vectors"]
+}
