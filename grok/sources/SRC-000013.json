@@ -1,0 +1,67 @@
+{
+  "source_id": "SRC-000013",
+  "case_id": "CASE-000013",
+  "canonical_url": "https://xbow.com/blog/xbow-photo-proxy-lfi",
+  "retrieved_url": "https://xbow.com/blog/xbow-photo-proxy-lfi",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:00:00Z",
+  "document_genres": ["research narrative", "technical walkthrough"],
+  "lineage_id": "xbow-photo-proxy-lfi-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Starting Point",
+      "type": "author_reported",
+      "statement": "Gathered context from JavaScript without source code. Focused on avatar generation and download endpoints."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Negatives / Pivots",
+      "type": "author_reported",
+      "statement": "Standard path traversal, encodings, null bytes on download endpoint produced only Internal Server Errors. Abandoned that fixation; examined other JS (main.js) and found SSRF allowing file://."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After standard traversal techniques fail on the obvious download endpoint, do other JavaScript-referenced endpoints expose a different file-access primitive?",
+      "basis": "action_implied_candidate",
+      "anchor": "pivot from download endpoint to other JS files",
+      "uncertainty_reduced": "whether file access is limited to the download path",
+      "assumption_challenged": "that the download endpoint is the only relevant surface"
+    }
+  ],
+  "environment_model_updates": [
+    "Download endpoint rejects standard traversal with errors",
+    "main.js contains an SSRF that accepts file:// and returns file content"
+  ],
+  "discovery_mechanisms": [
+    "javascript_static_analysis",
+    "failure_driven_pivot_away_from_obvious_endpoint",
+    "ssrf_to_local_file"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "testing standard path traversal variants on the download endpoint",
+    "exploratory": "examining additional JS files after the primary endpoint failed"
+  },
+  "negative_inconclusive": [
+    "All standard traversal techniques on download endpoint produced errors (bounded negative on that endpoint)"
+  ],
+  "decision_ids": ["xbow-photo-proxy-lfi-2025.T001"],
+  "unobserved_history": ["exact JS snippets examined", "order of failed encodings"],
+  "forbidden_inferences": [
+    "Do not treat download endpoint failures as proof no LFI exists",
+    "The successful SSRF was found by looking beyond the initial hint"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note bug bounty reporting and quick fix"],
+  "layer_b_candidate_principles": [
+    "When an obvious endpoint rejects standard techniques with errors, examine other client-side references for alternative entry points before stopping",
+    "JavaScript can reveal SSRF or proxy endpoints that accept file:// even when direct download paths do not"
+  ],
+  "model_vs_harness": "Deciding to abandon the download endpoint and look at other JS is model judgment; systematic testing of traversal variants can be harness."
+}
