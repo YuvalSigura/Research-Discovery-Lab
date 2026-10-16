@@ -1,0 +1,57 @@
+{
+  "source_id": "SRC-000007",
+  "case_id": "CASE-000007",
+  "canonical_url": "https://xbow.com/blog/tales-from-the-trace-how-xbow-reasons-its-way-into-finding-idors",
+  "retrieved_url": "https://xbow.com/blog/tales-from-the-trace-how-xbow-reasons-its-way-into-finding-idors",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:15:00Z",
+  "document_genres": ["AI-agent trace narrative", "technical walkthrough of two IDOR findings"],
+  "lineage_id": "xbow-spree-idor-2026",
+  "actor_roles": [
+    {"actor": "XBOW AI agent", "role": "investigator"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Finding 1 narrative",
+      "type": "author_reported",
+      "statement": "Navigated addresses pages, tested numeric IDs, received 403s, then accessed /addresses/1/edit unauthenticated after dropping session cookies, revealing PII."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Finding 2 narrative",
+      "type": "author_reported",
+      "statement": "Created distinct carts (victim Cart A, attacker Cart B); used order token and bill_address_id from A in PATCH to B's checkout to leak PII."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "Negatives / Pivots",
+      "type": "author_reported",
+      "statement": "502 on /account paths led to pivot via sidebar link; 403 on authenticated access led to unauthenticated test; 404/routing issues led to cart creation for token."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Do object IDs in address and cart endpoints enforce authorization consistently across authenticated and unauthenticated contexts?",
+      "basis": "action_implied_candidate",
+      "anchor": "trace descriptions"
+    }
+  ],
+  "decision_ids": ["xbow-spree-idor-2026.T001"],
+  "unobserved_history": [
+    "Full raw tool-call sequence beyond summarized traces",
+    "Reasons for selecting specific ID values beyond sequential testing"
+  ],
+  "forbidden_inferences": [
+    "Do not treat 403/502 as falsified IDOR hypotheses; they were pivots to alternative access methods",
+    "Traces are retrospective summaries of agent behavior, not contemporaneous logs"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": [
+    "Note two distinct findings within one source; may warrant separate run_ids if more detail emerges"
+  ]
+}
