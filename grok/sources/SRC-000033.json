@@ -1,0 +1,16 @@
+{
+  "source_id": "SRC-000033",
+  "canonical_url": "https://projectzero.google/2025/12/windows-exploitation-techniques.html",
+  "access_status": "READ_FULL",
+  "document_genres": ["technical research", "exploitation technique"],
+  "lineage_id": "projectzero-windows-race-2025",
+  "source_claims": [{"claim_id": "C1", "type": "author_reported", "statement": "Empirically measured OMNS lookup times. Long paths insufficient. Recursive dirs better. Symbolic links and hash collisions multiplicative. Shadow directories reduced setup cost. Final technique yields multi-second to multi-minute windows."}],
+  "research_questions": [{"question_id": "Q1", "formulation": "What OMNS mechanisms can expand a race window enough for reliable exploitation when a check is followed by resource access?", "basis": "author_explicit"}],
+  "discovery_mechanisms": ["empirical_timing_measurement", "kernel_disassembly", "technique_composition"],
+  "negative_inconclusive": ["Long paths only ~35μs", "Hash collision insertion quadratic and slow", "Symbolic link reparse limit 64"],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "layer_b_candidate_principles": ["When a race window is too small, systematically measure and compose slowdowns in the resource lookup path rather than abandoning the class", "Kernel disassembly can reveal multiplicative factors (hash collisions) that empirical testing alone misses"],
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "retrieval_timestamp": "2026-10-16T10:50:00Z"
+}
