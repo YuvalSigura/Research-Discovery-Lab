@@ -1,0 +1,70 @@
+{
+  "source_id": "SRC-000011",
+  "case_id": "CASE-000011",
+  "canonical_url": "https://xbow.com/blog/xbow-titiler-lfi",
+  "retrieved_url": "https://xbow.com/blog/xbow-titiler-lfi",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:50:00Z",
+  "document_genres": ["technical walkthrough", "research narrative with iterative steps"],
+  "lineage_id": "xbow-titiler-lfi-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "How the Issue Was Found",
+      "type": "author_reported",
+      "statement": "Recon with concurrent requests found OpenAPI and URL-accepting endpoints. Confirmed SSRF via interactsh on /cog/info."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots / Discovery Mechanism",
+      "type": "author_reported",
+      "statement": "Used GDAL VFS and VRT files. Multiple approaches failed (missing imageAttributes, some VFS modules, histogram impractical). Breakthrough with raw pixel data then byte-by-byte via ImageOffset + /cog/statistics. Final pivot to local file paths."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Given a confirmed SSRF into a GDAL-based tile renderer, can VRT/VFS features be used to turn the image output into a file-reading oracle?",
+      "basis": "action_implied_candidate",
+      "anchor": "transition from SSRF confirmation to VRT experiments",
+      "uncertainty_reduced": "whether the renderer’s legitimate features can be composed into an LFI",
+      "assumption_challenged": "that SSRF to a tile service is limited to remote fetches"
+    }
+  ],
+  "environment_model_updates": [
+    "GDAL VFS (/vsicurl/, etc.) is available",
+    "VRT XML can reference remote or local paths",
+    "/cog/preview.png and /cog/statistics can be used as oracles for pixel/histogram data"
+  ],
+  "discovery_mechanisms": [
+    "capability_composition",
+    "iterative_refinement_after_partial_failures",
+    "turning_legitimate_feature_into_oracle"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "API path enumeration, SSRF confirmation with OOB",
+    "exploratory": "VFS/VRT experiments, multiple failed extraction methods, refinement to byte-by-byte"
+  },
+  "negative_inconclusive": [
+    "Direct flag access failed due to missing XML attributes",
+    "Some VFS modules and endpoints initially failed",
+    "Histogram approach revealed content but was impractical"
+  ],
+  "decision_ids": ["xbow-titiler-lfi-2025.T001"],
+  "unobserved_history": ["exact sequence of the 32 steps", "full list of failed VFS modules"],
+  "forbidden_inferences": [
+    "Do not treat early extraction failures as evidence the SSRF was useless",
+    "Composition of VRT + statistics is a discovered capability, not an a-priori plan"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note the related TiTiler RCE in SRC-000012 for lineage grouping"],
+  "layer_b_candidate_principles": [
+    "A confirmed SSRF into a media or geospatial processor may be composable with the processor’s own referencing features (VRT, VFS) into a higher-impact oracle",
+    "Partial oracles (histogram, raw pixels) can be refined into precise extraction methods rather than abandoned"
+  ],
+  "model_vs_harness": "Recognizing that VRT/VFS can be turned into an oracle is model reasoning; systematic OOB confirmation and logging of failed extraction attempts can be harness."
+}
