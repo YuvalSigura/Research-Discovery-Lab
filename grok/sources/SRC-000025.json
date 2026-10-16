@@ -1,0 +1,71 @@
+{
+  "source_id": "SRC-000025",
+  "case_id": "CASE-000025",
+  "canonical_url": "https://portswigger.net/research/http1-must-die",
+  "retrieved_url": "https://portswigger.net/research/http1-must-die",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:35:00Z",
+  "document_genres": ["research whitepaper", "technical deep dive with case studies"],
+  "lineage_id": "portswigger-http-desync-lineage",
+  "actor_roles": [{"actor": "James Kettle / PortSwigger", "role": "primary_investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process / Pivots",
+      "type": "author_reported",
+      "statement": "Six years of work starting 2019. Classic detection methods blocked by WAFs. Shifted to parser discrepancy detection. 0.CL initially seemed unexploitable; developed double-desync and early-response gadgets. Expect header explored after 2022 attempts yielded nothing."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Negatives",
+      "type": "author_reported",
+      "statement": "Timeout-based and gadget detection fingerprinted. 0.CL often deadlocks. Some findings low bounty or out of scope. Reporting delays with CDNs."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After traditional CL.TE detection is mitigated, which parser discrepancies (including 0.CL and Expect) remain exploitable, and what early-response or sequencing techniques make them practical?",
+      "basis": "author_explicit_sequence",
+      "anchor": "shift from classic methods to discrepancy detection and Expect",
+      "uncertainty_reduced": "whether 0.CL and Expect can be made reliable",
+      "assumption_challenged": "that 0.CL is unexploitable and that WAFs close the class"
+    }
+  ],
+  "environment_model_updates": [
+    "HTTP/1.1 length ambiguity persists across proxies",
+    "Early-response gadgets exist on some servers (IIS /con)",
+    "Expect header can split requests and create new desyncs"
+  ],
+  "discovery_mechanisms": [
+    "parser_discrepancy_probing",
+    "early_response_gadget_discovery",
+    "double_desync_sequencing",
+    "collaboration_for_broader_testing"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "HTTP Request Smuggler probing of header discrepancies",
+    "exploratory": "Expect header after earlier attempts failed; double-desync after deadlocks"
+  },
+  "negative_inconclusive": [
+    "Classic gadgets and timeouts: fingerprinted/blocked",
+    "0.CL: frequent deadlocks without gadgets",
+    "Some CDN findings: delayed or out of scope"
+  ],
+  "decision_ids": ["portswigger-http-desync-lineage.T001"],
+  "unobserved_history": ["exact 2022 Expect experiments that yielded nothing"],
+  "forbidden_inferences": [
+    "Do not treat WAF blocks as closure of the desync class",
+    "0.CL deadlock is a prerequisite problem, not a falsified hypothesis"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Cross-reference with SRC-000026, SRC-000027, SRC-000029 for shared lineage"],
+  "layer_b_candidate_principles": [
+    "When classic detection is mitigated, probe for parser discrepancies and early-response gadgets rather than abandoning the class",
+    "Sequencing techniques (double-desync) can convert an apparently unexploitable primitive into a usable one"
+  ],
+  "model_vs_harness": "Identifying Expect and sequencing techniques is model reasoning; large-scale discrepancy probing and tool support are harness."
+}
