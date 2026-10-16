@@ -1,0 +1,16 @@
+{
+  "source_id": "SRC-000055",
+  "canonical_url": "https://pentera.io/resources/research/pre-auth-rce-chain-cyberpanel/",
+  "access_status": "READ_FULL",
+  "document_genres": ["research narrative", "vulnerability chain"],
+  "lineage_id": "pentera-cyberpanel-2026",
+  "source_claims": [{"claim_id": "C1", "type": "author_reported", "statement": "Variant analysis after cPanel CVE. Cron injection required auth and delayed. AI Scanner XSS blocked by missing scan_id. Pivot to forgotten debug endpoints that leaked scan_ids. Composed XSS → admin creation → cron RCE."}],
+  "research_questions": [{"question_id": "Q1", "formulation": "After an authenticated primitive and an unauthenticated XSS both appear blocked, does a forgotten debug endpoint supply the missing prerequisite for composition?", "basis": "action_implied_candidate"}],
+  "discovery_mechanisms": ["variant_analysis", "failure_driven_pivot_to_routing_review", "capability_composition"],
+  "negative_inconclusive": ["Cron: required auth + delay", "XSS: unreachable without scan_id", "ID guessing failed"],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "layer_b_candidate_principles": ["When two promising primitives are each blocked by a missing prerequisite, examine routing and debug surfaces for the missing link", "Variant analysis of similar products can surface analogous but differently protected features"],
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "retrieval_timestamp": "2026-10-16T10:50:00Z"
+}
