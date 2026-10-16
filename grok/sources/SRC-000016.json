@@ -1,0 +1,71 @@
+{
+  "source_id": "SRC-000016",
+  "case_id": "CASE-000016",
+  "canonical_url": "https://xbow.com/blog/xbow-akamai-cloudtest-xxe",
+  "retrieved_url": "https://xbow.com/blog/xbow-akamai-cloudtest-xxe",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:10:00Z",
+  "document_genres": ["technical walkthrough", "iterative XXE research narrative"],
+  "lineage_id": "xbow-akamai-cloudtest-xxe-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process",
+      "type": "author_reported",
+      "statement": "Redirect to /concerto/. Found SOAP endpoint. Basic XXE produced 500s. Analyzed WSDL. Tried CDATA, error-based, OOB with Interactsh, external DTD hosting. Combined external DTD + error-based to exfiltrate."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Negatives / Pivots",
+      "type": "author_reported",
+      "statement": "CDATA failed because entities not processed. Pure error-based did not give clean content. Cramming all logic into one request failed. Multiple endpoints under /concerto/services vulnerable."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After basic XXE and CDATA fail, can an external DTD combined with error-based techniques produce usable file content from the SOAP endpoints?",
+      "basis": "action_implied_candidate",
+      "anchor": "combination of external DTD hosting with error-based after earlier methods failed",
+      "uncertainty_reduced": "whether entity processing can be leveraged for exfiltration",
+      "assumption_challenged": "that 500 errors or CDATA failure mean XXE is unusable"
+    }
+  ],
+  "environment_model_updates": [
+    "Akamai CloudTest SOAP services under /concerto/services",
+    "Java 1.8.0_382",
+    "External entities processed; error messages can leak system-id"
+  ],
+  "discovery_mechanisms": [
+    "soap_endpoint_identification",
+    "iterative_xxe_technique_refinement",
+    "oob_confirmation_then_exfiltration_composition"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "endpoint exploration, WSDL analysis, testing standard XXE variants",
+    "exploratory": "splitting attack between hosted DTD and main request after in-band methods failed"
+  },
+  "negative_inconclusive": [
+    "Basic XXE: 500 errors",
+    "CDATA: entities not expanded",
+    "Pure error-based: no clean file content",
+    "Single-request full logic: failed"
+  ],
+  "decision_ids": ["xbow-akamai-cloudtest-xxe-2025.T001"],
+  "unobserved_history": ["exact DTD content and error payloads used"],
+  "forbidden_inferences": [
+    "Do not treat early 500s or CDATA failure as falsification of XXE",
+    "Success required composition of external DTD + error-based"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note fix by disabling DTD processing"],
+  "layer_b_candidate_principles": [
+    "When standard XXE techniques fail, composing external DTD hosting with error-based or OOB methods can still yield exfiltration",
+    "Error messages that leak system-id or file paths are positive signals even if content is not clean"
+  ],
+  "model_vs_harness": "Choosing to host an external DTD and split the attack is model reasoning; systematic SOAP/WSDL testing and OOB confirmation can be harness."
+}
