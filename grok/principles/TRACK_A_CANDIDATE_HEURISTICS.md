@@ -2,7 +2,7 @@
 
 **Status:** PROVISIONAL. Not an architecture change. Not a new authority.  
 **Purpose:** Translate source-grounded research principles into candidate capabilities that can be expressed using existing HOMELAB components (WorkGraph, ActionPlane, EvidenceLedger, hypothesis state, capability composition) without introducing new scheduler, truth authority, execution authority, or persistent state ownership.  
-**Architecture note:** Inspected Harness repository structure (action_plane.py, dynamic_workgraph.py, capability_chain_engine.py, discovery_hypotheses.py, etc.). All proposals below are classified as guidance for existing components or as potential Architecture Change Proposals (ACP) if they require new contracts. No F1–F12 foundation modifications are proposed here.  
+**Architecture note:** Earlier analysis inspected some Harness repository structure, but the latest unpushed P0 branch changes and authoritative production callers are **not verified by this document**. Component names below are integration candidates, not proven production hook locations. No F1–F12 foundation modifications are authorized here.  
 **Revision note:** Revised 2026-10-16 to correct TA-H002, TA-H004, and TA-H006.  
 **Date:** 2026-10-16
 
@@ -111,6 +111,36 @@ Do not treat “disable connection reuse first” as a hard filter that decides 
 **Proposed use:** Continue to require deterministic or independently verifiable checks before any model-proposed finding is treated as evidence. Model proposals remain proposals.  
 **Does not:** Change existing truth authority boundaries.  
 **Validation:** Audit that no model output is promoted without evidence contract satisfaction.
+
+---
+
+## Implementation-readiness matrix — candidate integration, NOT verified call sites
+
+The following is a concrete **integration specification for audit and test planning**. No production function or file path may be treated as verified until the target branch is checked at the exact commit under review. In particular, do not assume a single reducer owns task, hypothesis, campaign, and proof closure. The existing repository-defined owners remain authoritative.
+
+| ID | Proposed input contract | Candidate existing responsibility / hook to verify | Intended output (non-authoritative unless existing owner commits) | Acceptance and fault tests | Present status |
+|---|---|---|---|---|---|
+| TA-H001 | Experiment result; explicit target, identity, input/state scope; evidence refs; discriminator | Existing evidence ingestion + hypothesis interpretation; identify real consumer after FUP-B1 | Scoped negative/unknown claim, never a global closure | Same response in different identity/state; missing or stale evidence; positive proof isolation | NEEDS_CODE_AUDIT |
+| TA-H002 | Blocked investigation direction; policy/technical/cost/experimental reason; prerequisite refs | Existing hypothesis-state owner; WorkGraph only reflects execution/task status | Reason-typed unresolved research item with permitted reconsideration | Authorization block never becomes hypothesis refutation; replay idempotent; no automatic unauthorized retry | NEEDS_CODE_AUDIT |
+| TA-H003 | Verified or hypothesized prerequisite graph gaps; currently available approved capabilities | Existing planning/capability-chain input; WorkGraph dispatch only through canonical planner | Ranked **proposal** for next discriminating research question | Missing condition remains unknown; no inferred credential grant; scope changes deny proposals | NEEDS_CODE_AUDIT |
+| TA-H004 | Explicitly authorized HTTP test case with connection-state variants; request/evidence correlation | Existing ActionPlane HTTP execution + observation capture, only if supported by policy/tooling | Paired measurement record and candidate interpretation, not verified desync | With/without-reuse controls; tool-artifact negatives; connection-state true positives; no unsanctioned target requests | NEEDS_CODE_AUDIT |
+| TA-H005 | Structured validation error with provenance, redaction classification, context | Existing execution evidence capture + environment model ingestion path | Candidate schema constraints with confidence, not assumed authoritative server contract | Malformed/partial error, sensitive values, stale schema, parse failure, conflicting schema | NEEDS_CODE_AUDIT |
+| TA-H006 | Prior-art claim about a default credential, **without secret material in model context** | Existing environment hypothesis + secret authority + ActionPlane authorization | Unverified environment hypothesis; authorized verification proposal only | Token redaction; no automatic secret use; unavailable/expired token; cross-tenant isolation | NEEDS_CODE_AUDIT |
+| TA-H007 | Cost/complexity abandonment and supporting evidence, benefit estimate | Existing supervisor/approval or planning feedback, if actually present | Optional human-review **suggestion**, never required for routine autonomy | No human queue flood; cost-vs-prerequisite distinction; replay/dedup; no grant escalation | NEEDS_CODE_AUDIT |
+| TA-H008 | Model claim, proposed mechanism, qualifying evidence refs, verifier result | Existing Evidence/Verifier/ProofLifecycle promotion path; confirm caller in target branch | Proof status assigned only by existing verification authority | Model-only findings rejected; mismatch/late/replay evidence; no truth promotion from receipt | NEEDS_CODE_AUDIT |
+
+### Engineering rules before implementation
+
+1. **Audit the exact target Git SHA** and enumerate the real production caller, file:line or symbol, current owner and writer, input/output schema, existing test, and missing invariant for each TA-Hxxx. Do not turn the candidate table above into fabricated repository facts.
+2. Classify each entry as `IMPLEMENTED_AND_WIRED`, `IMPLEMENTED_NOT_WIRED`, `PARTIAL`, `MISSING`, or `DEFERRED`, with evidence. A *file-name match* alone is not production wiring.
+3. Reconcile specifically against the **final combined** FUP-B1/FUP-B3 code and reality report before proposing any adjacent implementation. Do not duplicate experiment satisfaction, stagnation owners, rediscovery dispatch, or proof promotion.
+4. For any proposed mutation, record existing writer and transaction boundary. An additional interpretation/read-side helper is not a new authority; a new persistent state owner, truth authority, execution authority, scheduler, secret path, or foundational contract requires the project's architecture-change process.
+5. Execute no RDL-driven target work outside ProgramPolicy and ActionPlane. All outputs that advise the model remain provisional proposals until evidenced by the actual runtime.
+6. Specify and run both positive and *negative* contract tests, replay/duplicate-receipt tests, restart recovery, scope-revocation and missing-prerequisite cases before calling any heuristic implemented.
+
+### Review deliverable required from the engineer
+
+For each `TA-Hxxx`, return `observed_branch_sha`, `actual_file_symbol`, `production_caller`, `authority_owner`, `existing_schema`, `planned_schema_delta`, `test_paths`, `runtime_qualification`, and `verdict`. Use `UNVERIFIED` where inspection is impossible. This document is not an instruction to start P1–P4 or to edit ongoing P0 work.
 
 ---
 
