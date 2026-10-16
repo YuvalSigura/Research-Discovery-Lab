@@ -1,0 +1,13 @@
+{
+  "lineage_id": "xbow-chrome-fullchain-2026",
+  "description": "XBOW Chrome full-chain exploit investigation (2026), announced and technically described in two first-party posts",
+  "sources": ["SRC-000001", "SRC-000002"],
+  "investigation_type": "single_investigation_multiple_publications",
+  "actor_notes": "Named humans + AI agents as tools. Parallel campaigns noted; not a single serial diary.",
+  "chain_revisions": [
+    "Initial chain (disqualified due to known bug per announcement)",
+    "Gin-based V8 escape version (duplicate of Chromium issue 542670566)",
+    "Final chain using Maglev + animated WebP + Crashpad"
+  ],
+  "notes": "Announcement and technical post describe the same effort. Day-by-day assignments are not supported by either source. Modularity causality relative to collisions is uncertain."
+}
