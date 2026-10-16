@@ -951,6 +951,756 @@
           "locator": "section: Swapping Out the Middle"
         }
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000039",
+      "subject": "EVT-000046",
+      "predicate": "raised_question",
+      "object": "EVT-000047",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: introduction; The Architecture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000040",
+      "subject": "EVT-000047",
+      "predicate": "answers",
+      "object": "EVT-000048",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: The Architecture"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000041",
+      "subject": "EVT-000048",
+      "predicate": "followed_by",
+      "object": "EVT-000049",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: The Architecture; Signs of Trouble"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000042",
+      "subject": "EVT-000049",
+      "predicate": "raised_question",
+      "object": "EVT-000050",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-formulated reasoning connection; neither the question wording nor causality is independently established.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Signs of Trouble"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000043",
+      "subject": "EVT-000050",
+      "predicate": "tested_by",
+      "object": "EVT-000051",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-formulated reasoning connection; neither the question wording nor causality is independently established.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Signs of Trouble; Bug 1: Title Injection"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000044",
+      "subject": "EVT-000051",
+      "predicate": "followed_by",
+      "object": "EVT-000052",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 1: Title Injection"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000045",
+      "subject": "EVT-000052",
+      "predicate": "produced_evidence",
+      "object": "EVT-000053",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 1: Title Injection"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000046",
+      "subject": "EVT-000053",
+      "predicate": "blocked_by",
+      "object": "EVT-000054",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 1: Title Injection"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000047",
+      "subject": "EVT-000054",
+      "predicate": "followed_by",
+      "object": "EVT-000055",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 1: Title Injection"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000048",
+      "subject": "EVT-000055",
+      "predicate": "followed_by",
+      "object": "EVT-000056",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 1; Bug 2"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000049",
+      "subject": "EVT-000056",
+      "predicate": "followed_by",
+      "object": "EVT-000057",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 2: Template Injection Mitigation Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000050",
+      "subject": "EVT-000057",
+      "predicate": "revised_belief",
+      "object": "EVT-000058",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 2: Template Injection Mitigation Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000051",
+      "subject": "EVT-000058",
+      "predicate": "informed_by",
+      "object": "EVT-000059",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 2: Template Injection Mitigation Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000052",
+      "subject": "EVT-000059",
+      "predicate": "raised_question",
+      "object": "EVT-000060",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-formulated reasoning connection; neither the question wording nor causality is independently established.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 2; Bug 3"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000053",
+      "subject": "EVT-000060",
+      "predicate": "tested_by",
+      "object": "EVT-000061",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-formulated reasoning connection; neither the question wording nor causality is independently established.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 3: Filesystem Filter Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000054",
+      "subject": "EVT-000061",
+      "predicate": "produced_evidence",
+      "object": "EVT-000062",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 3: Filesystem Filter Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000055",
+      "subject": "EVT-000062",
+      "predicate": "informed_by",
+      "object": "EVT-000063",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 3: Filesystem Filter Bypass"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000056",
+      "subject": "EVT-000063",
+      "predicate": "produced_evidence",
+      "object": "EVT-000064",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Bug 3; Bonus - Going for Full Compromise"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000057",
+      "subject": "EVT-000064",
+      "predicate": "followed_by",
+      "object": "EVT-000065",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000075"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000075",
+          "locator": "sections: Conclusion"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000058",
+      "subject": "EVT-000066",
+      "predicate": "followed_by",
+      "object": "EVT-000067",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The Initial Discovery"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000059",
+      "subject": "EVT-000067",
+      "predicate": "raised_question",
+      "object": "EVT-000068",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The Initial Analysis: A Suspected Vulnerability"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000060",
+      "subject": "EVT-000068",
+      "predicate": "followed_by",
+      "object": "EVT-000069",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The Initial Analysis: A Suspected Vulnerability"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000061",
+      "subject": "EVT-000069",
+      "predicate": "tested_by",
+      "object": "EVT-000070",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The Initial Analysis: A Suspected Vulnerability"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000062",
+      "subject": "EVT-000070",
+      "predicate": "followed_by",
+      "object": "EVT-000071",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The Vendor Response: A Different Interpretation"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000063",
+      "subject": "EVT-000071",
+      "predicate": "revised_belief",
+      "object": "EVT-000072",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The Vendor Response; Mathematical Validation"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000064",
+      "subject": "EVT-000072",
+      "predicate": "raised_question",
+      "object": "EVT-000073",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-formulated reasoning connection; neither the question wording nor causality is independently established.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: AddressSanitizer: A Tool for Detection, Not Proof"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000065",
+      "subject": "EVT-000073",
+      "predicate": "tested_by",
+      "object": "EVT-000074",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-formulated reasoning connection; neither the question wording nor causality is independently established.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: Empirical Validation; AddressSanitizer"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000066",
+      "subject": "EVT-000074",
+      "predicate": "produced_evidence",
+      "object": "EVT-000075",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: Empirical Validation; AddressSanitizer"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000067",
+      "subject": "EVT-000075",
+      "predicate": "informed_by",
+      "object": "EVT-000076",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "The writer describes the connection in the named source sections; author retrospective is not independently corroborated.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The False Positive: Understanding What Went Wrong"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000068",
+      "subject": "EVT-000076",
+      "predicate": "followed_by",
+      "object": "EVT-000077",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher narrative order only; this edge must never establish causality.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Article inspected 2026-10-16; no exact event timestamp or contemporaneous review."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: Conclusion: The Path to Accurate Vulnerability Assessment"
+        }
+      ]
     }
   ]
 }
