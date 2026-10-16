@@ -14,7 +14,9 @@
     "review_status",
     "abstraction_rationale",
     "provenance",
-    "evidence_anchors"
+    "evidence_anchors",
+    "abstraction_relation",
+    "question_novelty"
   ],
   "properties": {
     "schema_version": {
@@ -135,6 +137,44 @@
         "string",
         "null"
       ]
+    },
+    "abstraction_relation": {
+      "enum": [
+        "same_core_question",
+        "specialization",
+        "partial_overlap",
+        "analogy_only",
+        "unresolved"
+      ]
+    },
+    "question_novelty": {
+      "enum": [
+        "unassessed",
+        "known_research_question",
+        "novel_framing_of_known_question",
+        "candidate_distinct_question"
+      ]
+    },
+    "question_novelty_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_art_cutoff": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "prior_art_source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[0-9]{6}$"
+      },
+      "uniqueItems": true
     }
   }
 }

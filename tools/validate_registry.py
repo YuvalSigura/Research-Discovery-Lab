@@ -114,6 +114,28 @@ def validate(root=ROOT):
                         anchor["source_ref"] in case_sources and
                         anchor["source_ref"] in source_refs,
                         f"{rid}: invalid question mapping source")
+            if item["question_novelty"]!="unassessed":
+                require(bool(item.get("question_novelty_basis")),
+                        f"{rid}: question novelty requires explicit basis")
+            if item["question_novelty"]=="candidate_distinct_question":
+                require(item["mapping_basis"]!="algorithmic_suggestion" and
+                        bool(item.get("prior_art_cutoff")) and
+                        bool(item.get("prior_art_source_refs")),
+                        f"{rid}: candidate new question requires prior-art review and cutoff")
+                from datetime import timezone
+                cutoff=datetime.fromisoformat(item["prior_art_cutoff"].replace("Z","+00:00"))
+                for sid in item.get("prior_art_source_refs", []):
+                    require(sid in records and sid.startswith("SRC-"),
+                            f"{rid}: invalid question prior-art source {sid}")
+                    date=records[sid].get("publication_date")
+                    require(date and re.fullmatch(r"\d{4}-\d{2}-\d{2}", date),
+                            f"{rid}: undated prior art cannot establish novelty at cutoff")
+                    publication=datetime.fromisoformat(date).replace(tzinfo=timezone.utc)
+                    require(publication<=cutoff,
+                            f"{rid}: question novelty cites future prior art {sid}")
+            if item["review_status"]=="curator_reviewed":
+                require(item["abstraction_relation"] in {"same_core_question","specialization"},
+                        f"{rid}: overlapping or analogical questions cannot be treated as identical")
             if item["mapping_basis"]=="algorithmic_suggestion":
                 require(item["review_status"]=="proposed" and
                         item["provenance"]["evidence_status"] in {"proposed","unknown"},
