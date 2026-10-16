@@ -1,0 +1,68 @@
+{
+  "source_id": "SRC-000010",
+  "case_id": "CASE-000010",
+  "canonical_url": "https://xbow.com/blog/xbow-geolocation-sqli",
+  "retrieved_url": "https://xbow.com/blog/xbow-geolocation-sqli",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:50:00Z",
+  "document_genres": ["research narrative", "technical walkthrough"],
+  "lineage_id": "xbow-geolocation-sqli-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Starting Point / Negatives",
+      "type": "author_reported",
+      "statement": "Goal was to bypass geolocation restriction. X-Forwarded-For, User-Agent, endpoint discovery, account registration all failed. Most endpoints remained protected."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Unexpected Findings / Pivots",
+      "type": "author_reported",
+      "statement": "After pivot to cookie testing, /non_participating/ returned 500 with SQL payload in cookie. Confirmed blind SQLi via SLEEP timing."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After standard geo-bypass techniques fail, are there input vectors (cookies, specific endpoints) that still reach backend logic?",
+      "basis": "action_implied_candidate",
+      "anchor": "pivot from geo-bypass dead-end to cookie/sqlmap testing",
+      "uncertainty_reduced": "whether any reachable input is unsanitized",
+      "assumption_challenged": "that geolocation enforcement implies the entire surface is closed"
+    }
+  ],
+  "environment_model_updates": [
+    "Geolocation restrictions are applied broadly across endpoints and methods",
+    "/non_participating/ processes cookie values in a way that reaches SQL"
+  ],
+  "discovery_mechanisms": [
+    "failure_driven_pivot",
+    "systematic_then_alternative_input_vector",
+    "timing_oracle_confirmation"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "geo-bypass techniques, robots.txt, sitemap, account attempts",
+    "exploratory": "continued probing of cookies and specific endpoints after recon dead-end"
+  },
+  "negative_inconclusive": [
+    "All initial geo-bypass methods failed (blocked access, not disproved vulnerability class)",
+    "Most discovered endpoints remained geo-protected"
+  ],
+  "decision_ids": ["xbow-geolocation-sqli-2025.T001"],
+  "unobserved_history": ["exact sqlmap commands or payload list", "whether AI was involved in persistence"],
+  "forbidden_inferences": [
+    "Do not treat geo-restriction failures as evidence that no vulnerabilities exist",
+    "The 500 on cookie payload is a signal, not yet proof until timing confirmation"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note responsible disclosure to bug bounty program"],
+  "layer_b_candidate_principles": [
+    "When the primary access path is blocked, test whether secondary input channels (cookies, headers, less-obvious endpoints) still reach backend logic",
+    "A recon dead-end is not automatically a stopping condition if alternative input surfaces remain untested"
+  ],
+  "model_vs_harness": "Deciding to continue after geo-bypass failure is model judgment; systematic testing of common bypass techniques and timing confirmation can be harness-supported."
+}
