@@ -1,0 +1,71 @@
+{
+  "source_id": "SRC-000017",
+  "case_id": "CASE-000017",
+  "canonical_url": "https://xbow.com/blog/xbow-globalprotect-xss",
+  "retrieved_url": "https://xbow.com/blog/xbow-globalprotect-xss",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:15:00Z",
+  "document_genres": ["research narrative", "technical walkthrough", "variant analysis"],
+  "lineage_id": "xbow-globalprotect-xss-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process / Negatives",
+      "type": "author_reported",
+      "statement": "Client-side analysis and endpoint scouting. Login page variables not controllable from query. /global-protect/getconfig.esp initially unpromising (static content). Initial SVG payloads failed in XML context."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "Created lists of parameters and probes. SVG with proper namespace worked. Variant analysis found additional parameters and /ssl-vpn/getconfig.esp."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After standard XSS fails on login and an endpoint looks static, do XML-returning configuration endpoints reflect parameters in a context that allows namespaced SVG or XHTML?",
+      "basis": "action_implied_candidate",
+      "anchor": "pivot to parameter lists and namespace-aware payloads after initial failures",
+      "uncertainty_reduced": "whether XML reflection can be made executable",
+      "assumption_challenged": "that static-looking or XML endpoints are safe from XSS"
+    }
+  ],
+  "environment_model_updates": [
+    "GlobalProtect portals exchange XML config",
+    "Parameters such as portal-prelogonuserauthcookie are reflected",
+    "Namespaces affect XML parsing and browser rendering"
+  ],
+  "discovery_mechanisms": [
+    "endpoint_scouting_from_knowledge",
+    "parameter_list_generation",
+    "namespace_aware_payload",
+    "variant_analysis"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "client-side review, parameter and probe list creation, variant analysis after first hit",
+    "exploratory": "trying namespaced SVG after plain SVG failed in XML"
+  },
+  "negative_inconclusive": [
+    "Login page: variables not controllable from query",
+    "Initial getconfig.esp: appeared static",
+    "Plain SVG: failed due to XML parsing rules"
+  ],
+  "decision_ids": ["xbow-globalprotect-xss-2025.T001"],
+  "unobserved_history": ["exact parameter list size", "order of failed probes"],
+  "forbidden_inferences": [
+    "Do not treat static-looking response as proof of no reflection",
+    "Namespace was required for the XML context"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note CVE-2025-0133 and post-mitigation bypass re-test"],
+  "layer_b_candidate_principles": [
+    "When an endpoint returns XML, test whether reflected parameters can be turned into executable content via proper SVG/XHTML namespaces",
+    "After a first hit, variant analysis across parameters and related endpoints is high-value"
+  ],
+  "model_vs_harness": "Knowing GlobalProtect endpoints and XML namespace tricks is model knowledge; systematic parameter probing and variant checking can be harness."
+}
