@@ -4,20 +4,22 @@
   "frozen_registry_sha": "066b37c840576427ecdb54cb4541d710b3100ba6",
   "total": 109,
   "coverage_counts": {
-    "previous_provisional_case_notes": 2,
-    "original_article_bounded_review": 90,
+    "original_article_bounded_review": 95,
     "original_content_recovered_bounded": 13,
-    "publisher_page_opened_only": 3,
-    "official_pdf_identified_body_not_verified": 1
+    "official_pdf_abstract_indexed_body_not_read": 1
   },
-  "notes": "All 109 source IDs addressed in bounded source-audit documents. Coverage is not full historical reconstruction. Grok materials were not used. No 109-source full-text verification, no contemporaneous evidence review, no reviewer-approved training data.",
+  "notes": "Coverage audit of all 109 original source IDs, with official primary alternatives for 14 originally inaccessible/landing pages. No guarantee of exhaustive article reading or historical decision reconstruction. 0 approved training examples. This manifest describes source review state, not true completeness of published investigations.",
   "files": [
     "gpt/cases/XBOW_SRC_000003_000010_INDEPENDENT_ANALYSIS.md",
     "gpt/cases/XBOW_SRC_000011_000023_INDEPENDENT_ANALYSIS.md",
     "gpt/cases/RDL_SRC_000024_000043_PRIMARY_SOURCE_PASS.md",
     "gpt/cases/RDL_SRC_000044_000072_SOURCE_AUDIT.md",
     "gpt/cases/RDL_SRC_000073_000109_SOURCE_AUDIT.md",
-    "gpt/cases/RDL_RECOVERED_PRIMARY_SOURCES_ADDENDUM.md"
+    "gpt/cases/RDL_RECOVERED_PRIMARY_SOURCES_ADDENDUM.md",
+    "gpt/cases/XBOW_SRC_000001_000002_INDEPENDENT_ANALYSIS.md",
+    "gpt/cases/XBOW_SRC_000001_000002_TRANSITIONS_CANDIDATE.jsonl",
+    "gpt/cases/RDL_TARGETED_DEEP_X_TO_Y_AUDIT.md",
+    "gpt/cases/RDL_TARGETED_DEEP_X_TO_Y_CANDIDATES.jsonl"
   ],
   "records": [
     {
@@ -26,7 +28,7 @@
         "CASE-000001"
       ],
       "registry_url": "https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit",
-      "review_level": "previous_provisional_case_notes",
+      "review_level": "original_article_bounded_review",
       "research_decisions_complete": false,
       "independent_reviewer_approved": false,
       "predecision_ground_truth_verified": false,
@@ -39,7 +41,7 @@
         "CASE-000002"
       ],
       "registry_url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
-      "review_level": "previous_provisional_case_notes",
+      "review_level": "original_article_bounded_review",
       "research_decisions_complete": false,
       "independent_reviewer_approved": false,
       "predecision_ground_truth_verified": false,
@@ -637,7 +639,7 @@
         "CASE-000048"
       ],
       "registry_url": "https://www.assetnote.io/resources/research/high-signal-detection-and-exploitation-of-ivantis-pulse-connect-secure-auth-bypass-rce/",
-      "review_level": "publisher_page_opened_only",
+      "review_level": "original_article_bounded_review",
       "research_decisions_complete": false,
       "independent_reviewer_approved": false,
       "predecision_ground_truth_verified": false,
@@ -650,7 +652,7 @@
         "CASE-000049"
       ],
       "registry_url": "https://www.assetnote.io/resources/research/advisory-next-js-ssrf-cve-2024-34351",
-      "review_level": "publisher_page_opened_only",
+      "review_level": "original_article_bounded_review",
       "research_decisions_complete": false,
       "independent_reviewer_approved": false,
       "predecision_ground_truth_verified": false,
@@ -663,7 +665,7 @@
         "CASE-000050"
       ],
       "registry_url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534",
-      "review_level": "publisher_page_opened_only",
+      "review_level": "original_article_bounded_review",
       "research_decisions_complete": false,
       "independent_reviewer_approved": false,
       "predecision_ground_truth_verified": false,
@@ -897,7 +899,7 @@
         "CASE-000068"
       ],
       "registry_url": "https://pentera.io/resources/research/not-another-weblogic-exploitation-how-to-prevent-rce/",
-      "review_level": "official_pdf_identified_body_not_verified",
+      "review_level": "official_pdf_abstract_indexed_body_not_read",
       "research_decisions_complete": false,
       "independent_reviewer_approved": false,
       "predecision_ground_truth_verified": false,
