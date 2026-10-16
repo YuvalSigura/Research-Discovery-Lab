@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Typed relationship",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "subject",
+    "predicate",
+    "object",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^REL-[0-9]{6}$"
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "predicate": {
+      "enum": [
+        "investigates",
+        "observed_in",
+        "supported_by",
+        "contradicts",
+        "variant_of",
+        "same_mechanism_as",
+        "requires",
+        "derived_from",
+        "tests",
+        "answers",
+        "supersedes"
+      ]
+    },
+    "object": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_status",
+        "source_refs"
+      ],
+      "properties": {
+        "evidence_status": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "proposed",
+            "documented",
+            "verified",
+            "refuted"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

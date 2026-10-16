@@ -3,12 +3,20 @@ on:
   push:
     paths:
       - "research/**"
+      - "registry/**"
+      - "schemas/**"
+      - "ontology/**"
       - "tools/validate_archive.py"
+      - "tools/validate_registry.py"
       - ".github/workflows/archive-validation.yml"
   pull_request:
     paths:
       - "research/**"
+      - "registry/**"
+      - "schemas/**"
+      - "ontology/**"
       - "tools/validate_archive.py"
+      - "tools/validate_registry.py"
       - ".github/workflows/archive-validation.yml"
 jobs:
   validate:
@@ -18,5 +26,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate research archive
+      - name: Validate legacy archive
         run: python tools/validate_archive.py
+      - name: Validate typed registries
+        run: python tools/validate_registry.py

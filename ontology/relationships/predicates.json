@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "predicates": [
+    "investigates",
+    "observed_in",
+    "supported_by",
+    "contradicts",
+    "variant_of",
+    "same_mechanism_as",
+    "requires",
+    "derived_from",
+    "tests",
+    "answers",
+    "supersedes"
+  ]
+}

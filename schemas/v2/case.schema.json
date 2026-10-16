@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Investigation case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "source_refs",
+    "system_refs",
+    "environment_refs",
+    "case_kind",
+    "analysis_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^CASE-[0-9]{6}$"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "system_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "environment_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "finding_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "mechanism_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "context_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_kind": {
+      "enum": [
+        "vulnerability",
+        "exploit_chain",
+        "architecture",
+        "negative_result",
+        "failed_investigation",
+        "differential",
+        "methodology",
+        "root_cause",
+        "patch_regression",
+        "ai_discovery",
+        "unclassified"
+      ]
+    },
+    "analysis_status": {
+      "enum": [
+        "not_started",
+        "in_progress",
+        "reviewed"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_status",
+        "source_refs"
+      ],
+      "properties": {
+        "evidence_status": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "proposed",
+            "documented",
+            "verified",
+            "refuted"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

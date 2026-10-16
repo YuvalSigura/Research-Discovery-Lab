@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "domains": [
+    "web_api",
+    "cloud_identity",
+    "os_kernel",
+    "browser_engine",
+    "enterprise_supply_chain",
+    "ai_agents",
+    "crypto_protocols",
+    "mobile_hardware",
+    "research_methodology"
+  ],
+  "note": "Domains are labels, not partitions. A case may span multiple domains."
+}

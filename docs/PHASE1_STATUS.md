@@ -1,9 +1,7 @@
 # Phase 1 status — 2026-10-16
 
-**Delivered:** archive structure, 50 catalogued source records, 50 RAW source manifests, JSON index, metadata schema, archive policy, validator and GitHub Actions validation workflow.
+**Delivered:** 50 source-catalogue entries and their RAW status manifests; versioned typed registry scaffolding (SRC/SYS/ENV/CASE/CTX/FND/MEC/EVT/REL); 50 legacy case placeholders; explicit crosswalk; common research-event ontology; domain labels; JSON schemas; stdlib integrity validator; GitHub Actions workflow.
 
-**Not delivered:** article full-text RAW captures, PDF/screenshot downloads, byte-level hashes, license clearances, technical analyses, discovery reconstructions, or model training datasets.
+**Not delivered:** full-text RAW captures, verified extraction of system/version/environment data, analyzed findings, discovery timelines, source hash capture, or fine-tuning examples. These remain future acquisition/analysis tasks.
 
-**Source breadth:** XBOW, PortSwigger, Assetnote, Google Project Zero.
-
-**Next acquisition work:** broaden the inventory across additional publishers, validate every source URL, conduct license-aware capture to authorized storage, record hashes and provenance, and execute CI.
+**Migration policy:** Existing source records remain immutable. Legacy CASE identifiers are preserved as placeholders, not asserted to be one-to-one investigations. Future normalization should explicitly distinguish source identities from investigations and migrate references with recorded lineage.

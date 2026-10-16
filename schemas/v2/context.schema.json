@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pre-discovery context",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "case_ref",
+    "snapshot_time",
+    "known_observations",
+    "unknowns",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^CTX-[0-9]{6}$"
+    },
+    "case_ref": {
+      "type": "string",
+      "pattern": "^CASE-[0-9]{6}$"
+    },
+    "snapshot_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "known_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "text",
+          "source_refs"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_status",
+        "source_refs"
+      ],
+      "properties": {
+        "evidence_status": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "proposed",
+            "documented",
+            "verified",
+            "refuted"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "hindsight_review": {
+      "enum": [
+        "not_reviewed",
+        "passed",
+        "failed"
+      ]
+    }
+  }
+}

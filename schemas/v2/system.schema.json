@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "System registry entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "knowledge"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^SYS-[0-9]{6}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "vendor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "product": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "technology": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "identity_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "architecture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "knowledge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_status",
+        "source_refs"
+      ],
+      "properties": {
+        "evidence_status": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "proposed",
+            "documented",
+            "verified",
+            "refuted"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

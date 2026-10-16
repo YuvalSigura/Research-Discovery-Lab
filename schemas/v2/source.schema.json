@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "publisher",
+    "url",
+    "capture_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{6}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "publication_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_type": {
+      "enum": [
+        "article",
+        "paper",
+        "advisory",
+        "code",
+        "dataset",
+        "talk",
+        "other"
+      ]
+    },
+    "capture_status": {
+      "enum": [
+        "not_archived",
+        "archived",
+        "restricted"
+      ]
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_status": {
+      "enum": [
+        "unreviewed",
+        "permitted",
+        "restricted"
+      ]
+    },
+    "case_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  }
+}

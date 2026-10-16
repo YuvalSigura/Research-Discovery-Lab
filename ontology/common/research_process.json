@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "event_kinds": [
+    "observation",
+    "assumption",
+    "question",
+    "hypothesis",
+    "experiment",
+    "evidence",
+    "outcome",
+    "principle"
+  ],
+  "note": "Typed event graph; not a required linear sequence. Every event must preserve provenance."
+}
