@@ -546,6 +546,835 @@
           "locator": "section: Enter CyberPanel"
         }
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000019",
+      "case_ref": "CASE-000073",
+      "kind": "question",
+      "statement": "The author evaluates how quickly a proposed topic can be tested enough to decide whether to abandon or continue it.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000020",
+      "case_ref": "CASE-000073",
+      "kind": "experiment",
+      "statement": "The author built a realistic vulnerable test site as a short viability experiment for his initial concept.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ],
+      "direction_status": "attempted",
+      "expected_outcome": "Establish whether the concept would work in a plausible test environment"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000021",
+      "case_ref": "CASE-000073",
+      "kind": "evidence",
+      "statement": "The first concept proved extremely unrealistic in the test and was abandoned.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ],
+      "result_status": "negative",
+      "actual_outcome": "Concept failed viability check",
+      "information_gained": "Quick prototype ruled out a costly direction"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000022",
+      "case_ref": "CASE-000073",
+      "kind": "direction",
+      "statement": "A second idea showed initial promise but failed to deliver after six weeks.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ],
+      "direction_status": "failed",
+      "result_status": "negative",
+      "actual_outcome": "Second concept flopped after six weeks"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000023",
+      "case_ref": "CASE-000073",
+      "kind": "decision",
+      "statement": "The author selected race conditions as a third direction partly because earlier tooling was reusable, enabling a cheap initial test.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ],
+      "decision_rationale": "Reusing powerful tooling would cut viability-check cost",
+      "alternatives": [
+        "Continue a failed concept",
+        "Explore a topic requiring new tooling"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000024",
+      "case_ref": "CASE-000073",
+      "kind": "experiment",
+      "statement": "The researcher adapted tooling and manually investigated race conditions on real-world sites.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ],
+      "direction_status": "attempted",
+      "expected_outcome": "Determine whether high-impact real-world results are plausible"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000025",
+      "case_ref": "CASE-000073",
+      "kind": "outcome",
+      "statement": "The author reports finding a high-impact vulnerability within a week, which reinforced his commitment to this direction.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "section: Fast failure"
+        }
+      ],
+      "result_status": "success",
+      "actual_outcome": "Publisher-reported discovery, not independently reproduced"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000026",
+      "case_ref": "CASE-000073",
+      "kind": "decision",
+      "statement": "Topic selection also accounted for personal unfamiliarity, audience value, and avoidance of over-specializing in request smuggling.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000073"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000073",
+          "locator": "sections: The fear factor; Direct impact vs audience impact; Existing skill-sets vs personal development"
+        }
+      ],
+      "decision_rationale": "Research choice was not optimized solely for likely immediate findings"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000027",
+      "case_ref": "CASE-000074",
+      "kind": "experiment",
+      "statement": "The team explored WHOIS client parsing and observed a crash using a lab-controlled server.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Setting The Scene"
+        }
+      ],
+      "direction_status": "attempted",
+      "information_gained": "A laboratory crash alone does not establish remotely reachable exploitation"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000028",
+      "case_ref": "CASE-000074",
+      "kind": "blocking_factor",
+      "statement": "Colleagues challenged the feasibility of supplying malicious WHOIS replies without a privileged network or WHOIS-server position.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Setting The Scene"
+        }
+      ],
+      "blocking_reason": "The initial test redirected server traffic in a lab"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000029",
+      "case_ref": "CASE-000074",
+      "kind": "question",
+      "statement": "Could an attacker reach ordinary WHOIS clients without network-level interception or legitimate server compromise?",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Setting The Scene; Collateral Damage In Pursuit Of RCE"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000030",
+      "case_ref": "CASE-000074",
+      "kind": "observation",
+      "statement": "The authors found a previous .mobi WHOIS endpoint had been retired and the corresponding domain was available.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Collateral Damage In Pursuit Of RCE"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000031",
+      "case_ref": "CASE-000074",
+      "kind": "decision",
+      "statement": "They acquired the former WHOIS server's domain to test whether legacy clients still used a hardcoded endpoint.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Collateral Damage In Pursuit Of RCE"
+        }
+      ],
+      "decision_rationale": "Deprecated names might remain embedded in deployed clients"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000032",
+      "case_ref": "CASE-000074",
+      "kind": "knowledge_revision",
+      "statement": "Ownership of the old endpoint made server response control realistic for clients still using the obsolete hostname.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: So What? It's Old"
+        }
+      ],
+      "assumption_status": "revised",
+      "information_gained": "Infrastructure lifecycle can invalidate assumed attacker prerequisites"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000033",
+      "case_ref": "CASE-000074",
+      "kind": "direction",
+      "statement": "A Fail2Ban WHOIS-related injection candidate remained unreachable via their .mobi server because it concerned IP-address lookups.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: Fail2Ban (CVE-2021-32749)"
+        }
+      ],
+      "direction_status": "blocked",
+      "result_status": "not_applicable",
+      "blocking_reason": "The lookup target was an IP address, not a .mobi domain; no failed exploit attempt is documented"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000034",
+      "case_ref": "CASE-000074",
+      "kind": "experiment",
+      "statement": "The team deployed a server at the old hostname on 30 August 2024 and logged incoming WHOIS requests.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Summary; Kill WHOIS With Fire"
+        }
+      ],
+      "direction_status": "attempted",
+      "expected_outcome": "Measure whether stale client traffic exists"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000035",
+      "case_ref": "CASE-000074",
+      "kind": "observation",
+      "statement": "The server received substantial real-world traffic, including from major services, challenging the expectation that the old hostname was scarcely used.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Uh…..; Reality check"
+        }
+      ],
+      "information_gained": "This was an active ecosystem dependency, not just a hypothetical target"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000036",
+      "case_ref": "CASE-000074",
+      "kind": "question",
+      "statement": "Could the now-controllable WHOIS responses influence a higher-trust certificate validation workflow?",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Summary; TLS/SSL validation"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000037",
+      "case_ref": "CASE-000074",
+      "kind": "experiment",
+      "statement": "An initial provider test did not display the supplied contact email; the researchers considered parser incompatibility as an alternative to no traffic.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: TLS/SSL validation; GoGetSSL check"
+        }
+      ],
+      "direction_status": "attempted",
+      "result_status": "negative",
+      "actual_outcome": "Expected contact was not offered",
+      "information_gained": "Absence of the contact did not identify which failure mode occurred"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000038",
+      "case_ref": "CASE-000074",
+      "kind": "experiment",
+      "statement": "After modifying the WHOIS response format, the authors report GlobalSign offered their controlled address as a contact for microsoft.mobi.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "section: TLS/SSL validation; GlobalSign experiment"
+        }
+      ],
+      "direction_status": "succeeded",
+      "result_status": "positive",
+      "actual_outcome": "Controlled address shown as validation option; no rogue certificate issued"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000039",
+      "case_ref": "CASE-000074",
+      "kind": "decision",
+      "statement": "The researchers explicitly stopped before validating or issuing any rogue certificate and described remediation coordination.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: GlobalSign experiment; Here We Go Again"
+        }
+      ],
+      "direction_status": "abandoned",
+      "decision_rationale": "Avoid causing a real certificate issuance incident"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000040",
+      "case_ref": "CASE-000074",
+      "kind": "outcome",
+      "statement": "The article reports exposed infrastructure dependency and certificate-validation weakness, not a completed rogue certificate issuance.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000074"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Summary; GlobalSign experiment"
+        }
+      ],
+      "result_status": "positive",
+      "actual_outcome": "Publisher-demonstrated control of email verification option; certificate issuance remained hypothetical"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000041",
+      "case_ref": "CASE-000002",
+      "kind": "decision",
+      "statement": "XBOW organized its August 2026 Chrome research as several parallel agent campaigns with interchangeable exploit stages.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: introduction; campaign design"
+        }
+      ],
+      "decision_rationale": "Allow component replacement without rebuilding unrelated stages"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000042",
+      "case_ref": "CASE-000002",
+      "kind": "observation",
+      "statement": "The authors describe agents searching and developing stages while humans selected targets, challenged outputs, and chose stage composition.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: introduction; human and agent responsibilities"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000043",
+      "case_ref": "CASE-000002",
+      "kind": "blocking_factor",
+      "statement": "A Gin-based V8 escape in the first chain collided with an already known Chromium issue.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: Swapping Out the Middle"
+        }
+      ],
+      "blocking_reason": "Prior discovery/duplicate; not evidence the attack failed technically"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000044",
+      "case_ref": "CASE-000002",
+      "kind": "pivot",
+      "statement": "XBOW replaced the Gin component with animated WebP, retaining the modular chain structure.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: Swapping Out the Middle"
+        }
+      ],
+      "decision_rationale": "Swap a duplicate stage rather than restart the full campaign"
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000045",
+      "case_ref": "CASE-000002",
+      "kind": "outcome",
+      "statement": "The authors report that Google confirmed the revised chain launched calc outside the renderer sandbox.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000002"
+        ],
+        "notes": "Author retrospective; date of the original decision not established. Article publication date is in the source record. No independent reproduction."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000002",
+          "locator": "section: Swapping Out the Middle"
+        }
+      ],
+      "result_status": "success",
+      "actual_outcome": "Publisher-reported external confirmation, not independently verified by RDL"
     }
   ]
 }
