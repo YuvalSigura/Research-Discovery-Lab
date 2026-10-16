@@ -8,9 +8,9 @@ from urllib.parse import urlsplit
 from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
-KINDS = {"sources":"SRC","systems":"SYS","environments":"ENV","cases":"CASE","contexts":"CTX","findings":"FND","mechanisms":"MEC","events":"EVT","relations":"REL","passages":"PAS"}
-SCHEMAS = {"sources":"source","systems":"system","environments":"environment","cases":"case","contexts":"context","findings":"finding","mechanisms":"mechanism","events":"research_event","relations":"relation","passages":"passage"}
-LINKS = {"source_refs":"SRC","system_refs":"SYS","environment_refs":"ENV","finding_refs":"FND","mechanism_refs":"MEC","case_refs":"CASE","case_ref":"CASE","context_ref":"CTX","previous_event_refs":"EVT","related_mechanisms":"MEC","source_ref":"SRC"}
+KINDS = {"sources":"SRC","systems":"SYS","environments":"ENV","cases":"CASE","contexts":"CTX","findings":"FND","mechanisms":"MEC","events":"EVT","relations":"REL","passages":"PAS","mindsets":"MND"}
+SCHEMAS = {"sources":"source","systems":"system","environments":"environment","cases":"case","contexts":"context","findings":"finding","mechanisms":"mechanism","events":"research_event","relations":"relation","passages":"passage","mindsets":"mindset"}
+LINKS = {"source_refs":"SRC","system_refs":"SYS","environment_refs":"ENV","finding_refs":"FND","mechanism_refs":"MEC","case_refs":"CASE","case_ref":"CASE","context_ref":"CTX","previous_event_refs":"EVT","related_mechanisms":"MEC","source_ref":"SRC","event_refs":"EVT","outcome_event_refs":"EVT","prior_art_source_refs":"SRC"}
 
 def require(condition, message):
     if not condition: raise ValueError(message)
@@ -87,6 +87,75 @@ def validate(root=ROOT):
                 require(cid in records and cid.startswith("CASE-"), f"{rid}: invalid passage case")
                 require(item["source_ref"] in records[cid]["source_refs"],
                         f"{rid}: passage case source mismatch")
+        if rid.startswith("MND-"):
+            case_id=item["case_ref"]
+            cases=set(item["event_refs"]+item["outcome_event_refs"])
+            for eid in cases:
+                require(eid in records and eid.startswith("EVT-"),
+                        f"{rid}: invalid mindset event {eid}")
+                require(records[eid]["case_ref"]==case_id,
+                        f"{rid}: mindset event crosses case boundary {eid}")
+            case_source_ids=set(records[case_id]["source_refs"])
+            references=set(item["provenance"]["source_refs"])
+            anchors=item["evidence_anchors"]
+            for anchor in anchors:
+                sid=anchor["source_ref"]
+                require(sid in records and sid.startswith("SRC-"),
+                        f"{rid}: invalid mindset evidence source {sid}")
+                require(sid in case_source_ids,
+                        f"{rid}: mindset anchor source outside case {sid}")
+                require(sid in references,
+                        f"{rid}: mindset anchor absent from provenance {sid}")
+            for sid in item.get("prior_art_source_refs", []):
+                require(sid in records and sid.startswith("SRC-"),
+                        f"{rid}: invalid prior-art source {sid}")
+            if item["attribution"] in {"researcher_explicit","observed_research_action"}:
+                require(item["provenance"]["evidence_status"] in {"documented","verified"},
+                        f"{rid}: documented mindset requires documented evidence")
+                require(bool(references and anchors),
+                        f"{rid}: sourced mindset requires provenance and anchors")
+            else:
+                require(item["provenance"]["evidence_status"] in {"proposed","unknown"},
+                        f"{rid}: analyst inference must not become documented history")
+                require(item["outcome_linkage"]!="researcher_reported_contribution",
+                        f"{rid}: inferred mindset cannot claim researcher-reported contribution")
+            if item["novelty"]=="originality_candidate":
+                require(item.get("comparison_scope")=="within_reviewed_prior_art",
+                        f"{rid}: originality needs declared prior-art comparison")
+                require(bool(item.get("prior_art_source_refs") and item.get("novelty_basis")),
+                        f"{rid}: unsupported originality claim")
+                require(item.get("review_status")=="curator_reviewed",
+                        f"{rid}: originality requires curator review")
+            if item["outcome_linkage"]=="researcher_reported_contribution":
+                require(item["attribution"]=="researcher_explicit" and bool(anchors),
+                        f"{rid}: outcome contribution needs explicit researcher testimony")
+                require(bool(item["outcome_event_refs"]),
+                        f"{rid}: outcome contribution without explicit outcome event")
+            if item["outcome_linkage"]=="none":
+                require(not item["outcome_event_refs"],
+                        f"{rid}: outcome links contradict none")
+            for eid in item["outcome_event_refs"]:
+                require(records[eid]["kind"]=="outcome",
+                        f"{rid}: outcome link must reference an outcome event")
+        if rid.startswith("CASE-") and "discovery_assessment" in item:
+            ass=item["discovery_assessment"]
+            all_source_refs=set(ass["evidence_source_refs"]+
+                                ass["independent_verification_refs"])
+            require(all(sid in records and sid.startswith("SRC-")
+                        for sid in all_source_refs),
+                    f"{rid}: invalid zero-day evidence source")
+            require(all(sid in item["source_refs"] for sid in all_source_refs),
+                    f"{rid}: zero-day assessment source outside case")
+            if ass["zero_day_status"]!="unassessed":
+                require(bool(ass["evidence_source_refs"]),
+                        f"{rid}: assessed outcome has no evidence")
+            if ass["zero_day_status"]=="corroborated_zero_day":
+                require(ass["review_status"]=="reviewed" and
+                        bool(ass["independent_verification_refs"]),
+                        f"{rid}: zero-day corroboration needs review and independent source")
+                require(not set(ass["evidence_source_refs"]).issuperset(
+                        ass["independent_verification_refs"]),
+                        f"{rid}: zero-day corroboration must use separate source")
         if rid.startswith("SRC-"):
             parts=urlsplit(item["url"])
             require(parts.scheme=="https" and bool(parts.hostname), f"{rid}: invalid URL")

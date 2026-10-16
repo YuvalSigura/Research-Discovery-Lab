@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence-grounded research mindset at an observed decision or action",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "case_ref",
+    "event_refs",
+    "mindset_key",
+    "statement",
+    "attribution",
+    "novelty",
+    "provenance",
+    "evidence_anchors",
+    "outcome_linkage",
+    "outcome_event_refs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^MND-[0-9]{6}$"
+    },
+    "case_ref": {
+      "type": "string",
+      "pattern": "^CASE-[0-9]{6}$"
+    },
+    "event_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVT-[0-9]{6}$"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "mindset_key": {
+      "enum": [
+        "procedural_checklist",
+        "systematic_exploration",
+        "variant_analysis",
+        "hypothesis_testing",
+        "anomaly_followup",
+        "assumption_challenge",
+        "trust_boundary_reasoning",
+        "time_state_reasoning",
+        "cross_domain_analogy",
+        "mechanism_recombination",
+        "constraint_reframing",
+        "failure_driven_pivot",
+        "root_cause_abstraction",
+        "tool_assisted_probe",
+        "opportunity_prioritization"
+      ]
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "attribution": {
+      "enum": [
+        "researcher_explicit",
+        "observed_research_action",
+        "analyst_inference"
+      ]
+    },
+    "novelty": {
+      "enum": [
+        "unassessed",
+        "established_procedure",
+        "contextual_adaptation",
+        "method_recombination",
+        "originality_candidate"
+      ]
+    },
+    "novelty_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparison_scope": {
+      "enum": [
+        "not_assessed",
+        "within_case",
+        "within_reviewed_prior_art"
+      ]
+    },
+    "prior_art_source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[0-9]{6}$"
+      },
+      "uniqueItems": true
+    },
+    "evidence_anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_ref",
+          "locator"
+        ],
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_status",
+        "source_refs"
+      ],
+      "properties": {
+        "evidence_status": {
+          "enum": [
+            "unknown",
+            "proposed",
+            "documented",
+            "verified",
+            "refuted"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "reviewed_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "not_reviewed",
+        "curator_reviewed"
+      ]
+    },
+    "outcome_linkage": {
+      "enum": [
+        "none",
+        "co_occurrence",
+        "researcher_reported_contribution",
+        "analyst_hypothesis"
+      ]
+    },
+    "outcome_event_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVT-[0-9]{6}$"
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

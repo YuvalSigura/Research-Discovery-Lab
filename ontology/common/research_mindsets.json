@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "description": "Observable research strategies, not inferred personality traits; multiple modes can occur in one investigation.",
+  "codes": [
+    {
+      "code": "procedural_checklist",
+      "label": "Procedural baseline",
+      "definition": "Applies repeatable known checks or a prepared playbook without a documented conceptual change.",
+      "interpretation": "Routine method is not a failure and a finding is not proof of novel reasoning."
+    },
+    {
+      "code": "systematic_exploration",
+      "label": "Systematic exploration",
+      "definition": "Maps inputs, APIs, configurations, states or reachable surfaces by a defined coverage strategy.",
+      "interpretation": "Breadth/coverage is distinct from conceptual originality."
+    },
+    {
+      "code": "variant_analysis",
+      "label": "Variant reasoning",
+      "definition": "Transfers a previously documented failure mechanism to analogous components, versions or products.",
+      "interpretation": "A new vulnerability may follow an established reasoning pattern."
+    },
+    {
+      "code": "hypothesis_testing",
+      "label": "Hypothesis discrimination",
+      "definition": "Runs a discriminating test between candidate explanations and updates beliefs from the observed result.",
+      "interpretation": "A negative result may still be informative."
+    },
+    {
+      "code": "anomaly_followup",
+      "label": "Anomaly-driven investigation",
+      "definition": "Treats unexpected observations as clues and tests alternative explanations.",
+      "interpretation": "Accidental discovery is not necessarily an absence of reasoning."
+    },
+    {
+      "code": "assumption_challenge",
+      "label": "Foundational assumption challenge",
+      "definition": "Names a previously accepted invariant and tests where it might break.",
+      "interpretation": "Record what was assumed, why, and the precise boundary of the challenge."
+    },
+    {
+      "code": "trust_boundary_reasoning",
+      "label": "Boundary and authority reasoning",
+      "definition": "Examines differences between caller, actor, tenant, trust, authority and authorization contexts.",
+      "interpretation": "An ordinary boundary checklist is not automatically novel."
+    },
+    {
+      "code": "time_state_reasoning",
+      "label": "Time, state and ordering reasoning",
+      "definition": "Studies transitions, races, stale assumptions and time-dependent checks.",
+      "interpretation": "Preserve exact observation/occurrence chronology when available."
+    },
+    {
+      "code": "cross_domain_analogy",
+      "label": "Cross-domain analogy",
+      "definition": "Applies an explanatory structure from one technical domain to another.",
+      "interpretation": "Distinguish analogical transfer from actual discovered equivalence."
+    },
+    {
+      "code": "mechanism_recombination",
+      "label": "Mechanism recombination",
+      "definition": "Connects independently known behaviors or partial capabilities to form a new testable hypothesis.",
+      "interpretation": "A novel chain may combine already-known mechanisms."
+    },
+    {
+      "code": "constraint_reframing",
+      "label": "Constraint reframing",
+      "definition": "Reformulates a blocked research question by changing an assumption or target criterion.",
+      "interpretation": "Do not mistake relaxed success conditions for newly demonstrated access."
+    },
+    {
+      "code": "failure_driven_pivot",
+      "label": "Failure-informed pivot",
+      "definition": "Changes direction because a failed or inconclusive attempt reduces the value of the previous path.",
+      "interpretation": "Document why a direction stopped, not only the new direction."
+    },
+    {
+      "code": "root_cause_abstraction",
+      "label": "Root cause abstraction",
+      "definition": "Generalizes a demonstrated failure to the mechanism or invariant that made it possible.",
+      "interpretation": "Avoid presenting broad patterns as fact without representative evidence."
+    },
+    {
+      "code": "tool_assisted_probe",
+      "label": "Tool-assisted probing",
+      "definition": "Uses instrumentation, code search, fuzzing or automation to collect test evidence.",
+      "interpretation": "Tool use does not by itself imply original insight."
+    },
+    {
+      "code": "opportunity_prioritization",
+      "label": "Evidence-driven prioritization",
+      "definition": "Chooses among research questions according to uncertainty, feasibility, expected impact or available resources.",
+      "interpretation": "Do not infer private intent from observed execution ordering."
+    }
+  ],
+  "novelty_levels": [
+    {
+      "key": "unassessed",
+      "meaning": "Insufficient evidence to assess novelty."
+    },
+    {
+      "key": "established_procedure",
+      "meaning": "Uses a previously known routine or checklist."
+    },
+    {
+      "key": "contextual_adaptation",
+      "meaning": "Changes the application of a known method to fit this context."
+    },
+    {
+      "key": "method_recombination",
+      "meaning": "Combines known methods to form a distinct research move."
+    },
+    {
+      "key": "originality_candidate",
+      "meaning": "Potentially original line of thought within reviewed prior art; not a claim of first-ever originality."
+    }
+  ],
+  "attribution_types": [
+    {
+      "key": "researcher_explicit",
+      "meaning": "Source records the researcher's own stated reasoning."
+    },
+    {
+      "key": "observed_research_action",
+      "meaning": "Source records what they did, not what they privately thought."
+    },
+    {
+      "key": "analyst_inference",
+      "meaning": "A separate, unverified reconstruction of why that action occurred."
+    }
+  ],
+  "invariants": [
+    "Mindset is a label for an evidenced decision/action, never an enduring researcher personality or intelligence score.",
+    "A zero-day label is an independently curated outcome variable, not a proxy for novelty.",
+    "Association does not prove a mindset caused a finding; retrospective reporting and publication bias must be tested.",
+    "Routine and original reasoning can coexist in one research trajectory and a single step can carry multiple observations.",
+    "Novelty must be assessed relative to a declared prior-art corpus and temporal cutoff, not through rhetorical confidence.",
+    "Counterfactual, reconstructed and analyst-inferred mindsets are excluded from historical summaries.",
+    "Unsuccessful and undisclosed studies are needed before comparing outcome frequencies."
+  ]
+}

@@ -127,6 +127,67 @@
         "type": "string"
       },
       "uniqueItems": true
+    },
+    "discovery_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "zero_day_status",
+        "evidence_source_refs",
+        "independent_verification_refs",
+        "review_status",
+        "basis"
+      ],
+      "properties": {
+        "zero_day_status": {
+          "enum": [
+            "unassessed",
+            "claimed_zero_day",
+            "corroborated_zero_day",
+            "not_zero_day",
+            "disputed"
+          ]
+        },
+        "evidence_source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "uniqueItems": true
+        },
+        "independent_verification_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^SRC-[0-9]{6}$"
+          },
+          "uniqueItems": true
+        },
+        "first_disclosure_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "review_status": {
+          "enum": [
+            "not_reviewed",
+            "reviewed"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     }
   }
 }
