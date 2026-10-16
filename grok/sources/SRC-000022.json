@@ -1,0 +1,70 @@
+{
+  "source_id": "SRC-000022",
+  "case_id": "CASE-000022",
+  "canonical_url": "https://xbow.com/blog/xbow-scoold-vuln",
+  "retrieved_url": "https://xbow.com/blog/xbow-scoold-vuln",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:20:00Z",
+  "document_genres": ["research narrative", "source-assisted technical walkthrough"],
+  "lineage_id": "xbow-scoold-auth-bypass-2024",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process / Negatives",
+      "type": "author_reported",
+      "statement": "Unpacked JAR, analyzed with javap. Initial HOCON stack-overflow attempts hit 405. Dummy tokens failed. Needed full configuration workaround."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "Fuzzing revealed auth requirement. Found path trick (semicolon) bypassing auth on /api/config. Then used HOCON include for error-based file disclosure."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After direct config methods are blocked, does a path variation bypass authentication and allow HOCON include directives to leak file contents via errors?",
+      "basis": "action_implied_candidate",
+      "anchor": "shift from stack-overflow attempts to path-based auth bypass then include",
+      "uncertainty_reduced": "whether config endpoint auth can be bypassed and whether HOCON errors leak files",
+      "assumption_challenged": "that authentication fully protects the config API"
+    }
+  ],
+  "environment_model_updates": [
+    "HOCON configuration language",
+    "getRequestURI() used in auth check",
+    "Semicolon in path bypasses auth check"
+  ],
+  "discovery_mechanisms": [
+    "disassembly_and_fuzzing",
+    "path_normalization_mismatch",
+    "error_based_file_disclosure_via_include"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "code disassembly and endpoint fuzzing",
+    "exploratory": "trying path tricks after method-not-allowed and then HOCON include"
+  },
+  "negative_inconclusive": [
+    "Initial stack-overflow on configSet: 405",
+    "Dummy tokens unsuccessful",
+    "Some HOCON attempts did not aid file reading"
+  ],
+  "decision_ids": ["xbow-scoold-auth-bypass-2024.T001"],
+  "unobserved_history": ["exact path variations tested before semicolon"],
+  "forbidden_inferences": [
+    "Do not treat 405 as proof the config surface is closed",
+    "File read required both auth bypass and HOCON include"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note CVE-2024-50334 and patch commit"],
+  "layer_b_candidate_principles": [
+    "When an API returns method-not-allowed, test path variations that may bypass authorization checks that inspect the raw URI",
+    "Configuration languages that support include can turn parse errors into file-disclosure oracles once access is obtained"
+  ],
+  "model_vs_harness": "Recognizing semicolon path bypass and HOCON include is model reasoning; disassembly-assisted fuzzing and systematic path testing can be harness."
+}
