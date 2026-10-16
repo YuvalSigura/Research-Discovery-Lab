@@ -1,0 +1,68 @@
+{
+  "source_id": "SRC-000009",
+  "case_id": "CASE-000009",
+  "canonical_url": "https://xbow.com/blog/apache-druid-proxy",
+  "retrieved_url": "https://xbow.com/blog/apache-druid-proxy",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:50:00Z",
+  "document_genres": ["high-level research narrative", "technical summary"],
+  "lineage_id": "xbow-apache-druid-ssrf-2025",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process",
+      "type": "author_reported",
+      "statement": "Started with known historical SSRF endpoints (druid/indexer/v1/task, v2/sql referencing CVE-2023-0361). Both failed due to missing configuration."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "After failures, explored Druid console for extensions/plugins; proxy endpoint produced an error indicating SSRF potential. Iterative attacks succeeded."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After known SSRF endpoints are unavailable due to configuration, does the management console expose an alternative proxy or extension path that can reach internal resources?",
+      "basis": "action_implied_candidate",
+      "anchor": "shift to console after task/sql failures",
+      "uncertainty_reduced": "existence and exploitability of console proxy",
+      "assumption_challenged": "that historical SSRF locations are the only relevant ones"
+    }
+  ],
+  "environment_model_updates": [
+    "Known SSRF endpoints not configured on this instance",
+    "Console proxy endpoint exists and is reachable"
+  ],
+  "discovery_mechanisms": [
+    "historical_vulnerability_reuse",
+    "failure_driven_pivot_to_adjacent_surface",
+    "error_as_signal_of_interesting_endpoint"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "testing of previously documented SSRF locations",
+    "exploratory": "guessing console extensions after systematic options failed"
+  },
+  "negative_inconclusive": [
+    "task endpoint: nothing interesting",
+    "v2/sql: failed due to configuration (blocked prerequisite, not falsified SSRF class)"
+  ],
+  "decision_ids": ["xbow-apache-druid-ssrf-2025.T001"],
+  "unobserved_history": ["full trace of iterative attacks on proxy", "exact error message content"],
+  "forbidden_inferences": [
+    "Process is thin; do not invent detailed experiment sequence beyond the high-level pivot described",
+    "Failure on known endpoints does not mean the class of SSRF is absent"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Seek any linked full trace or advisory for more process detail"],
+  "layer_b_candidate_principles": [
+    "When historical attack surface is unavailable due to configuration, examine adjacent management or console surfaces before abandoning the direction",
+    "An error response can itself be evidence that an endpoint exists and is worth further probing"
+  ],
+  "model_vs_harness": "Recall of historical CVEs is model knowledge; systematic enumeration of known endpoints and logging of configuration-related failures can be harness."
+}
