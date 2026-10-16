@@ -30,7 +30,7 @@
 
 **Maps to:** TB-Q002  
 **Classification:** Model reasoning guidance + existing hypothesis-state annotation.  
-**Existing components:** Hypothesis / discovery state (not WorkGraph task status).  
+**Existing components to verify, NOT a presumed new owner:** existing `ResearchStateStore` / hypothesis projection / convergence reducer (actual authority owner unverified), with WorkGraph retaining only task/execution semantics. **Do not implement a separate hypothesis-state store** unless a code audit proves none of the existing owners can satisfy the contract and the necessary architecture change is approved.  
 **Proposed use:** When a direction is blocked, record the reason in the hypothesis state, distinguishing at least:
 - Missing precondition (recoverable if the precondition can be observed or constructed within authorized scope)
 - Cost / complexity judgment (abandoned for resource reasons; may be revisited)
@@ -105,7 +105,7 @@ Do not treat “disable connection reuse first” as a hard filter that decides 
 
 ## TA-H008 — Deterministic validators for model proposals
 
-**Maps to:** SRC-000031  
+**Source note:** SRC-000031 is a publisher/vendor position article, **not independent experiment-trace validation** for deterministic proof. This is an architectural authority-boundary principle; practical controls must be grounded in the existing Evidence/Verifier/ProofLifecycle contracts and controlled false-positive tests.  
 **Classification:** Existing EvidenceLedger / proof contracts.  
 **Existing components:** EvidenceLedger, candidate-to-proof runtime.  
 **Proposed use:** Continue to require deterministic or independently verifiable checks before any model-proposed finding is treated as evidence. Model proposals remain proposals.  
@@ -141,6 +141,29 @@ The following is a concrete **integration specification for audit and test plann
 ### Review deliverable required from the engineer
 
 For each `TA-Hxxx`, return `observed_branch_sha`, `actual_file_symbol`, `production_caller`, `authority_owner`, `existing_schema`, `planned_schema_delta`, `test_paths`, `runtime_qualification`, and `verdict`. Use `UNVERIFIED` where inspection is impossible. This document is not an instruction to start P1–P4 or to edit ongoing P0 work.
+
+---
+
+## Independent-review amendment — named HOMELAB owner collision checks (2026-10-16)
+
+**Authorship/provenance:** This paragraph is a GPT follow-up to Claude's independent PR #5 review. It **does not overwrite Grok's independent source observations**. The named implementations below come from a coordinator's external-repository report; this RDL repository **cannot verify their code or ownership contracts**. See [external dependency matrix](../../docs/RDL_EXTERNAL_HOMELAB_DEPENDENCIES.md).
+
+Before changing any `NEEDS_CODE_AUDIT` to an implemented/wired status, the engineer must inspect these exact candidate owner paths and show production caller, current writer, state owner, input/output contract and regression tests:
+
+| TA-Hxxx | Named existing owner/component candidates to inspect (not verified) | Avoid |
+|---|---|---|
+| H001 | `XART/EvidenceLedger`, `ResearchStateStore`, experiment satisfaction/projection | A new scientific-truth writer or a second closure path |
+| H002 | `ResearchStateStore`, existing hypothesis projection/convergence reducer, `WorkGraph` | Inventing "hypothesis state" persistence just to fit this heuristic |
+| H003 | `SurfaceGraph`, `EvidenceBackedExhaustion`, `discovery_fabric` | Duplicate prerequisite graph, permissions or scheduler |
+| H004 | `ActionPlane`, authorized HTTP transport/evidence capture | Test requests outside the authorized path |
+| H005 | `ApplicationIntelligenceEngine`, existing evidence ingestion and redaction | Duplicate environment schema store |
+| H006 | Existing Secret Store/authorization, `ApplicationIntelligenceEngine` | Auto-use of unverified credentials |
+| H007 | Existing approvals/supervisor and WorkGraph planning | Parallel approval authority or unbounded queue |
+| H008 | EvidenceLedger, verifier, `ProofLifecycle` | Model/scanner claims minting VERIFIED |
+
+Also inspect `CoverageLedger`, `SurfaceGraph`, `ApplicationIntelligenceEngine`, `state_epoch_recon`, and the existing state/rediscovery owners before adding action-centered discovery or coverage accounting. A component name alone is not evidence that the intended behavior is present. Existing FUP-B1/B3 branch-level behavior and frozen F1–F12 contracts are `UNVERIFIABLE_FROM_THIS_REPO` until the exact external SHA is checked.
+
+**TA-H002 gate:** If no existing *authorized* hypothesis owner or extension path satisfies typed blocker semantics, return `MISSING_FOUNDATIONAL_CONTRACT` for architecture review; do not instantiate a persistence owner under an innocuous helper name.
 
 ---
 
