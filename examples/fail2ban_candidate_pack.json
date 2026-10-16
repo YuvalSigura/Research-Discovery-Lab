@@ -1,0 +1,133 @@
+{
+  "schema": "rdl.reconstruction_candidate.v1",
+  "case_id": "CASE-000078",
+  "sources": [
+    {
+      "id": "SRC-000078",
+      "url": "https://securitylab.github.com/research/Fail2exploit/"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "source_ref": "SRC-000078",
+      "kind": "retrospective_author",
+      "locator": "Command Injection? — first failed input and author explanation",
+      "statement": "Author describes trying a modified malformed-IP input after seeing an integer conversion error."
+    },
+    {
+      "id": "E2",
+      "source_ref": "SRC-000078",
+      "kind": "contemporaneous_artifact",
+      "locator": "Command Injection? — published integer-conversion log",
+      "statement": "One malformed input caused an integer parsing error; timestamp displayed in article has unknown timezone."
+    },
+    {
+      "id": "E3",
+      "source_ref": "SRC-000078",
+      "kind": "contemporaneous_artifact",
+      "locator": "Command Injection? — published iptables argument diagnostic",
+      "statement": "Modified payload reached command argument handling, with an error instead of evidence of arbitrary root code execution."
+    },
+    {
+      "id": "E4",
+      "source_ref": "SRC-000078",
+      "kind": "retrospective_author",
+      "locator": "SQL Injection? and Command Injection? section headings",
+      "statement": "Publication describes SQL and command-related audit in that order; a motive connecting them is not established."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "result",
+      "statement": "Initial malformed input was rejected; general hypothesis of unsafe validation remained unresolved.",
+      "basis": "artifact_observed",
+      "evidence_refs": [
+        "E2"
+      ],
+      "outcome": "negative_test",
+      "hypothesis_effect": "open"
+    },
+    {
+      "id": "C2",
+      "kind": "decision",
+      "statement": "The author retested with numeric characters in the malformed input.",
+      "basis": "author_report",
+      "evidence_refs": [
+        "E1"
+      ],
+      "reason_documented": true
+    },
+    {
+      "id": "C3",
+      "kind": "result",
+      "statement": "Modified input reached an iptables argument but did not demonstrate arbitrary privileged execution.",
+      "basis": "artifact_observed",
+      "evidence_refs": [
+        "E3"
+      ],
+      "outcome": "observed",
+      "hypothesis_effect": "supported_in_scope",
+      "scope": "nonstandard permissive experiment"
+    },
+    {
+      "id": "C4",
+      "kind": "observation",
+      "statement": "SQL injection analysis is described in the publication.",
+      "basis": "author_report",
+      "evidence_refs": [
+        "E4"
+      ]
+    },
+    {
+      "id": "C5",
+      "kind": "observation",
+      "statement": "Command injection analysis is described after it.",
+      "basis": "author_report",
+      "evidence_refs": [
+        "E4"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "L1",
+      "from": "C1",
+      "to": "C2",
+      "kind": "motivated",
+      "basis": "author_explicit",
+      "evidence_refs": [
+        "E1"
+      ],
+      "alternatives": []
+    },
+    {
+      "id": "L2",
+      "from": "C4",
+      "to": "C5",
+      "kind": "followed_by",
+      "basis": "chronology_only",
+      "evidence_refs": [
+        "E4"
+      ],
+      "alternatives": [
+        "Both checks may have been planned from the start.",
+        "Section order could be editorial rather than laboratory time order."
+      ]
+    },
+    {
+      "id": "L3",
+      "from": "C2",
+      "to": "C3",
+      "kind": "tested_by",
+      "basis": "analyst_inference",
+      "evidence_refs": [
+        "E3"
+      ],
+      "alternatives": [
+        "The publication may omit intervening experiments."
+      ]
+    }
+  ]
+}
