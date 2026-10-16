@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "created_on": "2026-10-16",
-  "case_count": 31,
+  "case_count": 50,
   "cases": [
     {
       "id": "CASE-000001",
@@ -250,6 +250,159 @@
       "url": "https://xbow.com/blog/mythos-gpt-5-5-ai-vulnerability-detection-security",
       "date": "2026-06-02",
       "category": "ai_research"
+    },
+    {
+      "id": "CASE-000032",
+      "publisher": "Google Project Zero",
+      "title": "From Naptime to Big Sleep: Using Large Language Models To Catch Vulnerabilities In Real-World Code",
+      "url": "https://googleprojectzero.blogspot.com/2024/11/from-naptime-to-big-sleep.html",
+      "date": "2024-11-01",
+      "category": "ai_research"
+    },
+    {
+      "id": "CASE-000033",
+      "publisher": "Google Project Zero",
+      "title": "Windows Exploitation Techniques: Winning Race Conditions with Path Lookups",
+      "url": "https://projectzero.google/2025/12/windows-exploitation-techniques.html",
+      "date": "2025-12-16",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000034",
+      "publisher": "Google Project Zero",
+      "title": "Breaking the Sound Barrier Part I: Fuzzing CoreAudio with Mach Messages",
+      "url": "https://projectzero.google/2025/05/breaking-sound-barrier-part-i-fuzzing.html",
+      "date": "2025-05-09",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000035",
+      "publisher": "Google Project Zero",
+      "title": "The Windows Registry Adventure #8: Practical exploitation of hive memory corruption",
+      "url": "https://projectzero.google/2025/05/the-windows-registry-adventure-8-exploitation.html",
+      "date": "2025-05-28",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000036",
+      "publisher": "Google Project Zero",
+      "title": "Policy and Disclosure: 2025 Edition",
+      "url": "https://projectzero.google/2025/07/reporting-transparency.html",
+      "date": "2025-07-29",
+      "category": "research_methodology"
+    },
+    {
+      "id": "CASE-000037",
+      "publisher": "Google Project Zero",
+      "title": "Reporting Transparency 2025",
+      "url": "https://projectzero.google/reporting-transparency-2025.html",
+      "date": "2025",
+      "category": "research_dataset"
+    },
+    {
+      "id": "CASE-000038",
+      "publisher": "Google Project Zero",
+      "title": "Reporting Transparency 2026",
+      "url": "https://projectzero.google/reporting-transparency.html",
+      "date": "2026",
+      "category": "research_dataset"
+    },
+    {
+      "id": "CASE-000039",
+      "publisher": "PortSwigger",
+      "title": "Smashing the state machine: the true potential of web race conditions",
+      "url": "https://portswigger.net/research/smashing-the-state-machine",
+      "date": "2023-08-09",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000040",
+      "publisher": "PortSwigger",
+      "title": "Listen to the whispers: web timing attacks that actually work",
+      "url": "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work",
+      "date": "2024-08-07",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000041",
+      "publisher": "PortSwigger",
+      "title": "Introducing HTTP Anomaly Rank",
+      "url": "https://portswigger.net/research/introducing-http-anomaly-rank",
+      "date": "2025-11-11",
+      "category": "research_methodology"
+    },
+    {
+      "id": "CASE-000042",
+      "publisher": "PortSwigger",
+      "title": "Top 10 web hacking techniques of 2024",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2024",
+      "date": "2025-02-04",
+      "category": "research_collection"
+    },
+    {
+      "id": "CASE-000043",
+      "publisher": "PortSwigger",
+      "title": "Top 10 web hacking techniques of 2025",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2025",
+      "date": "2026-02-05",
+      "category": "research_collection"
+    },
+    {
+      "id": "CASE-000044",
+      "publisher": "Assetnote",
+      "title": "Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108)",
+      "url": "https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os",
+      "date": "2025-02-12",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000045",
+      "publisher": "Assetnote",
+      "title": "Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927)",
+      "url": "https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927",
+      "date": "2025-03-24",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000046",
+      "publisher": "Assetnote",
+      "title": "Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x",
+      "url": "https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x",
+      "date": "2024-11-22",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000047",
+      "publisher": "Assetnote",
+      "title": "Ivanti's Pulse Connect Secure Auth Bypass Round Two",
+      "url": "https://www.assetnote.io/resources/research/ivantis-pulse-connect-secure-auth-bypass-round-two/",
+      "date": "2024-02-02",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000048",
+      "publisher": "Assetnote",
+      "title": "High Signal Detection and Exploitation of Ivanti's Pulse Connect Secure Auth Bypass & RCE",
+      "url": "https://www.assetnote.io/resources/research/high-signal-detection-and-exploitation-of-ivantis-pulse-connect-secure-auth-bypass-rce/",
+      "date": "2024-01-18",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000049",
+      "publisher": "Assetnote",
+      "title": "Advisory: Next.js SSRF (CVE-2024-34351)",
+      "url": "https://www.assetnote.io/resources/research/advisory-next-js-ssrf-cve-2024-34351",
+      "date": "2024-05-09",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000050",
+      "publisher": "Assetnote",
+      "title": "Citrix Denial of Service: Analysis of CVE-2024-8534",
+      "url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534",
+      "date": "2024-12-13",
+      "category": "security_research"
     }
-  ]
+  ],
+  "last_expanded_on": "2026-10-16"
 }

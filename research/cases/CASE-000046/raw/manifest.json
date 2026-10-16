@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000046",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x"
+    }
+  ],
+  "note": "No article bytes archived. Acquire only after permission review, record content hash and capture provenance."
+}

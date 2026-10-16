@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000035",
+  "title": "The Windows Registry Adventure #8: Practical exploitation of hive memory corruption",
+  "publisher": "Google Project Zero",
+  "publication_date": "2025-05-28",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://projectzero.google/2025/05/the-windows-registry-adventure-8-exploitation.html",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "verified_via_public_search",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Public publisher URL identified. No full-text RAW copy or technical analysis is claimed."
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000034",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://projectzero.google/2025/05/breaking-sound-barrier-part-i-fuzzing.html"
+    }
+  ],
+  "note": "No article bytes archived. Acquire only after permission review, record content hash and capture provenance."
+}

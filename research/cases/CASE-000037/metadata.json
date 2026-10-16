@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000037",
+  "title": "Reporting Transparency 2025",
+  "publisher": "Google Project Zero",
+  "publication_date": "2025",
+  "category": "research_dataset",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://projectzero.google/reporting-transparency-2025.html",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "verified_via_public_search",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Public publisher URL identified. No full-text RAW copy or technical analysis is claimed."
+}

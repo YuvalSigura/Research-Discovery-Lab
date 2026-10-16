@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000047",
+  "title": "Ivanti's Pulse Connect Secure Auth Bypass Round Two",
+  "publisher": "Assetnote",
+  "publication_date": "2024-02-02",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://www.assetnote.io/resources/research/ivantis-pulse-connect-secure-auth-bypass-round-two/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "verified_via_public_search",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Public publisher URL identified. No full-text RAW copy or technical analysis is claimed."
+}

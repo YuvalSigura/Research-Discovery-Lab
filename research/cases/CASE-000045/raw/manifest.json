@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000045",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927"
+    }
+  ],
+  "note": "No article bytes archived. Acquire only after permission review, record content hash and capture provenance."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000039",
+  "title": "Smashing the state machine: the true potential of web race conditions",
+  "publisher": "PortSwigger",
+  "publication_date": "2023-08-09",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://portswigger.net/research/smashing-the-state-machine",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "verified_via_public_search",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Public publisher URL identified. No full-text RAW copy or technical analysis is claimed."
+}

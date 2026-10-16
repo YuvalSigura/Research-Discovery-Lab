@@ -1,0 +1,22 @@
+name: Research archive validation
+on:
+  push:
+    paths:
+      - "research/**"
+      - "tools/validate_archive.py"
+      - ".github/workflows/archive-validation.yml"
+  pull_request:
+    paths:
+      - "research/**"
+      - "tools/validate_archive.py"
+      - ".github/workflows/archive-validation.yml"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate research archive
+        run: python tools/validate_archive.py

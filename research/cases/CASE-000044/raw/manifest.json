@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000044",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os"
+    }
+  ],
+  "note": "No article bytes archived. Acquire only after permission review, record content hash and capture provenance."
+}

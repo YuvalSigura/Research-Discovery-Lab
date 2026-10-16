@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000032",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://googleprojectzero.blogspot.com/2024/11/from-naptime-to-big-sleep.html"
+    }
+  ],
+  "note": "No article bytes archived. Acquire only after permission review, record content hash and capture provenance."
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000050",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534"
+    }
+  ],
+  "note": "No article bytes archived. Acquire only after permission review, record content hash and capture provenance."
+}

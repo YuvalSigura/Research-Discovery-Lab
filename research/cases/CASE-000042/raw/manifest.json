@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000042",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-001",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2024"
+    }
+  ],
+  "note": "No article bytes archived. Acquire only after permission review, record content hash and capture provenance."
+}
