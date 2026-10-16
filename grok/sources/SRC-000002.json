@@ -1,0 +1,73 @@
+{
+  "source_id": "SRC-000002",
+  "case_id": "CASE-000002",
+  "canonical_url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
+  "retrieved_url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:00:00Z",
+  "document_genres": ["technical walkthrough", "retrospective research narrative", "exploit chain description"],
+  "lineage_id": "xbow-chrome-fullchain-2026",
+  "actor_roles": [
+    {"actor": "B. Dolan-Gavitt", "role": "author_investigator"},
+    {"actor": "XBOW team / agents", "role": "original_finders"},
+    {"actor": "gpt-5.6-sol", "role": "AI_tool"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Vulnerabilities / Maglev section",
+      "type": "author_reported",
+      "statement": "Maglev deoptimization reused mutable HeapNumber as immutable literal (maglev-code-generator.cc, translated-state.cc), violating V8 invariant."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Animated WebP section",
+      "type": "author_reported",
+      "statement": "Blink ImageDecoder combined cached geometry from one WebP frame with bytes from another, enabling TOCTOU heap overflow."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "Crashpad section",
+      "type": "author_reported",
+      "statement": "Crashpad ReadUpTo assumed stable memory of suspended renderer; freeze-exempt thread altered protections causing overflow."
+    },
+    {
+      "claim_id": "C4",
+      "anchor": "timeline paragraph",
+      "type": "author_reported",
+      "statement": "Chain built in six days (Aug 2–7). Work split into parallel campaigns: broad search, V8 memory corruption, V8 sandbox escape, renderer sandbox escape, integration. Modular stages with clean interfaces and backup routes."
+    },
+    {
+      "claim_id": "C5",
+      "anchor": "WebP / collision paragraph",
+      "type": "author_reported",
+      "statement": "First version of chain used Gin vulnerability for V8 sandbox escape; it was a duplicate of issue 542670566. Replaced with animated WebP stage after stressful few hours. Modularity designed to guard against collisions."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Which V8/Blink/Crashpad invariants can be violated to obtain progressive escapes from a JS context to native code execution?",
+      "basis": "action_implied_candidate",
+      "anchor": "parallel campaigns description"
+    }
+  ],
+  "decision_ids": ["xbow-chrome-fullchain-2026.T001"],
+  "unobserved_history": [
+    "Exact chronological order of discovery of Maglev vs WebP vs Crashpad within the six days",
+    "Contemporaneous agent logs or intermediate negative results",
+    "When modular architecture was first adopted relative to the Gin collision"
+  ],
+  "forbidden_inferences": [
+    "Do not assign Maglev/WebP/Crashpad to specific calendar days; article reports only the six-day total and parallel campaigns, not a day-by-day diary",
+    "Do not treat the Gin→WebP replacement as proof that modularity was invented only after the collision; article presents modularity as a pre-existing strategy that paid off"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": [
+    "Inspect linked Chromium issues and changes (e.g. 542670566, 8255554) for independent artifact evidence",
+    "Distinguish parallel campaign structure from any serial diary"
+  ]
+}
