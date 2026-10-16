@@ -1,5 +1,77 @@
 {
   "schema_version": "1.0",
   "entity_type": "QPT",
-  "records": []
+  "records": [
+    {
+      "schema_version": "1.0",
+      "id": "QPT-000001",
+      "question_text": "When a proposed line of research seems unreachable, does a separately controllable dependency or interface change the missing precondition?",
+      "scope": "cross_case_candidate",
+      "definition_revision": 1,
+      "status": "proposed",
+      "inclusion_criteria": [
+        "The case documents a blocked or seemingly unreachable prerequisite",
+        "A second dependency, input, or interface is investigated for evidence that changes reachability",
+        "The proposed connection concerns reachability, not the vulnerability class"
+      ],
+      "exclusion_criteria": [
+        "The second feature is only used after access is already established",
+        "The difficulty is purely lack of interesting hypotheses, not a missing access precondition",
+        "A similar-looking exploit or tool is the only link"
+      ],
+      "boundary_or_invariant": "Reachability of a research prerequisite without assuming it is already satisfied",
+      "contrast_example": "ShadowPanel's scan identifier and .MOBI's legacy WHOIS-server control are different capabilities; similarity is not evidence they test one core question.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000055",
+          "SRC-000074"
+        ],
+        "notes": "Analyst comparison hypothesis. Not proven recurrence, reviewed equivalence, or prior-art novelty."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000055",
+          "locator": "sections: The Almost-Bug; Stepping Back"
+        },
+        {
+          "source_ref": "SRC-000074",
+          "locator": "sections: Setting The Scene; Collateral Damage In Pursuit Of RCE"
+        }
+      ],
+      "notes": "No curator review. Unclassified questions must remain allowed; falsifying contrast examples should be sought before promotion."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "QPT-000002",
+      "question_text": "Can an apparent security signal be explained by the measuring instrument or the test procedure instead of the system under test?",
+      "scope": "hypothesis",
+      "definition_revision": 1,
+      "status": "proposed",
+      "inclusion_criteria": [
+        "A recorded signal initially favors a defect hypothesis",
+        "A later independent check distinguishes target behavior from an artifact of the test"
+      ],
+      "exclusion_criteria": [
+        "Merely slow or expensive tests that never suggested a false signal",
+        "True vulnerability signals with no disputed measurement"
+      ],
+      "boundary_or_invariant": "Instrument validity versus target behavior",
+      "contrast_example": "Choosing a cheap feasibility experiment is not the same as an instrument-generated false positive.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000076"
+        ],
+        "notes": "Analyst comparison hypothesis. Not proven recurrence, reviewed equivalence, or prior-art novelty."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000076",
+          "locator": "sections: The Initial Analysis: A Suspected Vulnerability; AddressSanitizer: A Tool for Detection, Not Proof"
+        }
+      ],
+      "notes": "No curator review. Unclassified questions must remain allowed; falsifying contrast examples should be sought before promotion."
+    }
+  ]
 }
