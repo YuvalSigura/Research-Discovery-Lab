@@ -124,7 +124,7 @@ class QuestionAbstractionEngine:
                     } for m in moves
                 ]
             })
-        used_m = {m["id"] for q in cases for m in q["research_moves"]}
+        used_m = {m["mindset_id"] for q in cases for m in q["research_moves"]}
         total_m = {m["id"] for m in observations}
         case = self.store.get(case_id, "cases")
         assessment = case.get("discovery_assessment") or {"zero_day_status": "unassessed"}

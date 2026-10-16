@@ -226,9 +226,9 @@ class ResearchQuestionUmbrellaTests(unittest.TestCase):
         live=ResearchRetrievalEngine(ResearchStore(ROOT))
         report=live.question_convergence()
         self.assertEqual(report["patterns"],[])
-        self.assertEqual(report["question_coverage"]["eligible_question_count"],0)
+        self.assertEqual(report["question_coverage"]["mapped_to_reported_patterns"],0)
         single=live.question_analysis("CASE-000001")
-        self.assertEqual(single["coverage"]["documented_or_proposed_questions"],0)
+        self.assertEqual(single["coverage"]["curated_or_proposed_umbrella_mappings"],0)
 
     def test_cli_question_summary_no_fabrication(self):
         cmd=[sys.executable,"-m","research_engine","question-convergence"]
