@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "created_on": "2026-10-16",
-  "case_count": 74,
+  "case_count": 76,
   "cases": [
     {
       "id": "CASE-000001",
@@ -594,6 +594,22 @@
       "url": "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/",
       "date": "2024-09-11",
       "category": "security_research"
+    },
+    {
+      "id": "CASE-000075",
+      "publisher": "Searchlight Cyber (original Assetnote research)",
+      "title": "Chaining Three Bugs to Access All Your ServiceNow Data",
+      "url": "https://www.slcyber.io/research/chaining-three-bugs-to-access-all-your-servicenow-data",
+      "date": "2024-07-11",
+      "category": "security_research"
+    },
+    {
+      "id": "CASE-000076",
+      "publisher": "Stingrai",
+      "title": "The Perils of Premature Vulnerability Reporting: A Case Study in Off-by-One Analysis",
+      "url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one",
+      "date": "2026-01-07",
+      "category": "negative_result"
     }
   ],
   "last_expanded_on": "2026-10-16"
