@@ -35,6 +35,16 @@ def create_parser() -> argparse.ArgumentParser:
     trace.add_argument("question_id")
     trace.add_argument("--view", choices=["historical", "all"], default="historical")
     trace.add_argument("--depth", type=int, default=6)
+    questions = commands.add_parser("questions", help="Link researcher moves and novelty to motivating questions")
+    questions.add_argument("case_id")
+    questions.add_argument("--view", choices=["historical", "all"], default="historical")
+    convergence = commands.add_parser("question-convergence", help="Evidence-curated recurring umbrella questions across cases")
+    convergence.add_argument("--view", choices=["historical", "all"], default="historical")
+    convergence.add_argument("--min-cases", type=int, default=1)
+    convergence.add_argument("--limit", type=int, default=100)
+    compare = commands.add_parser("compare-questions", help="Compare the underlying research questions in two or more cases")
+    compare.add_argument("case_ids", nargs="+")
+    compare.add_argument("--view", choices=["historical", "all"], default="historical")
     related = commands.add_parser("related", help="Explicitly linked investigations")
     related.add_argument("case_id")
     related.add_argument("--limit", type=int, default=20)
@@ -61,6 +71,14 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "trace":
             result = engine.trace_question(args.case_id, args.question_id,
                                            view=args.view, max_depth=args.depth)
+        elif args.command == "questions":
+            result = engine.question_analysis(args.case_id, view=args.view)
+        elif args.command == "question-convergence":
+            result = engine.question_convergence(view=args.view,
+                                                 minimum_cases=args.min_cases,
+                                                 limit=args.limit)
+        elif args.command == "compare-questions":
+            result = engine.compare_questions(args.case_ids, view=args.view)
         elif args.command == "related":
             result = engine.related_cases(args.case_id, limit=args.limit)
         elif args.command == "coverage":

@@ -74,7 +74,7 @@ class ResearchRetrievalEngine:
         if set(filters) - allowed_filters:
             raise ValueError(f"Unknown search filters: {sorted(set(filters)-allowed_filters)}")
         selected = kinds or ["sources", "cases", "events", "passages", "systems",
-                             "environments", "findings", "mechanisms"]
+                             "environments", "findings", "mechanisms", "mindsets", "question_patterns"]
         if set(selected) - set(self.store.registries):
             raise ValueError("Unknown entity type")
         query_tokens = tokens(query)
@@ -117,6 +117,10 @@ class ResearchRetrievalEngine:
                                "locator": record["locator"], "usage_status": record["usage_status"]})
             if kind == "sources":
                 result["url"] = record["url"]
+            if kind == "mindsets":
+                result.update({"case_ref": record["case_ref"], "mindset_key": record["mindset_key"],
+                               "novelty": record["novelty"], "attribution": record["attribution"],
+                               "evidence_status": status(record)})
             if kind == "events":
                 result.update({"case_ref": record["case_ref"],
                                "evidence_status": status(record), "origin": origin(record)})
@@ -129,8 +133,10 @@ class ResearchRetrievalEngine:
     def _case_ids(self, kind: str, record: dict) -> set[str]:
         if kind == "cases":
             return {record["id"]}
-        if kind in ("events", "contexts"):
+        if kind in ("events", "contexts", "mindsets", "question_mappings"):
             return {record["case_ref"]}
+        if kind == "question_patterns":
+            return {m["case_ref"] for m in self.store.mappings_by_pattern[record["id"]]}
         if kind == "passages":
             return set(self.store.get(record["source_ref"], "sources").get("case_refs", []))
         if kind == "sources":
@@ -180,6 +186,12 @@ class ResearchRetrievalEngine:
             return names + [record.get("case_kind", ""), " ".join(record.get("domain_labels", []))]
         if kind == "passages":
             return [record["text"]]
+        if kind == "mindsets":
+            return [record["statement"], record["mindset_key"], record["novelty"],
+                    record.get("novelty_basis") or ""]
+        if kind == "question_patterns":
+            return [record["question_text"], record.get("boundary_or_invariant") or "",
+                    *record["inclusion_criteria"]]
         if kind == "events":
             return [record["statement"], record.get("kind", ""),
                     record.get("decision_rationale") or "",
@@ -286,6 +298,9 @@ class ResearchRetrievalEngine:
                          for e in dated],
             "chronology_unknown": [e["id"] for e in undated],
             "relations": connections, "passages": passages, "findings": findings,
+            "question_analysis": self.question_analysis(case_id, view=view),
+            "discovery_assessment": case.get("discovery_assessment") or
+                {"zero_day_status": "unassessed"},
             "mechanisms": mechanisms,
             "assumptions": [e["id"] for e in events if e["kind"] == "assumption"],
             "challenged_assumptions": [e["id"] for e in events
@@ -484,6 +499,20 @@ class ResearchRetrievalEngine:
                 "limitations": (["No qualifying causal history documented."]
                                 if not steps else []),
                 "note": "This is a provenance-filtered graph traversal, not an inferred history."}
+
+    def question_analysis(self, case_id: str, *, view: str = "historical") -> dict:
+        from .question_analysis import QuestionAbstractionEngine
+        return QuestionAbstractionEngine(self.store).case_report(case_id, view=view)
+
+    def question_convergence(self, *, view: str = "historical",
+                             minimum_cases: int = 1, limit: int = 100) -> dict:
+        from .question_analysis import QuestionAbstractionEngine
+        return QuestionAbstractionEngine(self.store).convergence(
+            view=view, minimum_cases=minimum_cases, limit=limit)
+
+    def compare_questions(self, case_ids: list[str], *, view: str = "historical") -> dict:
+        from .question_analysis import QuestionAbstractionEngine
+        return QuestionAbstractionEngine(self.store).compare_case_questions(case_ids, view=view)
 
     def related_cases(self, case_id: str, *, limit: int = 20) -> dict:
         """Return evidence-backed mechanism/source overlap and explicit case links only."""
