@@ -66,6 +66,7 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "coverage":
             pack = engine.reconstruct(args.case_id, view=args.view)
             result = {"case_id": args.case_id, "coverage": pack["coverage"],
+                      "trajectory_gaps": pack["trajectory_gaps"],
                       "warnings": pack["warnings"]}
         else:
             parser.error("Unsupported command")

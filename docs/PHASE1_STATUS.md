@@ -1,9 +1,21 @@
-# Phase 1 status — 2026-10-16
+# Phase 1 — retrieval engine status
 
 ## Delivered
 
-50 original source catalogue entries and RAW manifests; 50 linked SRC records with explicit one-to-one **legacy source** links to 50 compatibility CASE placeholders; typed v2 registries; crosswalk; domain ontology; 9 JSON Schemas; schema-based validation, referential integrity, bidirectional source/case checks, CI, and corruption-injection tests.
+- 50 preserved original research source entries, 50 source registry entities and legacy case crosswalk.
+- Ten typed registries/schemas: sources, cases, systems, environments, contexts, findings, mechanisms, events, relations, passages.
+- Read-only Python research engine and JSON CLI: search, reconstruct, trace, related, coverage.
+- Deterministic lexical and structured-filter retrieval, provenance, passage SHA-256 and explicit license checks.
+- Chronological reconstruction with unknown chronology separate; assumptions, abandoned/failed/untried directions, pivots and source-backed questions.
+- Historical versus explicitly reconstructed/counterfactual views; fail-closed pre-discovery snapshots and dedicated trajectory gap audit.
+- CI schema validation, fault-injection tests and offline synthetic branching-investigation tests.
 
-## Important limitations
+## Not accomplished / intentionally deferred
 
-Original RAW article bytes are **not archived**. The CASE placeholders are not evidence-validated investigations. System, environment, findings, mechanism, context and event registries are currently empty. Training is explicitly deferred until all acquisition, analysis and evaluation phases are complete. Actual CI run outcome must be checked separately.
+- The 50 real publications have **no original RAW full-text captures**. Search currently indexes catalogue metadata, not missing article content.
+- The existing CASE IDs are source-catalogue placeholders, **not fully reconstructed investigations**; evidence-backed event extraction and curatorial review still need actual sources.
+- No live acquisition or web crawling as part of this read-only engine.
+- No automatic historical assertion that was not documented; no LLM decision authority.
+- No training; fine-tuning is the last project phase.
+
+See \`docs/RETRIEVAL_ENGINE.md\`.

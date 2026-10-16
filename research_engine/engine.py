@@ -223,7 +223,7 @@ class ResearchRetrievalEngine:
         connections = self.store.case_relations(case_id, selected_ids)
         if view == "historical":
             connections = [r for r in connections if status(r) in HISTORICAL_EVIDENCE
-                           and r.get("causal_basis") != "counterfactual"]
+                           and r.get("causal_basis") not in {"counterfactual", "reconstructed"}]
         if view == "pre_discovery":
             connections = [r for r in connections if
                            r["subject"] in selected_ids and r["object"] in selected_ids
@@ -299,7 +299,9 @@ class ResearchRetrievalEngine:
             "questions": [e["id"] for e in events if e["kind"] == "question"],
             "experiments": [e["id"] for e in events if e["kind"] == "experiment"],
             "pivots": [r["id"] for r in connections if r["predicate"] == "pivoted_to"],
-            "coverage": report, "warnings": warnings
+            "coverage": report,
+            "trajectory_gaps": self._trajectory_gaps(events, connections),
+            "warnings": warnings
         }
 
     def _source_summary(self, source: dict) -> dict:
@@ -334,6 +336,9 @@ class ResearchRetrievalEngine:
         source_ids = provenance(event).get("source_refs", [])
         if not self._sources_preexisting(source_ids, horizon):
             return None
+        if any(not self._sources_preexisting([a["source_ref"]], horizon)
+               for a in event.get("evidence_anchors", [])):
+            return None
         # Allowlisted fields only. Do not leak later conclusions in auxiliary text.
         return {
             "id": event["id"], "kind": event["kind"], "statement": event["statement"],
@@ -352,9 +357,66 @@ class ResearchRetrievalEngine:
             return None
         if not self._sources_preexisting(provenance(context).get("source_refs", []), horizon):
             return None
+        if any(not self._sources_preexisting(obs.get("source_refs", []), horizon)
+               for obs in context.get("known_observations", [])):
+            return None
         return {"id": context["id"], "snapshot_time": context["snapshot_time"],
                 "known_observations": context.get("known_observations", []),
                 "unknowns": context.get("unknowns", [])}
+
+    def _trajectory_gaps(self, events: list[dict], relations: list[dict]) -> dict:
+        """Missing documentation is not proof a direction, reason or transition never existed."""
+        nodes = {event["id"]: event for event in events}
+        triggered_questions, challenged, motivated_directions = set(), set(), set()
+        conflicts = []
+        for rel in relations:
+            start, end = rel["subject"], rel["object"]
+            if start not in nodes or end not in nodes:
+                continue
+            if rel["predicate"] in {"motivated_by", "tested_by", "blocked_by",
+                                    "abandoned_because", "failed_because"}:
+                cause, effect = end, start
+            else:
+                cause, effect = start, end
+            if (rel.get("causal_basis") != "explicit_documented"
+                    or status(rel) not in HISTORICAL_EVIDENCE
+                    or rel["predicate"] not in CAUSAL_PREDICATES):
+                continue
+            if nodes[effect]["kind"] == "question":
+                triggered_questions.add(effect)
+            if rel["predicate"] in {"challenged_assumption", "refuted_assumption",
+                                     "supported_assumption"}:
+                challenged.update((start, end))
+            if nodes[effect]["kind"] == "direction":
+                motivated_directions.add(effect)
+            t_cause = iso_time((nodes[cause].get("timestamps") or {}).get("occurred_at"))
+            t_effect = iso_time((nodes[effect].get("timestamps") or {}).get("occurred_at"))
+            if t_cause is not None and t_effect is not None and t_cause > t_effect:
+                conflicts.append(rel["id"])
+        directions = [e for e in events if e["kind"] == "direction"]
+        return {
+            "questions_without_recorded_trigger": sorted(
+                e["id"] for e in events if e["kind"] == "question"
+                and e["id"] not in triggered_questions),
+            "challenged_assumptions_without_link": sorted(
+                e["id"] for e in events if e.get("assumption_status") == "challenged"
+                and e["id"] not in challenged),
+            "directions_without_recorded_selection_reason": sorted(
+                e["id"] for e in directions if not e.get("decision_rationale")
+                and e["id"] not in motivated_directions),
+            "attempted_directions_without_recorded_result": sorted(
+                e["id"] for e in directions if e.get("direction_status") == "attempted"
+                and e.get("result_status", "unknown") == "unknown"
+                and not e.get("actual_outcome")),
+            "untried_or_abandoned_without_recorded_reason": sorted(
+                e["id"] for e in directions if
+                e.get("direction_status") in {"not_tested", "abandoned", "blocked"}
+                and not e.get("blocking_reason")),
+            "events_without_precise_source_anchor": sorted(
+                e["id"] for e in events if not e.get("evidence_anchors")),
+            "causal_time_conflicts_to_review": sorted(conflicts),
+            "interpretation": "Unrecorded details are unknown, not evidence of absence."
+        }
 
     def _coverage(self, case: dict, events: list[dict], sources: list[dict],
                   passages: list[dict], relations: list[dict],

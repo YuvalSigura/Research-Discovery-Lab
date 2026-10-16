@@ -319,3 +319,10 @@ Early contributions are most useful in **research methodology, synthetic world d
 *The objective is not to know the answer in advance — it is to discover what is worth asking.*
 
 </div>
+
+
+## Retrieval and investigation reconstruction
+
+Run \`python -m research_engine search "Chrome"\` or \`python -m research_engine reconstruct CASE-000001\` after \`python -m pip install -r requirements-validation.txt\`. The read-only engine assembles source-grounded timelines, negative and untried directions, challenged assumptions, question transitions, and evidence gap reports.
+
+**Limitation:** all 50 initial records are source metadata only. A historical research trajectory is never invented from titles. See [retrieval and reconstruction documentation](docs/RETRIEVAL_ENGINE.md). Training remains the final project phase.

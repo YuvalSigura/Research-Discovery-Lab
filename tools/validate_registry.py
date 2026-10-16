@@ -31,6 +31,16 @@ def validate(root=ROOT):
             require(rid not in records, f"Duplicate identifier: {rid}")
             records[rid] = item
     for rid, item in records.items():
+        for holder in ("provenance", "knowledge"):
+            evidence = item.get(holder) or {}
+            for sid in evidence.get("source_refs", []):
+                require(sid in records and sid.startswith("SRC-"),
+                        f"{rid}: missing {holder} source {sid}")
+        if rid.startswith("CTX-"):
+            for obs in item.get("known_observations", []):
+                for sid in obs.get("source_refs", []):
+                    require(sid in records and sid.startswith("SRC-"),
+                            f"{rid}: missing observation source {sid}")
         for field, expected_prefix in LINKS.items():
             if field not in item: continue
             value = item[field]
