@@ -1,0 +1,70 @@
+{
+  "source_id": "SRC-000020",
+  "case_id": "CASE-000020",
+  "canonical_url": "https://xbow.com/blog/xbow-eddi-path",
+  "retrieved_url": "https://xbow.com/blog/xbow-eddi-path",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:20:00Z",
+  "document_genres": ["research narrative", "technical walkthrough"],
+  "lineage_id": "xbow-eddi-path-2024",
+  "actor_roles": [{"actor": "XBOW", "role": "investigator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Research Process / Negatives",
+      "type": "author_reported",
+      "statement": "Fetched OpenAPI. Tested ZIP import endpoints for traversal/ZIP Slip; got 500s. Template injection on propertysetters was sanitized. Other file endpoints unproductive."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Pivots",
+      "type": "author_reported",
+      "statement": "Re-evaluated OpenAPI and shifted to /backup/export/{botFilename}. Encoded traversal succeeded and returned /etc/passwd."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "After ZIP import and template paths fail, does a simple export endpoint that takes a filename parameter allow path traversal?",
+      "basis": "action_implied_candidate",
+      "anchor": "reevaluation of OpenAPI leading to export endpoint",
+      "uncertainty_reduced": "whether any filename-taking endpoint is unprotected",
+      "assumption_challenged": "that complex ZIP or template attacks are required"
+    }
+  ],
+  "environment_model_updates": [
+    "ZIP import endpoints error on traversal attempts",
+    "Template engine is locked down",
+    "/backup/export/{botFilename} directly handles user-supplied path"
+  ],
+  "discovery_mechanisms": [
+    "openapi_guided_enumeration",
+    "failure_driven_reevaluation",
+    "simple_traversal_on_overlooked_endpoint"
+  ],
+  "systematic_vs_exploratory": {
+    "systematic": "OpenAPI mapping and testing of file-handling endpoints",
+    "exploratory": "returning to the spec with fresh eyes after complex attacks failed"
+  },
+  "negative_inconclusive": [
+    "ZIP Slip and related attacks on import: 500s",
+    "Template injection: sanitized",
+    "Other import/git endpoints: no immediate success"
+  ],
+  "decision_ids": ["xbow-eddi-path-2024.T001"],
+  "unobserved_history": ["exact order of ZIP variants tested"],
+  "forbidden_inferences": [
+    "Do not treat complex attack failures as proof no file read exists",
+    "The successful vector was a simpler traversal on a different endpoint"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Note successful retrieval of /etc/passwd as proof"],
+  "layer_b_candidate_principles": [
+    "When complex file-format attacks fail, re-examine the API spec for simpler filename or path parameters that may have been overlooked",
+    "A 500 on one endpoint does not close the file-read question for the whole application"
+  ],
+  "model_vs_harness": "Deciding to re-read the OpenAPI after failures is model judgment; systematic endpoint testing can be harness."
+}
