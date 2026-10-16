@@ -3,6 +3,7 @@
 **Status:** PROVISIONAL. Not an architecture change. Not a new authority.  
 **Purpose:** Translate source-grounded research principles into candidate capabilities that can be expressed using existing HOMELAB components (WorkGraph, ActionPlane, EvidenceLedger, hypothesis state, capability composition) without introducing new scheduler, truth authority, execution authority, or persistent state ownership.  
 **Architecture note:** Inspected Harness repository structure (action_plane.py, dynamic_workgraph.py, capability_chain_engine.py, discovery_hypotheses.py, etc.). All proposals below are classified as guidance for existing components or as potential Architecture Change Proposals (ACP) if they require new contracts. No F1–F12 foundation modifications are proposed here.  
+**Revision note:** Revised 2026-10-16 to correct TA-H002, TA-H004, and TA-H006.  
 **Date:** 2026-10-16
 
 ## Classification key
@@ -25,14 +26,20 @@
 
 ---
 
-## TA-H002 — Blocked-path re-examination flag
+## TA-H002 — Distinguish blockage reasons in hypothesis state
 
 **Maps to:** TB-Q002  
-**Classification:** Deterministic infrastructure flag + model guidance.  
-**Existing components:** WorkGraph (node status), ActionPlane (action outcome).  
-**Proposed use:** When an action is abandoned due to cost, complexity, or missing precondition (as reported by the model or observed outcome), mark the WorkGraph node with a "blocked_recoverable" flag rather than "closed". The research model may later retrieve this flag when generating questions about missing preconditions.  
-**Does not:** Automatically re-execute. Does not override budget or authorization.  
-**Validation:** Ensure the flag does not create an infinite retry loop.
+**Classification:** Model reasoning guidance + existing hypothesis-state annotation.  
+**Existing components:** Hypothesis / discovery state (not WorkGraph task status).  
+**Proposed use:** When a direction is blocked, record the reason in the hypothesis state, distinguishing at least:
+- Missing precondition (recoverable if the precondition can be observed or constructed within authorized scope)
+- Cost / complexity judgment (abandoned for resource reasons; may be revisited)
+- Authorization limit (blocked by policy; not a research conclusion)
+- Experimental negative (scoped result under tested conditions)
+
+Do not collapse these into a single WorkGraph node flag. WorkGraph remains a task/execution structure; research conclusions about recoverability belong in hypothesis state.  
+**Does not:** Automatically re-execute. Does not override budget or authorization. Does not treat authorization limits as scientific findings.  
+**Validation:** Verify that authorization-blocked and cost-abandoned paths are not treated as falsified hypotheses.
 
 ---
 
@@ -47,14 +54,19 @@
 
 ---
 
-## TA-H004 — Connection-reuse disable before desync validation
+## TA-H004 — Controlled comparison for connection-reuse effects
 
 **Maps to:** SRC-000026  
-**Classification:** Deterministic infrastructure rule.  
-**Existing components:** ActionPlane HTTP request handling, if desync-related actions exist.  
-**Proposed use:** For any action classified as desync validation, first execute with connection reuse disabled. Only if the behavior disappears, apply class-specific probes (HTTP/2 nesting, partial request, connection-state).  
-**Does not:** Change authorization. Can be implemented as a precondition in existing action contracts.  
-**Validation:** Test against known desync vs pipelining cases.
+**Classification:** Model reasoning guidance + deterministic measurement support.  
+**Existing components:** ActionPlane HTTP request handling.  
+**Proposed use:** When an HTTP behavior is observed that may be related to desync, pipelining, or connection state, perform a controlled comparison: measure the behavior both with connection reuse enabled and with connection reuse disabled. Use the comparison to distinguish:
+- Artifact of the testing tool or connection handling
+- Behavior that depends on connection state
+- Behavior independent of connection reuse
+
+Do not treat “disable connection reuse first” as a hard filter that decides whether further investigation continues. Connection reuse can be a required condition for some real vulnerability classes.  
+**Does not:** Change authorization.  
+**Validation:** Test against known cases where the signal appears only with reuse, only without reuse, and in both conditions.
 
 ---
 
@@ -69,14 +81,14 @@
 
 ---
 
-## TA-H006 — Default-token environment fact
+## TA-H006 — Known-token candidates as hypotheses, not facts
 
 **Maps to:** SRC-000008 and similar XBOW cases  
 **Classification:** Model / retrieval guidance.  
-**Existing components:** Application intelligence / environment model.  
-**Proposed use:** When the research model or knowledge base identifies a well-known default credential or token relevant to the target, surface it as an environment fact for verification rather than assuming it is out of scope. Verification still requires authorized action.  
-**Does not:** Automatically use credentials.  
-**Validation:** Confirm that credential use remains inside engagement rules.
+**Existing components:** Application intelligence / environment model; existing secret-handling paths.  
+**Proposed use:** When prior knowledge or retrieval surfaces a well-known default credential or token that may be relevant to the target, record it as a hypothesis about the current environment, not as a verified fact. Any attempt to verify or use the token must go through existing authorized secret-handling and engagement-rule mechanisms.  
+**Does not:** Automatically treat the token as present. Does not bypass secret-handling contracts. Does not expand authorization.  
+**Validation:** Confirm that token hypotheses remain hypotheses until verified under authorized conditions, and that secret handling is unchanged.
 
 ---
 
@@ -108,7 +120,7 @@ None of the heuristics above introduce:
 - A new scheduler
 - New truth authority
 - New execution authority
-- New persistent state ownership outside existing WorkGraph / EvidenceLedger contracts
+- New persistent state ownership outside existing WorkGraph / EvidenceLedger / hypothesis-state contracts
 
 Any implementation that would require new contracts must be submitted as an Architecture Change Proposal and evaluated against the frozen F1–F12 foundations.
 
