@@ -1,0 +1,47 @@
+{
+  "source_id": "SRC-000030",
+  "case_id": "CASE-000030",
+  "canonical_url": "https://xbow.com/blog/gpt-5-5-and-xbow-a-step-change-in-autonomous-application-security",
+  "retrieved_url": "https://xbow.com/blog/gpt-5-5-and-xbow-a-step-change-in-autonomous-application-security",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T10:40:00Z",
+  "document_genres": ["evaluation announcement", "product blog"],
+  "lineage_id": "xbow-model-evaluation-2026",
+  "actor_roles": [{"actor": "XBOW", "role": "evaluator"}],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Results",
+      "type": "publisher_claimed",
+      "statement": "GPT-5.5 reduced missed-vulnerability rate by 75% vs GPT-5 and 44% vs Opus 4.6 on internal benchmark. Better efficiency, auth workflows, and pivot judgment."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Methodology",
+      "type": "publisher_claimed",
+      "statement": "Models evaluated inside complete offensive workflows on real-world vulnerable applications. Process evidence is thin: no dataset size, statistical details, or external validation."
+    }
+  ],
+  "research_questions": [],
+  "environment_model_updates": [],
+  "discovery_mechanisms": [],
+  "systematic_vs_exploratory": {},
+  "negative_inconclusive": [
+    "Model capability alone is insufficient; requires systems for context, chaining, validation, evidence"
+  ],
+  "decision_ids": [],
+  "unobserved_history": ["benchmark construction details", "exact test cases"],
+  "forbidden_inferences": [
+    "Do not treat quantitative claims as independently verified research findings",
+    "Thin process evidence; this is an evaluation announcement, not a research reconstruction"
+  ],
+  "scientific_readiness": "catalog_only",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": ["Seek any linked methodology or benchmark details"],
+  "layer_b_candidate_principles": [
+    "Operationalization (context, validation, evidence) is required beyond raw model capability"
+  ],
+  "model_vs_harness": "Highlights that harness-level systems are necessary for autonomy."
+}
