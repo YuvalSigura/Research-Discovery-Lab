@@ -229,6 +229,9 @@ class ResearchRetrievalEngine:
                            r["subject"] in selected_ids and r["object"] in selected_ids
                            and status(r) in HISTORICAL_EVIDENCE
                            and r.get("causal_basis") == "explicit_documented"
+                           and r.get("hindsight_review") == "passed"
+                           and iso_time(r.get("known_at")) is not None
+                           and iso_time(r.get("known_at")) <= horizon
                            and self._sources_preexisting(provenance(r).get("source_refs", []), horizon)]
         dated, undated = [], []
         for event in events:
@@ -324,6 +327,9 @@ class ResearchRetrievalEngine:
             return None
         event_time = iso_time((event.get("timestamps") or {}).get("known_at"))
         if event_time is None or event_time > horizon:
+            return None
+        occurred = iso_time((event.get("timestamps") or {}).get("occurred_at"))
+        if occurred is not None and occurred > horizon:
             return None
         source_ids = provenance(event).get("source_refs", [])
         if not self._sources_preexisting(source_ids, horizon):

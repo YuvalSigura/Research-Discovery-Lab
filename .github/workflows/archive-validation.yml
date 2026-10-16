@@ -1,7 +1,7 @@
 name: Research archive validation
 on:
   push:
-    paths: ["research/**", "registry/**", "schemas/**", "ontology/**", "tools/**", "tests/**", "requirements-validation.txt", ".github/workflows/archive-validation.yml"]
+    paths: ["research/**", "registry/**", "schemas/**", "ontology/**", "tools/**", "tests/**", "requirements-validation.txt", "research_engine/**", ".github/workflows/archive-validation.yml"]
   pull_request:
     paths: ["research/**", "registry/**", "schemas/**", "ontology/**", "tools/**", "tests/**", "requirements-validation.txt", ".github/workflows/archive-validation.yml"]
 jobs:

@@ -146,6 +146,20 @@
         "overlap",
         "unknown"
       ]
+    },
+    "hindsight_review": {
+      "enum": [
+        "not_reviewed",
+        "passed",
+        "failed"
+      ]
+    },
+    "known_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
     }
   }
 }
