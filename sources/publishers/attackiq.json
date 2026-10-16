@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "publisher": "AttackIQ Threat Research",
+  "root_url": "https://www.attackiq.com/",
+  "research_listing_urls": [
+    "https://www.attackiq.com/category/research/"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publicly accessible original technical research or clearly identified contextual background, curated before archiving.",
+  "priority": "medium",
+  "research_tags": [
+    "threat_research",
+    "adversary_emulation",
+    "cloud_identity"
+  ],
+  "example_urls": [
+    "https://www.attackiq.com/category/research/"
+  ],
+  "exclude_by_default": [
+    "datasheets",
+    "customer stories",
+    "sales content",
+    "vendor comparisons",
+    "webinars",
+    "product launches"
+  ],
+  "review_required_for": [
+    "originality",
+    "historical_trajectory_claims",
+    "author_attribution",
+    "negative_attempts",
+    "copyright",
+    "research_methodology"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "Threat research often analyzes known adversaries and publishes emulations rather than first-party novel vulnerability discovery; do not merge types."
+}

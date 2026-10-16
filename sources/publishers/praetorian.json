@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "publisher": "Praetorian Research",
+  "root_url": "https://www.praetorian.com/",
+  "research_listing_urls": [
+    "https://www.praetorian.com/blog/"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publicly accessible original technical research or clearly identified contextual background, curated before archiving.",
+  "priority": "high",
+  "research_tags": [
+    "original_vulnerability_research",
+    "os_kernel",
+    "ai_assisted_discovery"
+  ],
+  "example_urls": [
+    "https://www.praetorian.com/blog/ai-vulnerability-research-freebsd-kernel/"
+  ],
+  "exclude_by_default": [
+    "datasheets",
+    "customer stories",
+    "sales content",
+    "vendor comparisons",
+    "webinars",
+    "product launches"
+  ],
+  "review_required_for": [
+    "originality",
+    "historical_trajectory_claims",
+    "author_attribution",
+    "negative_attempts",
+    "copyright",
+    "research_methodology"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "Prioritize category-tagged Vulnerability Research and Labs work; exclude announcements and promotional platform copy."
+}

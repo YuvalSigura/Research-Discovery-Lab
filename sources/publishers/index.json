@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Source discovery registry, not proof that pages were archived, analyzed, or legally cleared for republication.",
+  "publishers": [
+    {
+      "key": "pentera",
+      "publisher": "Pentera Labs",
+      "priority": "high",
+      "config_path": "sources/publishers/pentera.json"
+    },
+    {
+      "key": "horizon3",
+      "publisher": "Horizon3.ai Attack Research",
+      "priority": "high",
+      "config_path": "sources/publishers/horizon3.json"
+    },
+    {
+      "key": "cymulate",
+      "publisher": "Cymulate Research Labs",
+      "priority": "high",
+      "config_path": "sources/publishers/cymulate.json"
+    },
+    {
+      "key": "safebreach",
+      "publisher": "SafeBreach Labs",
+      "priority": "high",
+      "config_path": "sources/publishers/safebreach.json"
+    },
+    {
+      "key": "netspi",
+      "publisher": "NetSPI Technical Blog",
+      "priority": "high",
+      "config_path": "sources/publishers/netspi.json"
+    },
+    {
+      "key": "praetorian",
+      "publisher": "Praetorian Research",
+      "priority": "high",
+      "config_path": "sources/publishers/praetorian.json"
+    },
+    {
+      "key": "xmcyber",
+      "publisher": "XM Cyber",
+      "priority": "medium",
+      "config_path": "sources/publishers/xmcyber.json"
+    },
+    {
+      "key": "picus",
+      "publisher": "Picus Labs",
+      "priority": "medium",
+      "config_path": "sources/publishers/picus.json"
+    },
+    {
+      "key": "attackiq",
+      "publisher": "AttackIQ Threat Research",
+      "priority": "medium",
+      "config_path": "sources/publishers/attackiq.json"
+    }
+  ],
+  "promotion_policy": {
+    "research_case_requires": [
+      "verified_article_url",
+      "source_metadata",
+      "originality_assessment"
+    ],
+    "historical_event_requires": [
+      "source_anchor",
+      "documented_event",
+      "explicit_epistemic_status"
+    ],
+    "historical_causal_edge_requires": [
+      "explicit_source_supported_transition",
+      "recorded_causal_basis"
+    ],
+    "raw_capture_requires": [
+      "permission_review",
+      "content_hash",
+      "capture_provenance"
+    ]
+  }
+}

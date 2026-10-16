@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "publisher": "SafeBreach Labs",
+  "root_url": "https://www.safebreach.com/",
+  "research_listing_urls": [
+    "https://www.safebreach.com/safebreach-labs/",
+    "https://www.safebreach.com/cve-discoveries/"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publicly accessible original technical research or clearly identified contextual background, curated before archiving.",
+  "priority": "high",
+  "research_tags": [
+    "original_vulnerability_research",
+    "endpoint_security",
+    "assumption_challenge"
+  ],
+  "example_urls": [
+    "https://www.safebreach.com/blog/defender-pretender-when-windows-defender-updates-become-a-security-risk/",
+    "https://www.safebreach.com/blog/edr-erase-data-remotely-by-cooking-unforgettable-byte-signature-dish/"
+  ],
+  "exclude_by_default": [
+    "datasheets",
+    "customer stories",
+    "sales content",
+    "vendor comparisons",
+    "webinars",
+    "product launches"
+  ],
+  "review_required_for": [
+    "originality",
+    "historical_trajectory_claims",
+    "author_attribution",
+    "negative_attempts",
+    "copyright",
+    "research_methodology"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "Research posts can include retrospective methods; CVE lists alone are not trajectory evidence."
+}

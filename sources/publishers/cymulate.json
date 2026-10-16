@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "publisher": "Cymulate Research Labs",
+  "root_url": "https://cymulate.com/",
+  "research_listing_urls": [
+    "https://cymulate.com/research/",
+    "https://cymulate.com/authors/cymulate-research-lab/"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publicly accessible original technical research or clearly identified contextual background, curated before archiving.",
+  "priority": "high",
+  "research_tags": [
+    "original_vulnerability_research",
+    "ai_agent_security",
+    "identity"
+  ],
+  "example_urls": [
+    "https://cymulate.com/blog/the-race-to-ship-ai-tools-left-security-behind-part-1-sandbox-escape/",
+    "https://cymulate.com/blog/zero-click-rce-prompt-injection-ai-tools/"
+  ],
+  "exclude_by_default": [
+    "datasheets",
+    "customer stories",
+    "sales content",
+    "vendor comparisons",
+    "webinars",
+    "product launches"
+  ],
+  "review_required_for": [
+    "originality",
+    "historical_trajectory_claims",
+    "author_attribution",
+    "negative_attempts",
+    "copyright",
+    "research_methodology"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "Distinguish original experiments from company commentary and threat summaries."
+}

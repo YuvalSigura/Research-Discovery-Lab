@@ -1,7 +1,7 @@
 name: Research archive validation
 on:
   push:
-    paths: ["research/**", "registry/**", "schemas/**", "ontology/**", "tools/**", "tests/**", "requirements-validation.txt", "research_engine/**", ".github/workflows/archive-validation.yml"]
+    paths: ["research/**", "registry/**", "schemas/**", "ontology/**", "tools/**", "tests/**", "requirements-validation.txt", "research_engine/**", "sources/**", ".github/workflows/archive-validation.yml"]
   pull_request:
     paths: ["research/**", "registry/**", "schemas/**", "ontology/**", "tools/**", "tests/**", "requirements-validation.txt", ".github/workflows/archive-validation.yml"]
 jobs:
@@ -15,4 +15,5 @@ jobs:
       - run: python -m pip install -r requirements-validation.txt
       - run: python tools/validate_archive.py
       - run: python tools/validate_registry.py
+      - run: python tools/validate_publisher_sources.py
       - run: python -m unittest discover -s tests -p "test_*.py" -v

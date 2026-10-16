@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "publisher": "Picus Labs",
+  "root_url": "https://www.picussecurity.com/",
+  "research_listing_urls": [
+    "https://www.picussecurity.com/picus-labs",
+    "https://www.picussecurity.com/resource/author/picus-labs"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publicly accessible original technical research or clearly identified contextual background, curated before archiving.",
+  "priority": "medium",
+  "research_tags": [
+    "attack_path_validation",
+    "empirical_security_measurement",
+    "threat_analysis"
+  ],
+  "example_urls": [
+    "https://www.picussecurity.com/resource/blog/blue-report-2024-uncovering-critical-defensive-gaps-with-automated-penetration-testing"
+  ],
+  "exclude_by_default": [
+    "datasheets",
+    "customer stories",
+    "sales content",
+    "vendor comparisons",
+    "webinars",
+    "product launches"
+  ],
+  "review_required_for": [
+    "originality",
+    "historical_trajectory_claims",
+    "author_attribution",
+    "negative_attempts",
+    "copyright",
+    "research_methodology"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "Labs authorship alone does not imply first-hand investigation; separate aggregate simulation evidence from reconstructed research trajectories."
+}

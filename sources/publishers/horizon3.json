@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "publisher": "Horizon3.ai Attack Research",
+  "root_url": "https://horizon3.ai/",
+  "research_listing_urls": [
+    "https://horizon3.ai/category/attack-research/attack-blogs/",
+    "https://horizon3.ai/category/attack-research/disclosures/"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publicly accessible original technical research or clearly identified contextual background, curated before archiving.",
+  "priority": "high",
+  "research_tags": [
+    "original_vulnerability_research",
+    "attack_chain",
+    "disclosure"
+  ],
+  "example_urls": [
+    "https://horizon3.ai/category/attack-research/disclosures/"
+  ],
+  "exclude_by_default": [
+    "datasheets",
+    "customer stories",
+    "sales content",
+    "vendor comparisons",
+    "webinars",
+    "product launches"
+  ],
+  "review_required_for": [
+    "originality",
+    "historical_trajectory_claims",
+    "author_attribution",
+    "negative_attempts",
+    "copyright",
+    "research_methodology"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "Use attack blogs/disclosures with explicit original investigation details; don't assume every attack blog is original research."
+}

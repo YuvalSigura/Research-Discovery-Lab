@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "publisher": "XM Cyber",
+  "root_url": "https://xmcyber.com/",
+  "research_listing_urls": [
+    "https://xmcyber.com/blog/"
+  ],
+  "discovered_utc_date": "2026-10-16",
+  "content_scope": "Publicly accessible original technical research or clearly identified contextual background, curated before archiving.",
+  "priority": "medium",
+  "research_tags": [
+    "exposure_management",
+    "attack_paths",
+    "identity"
+  ],
+  "example_urls": [
+    "https://xmcyber.com/blog/"
+  ],
+  "exclude_by_default": [
+    "datasheets",
+    "customer stories",
+    "sales content",
+    "vendor comparisons",
+    "webinars",
+    "product launches"
+  ],
+  "review_required_for": [
+    "originality",
+    "historical_trajectory_claims",
+    "author_attribution",
+    "negative_attempts",
+    "copyright",
+    "research_methodology"
+  ],
+  "copyright_policy": "metadata_and_links_only_until_permission_review",
+  "raw_capture_enabled": false,
+  "deduplicate_by": [
+    "canonical_url",
+    "source_hash_if_available"
+  ],
+  "notes": "General blog mixes marketing with isolated original CVE disclosures. Require explicit researcher attribution."
+}
