@@ -610,6 +610,14 @@
       "source_url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one",
       "source_registry_ref": "SRC-000076",
       "classification_status": "pending_review"
+    },
+    {
+      "legacy_id": "CASE-000077",
+      "legacy_path": "research/cases/CASE-000077/metadata.json",
+      "new_case_ref": "CASE-000077",
+      "source_url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "source_registry_ref": "SRC-000077",
+      "classification_status": "pending_review"
     }
   ]
 }

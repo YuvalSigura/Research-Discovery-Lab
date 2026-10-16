@@ -2372,6 +2372,365 @@
         }
       ],
       "blocking_reason": "Cannot independently establish source revision, exact testing context or universal non-vulnerability."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000079",
+      "case_ref": "CASE-000077",
+      "kind": "external_input",
+      "statement": "After using agent taskflows to triage CodeQL alerts, the authors decided to explore less narrowly constrained, general security audits.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Taskflows for general security code audits"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000080",
+      "case_ref": "CASE-000077",
+      "kind": "question",
+      "statement": "How could taskflows permit broader vulnerability hypothesis generation while keeping hallucinations and false positives under control?",
+      "origin": "reconstructed",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Analyst paraphrase of an explicitly published high-level research goal; the exact question was not presented as a dated historical utterance."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Taskflows for general security code audits"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000081",
+      "case_ref": "CASE-000077",
+      "kind": "decision",
+      "statement": "The authors separated component-level threat modelling, vulnerability suggestions and evidence-driven candidate auditing rather than relying on a single broad prompt.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): General taskflow design; Threat modeling stage; Issue audit stage"
+        }
+      ],
+      "decision_rationale": "Control the evaluation context and distinguish intended behavior from unintended privilege changes."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000082",
+      "case_ref": "CASE-000077",
+      "kind": "observation",
+      "statement": "The authors report that many automated false positives arise when tools ignore the intended use and trust boundaries of the component under review.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Threat modeling stage"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000083",
+      "case_ref": "CASE-000077",
+      "kind": "decision",
+      "statement": "Potential vulnerability types were generated independently from a subsequent auditing step that applied stricter evidence and realistic-prerequisite checks.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): General taskflow design; Issue suggestion stage; Issue audit stage"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000084",
+      "case_ref": "CASE-000077",
+      "kind": "question",
+      "statement": "Would strict hallucination controls also reject too many genuine vulnerabilities?",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Directly expressed research concern in the authors' retrospective account; no dated evidence of when the question arose."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Issue audit stage"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000085",
+      "case_ref": "CASE-000077",
+      "kind": "experiment",
+      "statement": "The authors applied the taskflow to over forty repositories, reviewed model-proposed issues, deduplicated selected cases and manually examined the resulting shortlist.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): What we learned"
+        }
+      ],
+      "direction_status": "attempted",
+      "result_status": "positive",
+      "actual_outcome": "Publisher reports a shortlist for manual vetting and a mixture of accepted, unreproduced and low-impact cases."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000086",
+      "case_ref": "CASE-000077",
+      "kind": "evidence",
+      "statement": "In a reported aggregate sample, 1,003 issues were suggested, 139 marked by the audit stage, 91 remained after deduplication, 20 were rejected as unreproduced, 52 as low severity and 19 retained for reporting.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): What we learned"
+        }
+      ],
+      "result_status": "inconclusive",
+      "actual_outcome": "Publisher-reported aggregate category counts, not 20 individually reconstructed investigations or proof that unreproduced issues were impossible."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000087",
+      "case_ref": "CASE-000077",
+      "kind": "knowledge_revision",
+      "statement": "The authors report that some false-positive classifications arose from browser mitigations or additional authorization layers missing from the earlier model's reasoning, rather than invented endpoints.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): LLMs are good at rejecting low-severity issues and false positives"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000088",
+      "case_ref": "CASE-000077",
+      "kind": "experiment",
+      "statement": "A later low-severity filtering taskflow reportedly rejected about half of low-impact issues but also excluded some borderline results.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): LLMs are good at rejecting low-severity issues and false positives"
+        }
+      ],
+      "direction_status": "attempted",
+      "result_status": "inconclusive",
+      "actual_outcome": "Publisher describes a precision/coverage tradeoff with no independent benchmark reproduction."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000089",
+      "case_ref": "CASE-000077",
+      "kind": "observation",
+      "statement": "The researchers state that desktop software was particularly hard to threat-model because the trust status of other local processes may be ambiguous.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): LLMs are good at threat modeling"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "EVT-000090",
+      "case_ref": "CASE-000077",
+      "kind": "outcome",
+      "statement": "The report describes a multi-stage workflow and its author's aggregate results; it does not provide independent ground truth for every rejected hypothesis or a complete pre-decision transcript.",
+      "origin": "historical",
+      "hindsight_review": "not_reviewed",
+      "timestamps": {
+        "occurred_at": null,
+        "observed_at": null,
+        "recorded_at": null,
+        "published_at": null,
+        "known_at": null
+      },
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Published GitHub Security Lab self-report; not independently confirmed or contemporaneous audit logs."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): What we learned"
+        }
+      ],
+      "result_status": "inconclusive",
+      "actual_outcome": "Research methodology and aggregate self-report only; no RDL verification of exploit outcomes or original zero-day priority."
     }
   ]
 }

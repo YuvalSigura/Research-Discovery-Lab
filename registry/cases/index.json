@@ -1804,6 +1804,40 @@
         "review_status": "not_reviewed",
         "basis": "Publisher description only; no independent verification or discovery assessment."
       }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000077",
+      "source_refs": [
+        "SRC-000077"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "ai_assisted_security_research",
+        "threat_modeling",
+        "research_validation"
+      ],
+      "analysis_status": "in_progress",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Primary co-authored GitHub Security Lab article describing taskflow design and aggregate manual triage; not independent evidence of individual false-positive case histories, reproducibility or a complete research trajectory."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000077/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "Aggregate publisher self-report; RDL has not verified specific findings, independent negative cases or zero-day originality."
+      }
     }
   ]
 }

@@ -1141,6 +1141,21 @@
       "case_refs": [
         "CASE-000076"
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000077",
+      "title": "How to scan for vulnerabilities with GitHub Security Lab's open source AI-powered framework",
+      "publisher": "GitHub Security Lab",
+      "url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "publication_date": "2026-03-06",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000077"
+      ]
     }
   ]
 }

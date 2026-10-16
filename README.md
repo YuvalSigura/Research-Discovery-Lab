@@ -35,20 +35,20 @@ The following figures reflect the current repository baseline as inspected after
 
 | Item | Status |
 | --- | --- |
-| Catalogued publications | **76 source records** (the original 74 plus ServiceNow and a negative-result source) |
-| CASE records | **76**, mostly source-compatible catalogue placeholders |
-| Deep case example | **ShadowPanel**, **James Kettle topic selection**, **watchTowr .MOBI**, **ServiceNow** and **an OpenVAS false-positive account**, partially reconstructed; **XBOW Chrome** has five initial process events |
-| ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** (ShadowPanel alone); **78 events and 68 relations** across current archive |
+| Catalogued publications | **77 source records** (previous 76 plus GitHub Security Lab's taskflow methodology study) |
+| CASE records | **77**, mostly source-compatible catalogue placeholders |
+| Deep case example | **ShadowPanel**, **James Kettle topic selection**, **watchTowr .MOBI**, **ServiceNow** and **an OpenVAS false-positive account**, and **GitHub Security Lab taskflow methodology**, partially reconstructed; **XBOW Chrome** has five initial process events |
+| ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** (ShadowPanel alone); **90 events and 79 relations** across current archive |
 | Publisher-discovery seeds | **9 configured research publishers**, in `sources/publishers/` |
 | Typed archive, schemas, integrity checks | Implemented |
 | Read-only retrieval, chronology, causal question tracing | Implemented |
 | Mindset taxonomy, question-to-move model and open-world umbrella-question analysis | Implemented **as infrastructure** |
-| Mindset / question-pattern / cross-case mappings | **4 unreviewed MND**, **2 proposed QPT**, **3 proposed QMP**; **0 reviewed** |
+| Mindset / question-pattern / cross-case mappings | **6 unreviewed MND**, **2 proposed QPT**, **3 proposed QMP**; **0 reviewed** |
 | Original article RAW text and licensed passages | **Not archived** for the catalogue |
 | Automated acquisition, document processing and historical extraction | **Not implemented end to end** |
-| Dataset creation, blind evaluation, fine-tuning | **Fail-closed predecision candidate exporter exists**, but **0 approved CTX** and **0 qualified benchmark tasks**; training is last |
+| Dataset creation, blind evaluation, fine-tuning | **Fail-closed predecision candidate exporter and offline descriptive A/B scorer exist**, but **0 approved CTX**, **0 qualified benchmark tasks**, and **no actual model comparison**; training is last |
 
-**Last previous verified release:** [first-mission successful CI](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38845096564) on PR #1; Phase-2 validation must pass independently. See [Phase-2 source decision audit](docs/PHASE2_SOURCE_DECISION_AUDIT.md).
+**Previously verified main baseline:** [consolidated main CI PASS](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38860482526), commit `2e66bca`; the current increment requires its own GitHub Actions run. See [Phase-3 research review and evaluation](docs/PHASE3_INDEPENDENT_CURATION_AND_EVALUATION.md).
 
 The research trajectory records are **partial reconstructions from authors' retrospective public accounts**, not independently repeated exploit experiments. Where event times are unavailable, the engine preserves uncertainty instead of manufacturing dates or causal ordering. See [first-mission source review](docs/FIRST_MISSION_SOURCE_REVIEW.md), [Pentera import notes](docs/PENTERA_IMPORT.md), and [phase status](docs/PHASE1_STATUS.md).
 
@@ -58,6 +58,8 @@ The Python `research_engine` package reads the typed registries and produces evi
 
 - **Source and record retrieval:** deterministic lexical search with metadata filters and source references; no unsupported claims of semantic indexing or uncaptured full-text search.
 - **Scout intake triage:** `tools/triage_source_candidates.py` deduplicates canonical first-party leads, flags unverifiable sources and keeps rights unreviewed; it deliberately creates no authoritative archive records.
+- **Independent review preparation:** `tools/build_curator_queue.py` produces source-linked human-review worksheets with inferred motives and uncertain causal edges flagged; no automatic promotion.
+- **Offline descriptive paired-arm checks:** `tools/score_paired_trials.py` validates three matched A/B/control arms and blinded human scoring; it does not run models or claim transfer.
 - **Investigation reconstruction:** documented events in known time order; unknown-time events kept in a separate bucket.
 - **Trajectory accounting:** assumptions, hypotheses, considered/abandoned/untried directions, experiments, negative and inconclusive results, pivots, and questions.
 - **Provenance-aware tracing:** explicit transitions between questions, evidence and research decisions; chronology alone is not treated as causality.
@@ -95,6 +97,9 @@ python -m research_engine questions CASE-000055
 python -m research_engine question-convergence --min-cases 2
 python tools/triage_source_candidates.py path/to/scout_candidates.json
 python tools/curation_readiness.py --case-id CASE-000075
+python tools/build_curator_queue.py --case-id CASE-000077
+# After external, preregistered scored trial data is available:
+# python tools/score_paired_trials.py /path/to/blind_human_scores.json
 # Export requires an operator-held RDL_BLIND_KEY; with 0 approved CTX exports 0 tasks:
 python tools/build_predecision_candidates.py
 python -m research_engine compare-questions CASE-000055 CASE-000001
@@ -180,7 +185,7 @@ All original/historical vs analyst-reconstructed vs counterfactual vs unknown cl
 
 ## Remaining roadmap — training is last
 
-The existing retrieval/question-analysis foundation is **not** the finished research factory. Phase 2 adds publisher-sourced cases, a real negative-result report with methodological caveats, unreviewed MND/QPT/QMP candidates and read-only curation/evaluation gates; it does not establish verified question-family convergence.
+The existing retrieval/question-analysis foundation is **not** the finished research factory. Phase 2 added publisher-sourced cases, a negative investigation with methodological caveats, and unreviewed MND/QPT/QMP hypotheses. The subsequent increment adds a GitHub Security Lab methodology study, an explicit independent curation queue and a strictly descriptive paired-trial scorer. **No question-family convergence, human-curated blind context or model-performance gain has been demonstrated.**
 
 | Order | Stage | Exit criterion |
 | --- | --- | --- |

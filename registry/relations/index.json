@@ -1701,6 +1701,281 @@
           "locator": "sections: Conclusion: The Path to Accurate Vulnerability Assessment"
         }
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000069",
+      "subject": "EVT-000079",
+      "predicate": "raised_question",
+      "object": "EVT-000080",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-stated reasoning link; not a verified historical causal relation.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Taskflows for general security code audits"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000070",
+      "subject": "EVT-000080",
+      "predicate": "pivoted_to",
+      "object": "EVT-000081",
+      "causal_basis": "reconstructed",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Analyst-stated reasoning link; not a verified historical causal relation.",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): General taskflow design"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000071",
+      "subject": "EVT-000082",
+      "predicate": "informed_by",
+      "object": "EVT-000081",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Authors describe the dependency or result; a retrospective report is not independently verified.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Threat modeling stage"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000072",
+      "subject": "EVT-000081",
+      "predicate": "followed_by",
+      "object": "EVT-000083",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher presentation order; causality NOT established.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): General taskflow design"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000073",
+      "subject": "EVT-000083",
+      "predicate": "followed_by",
+      "object": "EVT-000084",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher presentation order; causality NOT established.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Issue audit stage"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000074",
+      "subject": "EVT-000084",
+      "predicate": "tested_by",
+      "object": "EVT-000085",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Authors describe the dependency or result; a retrospective report is not independently verified.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): Issue audit stage; What we learned"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000075",
+      "subject": "EVT-000085",
+      "predicate": "produced_evidence",
+      "object": "EVT-000086",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Authors describe the dependency or result; a retrospective report is not independently verified.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): What we learned"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000076",
+      "subject": "EVT-000086",
+      "predicate": "informed_by",
+      "object": "EVT-000087",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Authors describe the dependency or result; a retrospective report is not independently verified.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): LLMs are good at rejecting low-severity issues and false positives"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000077",
+      "subject": "EVT-000086",
+      "predicate": "informed_by",
+      "object": "EVT-000088",
+      "causal_basis": "explicit_documented",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Authors describe the dependency or result; a retrospective report is not independently verified.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): LLMs are good at rejecting low-severity issues and false positives"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000078",
+      "subject": "EVT-000088",
+      "predicate": "followed_by",
+      "object": "EVT-000090",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher presentation order; causality NOT established.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): What we learned"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "REL-000079",
+      "subject": "EVT-000081",
+      "predicate": "followed_by",
+      "object": "EVT-000089",
+      "causal_basis": "temporal_only",
+      "temporal_order": "unknown",
+      "hindsight_review": "not_reviewed",
+      "known_at": null,
+      "rationale": "Publisher presentation order; causality NOT established.",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Publisher retrospective, inspected 2026-10-16; no actual research-decision timestamp established."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "section(s): LLMs are good at threat modeling"
+        }
+      ]
     }
   ]
 }

@@ -147,6 +147,78 @@
       "outcome_event_refs": [],
       "review_status": "not_reviewed",
       "notes": "Initial analysis only; second curator and prior-art review pending."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "MND-000005",
+      "case_ref": "CASE-000077",
+      "event_refs": [
+        "EVT-000085"
+      ],
+      "question_event_refs": [
+        "EVT-000084"
+      ],
+      "question_link_basis": "explicit_documented",
+      "question_relation_refs": [
+        "REL-000074"
+      ],
+      "mindset_key": "hypothesis_testing",
+      "statement": "The authors checked whether restrictive audit criteria suppressed useful reports by running the workflow across multiple codebases and manually verifying a subset.",
+      "attribution": "researcher_explicit",
+      "novelty": "unassessed",
+      "comparison_scope": "not_assessed",
+      "provenance": {
+        "evidence_status": "documented",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Retrospective methodology self-report only. Neither originality nor attribution of security discoveries to this mindset is validated."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "sections: Issue audit stage; What we learned"
+        }
+      ],
+      "outcome_linkage": "none",
+      "outcome_event_refs": [],
+      "review_status": "not_reviewed",
+      "notes": "Requires source-revision anchors and independent methodological scrutiny."
+    },
+    {
+      "schema_version": "1.0",
+      "id": "MND-000006",
+      "case_ref": "CASE-000077",
+      "event_refs": [
+        "EVT-000081"
+      ],
+      "question_event_refs": [
+        "EVT-000080"
+      ],
+      "question_link_basis": "analyst_hypothesis",
+      "question_relation_refs": [],
+      "mindset_key": "trust_boundary_reasoning",
+      "statement": "Analyst interprets the emphasis on component ownership and intended capabilities as a strategy for generating testable boundary questions. Its motivating question is a reconstruction, not a historical transcript.",
+      "attribution": "analyst_inference",
+      "novelty": "unassessed",
+      "comparison_scope": "not_assessed",
+      "provenance": {
+        "evidence_status": "proposed",
+        "source_refs": [
+          "SRC-000077"
+        ],
+        "notes": "Inference only; the publication describes the threat-model step, but no contemporaneous evidence of this precise internal question."
+      },
+      "evidence_anchors": [
+        {
+          "source_ref": "SRC-000077",
+          "locator": "sections: General taskflow design; Threat modeling stage"
+        }
+      ],
+      "outcome_linkage": "none",
+      "outcome_event_refs": [],
+      "review_status": "not_reviewed",
+      "notes": "Exclude from historical move-convergence and benchmark prompts; no empirical effect claim."
     }
   ]
 }

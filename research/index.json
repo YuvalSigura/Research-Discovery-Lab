@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "created_on": "2026-10-16",
-  "case_count": 76,
+  "case_count": 77,
   "cases": [
     {
       "id": "CASE-000001",
@@ -610,6 +610,14 @@
       "url": "https://www.stingrai.io/blog/the-perils-of-premature-vulnerability-reporting-a-case-study-in-off-by-one",
       "date": "2026-01-07",
       "category": "negative_result"
+    },
+    {
+      "id": "CASE-000077",
+      "publisher": "GitHub Security Lab",
+      "title": "How to scan for vulnerabilities with GitHub Security Lab's open source AI-powered framework",
+      "url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "date": "2026-03-06",
+      "category": "research_methodology"
     }
   ],
   "last_expanded_on": "2026-10-16"

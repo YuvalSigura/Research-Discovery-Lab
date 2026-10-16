@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000077",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000077",
+      "url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/"
+    }
+  ],
+  "note": "Primary article remains at GitHub Blog. No copyrighted article bytes, screenshot, prompt or full-text copied. Rights unreviewed; subsection anchors and inspection date in analyst review."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000077",
+  "title": "How to scan for vulnerabilities with GitHub Security Lab's open source AI-powered framework",
+  "publisher": "GitHub Security Lab",
+  "publication_date": "2026-03-06",
+  "category": "research_methodology",
+  "sources": [
+    {
+      "source_id": "SRC-000077",
+      "url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "in_progress",
+  "training_status": "not_started",
+  "provenance_note": "Primary public GitHub Security Lab report describes authors' research-process design, aggregate filtering and manual check counts. Not an independently audited experiment log, record of every failed candidate, or a license to mirror article text; no training examples or historical decision snapshots approved."
+}
