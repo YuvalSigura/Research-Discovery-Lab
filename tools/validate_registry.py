@@ -7,7 +7,7 @@ from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = {"sources":"SRC","systems":"SYS","environments":"ENV","cases":"CASE","contexts":"CTX","findings":"FND","mechanisms":"MEC","events":"EVT","relations":"REL"}
-SCHEMAS = {"sources":"source","systems":"system","environments":"environment","cases":"case","contexts":"context","findings":"finding","mechanisms":"mechanism","events":"event","relations":"relation"}
+SCHEMAS = {"sources":"source","systems":"system","environments":"environment","cases":"case","contexts":"context","findings":"finding","mechanisms":"mechanism","events":"research_event","relations":"relation"}
 LINKS = {"source_refs":"SRC","system_refs":"SYS","environment_refs":"ENV","finding_refs":"FND","mechanism_refs":"MEC","case_refs":"CASE","case_ref":"CASE","context_ref":"CTX","previous_event_refs":"EVT","related_mechanisms":"MEC"}
 
 def require(condition, message):

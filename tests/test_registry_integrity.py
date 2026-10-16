@@ -12,6 +12,12 @@ class RegistryIntegrityTests(unittest.TestCase):
         self.assertGreaterEqual(result["sources"],50)
         self.assertEqual(result["sources"],result["cases"])
 
+    def test_schema_files_exist(self):
+        from tools.validate_registry import KINDS, SCHEMAS
+        for kind in KINDS:
+            with self.subTest(kind=kind):
+                self.assertTrue((ROOT / "schemas" / "v2" / (SCHEMAS[kind]+".schema.json")).is_file())
+
     def corrupt_and_reject(self, filename, change):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp)
