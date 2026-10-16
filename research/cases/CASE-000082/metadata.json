@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000082",
+  "title": "GHSL-2024-069: Unsafe YAML deserialization in ngrinder",
+  "publisher": "GitHub Security Lab",
+  "publication_date": null,
+  "category": "supplemental_advisory",
+  "sources": [
+    {
+      "source_id": "SRC-000082",
+      "url": "https://securitylab.github.com/advisories/GHSL-2024-069_ngrinder/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=supplemental. Short impact-assessment advisory; not a full research trajectory. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

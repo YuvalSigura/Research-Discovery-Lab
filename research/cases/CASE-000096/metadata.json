@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000096",
+  "title": "Denial of Fuzzing: Rust in the Windows kernel",
+  "publisher": "Check Point Research",
+  "publication_date": null,
+  "category": "research_process",
+  "sources": [
+    {
+      "source_id": "SRC-000096",
+      "url": "https://research.checkpoint.com/2025/denial-of-fuzzing-rust-in-the-windows-kernel/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Unexpected unreproducible crashes forced a research pivot. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

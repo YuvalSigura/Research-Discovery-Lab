@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000078",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000078",
+      "url": "https://securitylab.github.com/research/Fail2exploit/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000108",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000108",
+      "url": "https://projectzero.google/2018/12/searching-statically-linked-vulnerable.html"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

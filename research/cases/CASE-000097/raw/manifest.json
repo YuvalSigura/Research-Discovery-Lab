@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000097",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000097",
+      "url": "https://projectzero.google/2021/04/designing-sockfuzzer-network-syscall.html"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

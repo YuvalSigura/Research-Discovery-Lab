@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000103",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000103",
+      "url": "https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

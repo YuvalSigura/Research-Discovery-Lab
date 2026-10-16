@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000090",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000090",
+      "url": "https://labs.watchtowr.com/gitlab-arbitrary-file-read-gitlab-cve-2023-2825-analysis/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

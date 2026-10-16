@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000082",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000082",
+      "url": "https://securitylab.github.com/advisories/GHSL-2024-069_ngrinder/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

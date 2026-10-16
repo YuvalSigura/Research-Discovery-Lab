@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000094",
+  "title": "Fuzzing an API with DeepState Part 2",
+  "publisher": "Trail of Bits",
+  "publication_date": "2019-01-23",
+  "category": "research_methodology",
+  "sources": [
+    {
+      "source_id": "SRC-000094",
+      "url": "https://blog.trailofbits.com/2019/01/23/fuzzing-an-api-with-deepstate-part-2/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=methodology. Iterative test harness decisions and correction of blind spots. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000104",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000104",
+      "url": "https://devco.re/blog/2025/06/26/the-journey-of-bypassing-ubuntus-unprivileged-namespace-restriction-en/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

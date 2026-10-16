@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000100",
+  "title": "New Attack Surface on MS Exchange Part 1: ProxyLogon",
+  "publisher": "DEVCORE",
+  "publication_date": "2021-08-06",
+  "category": "security_research",
+  "sources": [
+    {
+      "source_id": "SRC-000100",
+      "url": "https://devco.re/blog/2021/08/06/a-new-attack-surface-on-MS-exchange-part-1-ProxyLogon/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Architecture-led frontend/backend trust-boundary research. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

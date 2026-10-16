@@ -618,6 +618,262 @@
       "source_url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
       "source_registry_ref": "SRC-000077",
       "classification_status": "pending_review"
+    },
+    {
+      "legacy_id": "CASE-000078",
+      "legacy_path": "research/cases/CASE-000078/metadata.json",
+      "new_case_ref": "CASE-000078",
+      "source_url": "https://securitylab.github.com/research/Fail2exploit/",
+      "source_registry_ref": "SRC-000078",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000079",
+      "legacy_path": "research/cases/CASE-000079/metadata.json",
+      "new_case_ref": "CASE-000079",
+      "source_url": "https://orca.security/resources/blog/azure-machine-learning-privilege-escalation/",
+      "source_registry_ref": "SRC-000079",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000080",
+      "legacy_path": "research/cases/CASE-000080/metadata.json",
+      "new_case_ref": "CASE-000080",
+      "source_url": "https://portswigger.net/research/bypassing-csp-with-dangling-iframes",
+      "source_registry_ref": "SRC-000080",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000081",
+      "legacy_path": "research/cases/CASE-000081/metadata.json",
+      "new_case_ref": "CASE-000081",
+      "source_url": "https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/",
+      "source_registry_ref": "SRC-000081",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000082",
+      "legacy_path": "research/cases/CASE-000082/metadata.json",
+      "new_case_ref": "CASE-000082",
+      "source_url": "https://securitylab.github.com/advisories/GHSL-2024-069_ngrinder/",
+      "source_registry_ref": "SRC-000082",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000083",
+      "legacy_path": "research/cases/CASE-000083/metadata.json",
+      "new_case_ref": "CASE-000083",
+      "source_url": "https://www.wiz.io/blog/ai-agents-vs-humans-who-wins-at-web-hacking-in-2026",
+      "source_registry_ref": "SRC-000083",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000084",
+      "legacy_path": "research/cases/CASE-000084/metadata.json",
+      "new_case_ref": "CASE-000084",
+      "source_url": "https://blog.trailofbits.com/2023/03/22/codex-and-gpt4-cant-beat-humans-on-smart-contract-audits/",
+      "source_registry_ref": "SRC-000084",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000085",
+      "legacy_path": "research/cases/CASE-000085/metadata.json",
+      "new_case_ref": "CASE-000085",
+      "source_url": "https://projectzero.google/2020/02/several-months-in-life-of-part1.html",
+      "source_registry_ref": "SRC-000085",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000086",
+      "legacy_path": "research/cases/CASE-000086/metadata.json",
+      "new_case_ref": "CASE-000086",
+      "source_url": "https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql",
+      "source_registry_ref": "SRC-000086",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000087",
+      "legacy_path": "research/cases/CASE-000087/metadata.json",
+      "new_case_ref": "CASE-000087",
+      "source_url": "https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/",
+      "source_registry_ref": "SRC-000087",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000088",
+      "legacy_path": "research/cases/CASE-000088/metadata.json",
+      "new_case_ref": "CASE-000088",
+      "source_url": "https://labs.watchtowr.com/ghost-in-the-wire-sonic-in-the-wall/",
+      "source_registry_ref": "SRC-000088",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000089",
+      "legacy_path": "research/cases/CASE-000089/metadata.json",
+      "new_case_ref": "CASE-000089",
+      "source_url": "https://blog.trailofbits.com/2024/04/30/curvance-invariants-unleashed/",
+      "source_registry_ref": "SRC-000089",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000090",
+      "legacy_path": "research/cases/CASE-000090/metadata.json",
+      "new_case_ref": "CASE-000090",
+      "source_url": "https://labs.watchtowr.com/gitlab-arbitrary-file-read-gitlab-cve-2023-2825-analysis/",
+      "source_registry_ref": "SRC-000090",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000091",
+      "legacy_path": "research/cases/CASE-000091/metadata.json",
+      "new_case_ref": "CASE-000091",
+      "source_url": "https://horizon3.ai/attack-research/attack-blogs/the-long-tail-of-log4shell-exploitation/",
+      "source_registry_ref": "SRC-000091",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000092",
+      "legacy_path": "research/cases/CASE-000092/metadata.json",
+      "new_case_ref": "CASE-000092",
+      "source_url": "https://projectzero.google/2025/03/blasting-past-webp.html",
+      "source_registry_ref": "SRC-000092",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000093",
+      "legacy_path": "research/cases/CASE-000093/metadata.json",
+      "new_case_ref": "CASE-000093",
+      "source_url": "https://securitylab.github.com/research/uboot-rce-nfs-vulnerability/",
+      "source_registry_ref": "SRC-000093",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000094",
+      "legacy_path": "research/cases/CASE-000094/metadata.json",
+      "new_case_ref": "CASE-000094",
+      "source_url": "https://blog.trailofbits.com/2019/01/23/fuzzing-an-api-with-deepstate-part-2/",
+      "source_registry_ref": "SRC-000094",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000095",
+      "legacy_path": "research/cases/CASE-000095/metadata.json",
+      "new_case_ref": "CASE-000095",
+      "source_url": "https://projectzero.google/2021/12/this-shouldnt-have-happened.html",
+      "source_registry_ref": "SRC-000095",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000096",
+      "legacy_path": "research/cases/CASE-000096/metadata.json",
+      "new_case_ref": "CASE-000096",
+      "source_url": "https://research.checkpoint.com/2025/denial-of-fuzzing-rust-in-the-windows-kernel/",
+      "source_registry_ref": "SRC-000096",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000097",
+      "legacy_path": "research/cases/CASE-000097/metadata.json",
+      "new_case_ref": "CASE-000097",
+      "source_url": "https://projectzero.google/2021/04/designing-sockfuzzer-network-syscall.html",
+      "source_registry_ref": "SRC-000097",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000098",
+      "legacy_path": "research/cases/CASE-000098/metadata.json",
+      "new_case_ref": "CASE-000098",
+      "source_url": "https://blog.trailofbits.com/2025/07/25/exploiting-zero-days-in-abandoned-hardware/",
+      "source_registry_ref": "SRC-000098",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000099",
+      "legacy_path": "research/cases/CASE-000099/metadata.json",
+      "new_case_ref": "CASE-000099",
+      "source_url": "https://labs.watchtowr.com/fortinet-fortigate-cve-2024-23113-a-super-complex-vulnerability-in-a-super-secure-appliance-in-2024/",
+      "source_registry_ref": "SRC-000099",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000100",
+      "legacy_path": "research/cases/CASE-000100/metadata.json",
+      "new_case_ref": "CASE-000100",
+      "source_url": "https://devco.re/blog/2021/08/06/a-new-attack-surface-on-MS-exchange-part-1-ProxyLogon/",
+      "source_registry_ref": "SRC-000100",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000101",
+      "legacy_path": "research/cases/CASE-000101/metadata.json",
+      "new_case_ref": "CASE-000101",
+      "source_url": "https://projectzero.google/2025/05/the-windows-registry-adventure-7-attack-surface.html",
+      "source_registry_ref": "SRC-000101",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000102",
+      "legacy_path": "research/cases/CASE-000102/metadata.json",
+      "new_case_ref": "CASE-000102",
+      "source_url": "https://labs.watchtowr.com/auth-bypass-in-un-limited-scenarios-progress-moveit-transfer-cve-2024-5806/",
+      "source_registry_ref": "SRC-000102",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000103",
+      "legacy_path": "research/cases/CASE-000103/metadata.json",
+      "new_case_ref": "CASE-000103",
+      "source_url": "https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/",
+      "source_registry_ref": "SRC-000103",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000104",
+      "legacy_path": "research/cases/CASE-000104/metadata.json",
+      "new_case_ref": "CASE-000104",
+      "source_url": "https://devco.re/blog/2025/06/26/the-journey-of-bypassing-ubuntus-unprivileged-namespace-restriction-en/",
+      "source_registry_ref": "SRC-000104",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000105",
+      "legacy_path": "research/cases/CASE-000105/metadata.json",
+      "new_case_ref": "CASE-000105",
+      "source_url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher",
+      "source_registry_ref": "SRC-000105",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000106",
+      "legacy_path": "research/cases/CASE-000106/metadata.json",
+      "new_case_ref": "CASE-000106",
+      "source_url": "https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/",
+      "source_registry_ref": "SRC-000106",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000107",
+      "legacy_path": "research/cases/CASE-000107/metadata.json",
+      "new_case_ref": "CASE-000107",
+      "source_url": "https://blog.trailofbits.com/2025/09/25/taming-2500-compiler-warnings-with-codeql-an-openvpn2-case-study/",
+      "source_registry_ref": "SRC-000107",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000108",
+      "legacy_path": "research/cases/CASE-000108/metadata.json",
+      "new_case_ref": "CASE-000108",
+      "source_url": "https://projectzero.google/2018/12/searching-statically-linked-vulnerable.html",
+      "source_registry_ref": "SRC-000108",
+      "classification_status": "catalogue_level_only"
+    },
+    {
+      "legacy_id": "CASE-000109",
+      "legacy_path": "research/cases/CASE-000109/metadata.json",
+      "new_case_ref": "CASE-000109",
+      "source_url": "https://bugculture.io/fuzz-or-miss/",
+      "source_registry_ref": "SRC-000109",
+      "classification_status": "catalogue_level_only"
     }
   ]
 }

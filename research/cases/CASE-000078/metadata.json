@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000078",
+  "title": "Fail2exploit: a security audit of Fail2ban",
+  "publisher": "GitHub Security Lab",
+  "publication_date": "2021-07-01",
+  "category": "negative_result",
+  "sources": [
+    {
+      "source_id": "SRC-000078",
+      "url": "https://securitylab.github.com/research/Fail2exploit/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. First-person audit with no reportable findings. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

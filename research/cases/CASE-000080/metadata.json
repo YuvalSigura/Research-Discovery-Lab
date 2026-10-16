@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000080",
+  "title": "Bypassing CSP with dangling iframes",
+  "publisher": "PortSwigger",
+  "publication_date": null,
+  "category": "browser_research",
+  "sources": [
+    {
+      "source_id": "SRC-000080",
+      "url": "https://portswigger.net/research/bypassing-csp-with-dangling-iframes",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Browser behavior invalidated earlier attack approach; documented pivot. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000080",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000080",
+      "url": "https://portswigger.net/research/bypassing-csp-with-dangling-iframes"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

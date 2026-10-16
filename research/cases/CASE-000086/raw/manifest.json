@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000086",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000086",
+      "url": "https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

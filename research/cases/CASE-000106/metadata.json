@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000106",
+  "title": "The Frontier AI Vulnerability Burst",
+  "publisher": "Unit 42",
+  "publication_date": null,
+  "category": "research_methodology",
+  "sources": [
+    {
+      "source_id": "SRC-000106",
+      "url": "https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=methodology. Publisher self-report of automated source vulnerability research. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

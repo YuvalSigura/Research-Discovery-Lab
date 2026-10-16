@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000092",
+  "title": "Blasting Past WebP",
+  "publisher": "Google Project Zero",
+  "publication_date": null,
+  "category": "forensic_reconstruction",
+  "sources": [
+    {
+      "source_id": "SRC-000092",
+      "url": "https://projectzero.google/2025/03/blasting-past-webp.html",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=supplemental. Forensic reconstruction of already existing exploit; not first-discoverer notes. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

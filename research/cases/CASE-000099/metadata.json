@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000099",
+  "title": "FortiGate CVE-2024-23113: watchTowr analysis",
+  "publisher": "watchTowr Labs",
+  "publication_date": null,
+  "category": "variant_analysis",
+  "sources": [
+    {
+      "source_id": "SRC-000099",
+      "url": "https://labs.watchtowr.com/fortinet-fortigate-cve-2024-23113-a-super-complex-vulnerability-in-a-super-secure-appliance-in-2024/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Reproduction of disclosed issue with environment prerequisites. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

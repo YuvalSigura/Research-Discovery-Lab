@@ -35,8 +35,8 @@ The following figures reflect the current repository baseline as inspected after
 
 | Item | Status |
 | --- | --- |
-| Catalogued publications | **77 source records** (previous 76 plus GitHub Security Lab's taskflow methodology study) |
-| CASE records | **77**, mostly source-compatible catalogue placeholders |
+| Catalogued publications | **109 source records** (77 baseline + 32 catalogue-only candidates; see [intake ledger](docs/SOURCE_INTAKE_2026-10-16.md)) |
+| CASE records | **109**, mostly source-compatible catalogue placeholders |
 | Deep case example | **ShadowPanel**, **James Kettle topic selection**, **watchTowr .MOBI**, **ServiceNow** and **an OpenVAS false-positive account**, and **GitHub Security Lab taskflow methodology**, partially reconstructed; **XBOW Chrome** has five initial process events |
 | ShadowPanel trajectory | **18 source-anchored events; 19 provenance-tagged relations** (ShadowPanel alone); **90 events and 79 relations** across current archive |
 | Publisher-discovery seeds | **9 configured research publishers**, in `sources/publishers/` |
@@ -47,6 +47,8 @@ The following figures reflect the current repository baseline as inspected after
 | Original article RAW text and licensed passages | **Not archived** for the catalogue |
 | Automated acquisition, document processing and historical extraction | **Not implemented end to end** |
 | Dataset creation, blind evaluation, fine-tuning | **Fail-closed predecision candidate exporter and offline descriptive A/B scorer exist**, but **0 approved CTX**, **0 qualified benchmark tasks**, and **no actual model comparison**; training is last |
+
+**New source catalogue intake:** 32 unreviewed first-party leads, without new event trajectories or validated blind test tasks. [Intake guardrails](docs/SOURCE_INTAKE_2026-10-16.md).
 
 **Previously verified main baseline:** [consolidated main CI PASS](https://github.com/YuvalSigura/Research-Discovery-Lab/actions/runs/38860482526), commit `2e66bca`; the current increment requires its own GitHub Actions run. See [Phase-3 research review and evaluation](docs/PHASE3_INDEPENDENT_CURATION_AND_EVALUATION.md).
 

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000079",
+  "title": "Azure ML: When Pipelines Go Off the Rails",
+  "publisher": "Orca Security",
+  "publication_date": null,
+  "category": "cloud_security",
+  "sources": [
+    {
+      "source_id": "SRC-000079",
+      "url": "https://orca.security/resources/blog/azure-machine-learning-privilege-escalation/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Managed-identity and cloud-pipeline trust-boundary study. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

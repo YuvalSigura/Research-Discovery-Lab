@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000107",
+  "title": "Taming 2,500 compiler warnings with CodeQL: OpenVPN2",
+  "publisher": "Trail of Bits",
+  "publication_date": "2025-09-25",
+  "category": "negative_result",
+  "sources": [
+    {
+      "source_id": "SRC-000107",
+      "url": "https://blog.trailofbits.com/2025/09/25/taming-2500-compiler-warnings-with-codeql-an-openvpn2-case-study/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Thousands of warnings to 20 reviews; no exploitable issues in tested context. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000084",
+  "title": "Codex (and GPT-4) can't beat humans on smart contract audits",
+  "publisher": "Trail of Bits",
+  "publication_date": "2023-03-22",
+  "category": "negative_result",
+  "sources": [
+    {
+      "source_id": "SRC-000084",
+      "url": "https://blog.trailofbits.com/2023/03/22/codex-and-gpt4-cant-beat-humans-on-smart-contract-audits/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Failure modes and modified research strategy; historical models only. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

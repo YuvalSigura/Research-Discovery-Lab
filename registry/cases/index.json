@@ -1838,6 +1838,1030 @@
         "review_status": "not_reviewed",
         "basis": "Aggregate publisher self-report; RDL has not verified specific findings, independent negative cases or zero-day originality."
       }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000078",
+      "source_refs": [
+        "SRC-000078"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "negative_result",
+      "domain_labels": [
+        "negative_result"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000078"
+        ],
+        "notes": "Catalogue-only candidate: First-person audit with no reportable findings. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000078/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000079",
+      "source_refs": [
+        "SRC-000079"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "architecture",
+      "domain_labels": [
+        "cloud_security"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000079"
+        ],
+        "notes": "Catalogue-only candidate: Managed-identity and cloud-pipeline trust-boundary study. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000079/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000080",
+      "source_refs": [
+        "SRC-000080"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "browser_research"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000080"
+        ],
+        "notes": "Catalogue-only candidate: Browser behavior invalidated earlier attack approach; documented pivot. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000080/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000081",
+      "source_refs": [
+        "SRC-000081"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "architecture",
+      "domain_labels": [
+        "cloud_security"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000081"
+        ],
+        "notes": "Catalogue-only candidate: Cloud service-account and artifact permission boundaries. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000081/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000082",
+      "source_refs": [
+        "SRC-000082"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "supplemental_advisory"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000082"
+        ],
+        "notes": "Catalogue-only candidate: Short impact-assessment advisory; not a full research trajectory. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000082/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000083",
+      "source_refs": [
+        "SRC-000083"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000083"
+        ],
+        "notes": "Catalogue-only candidate: Publisher-reported human vs agent exploration decisions; not blind independent trial. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000083/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000084",
+      "source_refs": [
+        "SRC-000084"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "negative_result"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000084"
+        ],
+        "notes": "Catalogue-only candidate: Failure modes and modified research strategy; historical models only. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000084/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000085",
+      "source_refs": [
+        "SRC-000085"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "research_process"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000085"
+        ],
+        "notes": "Catalogue-only candidate: Extended reproduction attempts and retrospective hypothesis changes. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000085/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000086",
+      "source_refs": [
+        "SRC-000086"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "cloud_security"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000086"
+        ],
+        "notes": "Catalogue-only candidate: Cross-system architecture analogy and isolation assumptions. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000086/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000087",
+      "source_refs": [
+        "SRC-000087"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000087"
+        ],
+        "notes": "Catalogue-only candidate: Research goal selection and agent experiment design. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000087/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000088",
+      "source_refs": [
+        "SRC-000088"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "security_research"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000088"
+        ],
+        "notes": "Catalogue-only candidate: Appliance reverse-engineering setbacks and debug vs release impact. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000088/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000089",
+      "source_refs": [
+        "SRC-000089"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_process"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000089"
+        ],
+        "notes": "Catalogue-only candidate: Invariant-based auditing and hypothesis checks. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000089/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000090",
+      "source_refs": [
+        "SRC-000090"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "variant_analysis"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000090"
+        ],
+        "notes": "Catalogue-only candidate: Reported flaw reproduction and unusual hierarchy prerequisite. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000090/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000091",
+      "source_refs": [
+        "SRC-000091"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "variant_analysis"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000091"
+        ],
+        "notes": "Catalogue-only candidate: Testing alternative surfaces after non-useful initial probes. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000091/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000092",
+      "source_refs": [
+        "SRC-000092"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "forensic_reconstruction"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000092"
+        ],
+        "notes": "Catalogue-only candidate: Forensic reconstruction of already existing exploit; not first-discoverer notes. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000092/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000093",
+      "source_refs": [
+        "SRC-000093"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "research_process"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000093"
+        ],
+        "notes": "Catalogue-only candidate: CodeQL and manual analysis of embedded network code. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000093/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000094",
+      "source_refs": [
+        "SRC-000094"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000094"
+        ],
+        "notes": "Catalogue-only candidate: Iterative test harness decisions and correction of blind spots. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000094/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000095",
+      "source_refs": [
+        "SRC-000095"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000095"
+        ],
+        "notes": "Catalogue-only candidate: Why fuzzing did not uncover a serious bug; not a no-bug conclusion. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000095/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000096",
+      "source_refs": [
+        "SRC-000096"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "research_process"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000096"
+        ],
+        "notes": "Catalogue-only candidate: Unexpected unreproducible crashes forced a research pivot. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000096/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000097",
+      "source_refs": [
+        "SRC-000097"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000097"
+        ],
+        "notes": "Catalogue-only candidate: Harness fidelity and experimental design decisions. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000097/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000098",
+      "source_refs": [
+        "SRC-000098"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "security_research"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000098"
+        ],
+        "notes": "Catalogue-only candidate: Hardware research with service pivot and firmware access problems. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000098/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000099",
+      "source_refs": [
+        "SRC-000099"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "variant_analysis"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000099"
+        ],
+        "notes": "Catalogue-only candidate: Reproduction of disclosed issue with environment prerequisites. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000099/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000100",
+      "source_refs": [
+        "SRC-000100"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "security_research"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000100"
+        ],
+        "notes": "Catalogue-only candidate: Architecture-led frontend/backend trust-boundary research. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000100/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000101",
+      "source_refs": [
+        "SRC-000101"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "architecture",
+      "domain_labels": [
+        "research_process"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000101"
+        ],
+        "notes": "Catalogue-only candidate: Attack surface modeling; distinct from existing Part 8. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000101/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000102",
+      "source_refs": [
+        "SRC-000102"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "variant_analysis"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000102"
+        ],
+        "notes": "Catalogue-only candidate: Reanalysis of auth bypass with reproduction constraints. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000102/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000103",
+      "source_refs": [
+        "SRC-000103"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "exploit_chain",
+      "domain_labels": [
+        "security_research"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000103"
+        ],
+        "notes": "Catalogue-only candidate: Cache behavior, filtered inputs and research pivot. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000103/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000104",
+      "source_refs": [
+        "SRC-000104"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "root_cause",
+      "domain_labels": [
+        "research_process"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000104"
+        ],
+        "notes": "Catalogue-only candidate: First-person security boundary investigation. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000104/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000105",
+      "source_refs": [
+        "SRC-000105"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000105"
+        ],
+        "notes": "Catalogue-only candidate: Publisher description of AI research orchestration and verification. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000105/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000106",
+      "source_refs": [
+        "SRC-000106"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000106"
+        ],
+        "notes": "Catalogue-only candidate: Publisher self-report of automated source vulnerability research. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000106/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000107",
+      "source_refs": [
+        "SRC-000107"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "negative_result",
+      "domain_labels": [
+        "negative_result"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000107"
+        ],
+        "notes": "Catalogue-only candidate: Thousands of warnings to 20 reviews; no exploitable issues in tested context. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000107/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000108",
+      "source_refs": [
+        "SRC-000108"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "methodology",
+      "domain_labels": [
+        "research_methodology"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000108"
+        ],
+        "notes": "Catalogue-only candidate: Binary-function similarity false positives and tool limitations. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000108/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "CASE-000109",
+      "source_refs": [
+        "SRC-000109"
+      ],
+      "system_refs": [],
+      "environment_refs": [],
+      "finding_refs": [],
+      "mechanism_refs": [],
+      "context_ref": null,
+      "case_kind": "vulnerability",
+      "domain_labels": [
+        "research_process"
+      ],
+      "analysis_status": "not_started",
+      "provenance": {
+        "evidence_status": "unknown",
+        "source_refs": [
+          "SRC-000109"
+        ],
+        "notes": "Catalogue-only candidate: Initially negative web assessment pivoted to deeper directory discovery; final outcome positive. The publisher narrative is retrospective. No individually corroborated research events or verified outcomes."
+      },
+      "legacy_metadata_path": "research/cases/CASE-000109/metadata.json",
+      "discovery_assessment": {
+        "zero_day_status": "unassessed",
+        "evidence_source_refs": [],
+        "independent_verification_refs": [],
+        "review_status": "not_reviewed",
+        "basis": "No independent verification of findings or discovery timing."
+      }
     }
   ]
 }

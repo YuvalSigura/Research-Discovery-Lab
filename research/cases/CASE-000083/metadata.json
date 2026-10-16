@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000083",
+  "title": "AI Agents vs Humans: Who Wins at Web Hacking in 2026?",
+  "publisher": "Wiz Research",
+  "publication_date": null,
+  "category": "research_methodology",
+  "sources": [
+    {
+      "source_id": "SRC-000083",
+      "url": "https://www.wiz.io/blog/ai-agents-vs-humans-who-wins-at-web-hacking-in-2026",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=methodology. Publisher-reported human vs agent exploration decisions; not blind independent trial. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

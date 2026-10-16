@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000108",
+  "title": "Searching statically-linked vulnerable library functions in executable code",
+  "publisher": "Google Project Zero",
+  "publication_date": null,
+  "category": "research_methodology",
+  "sources": [
+    {
+      "source_id": "SRC-000108",
+      "url": "https://projectzero.google/2018/12/searching-statically-linked-vulnerable.html",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=methodology. Binary-function similarity false positives and tool limitations. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000104",
+  "title": "Journey of Bypassing Ubuntu Unprivileged Namespace Restriction",
+  "publisher": "DEVCORE",
+  "publication_date": "2025-06-26",
+  "category": "research_process",
+  "sources": [
+    {
+      "source_id": "SRC-000104",
+      "url": "https://devco.re/blog/2025/06/26/the-journey-of-bypassing-ubuntus-unprivileged-namespace-restriction-en/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. First-person security boundary investigation. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

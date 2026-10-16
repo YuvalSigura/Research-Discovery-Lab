@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000084",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000084",
+      "url": "https://blog.trailofbits.com/2023/03/22/codex-and-gpt4-cant-beat-humans-on-smart-contract-audits/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

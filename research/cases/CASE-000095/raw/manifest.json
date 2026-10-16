@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000095",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000095",
+      "url": "https://projectzero.google/2021/12/this-shouldnt-have-happened.html"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

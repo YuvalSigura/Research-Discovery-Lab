@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000107",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000107",
+      "url": "https://blog.trailofbits.com/2025/09/25/taming-2500-compiler-warnings-with-codeql-an-openvpn2-case-study/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

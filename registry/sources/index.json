@@ -1156,6 +1156,486 @@
       "case_refs": [
         "CASE-000077"
       ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000078",
+      "title": "Fail2exploit: a security audit of Fail2ban",
+      "publisher": "GitHub Security Lab",
+      "url": "https://securitylab.github.com/research/Fail2exploit/",
+      "publication_date": "2021-07-01",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000078"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000079",
+      "title": "Azure ML: When Pipelines Go Off the Rails",
+      "publisher": "Orca Security",
+      "url": "https://orca.security/resources/blog/azure-machine-learning-privilege-escalation/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000079"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000080",
+      "title": "Bypassing CSP with dangling iframes",
+      "publisher": "PortSwigger",
+      "url": "https://portswigger.net/research/bypassing-csp-with-dangling-iframes",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000080"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000081",
+      "title": "Bad.Build: Google Cloud Build",
+      "publisher": "Orca Security",
+      "url": "https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000081"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000082",
+      "title": "GHSL-2024-069: Unsafe YAML deserialization in ngrinder",
+      "publisher": "GitHub Security Lab",
+      "url": "https://securitylab.github.com/advisories/GHSL-2024-069_ngrinder/",
+      "publication_date": null,
+      "source_type": "advisory",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000082"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000083",
+      "title": "AI Agents vs Humans: Who Wins at Web Hacking in 2026?",
+      "publisher": "Wiz Research",
+      "url": "https://www.wiz.io/blog/ai-agents-vs-humans-who-wins-at-web-hacking-in-2026",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000083"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000084",
+      "title": "Codex (and GPT-4) can't beat humans on smart contract audits",
+      "publisher": "Trail of Bits",
+      "url": "https://blog.trailofbits.com/2023/03/22/codex-and-gpt4-cant-beat-humans-on-smart-contract-audits/",
+      "publication_date": "2023-03-22",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000084"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000085",
+      "title": "Chrome bug of suffering: Project Zero Part 1",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2020/02/several-months-in-life-of-part1.html",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000085"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000086",
+      "title": "ExtraReplica: cross-account Azure PostgreSQL vulnerability",
+      "publisher": "Wiz Research",
+      "url": "https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000086"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000087",
+      "title": "How we use /goal to find bugs in Patch the Planet",
+      "publisher": "Trail of Bits",
+      "url": "https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/",
+      "publication_date": "2026-07-28",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000087"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000088",
+      "title": "Ghost in the Wire, Sonic in the Wall",
+      "publisher": "watchTowr Labs",
+      "url": "https://labs.watchtowr.com/ghost-in-the-wire-sonic-in-the-wall/",
+      "publication_date": "2023-10-20",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000088"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000089",
+      "title": "Curvance: Invariants unleashed",
+      "publisher": "Trail of Bits",
+      "url": "https://blog.trailofbits.com/2024/04/30/curvance-invariants-unleashed/",
+      "publication_date": "2024-04-30",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000089"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000090",
+      "title": "GitLab Arbitrary File Read CVE-2023-2825 Analysis",
+      "publisher": "watchTowr Labs",
+      "url": "https://labs.watchtowr.com/gitlab-arbitrary-file-read-gitlab-cve-2023-2825-analysis/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000090"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000091",
+      "title": "The Long Tail of Log4Shell Exploitation",
+      "publisher": "Horizon3.ai",
+      "url": "https://horizon3.ai/attack-research/attack-blogs/the-long-tail-of-log4shell-exploitation/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000091"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000092",
+      "title": "Blasting Past WebP",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2025/03/blasting-past-webp.html",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000092"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000093",
+      "title": "U-Boot NFS RCE Vulnerabilities",
+      "publisher": "GitHub Security Lab",
+      "url": "https://securitylab.github.com/research/uboot-rce-nfs-vulnerability/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000093"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000094",
+      "title": "Fuzzing an API with DeepState Part 2",
+      "publisher": "Trail of Bits",
+      "url": "https://blog.trailofbits.com/2019/01/23/fuzzing-an-api-with-deepstate-part-2/",
+      "publication_date": "2019-01-23",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000094"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000095",
+      "title": "This shouldn't have happened: A vulnerability postmortem",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2021/12/this-shouldnt-have-happened.html",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000095"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000096",
+      "title": "Denial of Fuzzing: Rust in the Windows kernel",
+      "publisher": "Check Point Research",
+      "url": "https://research.checkpoint.com/2025/denial-of-fuzzing-rust-in-the-windows-kernel/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000096"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000097",
+      "title": "Designing Sockfuzzer: XNU network syscall fuzzer",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2021/04/designing-sockfuzzer-network-syscall.html",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000097"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000098",
+      "title": "Exploiting zero days in abandoned hardware",
+      "publisher": "Trail of Bits",
+      "url": "https://blog.trailofbits.com/2025/07/25/exploiting-zero-days-in-abandoned-hardware/",
+      "publication_date": "2025-07-25",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000098"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000099",
+      "title": "FortiGate CVE-2024-23113: watchTowr analysis",
+      "publisher": "watchTowr Labs",
+      "url": "https://labs.watchtowr.com/fortinet-fortigate-cve-2024-23113-a-super-complex-vulnerability-in-a-super-secure-appliance-in-2024/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000099"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000100",
+      "title": "New Attack Surface on MS Exchange Part 1: ProxyLogon",
+      "publisher": "DEVCORE",
+      "url": "https://devco.re/blog/2021/08/06/a-new-attack-surface-on-MS-exchange-part-1-ProxyLogon/",
+      "publication_date": "2021-08-06",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000100"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000101",
+      "title": "Windows Registry Adventure #7: Attack surface analysis",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2025/05/the-windows-registry-adventure-7-attack-surface.html",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000101"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000102",
+      "title": "Auth Bypass in (Un)Limited Scenarios: MOVEit",
+      "publisher": "watchTowr Labs",
+      "url": "https://labs.watchtowr.com/auth-bypass-in-un-limited-scenarios-progress-moveit-transfer-cve-2024-5806/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000102"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000103",
+      "title": "Cache Me If You Can: Sitecore cache poisoning to RCE",
+      "publisher": "watchTowr Labs",
+      "url": "https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000103"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000104",
+      "title": "Journey of Bypassing Ubuntu Unprivileged Namespace Restriction",
+      "publisher": "DEVCORE",
+      "url": "https://devco.re/blog/2025/06/26/the-journey-of-bypassing-ubuntus-unprivileged-namespace-restriction-en/",
+      "publication_date": "2025-06-26",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000104"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000105",
+      "title": "Introducing Atlas: Wiz AI vulnerability researcher",
+      "publisher": "Wiz Research",
+      "url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000105"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000106",
+      "title": "The Frontier AI Vulnerability Burst",
+      "publisher": "Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000106"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000107",
+      "title": "Taming 2,500 compiler warnings with CodeQL: OpenVPN2",
+      "publisher": "Trail of Bits",
+      "url": "https://blog.trailofbits.com/2025/09/25/taming-2500-compiler-warnings-with-codeql-an-openvpn2-case-study/",
+      "publication_date": "2025-09-25",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000107"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000108",
+      "title": "Searching statically-linked vulnerable library functions in executable code",
+      "publisher": "Google Project Zero",
+      "url": "https://projectzero.google/2018/12/searching-statically-linked-vulnerable.html",
+      "publication_date": null,
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000108"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "SRC-000109",
+      "title": "Finding Hidden Features",
+      "publisher": "Bug Culture",
+      "url": "https://bugculture.io/fuzz-or-miss/",
+      "publication_date": "2024-08-23",
+      "source_type": "article",
+      "capture_status": "not_archived",
+      "sha256": null,
+      "license_status": "unreviewed",
+      "case_refs": [
+        "CASE-000109"
+      ]
     }
   ]
 }

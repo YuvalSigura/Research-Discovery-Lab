@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000102",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000102",
+      "url": "https://labs.watchtowr.com/auth-bypass-in-un-limited-scenarios-progress-moveit-transfer-cve-2024-5806/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

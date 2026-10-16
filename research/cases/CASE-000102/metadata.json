@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "CASE-000102",
+  "title": "Auth Bypass in (Un)Limited Scenarios: MOVEit",
+  "publisher": "watchTowr Labs",
+  "publication_date": null,
+  "category": "variant_analysis",
+  "sources": [
+    {
+      "source_id": "SRC-000102",
+      "url": "https://labs.watchtowr.com/auth-bypass-in-un-limited-scenarios-progress-moveit-transfer-cve-2024-5806/",
+      "kind": "publisher_article",
+      "original_content_status": "not_archived",
+      "retrieval_status": "catalogued_from_public_source",
+      "sha256": null,
+      "license": "unreviewed",
+      "retrieved_at": null
+    }
+  ],
+  "analysis_status": "not_started",
+  "training_status": "not_started",
+  "provenance_note": "Catalogued source-only lead. triage=deep. Reanalysis of auth bypass with reproduction constraints. No anchored event, known-at context, approved curator, independent proof or usage rights claimed."
+}

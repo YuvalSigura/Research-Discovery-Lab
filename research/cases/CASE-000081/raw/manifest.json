@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000081",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000081",
+      "url": "https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

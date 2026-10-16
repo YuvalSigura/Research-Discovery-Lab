@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000106",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000106",
+      "url": "https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

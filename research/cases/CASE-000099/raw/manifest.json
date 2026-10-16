@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000099",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000099",
+      "url": "https://labs.watchtowr.com/fortinet-fortigate-cve-2024-23113-a-super-complex-vulnerability-in-a-super-secure-appliance-in-2024/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

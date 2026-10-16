@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000091",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000091",
+      "url": "https://horizon3.ai/attack-research/attack-blogs/the-long-tail-of-log4shell-exploitation/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

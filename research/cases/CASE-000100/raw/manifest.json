@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000100",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000100",
+      "url": "https://devco.re/blog/2021/08/06/a-new-attack-surface-on-MS-exchange-part-1-ProxyLogon/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

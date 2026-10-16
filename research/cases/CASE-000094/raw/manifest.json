@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000094",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000094",
+      "url": "https://blog.trailofbits.com/2019/01/23/fuzzing-an-api-with-deepstate-part-2/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}

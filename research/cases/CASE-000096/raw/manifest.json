@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000096",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000096",
+      "url": "https://research.checkpoint.com/2025/denial-of-fuzzing-rust-in-the-windows-kernel/"
+    }
+  ],
+  "note": "Publisher article remains external. Rights unreviewed; no copyrighted source content mirrored or validated research chronology."
+}
