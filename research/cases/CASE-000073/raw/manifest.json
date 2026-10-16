@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-000073",
+  "raw_files": [],
+  "external_sources": [
+    {
+      "source_id": "SRC-000073",
+      "url": "https://portswigger.net/research/how-i-choose-a-security-research-topic"
+    }
+  ],
+  "note": "Publisher article remains at original URL; text and media not mirrored. Source content rights unreviewed. Section locators are not full-text snapshots."
+}
