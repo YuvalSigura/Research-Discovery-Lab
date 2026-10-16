@@ -1,0 +1,70 @@
+{
+  "source_id": "SRC-000004",
+  "case_id": "CASE-000004",
+  "canonical_url": "https://xbow.com/blog/bing-images-rce-vulnerabilities",
+  "retrieved_url": "https://xbow.com/blog/bing-images-rce-vulnerabilities",
+  "registry_revision": "066b37c840576427ecdb54cb4541d710b3100ba6",
+  "access_status": "READ_FULL",
+  "source_revision_or_capture": "live page fetched 2026-10-16",
+  "retrieval_timestamp": "2026-10-16T09:10:00Z",
+  "document_genres": ["technical walkthrough", "autonomous AI discovery narrative"],
+  "lineage_id": "xbow-bing-images-rce-2026",
+  "actor_roles": [
+    {"actor": "XBOW autonomous AI", "role": "sole_investigator"}
+  ],
+  "source_claims": [
+    {
+      "claim_id": "C1",
+      "anchor": "Initial Signal / Confirmation",
+      "type": "author_reported",
+      "statement": "Suspicious 500 error during reverse image search of attacker-controlled URL; confirmed SSRF via OOB HTTP from bingbot/2.0."
+    },
+    {
+      "claim_id": "C2",
+      "anchor": "Negative Results",
+      "type": "author_reported",
+      "statement": "XML payloads / XXE attempts produced no outbound fetches, ruling out XXE. Certain pseudo-protocols failed."
+    },
+    {
+      "claim_id": "C3",
+      "anchor": "Renderer Fingerprinting / Delegate Exploitation",
+      "type": "author_reported",
+      "statement": "ImageMagick-compatible stack identified via pseudo-protocols; crafted SVG with pipe-prefixed commands triggered shell-backed delegate execution."
+    },
+    {
+      "claim_id": "C4",
+      "anchor": "AI involvement",
+      "type": "author_reported",
+      "statement": "Entire investigation fully autonomous, no human in the loop."
+    }
+  ],
+  "research_questions": [
+    {
+      "question_id": "Q1",
+      "formulation": "Does the 500 error on attacker-controlled image URL indicate a server-side fetch that can be confirmed out-of-band?",
+      "basis": "action_implied_candidate",
+      "anchor": "Initial Signal"
+    },
+    {
+      "question_id": "Q2",
+      "formulation": "After ruling out XXE, which image-processing delegate or pseudo-protocol accepts attacker-controlled input that reaches a shell?",
+      "basis": "author_reported_sequence",
+      "anchor": "Layered Probing"
+    }
+  ],
+  "decision_ids": ["xbow-bing-images-rce-2026.T001", "xbow-bing-images-rce-2026.T002"],
+  "unobserved_history": [
+    "Raw agent tool-call logs or intermediate hypotheses not summarized",
+    "Exact number and order of failed probes beyond high-level narrative"
+  ],
+  "forbidden_inferences": [
+    "Do not treat ruled-out XXE as a universal proof of no XML issues; it is bounded to the tested payloads",
+    "Do not invent additional human decisions; source claims fully autonomous"
+  ],
+  "scientific_readiness": "provisional",
+  "training_status": "TRAINING_BLOCKED",
+  "next_evidence_actions": [
+    "Note third vulnerability (Devices Pricing) is linked but process not detailed here",
+    "Distinguish vendor claim of full autonomy from independent trace evidence"
+  ]
+}
